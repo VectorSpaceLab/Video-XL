@@ -12,3 +12,8 @@ XL-VLM: Extra-Long Vision Language Model for Hour-Scale Video Understanding</a><
 
 
 ## Plan
+
+ - [x] Technical Report
+ - [ ] Model
+ - [ ] Code
+ - [ ] Data
