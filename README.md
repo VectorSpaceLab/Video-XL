@@ -21,7 +21,12 @@ XL-VLM is an extra-long vision language model for hour-scale video understanding
 (iii) XL-VLM shows strong ability in some real-world scenarios, like video summarization, surveillance anomaly detection and Ad placement identification.
 
 
-![Results on Needle-in-a-haystack evaluation on a single 80G GPU.](./assets/needle.png)*Results on Needle-in-a-haystack evaluation on a single 80G GPU.*
+<p align="center">
+  <img src="./assets/needle.png" alt="Results on Needle-in-a-haystack evaluation on a single 80G GPU." />
+</p>
+
+<p align="center"><em>Results on Needle-in-a-haystack evaluation on a single 80G GPU.</em></p>
+
 
 
 ## Plan
