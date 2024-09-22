@@ -11,7 +11,9 @@
 
 ## Overview
 XL-VLM is an extra-long vision language model for hour-scale video understanding. With LLM compression, XL-VLM can easily extend VLM to longer visual contexts wihout inforamtion loss. 
+
 ✨ Highlights:
+
 (i) Comprehensive long video understanding. XL-VLM 7B achieves the leading performance among 7B models on MLVU, VideoMME, VNBench and LongVideoBench.
 
 (ii) Efficient Long visual context processing. XL-VLM can process 1024 frames on an 80G GPU and achieves 100% accuracy on Needle-in-a-haystack evaluation.
