@@ -1,13 +1,13 @@
 
 deepspeed videoxl/videoxl/train/train_mem.py \
     --deepspeed scripts/zero2_offload.json \
-    --model_name_or_path /share/junjie/shuyan/Qwen2-7B-Instruct \
+    --model_name_or_path Qwen2-7B-Instruct \
     --version qwen_1_5  \
-    --data_path /share/junjie/shuyan/video_traindata/anno/\{cinepine_order,bunny_695k_pure,baaicaption,cinepine_10k,gpt4o_image,gpt4o_video,nextqa,sharegpt4v\}.json \
-    --image_folder /share/junjie/shuyan/video_traindata/Bunny-v1_0-data/finetune/images \
-    --vision_tower /share/junjie/shuyan/clip-vit-large-patch14-336 \
-    --video_folder /share/junjie/shuyan/video_traindata \
-    --pretrain_mm_mlp_adapter /share/junjie/shuyan/new1_copy/checkpoints/pretrain/mm_projector.bin \
+    --data_path video_traindata/anno/\{cinepine_order,bunny_695k_pure,baaicaption,cinepine_10k,gpt4o_image,gpt4o_video,nextqa,sharegpt4v\}.json \
+    --image_folder video_traindata/Bunny-v1_0-data/finetune/images \
+    --vision_tower clip-vit-large-patch14-336 \
+    --video_folder video_traindata \
+    --pretrain_mm_mlp_adapter checkpoints/pretrain/mm_projector.bin \
     --mm_projector_type mlp2x_gelu \
     --image_aspect_ratio anyres \
     --group_by_modality_length True \
