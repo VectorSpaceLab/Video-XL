@@ -137,7 +137,7 @@ bash eval/eval_vnbench.sh
 ## Needle-in-a-haystack evaluation
 To be coming soon
 
-## Training Code
+## Training Data
 To be coming soon
 
 ## Citation
