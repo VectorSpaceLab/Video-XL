@@ -1,6 +1,6 @@
 # Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding
 <p align="center">
-    <img src="./assets/needle.png" width="800">
+    <img src="./assets/needle1.png" width="800">
 </p>
 <p align="center"><em>Results on Needle-in-a-haystack evaluation on a single 80G GPU.</em></p>
 <p align="center">
@@ -9,16 +9,13 @@
 </p>
 
 
-
-Video-XL is an extra-long vision language model for hour-scale video understanding. With LLM compression, Video-XL can easily extend VLM to longer visual contexts wihout inforamtion loss. 
-
 ✨ **Highlights**:
 
-(i) Comprehensive long video understanding. Video-XL 7B achieves the leading performance among 7B models on MLVU, VideoMME, VNBench and LongVideoBench.
+(i) Comprehensive long video understanding. Video-XL 7B achieves the **leading performance among 7B models** on MLVU, VideoMME, VNBench and LongVideoBench.
 
-(ii) Efficient Long visual context processing. Video-XL can process 2048 frames on an 80G GPU and achieves nearly 95% accuracy on Needle-in-a-haystack evaluation.
+(ii) Efficient Long visual context processing. Video-XL can process **2048 frames on an 80G GPU and achieves nearly 95% accuracy** on Needle-in-a-haystack evaluation.
 
-(iii) Video-XL shows strong ability in some real-world scenarios, like movie summarization, surveillance anomaly detection and Ad placement identification.
+(iii) Video-XL shows strong ability in some real-world scenarios, like **movie summarization, surveillance anomaly detection and Ad placement identification**.
 
 
 
