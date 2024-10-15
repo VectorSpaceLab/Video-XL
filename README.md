@@ -6,7 +6,7 @@
 
 ## Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding
 <p align="center">
-    🌐 <a href="" target="_blank">Blog</a> | 📃 <a href="" target="_blank">Paper</a> | 🤗 <a href="" target="_blank">Hugging Face</a> | 🎥 <a href="" target="_blank">Demo</a>
+    🌐 <a href="" target="_blank">Blog</a> | 📃 <a href="" target="_blank">Paper</a> | 🤗 <a href="https://huggingface.co/sy1998/Video_XL/tree/main" target="_blank">Hugging Face</a> | 🎥 <a href="" target="_blank">Demo</a>
 
 </p>
 
