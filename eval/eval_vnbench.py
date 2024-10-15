@@ -67,7 +67,7 @@ class VNBench(Dataset):
 # fix seed
 torch.manual_seed(0)
 
-model_path = "/share/junjie/shuyan/VideoXL_weight_8"
+model_path = "VideoXL_weight_8"
 
 
  # you can change this to several thousands so long you GPU memory can handle it :)
