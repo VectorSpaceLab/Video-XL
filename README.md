@@ -122,7 +122,7 @@ accelerate launch --num_processes 8 --main_process_port 12345 -m lmms_eval \
 ```
 <details>
 <summary>Expand to see the performance on Video-MME and MLVU</summary>
-<IMG src="videomme.png"/>
+<IMG src="./assets/videomme.png"/>
 </details>
 
 For **VNBench** evaluation, download [VNBench](https://github.com/joez17/VideoNIAH) and use the following script
@@ -131,7 +131,7 @@ bash eval/eval_vnbench.sh
 ```
 <details>
 <summary>Expand to see the performance on VNbench and LongVideoBench</summary>
-<IMG src="vnbench.png"/>
+<IMG src="./assets/vnbench.png"/>
 </details>
 
 ## Needle-in-a-haystack evaluation
