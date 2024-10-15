@@ -1,12 +1,12 @@
 
 deepspeed videoxl/videoxl/train/train_mem.py \
    --deepspeed scripts/zero3.json \
-    --model_name_or_path /share/junjie/shuyan/Qwen2-7B-Instruct\
+    --model_name_or_path Qwen2-7B-Instruct\
     --version plain \
-    --data_path /share/junjie/shuyan/video_traindata/anno/\{laion_2m,textvr,youcook2,internvid\}.json\
-    --image_folder /share/junjie/shuyan/video_traindata/Bunny-v1_0-data/pretrain/images   \
-    --video_folder /share/junjie/shuyan/video_traindata \
-    --vision_tower /share/junjie/shuyan/clip-vit-large-patch14-336 \
+    --data_path video_traindata/anno/\{laion_2m,textvr,youcook2,internvid\}.json\
+    --image_folder video_traindata/Bunny-v1_0-data/pretrain/images   \
+    --video_folder video_traindata \
+    --vision_tower clip-vit-large-patch14-336 \
     --image_aspect_ratio square \
     --mm_tunable_parts="mm_mlp_adapter" \
     --mm_vision_select_layer -2 \
