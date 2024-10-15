@@ -1,0 +1,40 @@
+
+deepspeed videoxl/videoxl/train/train_mem.py \
+   --deepspeed scripts/zero3.json \
+    --model_name_or_path /share/junjie/shuyan/Qwen2-7B-Instruct\
+    --version plain \
+    --data_path /share/junjie/shuyan/video_traindata/anno/\{laion_2m,textvr,youcook2,internvid\}.json\
+    --image_folder /share/junjie/shuyan/video_traindata/Bunny-v1_0-data/pretrain/images   \
+    --video_folder /share/junjie/shuyan/video_traindata \
+    --vision_tower /share/junjie/shuyan/clip-vit-large-patch14-336 \
+    --image_aspect_ratio square \
+    --mm_tunable_parts="mm_mlp_adapter" \
+    --mm_vision_select_layer -2 \
+    --mm_projector_type mlp2x_gelu \
+    --mm_use_im_start_end False \
+    --mm_use_im_patch_token False \
+    --mm_spatial_pool_stride 2 \
+    --mm_resampler_type "spatial_pool" \
+    --mm_spatial_pool_out_channels 1024 \
+    --bf16 True \
+    --output_dir checkpoints/pretrain \
+    --num_train_epochs 1 \
+    --per_device_train_batch_size 8 \
+    --per_device_eval_batch_size 4 \
+    --gradient_accumulation_steps 4 \
+    --evaluation_strategy "no" \
+    --save_strategy "no" \
+    --save_steps 1000 \
+    --learning_rate 5e-4 \
+    --weight_decay 0. \
+    --warmup_ratio 0.03 \
+    --lr_scheduler_type "cosine" \
+    --logging_steps 1 \
+    --tf32 True \
+    --model_max_length 32768 \
+    --gradient_checkpointing True \
+    --dataloader_num_workers 4 \
+    --lazy_preprocess True \
+    --run_name pretrain \
+    --frames_upbound 4 \
+    --pretrain True
