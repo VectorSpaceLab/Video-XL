@@ -1,4 +1,4 @@
-<img src="./assets/logo.png" width="50"> # Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding
+<img src="./assets/logo.jpg" width="50"> #Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding
 
 <p align="center">
     <img src="./assets/needle.png" width="800">
