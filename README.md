@@ -120,11 +120,19 @@ accelerate launch --num_processes 8 --main_process_port 12345 -m lmms_eval \
     --log_samples_suffix videoxl \
     --output_path ./logs/
 ```
+<details>
+<summary>Expand to see the performance on Video-MME and MLVU</summary>
+<IMG src="videomme.png"/>
+</details>
 
 For **VNBench** evaluation, download [VNBench](https://github.com/joez17/VideoNIAH) and use the following script
 ```bash
 bash eval/eval_vnbench.sh
 ```
+<details>
+<summary>Expand to see the performance on VNbench and LongVideoBench</summary>
+<IMG src="vnbench.png"/>
+</details>
 
 ## Needle-in-a-haystack evaluation
 To be coming soon
@@ -135,6 +143,10 @@ To be coming soon
 - LongVA: the codebase we built upon. 
 - LMMs-Eval: the codebase we used for evaluation.
 - Activation Beacon: The compression methods we referring.
+
+## License
+This project utilizes certain datasets and checkpoints that are subject to their respective original licenses. Users must comply with all terms and conditions of these original licenses.
+The content of this project itself is licensed under the [Apache license 2.0](./LICENSE).
 
 
 
