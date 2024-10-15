@@ -1,9 +1,14 @@
-<p>
-    <img src="./assets/logo.jpg" width="50" style="vertical-align: middle;">
-    <span style="font-size: 24px; font-weight: bold;">Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding</span>
+<p align="center">
+    <img src="./assets/logo.jpg" width="100">
 </p>
 
 
+
+## Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding
+<p align="center">
+    🌐 <a href="" target="_blank">Blog</a> | 📃 <a href="" target="_blank">Paper</a> | 🤗 <a href="" target="_blank">Hugging Face</a> | 🎥 <a href="" target="_blank">Demo</a>
+
+</p>
 
 <p align="center">
     <img src="./assets/needle.png" width="800">
@@ -11,10 +16,6 @@
 <p align="center"><em>(a) The performance and max frames of different models.<br>(b) Results on Needle-in-a-haystack evaluation on a single 80G GPU.
     </em></p>
 
-<p align="center">
-    🌐 <a href="" target="_blank">Blog</a> | 📃 <a href="" target="_blank">Paper</a> | 🤗 <a href="" target="_blank">Hugging Face</a> | 🎥 <a href="" target="_blank">Demo</a>
-
-</p>
 
 
 ✨ **Highlights**:
@@ -39,7 +40,7 @@ pip install packaging &&  pip install ninja && pip install flash-attn --no-build
 pip install -r requirements.txt
 ```
 
-### Quick Start With HuggingFace
+## Quick Start With HuggingFace
 
 <details>
     <summary>Example Code</summary>
@@ -92,11 +93,49 @@ print(outputs)
 ```
 </details>
 
-## Plan
+## Pre-training 
+```bash
+bash scripts/pretrain.sh
+```
 
- - [ ] Technical Report
- - [ ] Model
- - [ ] Code
- - [ ] Data
+## Fine-tuning
+You can only utilize single image training data to efficiently train 
+```bash
+bash scripts/finetune_i.sh
+```
+or use single image/multi-image/video data to get better performance
+```bash
+bash scripts/finetune_v.sh
+```
+
+## Long Video Benchmark Evaluation
+For **MLVU**, **Video-MME**, **LongVideoBench** evaluation, please use  [`lmms-eval`](https://github.com/EvolvingLMMs-Lab/lmms-eval) After installing `lmms-eval` and videoxl, you can use the following script to evaluate.
+```bash
+accelerate launch --num_processes 8 --main_process_port 12345 -m lmms_eval \
+    --model videoxl \
+    --model_args pretrained=videoxl_checkpoint_15000,conv_template=qwen_1_5,model_name=llava_qwen,max_frames_num=128,video_decode_backend=decord\
+    --tasks videomme \
+    --batch_size 1 \
+    --log_samples \
+    --log_samples_suffix videoxl \
+    --output_path ./logs/
+```
+
+For **VNBench** evaluation, download [VNBench](https://github.com/joez17/VideoNIAH) and use the following script
+```bash
+bash eval/eval_vnbench.sh
+```
+
+## Needle-in-a-haystack evaluation
+To be coming soon
+
+## Citation
+
+## Acknowledgement
+- LongVA: the codebase we built upon. 
+- LMMs-Eval: the codebase we used for evaluation.
+- Activation Beacon: The compression methods we referring.
+
+
 
 
