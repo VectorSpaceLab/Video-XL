@@ -2,7 +2,7 @@
 <p align="center">
     <img src="./assets/needle1.png" width="800">
 </p>
-<p align="center"><em>(a) The performance and supported max frames of different video MLLMs.(b) Results on Needle-in-a-haystack evaluation on a single 80G GPU.</em></p>
+<p align="center"><em>(a) The performance and max frames of different video MLLMs.(b) Results on Needle-in-a-haystack evaluation on a single 80G GPU.</em></p>
 <p align="center">
     🌐 <a href="" target="_blank">Blog</a> | 📃 <a href="" target="_blank">Paper</a> | 🤗 <a href="" target="_blank">Hugging Face</a> | 🎥 <a href="" target="_blank">Demo</a>
 
