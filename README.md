@@ -29,7 +29,10 @@
 
 
 ## News
-- [2024/10/15] 🔥 Video-XL is released,  including model, training and evaluation code. 
+- [2024/10/15] 🔥 Video-XL is released,  including model, training and evaluation code.
+
+## Model weights
+Please download our pre-trained and finetuned model weights from the [link](https://huggingface.co/sy1998/Video_XL/tree/main) 
   
 ## Installation 
 ```bash
