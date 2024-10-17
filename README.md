@@ -6,7 +6,7 @@
 
 ## Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding
 <p align="center">
-    🌐 <a href="" target="_blank">Blog</a> | 📃 <a href="" target="_blank">Paper</a> | 🤗 <a href="https://huggingface.co/sy1998/Video_XL/tree/main" target="_blank">Hugging Face</a> | 🎥 <a href="" target="_blank">Demo</a>
+    🌐 <a href="" target="_blank">Blog</a> | 📃 <a href="" target="_blank">Paper</a> | 🤗 <a href="https://huggingface.co/sy1998/Video_XL" target="_blank">Hugging Face</a> | 🎥 <a href="" target="_blank">Demo</a>
 
 </p>
 
@@ -29,6 +29,7 @@
 
 
 ## News
+- [2024/10/17] 🔥 Video-XL-7B weight is released, which can process max 1024 frames. The model can process 2048 frames is on the corner.
 - [2024/10/15] 🔥 Video-XL is released,  including model, training and evaluation code.
 
 ## Model weights
