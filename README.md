@@ -29,7 +29,7 @@
 
 
 ## News
-- [2024/10/17] 🔥 Video-XL-7B weight is released, which can process max 1024 frames. The model can process 2048 frames is on the corner.
+- [2024/10/17] 🔥 Video-XL-7B weight is released, which can process max 1024 frames. The model can process 2048 frames is around the corner.
 - [2024/10/15] 🔥 Video-XL is released,  including model, training and evaluation code.
 
 ## Model weights
