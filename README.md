@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-    <img src="./assets/needle.png" width="800">
+    <img src="./assets/newneedle.png" width="800">
 </p>
 <p align="center"><em>(a) The performance and max frames of different models.<br>(b) Results on Needle-in-a-haystack evaluation on a single 80G GPU.
     </em></p>
