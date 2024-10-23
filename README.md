@@ -142,9 +142,20 @@ bash eval/eval_vnbench.sh
 To be coming soon
 
 ## Training Data
-To be coming soon
+Please refer to [train_samples](./assets/train_sample.json) so you can finetune with your own image or video data.
+We will realse our trainiing data in the near future!
 
 ## Citation
+If you find this repository useful, please consider giving a star :star: and citation
+
+```
+@article{shu2024video,
+  title={Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding},
+  author={Shu, Yan and Zhang, Peitian and Liu, Zheng and Qin, Minghao and Zhou, Junjie and Huang, Tiejun and Zhao, Bo},
+  journal={arXiv preprint arXiv:2409.14485},
+  year={2024}
+}
+```
 
 ## Acknowledgement
 - LongVA: the codebase we built upon. 
