@@ -1,0 +1,556 @@
+[
+    {
+        "id": "llavav1.5_335306",
+        "image": "coco_2017/000000266031.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nPlease provide a short description for this region: [0.19, 0.39, 0.52, 0.87]."
+            },
+            {
+                "from": "gpt",
+                "value": "Red car."
+            },
+            {
+                "from": "human",
+                "value": "Please provide the bounding box coordinate of the region this sentence describes: second truck from left blue and red."
+            },
+            {
+                "from": "gpt",
+                "value": "[0.19, 0.39, 0.52, 0.87]"
+            },
+            {
+                "from": "human",
+                "value": "Please provide a short description for this region: [0.19, 0.39, 0.52, 0.87]."
+            },
+            {
+                "from": "gpt",
+                "value": "Orange and blue bus."
+            },
+            {
+                "from": "human",
+                "value": "Please provide the bounding box coordinate of the region this sentence describes: oopsfar left train."
+            },
+            {
+                "from": "gpt",
+                "value": "[0.12, 0.19, 0.29, 0.99]"
+            },
+            {
+                "from": "human",
+                "value": "Please provide the bounding box coordinate of the region this sentence describes: yes."
+            },
+            {
+                "from": "gpt",
+                "value": "[0.12, 0.19, 0.29, 0.99]"
+            },
+            {
+                "from": "human",
+                "value": "Please provide the bounding box coordinate of the region this sentence describes: ino nest to blue vehicle."
+            },
+            {
+                "from": "gpt",
+                "value": "[0.12, 0.19, 0.29, 0.99]"
+            }
+        ]
+    },
+    {
+        "id": "llavav1.5_187641",
+        "image": "coco_2017/000000176282.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat are the men on?\nAnswer the question using a single word or phrase."
+            },
+            {
+                "from": "gpt",
+                "value": "Bus"
+            },
+            {
+                "from": "human",
+                "value": "Is it daylight?"
+            },
+            {
+                "from": "gpt",
+                "value": "Yes"
+            },
+            {
+                "from": "human",
+                "value": "Will the bus hit the power line?"
+            },
+            {
+                "from": "gpt",
+                "value": "No"
+            },
+            {
+                "from": "human",
+                "value": "Who works at Farmacia?"
+            },
+            {
+                "from": "gpt",
+                "value": "Pharmacists"
+            },
+            {
+                "from": "human",
+                "value": "Is it night time?"
+            },
+            {
+                "from": "gpt",
+                "value": "No"
+            },
+            {
+                "from": "human",
+                "value": "Which bus route is the bus running?"
+            },
+            {
+                "from": "gpt",
+                "value": "Tourist"
+            },
+            {
+                "from": "human",
+                "value": "How many levels does the bus have?"
+            },
+            {
+                "from": "gpt",
+                "value": "2"
+            },
+            {
+                "from": "human",
+                "value": "Who is on the side of the bus?"
+            },
+            {
+                "from": "gpt",
+                "value": "Windows"
+            },
+            {
+                "from": "human",
+                "value": "Where are the red and white stripes?"
+            },
+            {
+                "from": "gpt",
+                "value": "Front of bus"
+            },
+            {
+                "from": "human",
+                "value": "What season does it appear to be?"
+            },
+            {
+                "from": "gpt",
+                "value": "Summer"
+            },
+            {
+                "from": "human",
+                "value": "What color is this double Decker bus?"
+            },
+            {
+                "from": "gpt",
+                "value": "Red and white"
+            },
+            {
+                "from": "human",
+                "value": "In what city is this scene from?"
+            },
+            {
+                "from": "gpt",
+                "value": "Spain"
+            },
+            {
+                "from": "human",
+                "value": "What s the middle number?"
+            },
+            {
+                "from": "gpt",
+                "value": "0"
+            },
+            {
+                "from": "human",
+                "value": "What is on top of the car?"
+            },
+            {
+                "from": "gpt",
+                "value": "People"
+            },
+            {
+                "from": "human",
+                "value": "How many buses are in the picture?"
+            },
+            {
+                "from": "gpt",
+                "value": "1"
+            },
+            {
+                "from": "human",
+                "value": "How many buses are there?"
+            },
+            {
+                "from": "gpt",
+                "value": "1"
+            },
+            {
+                "from": "human",
+                "value": "Is it day time?"
+            },
+            {
+                "from": "gpt",
+                "value": "Yes"
+            },
+            {
+                "from": "human",
+                "value": "Is a bus driving past?"
+            },
+            {
+                "from": "gpt",
+                "value": "Yes"
+            },
+            {
+                "from": "human",
+                "value": "Are there clouds?"
+            },
+            {
+                "from": "gpt",
+                "value": "No"
+            }
+        ]
+    },
+    {
+        "id": "llavav1.5_535880",
+        "image": "ocrvqa/975479415.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWho is the author of this book?\nAnswer the question using a single word or phrase."
+            },
+            {
+                "from": "gpt",
+                "value": "Laurie Kaplan"
+            },
+            {
+                "from": "human",
+                "value": "What is the title of this book?"
+            },
+            {
+                "from": "gpt",
+                "value": "So Easy to Love, So Hard to Lose: A Bridge to Healing Before and After the Loss of a Pet"
+            },
+            {
+                "from": "human",
+                "value": "What type of book is this?"
+            },
+            {
+                "from": "gpt",
+                "value": "Crafts, Hobbies & Home"
+            },
+            {
+                "from": "human",
+                "value": "Is this a crafts or hobbies related book?"
+            },
+            {
+                "from": "gpt",
+                "value": "Yes"
+            }
+        ]
+    },
+    {
+        "id": "llavav1.5_407440",
+        "image": "visual_genome/2364944.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nPlease provide the bounding box coordinate of the region this sentence describes: a brass door handle on a door."
+            },
+            {
+                "from": "gpt",
+                "value": "[0.35, 0.59, 0.4, 0.72]"
+            },
+            {
+                "from": "human",
+                "value": "Please provide the bounding box coordinate of the region this sentence describes: the handles are silver."
+            },
+            {
+                "from": "gpt",
+                "value": "[0.48, 0.75, 0.5, 0.83]"
+            },
+            {
+                "from": "human",
+                "value": "Please provide the bounding box coordinate of the region this sentence describes: edge of white sink."
+            },
+            {
+                "from": "gpt",
+                "value": "[0.38, 0.59, 0.52, 0.71]"
+            },
+            {
+                "from": "human",
+                "value": "Please provide a short description for this region: [0.34, 0.22, 0.41, 0.48]."
+            },
+            {
+                "from": "gpt",
+                "value": "Large mirror on bathroom wall."
+            },
+            {
+                "from": "human",
+                "value": "Please provide a short description for this region: [0.35, 0.21, 0.42, 0.28]."
+            },
+            {
+                "from": "gpt",
+                "value": "The globe is round."
+            },
+            {
+                "from": "human",
+                "value": "Please provide a short description for this region: [0.39, 0.07, 0.44, 0.2]."
+            },
+            {
+                "from": "gpt",
+                "value": "Water reservoir for toilet."
+            },
+            {
+                "from": "human",
+                "value": "Please provide the bounding box coordinate of the region this sentence describes: reflection on toilet lid."
+            },
+            {
+                "from": "gpt",
+                "value": "[0.48, 0.49, 0.54, 0.57]"
+            },
+            {
+                "from": "human",
+                "value": "Please provide a short description for this region: [0.48, 0.49, 0.54, 0.56]."
+            },
+            {
+                "from": "gpt",
+                "value": "An open toilet seat cover."
+            },
+            {
+                "from": "human",
+                "value": "Please provide the bounding box coordinate of the region this sentence describes: edge of white tub."
+            },
+            {
+                "from": "gpt",
+                "value": "[0.69, 0.65, 0.79, 0.86]"
+            }
+        ]
+    },
+    {
+        "id": "llavav1.5_217220",
+        "image": "coco_2017/000000223718.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nWhat color is the teams shirts?\nAnswer the question using a single word or phrase."
+            },
+            {
+                "from": "gpt",
+                "value": "Red"
+            },
+            {
+                "from": "human",
+                "value": "Who is behind the catcher?"
+            },
+            {
+                "from": "gpt",
+                "value": "Umpire"
+            },
+            {
+                "from": "human",
+                "value": "Did the pitcher throw the ball?"
+            },
+            {
+                "from": "gpt",
+                "value": "Yes"
+            }
+        ]
+    },
+    {
+        "id": "11445",
+        "video": "reasoning/next_qa/split_videos/1008/8480330992.mp4/8480330992.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nQuestion: Why does the lady in green user her finger to point to something?\nOptions:\n(A) holding orange shirt baby.\n(B) present something.\n(C) performance.\n(D) for fun.\n(E) distract children.\nKeep in mind the causal and temporal aspects of the actions while watching the video, then determine the most accurate choice."
+            },
+            {
+                "from": "gpt",
+                "value": "(E) distract children."
+            }
+        ]
+    },
+    {
+        "id": "23213",
+        "video": "reasoning/next_qa/split_videos/1150/4772810451.mp4/4772810451.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nQuestion: What does the black dog who ran away in the middle do after running away?\nOptions:\n(A) push it.\n(B) play with white dog.\n(C) follow it down the stairs.\n(D) scare him.\n(E) look at the brown dog.\nWhile watching the video, focus on understanding the reasons and chronology of events, then decide on the right answer among the choices."
+            },
+            {
+                "from": "gpt",
+                "value": "(B) play with white dog."
+            }
+        ]
+    },
+    {
+        "id": "23938",
+        "video": "reasoning/next_qa/split_videos/1130/8015524320.mp4/8015524320.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nQuestion: Why did the boy holding the microphone stop dancing?\nOptions:\n(A) distracted by music video.\n(B) looking at the lady cook eggs.\n(C) finding new objects.\n(D) drop items.\n(E) dance with music.\nObserve the video, think about the relationships between actions and consequences, as well as their timing, before picking the most suitable choice."
+            },
+            {
+                "from": "gpt",
+                "value": "(A) distracted by music video."
+            }
+        ]
+    },
+    {
+        "id": "21508",
+        "video": "reasoning/next_qa/split_videos/1006/3517067405.mp4/3517067405.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nQuestion: What does the man do after he stretch out his hands out?\nOptions:\n(A) play the guitar.\n(B) put down the microphone.\n(C) make voice louder.\n(D) hitting it using hands.\n(E) hit instrument with sticks.\nView the video, identify patterns or connections related to causality and timing, and choose the best option."
+            },
+            {
+                "from": "gpt",
+                "value": "(A) play the guitar."
+            }
+        ]
+    },
+    {
+        "id": "582",
+        "video": "reasoning/next_qa/split_videos/1005/8291700390.mp4/8291700390.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nQuestion: Why is the boy in red holding onto some wrapping paper in his hands?\nOptions:\n(A) ask for help.\n(B) wants to wrap a present.\n(C) want to eat it.\n(D) show off.\n(E) to look after the children.\nConsider the cause-and-effect relationships and the order of events in the video, then pick the most appropriate choice as your answer."
+            },
+            {
+                "from": "gpt",
+                "value": "(B) wants to wrap a present."
+            }
+        ]
+    },
+    {
+        "id": "29249",
+        "video": "reasoning/next_qa/split_videos/0100/2399794335.mp4/2399794335.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nQuestion: What did the man in black do after the man in blue turned right around the corner?\nOptions:\n(A) shakes head.\n(B) move his hand.\n(C) move his hand over the ground.\n(D) aiming and shooting.\n(E) look at him.\nConsider the cause-and-effect relationships and the order of events in the video, then pick the most appropriate choice as your answer."
+            },
+            {
+                "from": "gpt",
+                "value": "(E) look at him."
+            }
+        ]
+    },
+    {
+        "id": "21753",
+        "video": "reasoning/next_qa/split_videos/1005/11688108404.mp4/11688108404.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nQuestion: How does the lady react when the boy runs behind her?\nOptions:\n(A) run with it.\n(B) rope.\n(C) shift her feet.\n(D) turn her front.\n(E) turns around to look.\nKeep in mind the causal and temporal aspects of the actions while watching the video, then determine the most accurate choice."
+            },
+            {
+                "from": "gpt",
+                "value": "(E) turns around to look."
+            }
+        ]
+    },
+    {
+        "id": "25412",
+        "video": "reasoning/next_qa/split_videos/1018/3778867714.mp4/3778867714.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nQuestion: How did the lady in black slow down the spinning?\nOptions:\n(A) singing in microphone.\n(B) happy.\n(C) remove her finger from the button.\n(D) pointed her reading with pencil.\n(E) lie on pillow.\nConsider the cause-and-effect relationships and the order of events in the video, then pick the most appropriate choice as your answer."
+            },
+            {
+                "from": "gpt",
+                "value": "(C) remove her finger from the button."
+            }
+        ]
+    },
+    {
+        "id": "28394",
+        "video": "reasoning/next_qa/split_videos/1021/7507172114.mp4/7507172114.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nQuestion: Why does the boy in red bend down?\nOptions:\n(A) show off.\n(B) tall enough to see.\n(C) picking something up.\n(D) tie shoelaces.\n(E) pose for camera.\nObserve the video, think about the relationships between actions and consequences, as well as their timing, before picking the most suitable choice."
+            },
+            {
+                "from": "gpt",
+                "value": "(C) picking something up."
+            }
+        ]
+    },
+    {
+        "id": "25297",
+        "video": "reasoning/next_qa/split_videos/1025/6025249212.mp4/6025249212.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nQuestion: How are the two children s hands positioned at the start of the video?\nOptions:\n(A) on the the table.\n(B) beside the table.\n(C) on the microphone.\n(D) playing the piano.\n(E) fingers apart.\nDive into the video, concentrate on the motives behind the actions and their timing, and find the correct choice."
+            },
+            {
+                "from": "gpt",
+                "value": "(E) fingers apart."
+            }
+        ]
+    },
+    {
+        "id": "12325",
+        "video": "reasoning/next_qa/split_videos/1203/5124781697.mp4/5124781697.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nQuestion: Why did the baby reach his hand out in the middle towards the man?\nOptions:\n(A) get the girl.\n(B) support the baby.\n(C) to get the toy.\n(D) take the food.\n(E) man pull him forward.\nObserve the video, think about the relationships between actions and consequences, as well as their timing, before picking the most suitable choice."
+            },
+            {
+                "from": "gpt",
+                "value": "(D) take the food."
+            }
+        ]
+    },
+    {
+        "id": "5018",
+        "video": "reasoning/next_qa/split_videos/1013/7390605748.mp4/7390605748.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nQuestion: What did the baby do as she sat in the baby walker?\nOptions:\n(A) climbed down.\n(B) standing up.\n(C) play with baby.\n(D) sit on toy.\n(E) looking around at the toys.\nDive into the video, concentrate on the motives behind the actions and their timing, and find the correct choice."
+            },
+            {
+                "from": "gpt",
+                "value": "(E) looking around at the toys."
+            }
+        ]
+    },
+    {
+        "id": "29196",
+        "video": "reasoning/next_qa/split_videos/1160/3958650538.mp4/3958650538.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nQuestion: What did the lady do after holding the phone in her hand near the end?\nOptions:\n(A) pass the torches to another lady.\n(B) turn back to her computer.\n(C) shakes the phone.\n(D) carrying the baby.\n(E) wipe her face.\nView the video, identify patterns or connections related to causality and timing, and choose the best option."
+            },
+            {
+                "from": "gpt",
+                "value": "(C) shakes the phone."
+            }
+        ]
+    },
+    {
+        "id": "19213",
+        "video": "reasoning/next_qa/split_videos/1105/4375052499.mp4/4375052499.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\nQuestion: Why are the two boys putting their hands into the blue packets?\nOptions:\n(A) take out food.\n(B) jump up and catch the toy.\n(C) free his hands.\n(D) playing.\n(E) trying to crush fishes.\nWhile watching the video, focus on understanding the reasons and chronology of events, then decide on the right answer among the choices."
+            },
+            {
+                "from": "gpt",
+                "value": "(A) take out food."
+            }
+        ]
+    }
+]
