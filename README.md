@@ -142,7 +142,7 @@ bash eval/eval_vnbench.sh
 To be coming soon
 
 ## Training Data
-Please refer to [train_samples](./assets/train_sample.json) so you can finetune with your own image or video data.
+Please refer to [train_samples](./assets/train_example.json) so you can finetune with your own image or video data.
 We will realse our trainiing data in the near future!
 
 ## Citation
