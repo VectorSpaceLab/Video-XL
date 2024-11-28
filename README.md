@@ -115,7 +115,7 @@ bash scripts/finetune_v.sh
 ## Long Video Benchmark Evaluation
 For **MLVU**, **Video-MME**, **LongVideoBench** evaluation, please use  [`lmms-eval`](https://github.com/EvolvingLMMs-Lab/lmms-eval) After installing `lmms-eval` and videoxl, you can use the following script to evaluate.
 
-First, put the [`lvideo_xl.py`](https://github.com/EvolvingLMMs-Lab/lmms-eval) in lmms-eval/lmms_eval/models. Then add "video_xl" in lmms-eval/lmms_eval/models/__init__.py. Lastly, run the following code.
+First, put the [`video_xl.py`](https://github.com/EvolvingLMMs-Lab/lmms-eval](https://github.com/VectorSpaceLab/Video-XL/blob/main/eval/videoxl.py) in lmms-eval/lmms_eval/models. Then add "video_xl" in lmms-eval/lmms_eval/models/__init__.py. Lastly, run the following code.
 
 ```bash
 accelerate launch --num_processes 8 --main_process_port 12345 -m lmms_eval \
