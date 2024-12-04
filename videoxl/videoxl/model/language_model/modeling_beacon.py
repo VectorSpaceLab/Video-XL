@@ -160,6 +160,24 @@ class Memory(torch.nn.Module):
             return self.beacon_skip_last - self.start_idx
         else:
             return self.config.beacon_stride
+            
+    def get_memory(self):
+        past_key_values = []
+        for layer_idx in range(self.config.num_hidden_layers):
+            sink_key, sink_value = self.sink_activations[layer_idx]
+            beacon_key, beacon_value = self.beacon_activations[layer_idx]
+            raw_key, raw_value = self.raw_activations[layer_idx]
+
+            key = cat_tensor([
+                sink_key, beacon_key, raw_key,
+            ], dim=self.k_seq_dim)
+            value = cat_tensor([
+                sink_value, beacon_value, raw_value,
+            ], dim=self.v_seq_dim)
+
+            layer_past_key_values = (key, value)
+            past_key_values.append(layer_past_key_values)
+        return past_key_values
  
     def get_memory_size(self):
         """
