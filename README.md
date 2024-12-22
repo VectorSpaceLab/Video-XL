@@ -6,7 +6,7 @@
 
 ## Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding
 <p align="center">
-    🌐 <a href="https://www.xiaohongshu.com/discovery/item/67172f5d0000000024017704?source=webshare&xhsshare=pc_web&xsec_token=GBL17lee3zbjumPCcki1x6IL0okkah9Lp3XX_IzlJwO4I=&xsec_source=pc_share" target="_blank">Blog</a> | 📃 <a href="https://arxiv.org/pdf/2409.14485" target="_blank">Paper</a> | 🤗 <a href="https://huggingface.co/sy1998/Video_XL" target="_blank">Hugging Face</a> | 🎥 <a href="" target="_blank">Demo</a>
+    🌐 <a href="https://www.xiaohongshu.com/discovery/item/67172f5d0000000024017704?source=webshare&xhsshare=pc_web&xsec_token=GBL17lee3zbjumPCcki1x6IL0okkah9Lp3XX_IzlJwO4I=&xsec_source=pc_share" target="_blank">Blog</a> | 📃 <a href="https://arxiv.org/pdf/2409.14485" target="_blank">Paper</a> | 🤗 <a href="https://huggingface.co/sy1998/Video_XL" target="_blank">Model</a> |  🤗 <a href="https://huggingface.co/datasets/sy1998/Video_XL_Training/tree/main" target="_blank">Data</a> |  🎥 <a href="" target="_blank">Demo</a>
 
 </p>
 
@@ -29,7 +29,7 @@
 
 
 ## News
-- [2024/12/22] 🔥 Most of the training data is released, including private baai-caption video data and VICO data. Feel free to use in [link](https://huggingface.co/datasets/sy1998/Video_XL_Training/tree/main) 
+- [2024/12/22] 🔥 Most of the training data is released, including private baai-caption video data and VICO data. Feel free to use in [link](https://huggingface.co/datasets/sy1998/Video_XL_Training/tree/main). 
 - [2024/10/17] 🔥 Video-XL-7B weight is released, which can process max 1024 frames. The model can process 2048 frames is around the corner.
 - [2024/10/15] 🔥 Video-XL is released,  including model, training and evaluation code.
 
@@ -147,7 +147,7 @@ To be coming soon
 
 ## Training Data
 Please refer to [train_samples](./assets/train_example.json) so you can finetune with your own image or video data.
-We will realse our trainiing data in the near future!
+We have realsed our trainiing data in [link](https://huggingface.co/datasets/sy1998/Video_XL_Training/tree/main).
 
 ## Citation
 If you find this repository useful, please consider giving a star :star: and citation
