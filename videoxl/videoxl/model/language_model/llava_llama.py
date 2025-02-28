@@ -29,7 +29,7 @@ from transformers import LlamaModel, LlamaForCausalLM
 from transformers.modeling_outputs import CausalLMOutputWithPast
 from transformers.generation.utils import GenerateOutput
 
-from longva.model.llava_arch import LlavaMetaModel, LlavaMetaForCausalLM
+from videoxl.model.llava_arch import LlavaMetaModel, LlavaMetaForCausalLM
 
 
 class LlavaConfig(LlamaConfig):
