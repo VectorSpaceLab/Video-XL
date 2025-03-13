@@ -143,8 +143,22 @@ bash eval/eval_vnbench.sh
 <IMG src="./assets/vnbench.png"/>
 </details>
 
-## Needle-in-a-haystack evaluation
-To be coming soon
+
+## Needle-in-a-Haystack (NIAH) Evaluation  
+
+We provide the NIAH evaluation code in the `./NIAH` folder.  
+
+### Running the Evaluation  
+To execute the evaluation, simply run:  
+```bash
+bash ./NIAH/scripts/eval.sh
+```  
+
+### Data and Setup  
+- The QA pairs and needle images required for the evaluation are available in the `./NIAH/datas` folder.  
+- Due to the large size of the haystack video, we are unable to upload it. You can use any documentary or movie as the haystack video.  
+- Specify the path to your chosen haystack video in the `"haystack_path"` parameter within `eval.sh`.
+
 
 ## Training Data
 Please refer to [train_samples](./assets/train_example.json) so you can finetune with your own image or video data.
