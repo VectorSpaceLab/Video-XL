@@ -4,11 +4,11 @@
 
 
 
-## [CVPR 2025]Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding
-<p align="center">
+## Video-XL-Pro: Reconstructive Token Compression for Extremely Long Video Understanding
+<!-- <p align="center">
     🌐 <a href="https://www.xiaohongshu.com/discovery/item/67172f5d0000000024017704?source=webshare&xhsshare=pc_web&xsec_token=GBL17lee3zbjumPCcki1x6IL0okkah9Lp3XX_IzlJwO4I=&xsec_source=pc_share" target="_blank">Blog</a> | 📃 <a href="https://arxiv.org/pdf/2409.14485" target="_blank">Paper</a> | 🤗 <a href="https://huggingface.co/sy1998/Video_XL" target="_blank">Model</a> |  🤗 <a href="https://huggingface.co/datasets/sy1998/Video_XL_Training/tree/main" target="_blank">Data</a> |  🎥 <a href="" target="_blank">Demo</a>
 
-</p>
+</p> -->
 
 <p align="center">
     <img src="./assets/needle.png" width="800">
@@ -20,22 +20,19 @@
 
 ✨ **Highlights**:
 
-(i) Comprehensive long video understanding. Video-XL 7B achieves the **leading performance among 7B models** on MLVU, VideoMME, VNBench and LongVideoBench.
+(i) Comprehensive long video understanding. Video-XL-Pro 3B achieves the **leading performance among 3B models** on MLVU, VideoMME, VNBench and LongVideoBench.
 
-(ii) Efficient Long visual context processing. Video-XL can process **2048 frames on an 80G GPU and achieves nearly 95% accuracy** on Needle-in-a-haystack evaluation.
-
-(iii) Video-XL shows strong ability in some real-world scenarios, like **movie summarization, surveillance anomaly detection and Ad placement identification**.
-
+(ii) Efficient Long visual context processing. Video-XL-Pro can process **10000 frames on an 80G GPU and achieves nearly 98% accuracy** on Needle-in-a-haystack evaluation.
 
 
 ## News
 
 
-- [2025/3/17] 🔥 Video-XL-3B weight is released, which can process max 10000 frames.
-- [2025/3/16] 🔥 Video-XL is released,  including model, training and evaluation code.
+- [2025/3/17] 🔥 Video-XL-Pro-3B weight is released, which can process max 10000 frames.
+- [2025/3/16] 🔥 Video-XL-Pro is released,  including model, training and evaluation code.
 
 ## Model weights
-Please download our pre-trained and finetuned model weights from the [link](https://huggingface.co/sy1998/Video_XL/tree/main) 
+Please download our pre-trained and finetuned model weights from the [link](https://huggingface.co/lxr2003/Video-XL-Pro-3B) 
   
 ## Installation 
 ```bash
@@ -128,7 +125,7 @@ bash scripts/finetune_v.sh
 <IMG src="./assets/needle.png"/>
 </details>
 
-## Citation
+<!-- ## Citation
 If you find this repository useful, please consider giving a star :star: and citation
 
 ```
@@ -138,12 +135,11 @@ If you find this repository useful, please consider giving a star :star: and cit
   journal={arXiv preprint arXiv:2409.14485},
   year={2024}
 }
-```
+``` -->
 
 ## Acknowledgement
-- LongVA: the codebase we built upon. 
+- VideoXL: the codebase we built upon. 
 - LMMs-Eval: the codebase we used for evaluation.
-- Activation Beacon: The compression methods we referring.
 
 ## License
 This project utilizes certain datasets and checkpoints that are subject to their respective original licenses. Users must comply with all terms and conditions of these original licenses.
