@@ -4,17 +4,16 @@
 
 
 
-## [CVPR 2025]Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding
+## [CVPR 2025] Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding
 <p align="center">
     🌐 <a href="https://www.xiaohongshu.com/discovery/item/67172f5d0000000024017704?source=webshare&xhsshare=pc_web&xsec_token=GBL17lee3zbjumPCcki1x6IL0okkah9Lp3XX_IzlJwO4I=&xsec_source=pc_share" target="_blank">Blog</a> | 📃 <a href="https://arxiv.org/pdf/2409.14485" target="_blank">Paper</a> | 🤗 <a href="https://huggingface.co/sy1998/Video_XL" target="_blank">Model</a> |  🤗 <a href="https://huggingface.co/datasets/sy1998/Video_XL_Training/tree/main" target="_blank">Data</a> |  🎥 <a href="" target="_blank">Demo</a>
 
 </p>
 
 <p align="center">
-    <img src="./assets/newneedle.png" width="800">
+    <img src="./assets/fig1.png" width="800">
 </p>
-<p align="center"><em>(Left) The performance and max frames of different models.<br>(Right) Results on Needle-in-a-haystack evaluation on a single 80G GPU.
-    </em></p>
+
 
 
 
