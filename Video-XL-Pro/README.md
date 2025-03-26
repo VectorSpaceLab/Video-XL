@@ -25,11 +25,6 @@
 (ii) Efficient Long visual context processing. Video-XL-Pro can process **10000 frames on an 80G GPU and achieves nearly 98% accuracy** on Needle-in-a-haystack evaluation.
 
 
-## News
-
-
-- [2025/3/17] 🔥 Video-XL-Pro-3B weight is released, which can process max 10000 frames.
-- [2025/3/16] 🔥 Video-XL-Pro is released,  including model, training and evaluation code.
 
 ## Model weights
 Please download our pre-trained and finetuned model weights from the [link](https://huggingface.co/lxr2003/Video-XL-Pro-3B) 
