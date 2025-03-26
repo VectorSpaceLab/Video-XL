@@ -1,49 +1,59 @@
-from videoxlpro.videoxlpro.model.builder import load_pretrained_model
-from videoxlpro.videoxlpro.mm_utils import tokenizer_image_token, process_images,transform_input_id
-from videoxlpro.videoxlpro.constants import IMAGE_TOKEN_INDEX
-from PIL import Image
-from decord import VideoReader, cpu
 import torch
-import numpy as np
-import matplotlib.pyplot as plt
-import os
-import cv2
+import transformers
+import gc
+from videoxlpro.videoxlpro.demo_utils import process_video, load_image_processor, generate_response
+from transformers import AutoTokenizer, AutoModelForCausalLM
+import warnings
 
-# fix seed
-torch.manual_seed(0)
+# 禁用一些警告
+transformers.logging.set_verbosity_error()
+warnings.filterwarnings('ignore')
 
-model_path="/share/LXRlxr0_0/Video-XL-Pro-3B"
-video_path="/share/junjie/code/videofactory/Evaluation_LVBench/MLVU_Test/video/test_sports_7.mp4"
+# 设置设备
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
+# 模型路径
+model_path = "/path/to/your/Video-XL-Pro-3B"
+video_path = "/path/to/your/video.mp4"
+
+# 使用 Auto 类加载模型
+model = AutoModelForCausalLM.from_pretrained(
+    model_path, 
+    low_cpu_mem_usage=True, 
+    torch_dtype=torch.float16,
+    attn_implementation="flash_attention_2",
+    device_map=device,
+    trust_remote_code=True
+)
+tokenizer = AutoTokenizer.from_pretrained(
+    model_path,
+    trust_remote_code=True
+)
+
+image_processor = load_image_processor(model, tokenizer)
 
 max_frames_num = 128
-gen_kwargs = {"do_sample": True, "temperature": 0.01, "top_p": 0.001, "num_beams": 1, "use_cache": True, "max_new_tokens": 128}
-tokenizer, model, image_processor, _ = load_pretrained_model(model_path, None, "llava_qwen", device_map="cuda:0")
 
-prompt = "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n<image>\nDescribe this video,<|im_end|>\n<|im_start|>assistant\n"
+# 处理视频
+video_tensor = process_video(video_path, image_processor, model.device, max_frames_num)
 
-input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors="pt").unsqueeze(0).to(model.device)
+# 生成参数
+gen_kwargs = {
+    "do_sample": True,
+    "temperature": 0.01,
+    "top_p": 0.001,
+    "num_beams": 1,
+    "use_cache": True,
+    "max_new_tokens": 256
+}
 
-vr = VideoReader(video_path, ctx=cpu(0))
+# 文本提示
+prompt = "Describe this video."
 
-total_frame_num = len(vr)
+text = f"<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n<image>\n{prompt}<|im_end|>\n<|im_start|>assistant\n"
 
-uniform_sampled_frames = np.linspace(0, total_frame_num - 1, max_frames_num, dtype=int)
+response = generate_response(model, tokenizer, text, video_tensor, gen_kwargs)
 
-frame_idx = uniform_sampled_frames.tolist()
-
-frames = vr.get_batch(frame_idx).asnumpy()
-
-
-video_tensor = image_processor.preprocess(frames, return_tensors="pt")["pixel_values"].to(model.device, dtype=torch.float16)
-
-
-with torch.inference_mode():
-    output_ids = model.generate(input_ids, images=[video_tensor],  modalities=["video"], **gen_kwargs)
-    
-ind=torch.where(output_ids[0] == 198)[0][-1]
-output_ids= output_ids[:,ind+1:]
-
-outputs = tokenizer.batch_decode(output_ids, skip_special_tokens=True)[0].strip()
-
-print(outputs)
+# 4. 输出结果
+print("\n===== 生成的回答 =====")
+print(response)
