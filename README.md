@@ -3,6 +3,7 @@
 
 
 ## News
+- [2025/03/16] 🎉 Video-XL-Pro is released, which can process 10000 frames on a 80G GPU and achives promising results with only 3B parameters.
 - [2025/02/27] 🎉 Video-XL has been accepted by CVPR 2025!
 - [2024/12/22] 🔥 Most of the training data is released, including private baai-caption video data and VICO data. Feel free to use in [link](https://huggingface.co/datasets/sy1998/Video_XL_Training/tree/main). 
 - [2024/10/17] 🔥 Video-XL-7B weight is released, which can process max 1024 frames. 
