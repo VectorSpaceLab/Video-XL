@@ -1,5 +1,5 @@
 
-## Video-XL Family: Efficient and Effective VLMs for Extremely Long Video Understanding
+## Video-XL Family: Efficient VLMs for Extremely Long Video Understanding
 
 
 ## News
