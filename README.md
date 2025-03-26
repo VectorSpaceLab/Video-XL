@@ -35,8 +35,14 @@
 - [2024/10/15] 🔥 Video-XL is released,  including model, training and evaluation code.
 
 ## Model weights
-Please download our pre-trained and finetuned model weights from the [link](https://huggingface.co/sy1998/Video_XL/tree/main) 
-  
+Please download our pre-trained and finetuned model weights from the [link](https://huggingface.co/sy1998/Video_XL/tree/main), and modify the model path in the demo code.
+```bash
+git lfs install
+git clone https://huggingface.co/sy1998/Video_XL
+git clone https://huggingface.co/openai/clip-vit-large-patch14-336
+```
+
+
 ## Installation 
 ```bash
 conda create -n videoxl python=3.10 -y && conda activate videoxl

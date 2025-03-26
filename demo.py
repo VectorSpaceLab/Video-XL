@@ -8,13 +8,14 @@ import numpy as np
 # fix seed
 torch.manual_seed(0)
 
-
+# Please change the following paths to your own paths
 model_path = "/share/junjie/shuyan/VideoXL_weight_8"
+clip_path = "/share/junjie/shuyan/clip-vit-large-patch14-336"
 video_path="/share/junjie/shuyan/test_demo/ad2_watch_15min.mp4"
 
 max_frames_num =900 # you can change this to several thousands so long you GPU memory can handle it :)
 gen_kwargs = {"do_sample": True, "temperature": 1, "top_p": None, "num_beams": 1, "use_cache": True, "max_new_tokens": 1024}
-tokenizer, model, image_processor, _ = load_pretrained_model(model_path, None, "llava_qwen", device_map="cuda:0")
+tokenizer, model, image_processor, _ = load_pretrained_model(model_path, None, "llava_qwen", device_map="cuda:0", mm_vision_tower=clip_path)
 
 model.config.beacon_ratio=[8]   # you can delete this line to realize random compression of {2,4,8} ratio
 
