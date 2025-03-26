@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-    <img src="./assets/fig1.png" width="800">
+    <img src="./assets/fig1_1.png" width="800">
 </p>
 
 
