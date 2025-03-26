@@ -114,27 +114,7 @@ bash scripts/finetune_v.sh
 <IMG src="./assets/videomme.png"/>
 </details>
 
-## Needle-in-a-haystack evaluation
 
-<details>
-<IMG src="./assets/needle.png"/>
-</details>
-
-<!-- ## Citation
-If you find this repository useful, please consider giving a star :star: and citation
-
-```
-@article{shu2024video,
-  title={Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding},
-  author={Shu, Yan and Zhang, Peitian and Liu, Zheng and Qin, Minghao and Zhou, Junjie and Huang, Tiejun and Zhao, Bo},
-  journal={arXiv preprint arXiv:2409.14485},
-  year={2024}
-}
-``` -->
-
-## Acknowledgement
-- VideoXL: the codebase we built upon. 
-- LMMs-Eval: the codebase we used for evaluation.
 
 ## License
 This project utilizes certain datasets and checkpoints that are subject to their respective original licenses. Users must comply with all terms and conditions of these original licenses.
