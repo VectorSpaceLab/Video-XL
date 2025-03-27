@@ -21,6 +21,13 @@ If you find this repository useful, please consider giving a star :star: and cit
   journal={arXiv preprint arXiv:2409.14485},
   year={2024}
 }
+
+@article{liu2025video,
+  title={Video-XL-Pro: Reconstructive Token Compression for Extremely Long Video Understanding},
+  author={Liu, Xiangrui and Shu, Yan and Liu, Zheng and Li, Ao and Tian, Yang and Zhao, Bo},
+  journal={arXiv preprint arXiv:2503.18478},
+  year={2025}
+}
 ```
 
 ## Acknowledgement
