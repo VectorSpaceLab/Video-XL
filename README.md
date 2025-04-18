@@ -3,6 +3,7 @@
 
 
 ## News
+- [2025/04/19] 🎉 Most of the Video-XL-Pro [training data](https://huggingface.co/datasets/lxr2003/Video-XL-Pro-Training/tree/main) is released.
 - [2025/04/07] 🎉 Video-XL has been selected as Oral presentation for CVPR.  
 - [2025/03/16] 🎉 [Video-XL-Pro](Video-XL-Pro) is released, which can process 10000 frames on an 80G GPU and achieves promising results with only 3B parameters.
 - [2025/02/27] 🎉 Video-XL has been accepted by CVPR 2025!
