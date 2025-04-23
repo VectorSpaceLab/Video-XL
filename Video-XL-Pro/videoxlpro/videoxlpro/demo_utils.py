@@ -21,8 +21,28 @@ def load_image_processor(model, tokenizer):
     image_processor = vision_tower.image_processor
     return image_processor
 
+def load_video(video_path, max_frames_num):
+    if type(video_path) == str:
+        vr = VideoReader(video_path, ctx=cpu(0))
+    else:
+        vr = VideoReader(video_path[0], ctx=cpu(0))
+    total_frame_num = len(vr)
 
-def process_video(video_path, image_processor, model_device, max_frames=128):
+    fps = vr.get_avg_fps()
+
+    uniform_sampled_frames = np.linspace(0, total_frame_num - 1, max_frames_num, dtype=int)
+    frame_idx = uniform_sampled_frames.tolist()
+    spare_frames = vr.get_batch(frame_idx).asnumpy()
+
+    frame_idx = uniform_sampled_frames.tolist()
+
+    spare_frames = vr.get_batch(frame_idx).asnumpy()
+
+    timestamps = [round(frame_index / fps, 1) for frame_index in frame_idx]
+    #print(timestamps)
+    return spare_frames,timestamps
+
+def process_video(video_path,tokenizer,image_processor, model_device, max_frames=128,gen_kwargs=None):
     """
     处理视频并返回处理后的张量
     
@@ -38,36 +58,32 @@ def process_video(video_path, image_processor, model_device, max_frames=128):
     print(f"处理视频: {video_path}")
     
     # 加载视频并采样帧
-    vr = VideoReader(video_path, ctx=cpu(0))
-    total_frame_num = len(vr)
-    uniform_sampled_frames = np.linspace(0, total_frame_num - 1, max_frames, dtype=int)
-    frame_idx = uniform_sampled_frames.tolist()
-    frames = vr.get_batch(frame_idx).asnumpy()
-    
-    # 处理帧
-    if hasattr(image_processor, "preprocess"):
-        video_tensor = image_processor.preprocess(frames, return_tensors="pt")["pixel_values"].to(model_device, dtype=torch.float16)
-    else:
-        pil_frames = [Image.fromarray(frame) for frame in frames]
-        video_tensor = image_processor(images=pil_frames, return_tensors="pt")["pixel_values"].to(model_device, dtype=torch.float16)
-    
-    return video_tensor
+    frames,times= load_video(video_path,max_frames)
+    #print(times)
+    time_stamps=[]
+    token_frames_sum=(len(times)+3)//4
+    compress_frame = times[::4]
+    time_embedding = []
+    for time in compress_frame:
+        time="{:06.1f}".format(time)
+        item = f"Time {time}s:"
+        time_embedding.append(tokenizer(item).input_ids)
+        time_embedding.append([151654]*144)
+
+    time_embedding = [item for sublist in time_embedding for item in sublist]
+
+    time_embedding = torch.tensor(time_embedding, dtype=torch.long).to(model_device)
+    time_stamps.append(time_embedding)
 
 
-def generate_response(model, tokenizer, prompt, video_tensor, gen_kwargs=None):
-    """
-    生成对视频的回答
+    video_tensor = image_processor.preprocess(frames, return_tensors="pt")["pixel_values"].to(model_device, dtype=torch.float16)
     
-    Args:
-        model: 模型
-        tokenizer: 分词器
-        prompt: 提示文本
-        video_tensor: 处理后的视频张量
-        gen_kwargs: 生成参数
-        
-    Returns:
-        生成的回答文本
-    """
+    
+    
+    return video_tensor,time_stamps
+
+
+def generate_response(model, tokenizer, prompt, video_tensor,time_stamps, gen_kwargs=None):
     if gen_kwargs is None:
         gen_kwargs = {
             "do_sample": True,
@@ -86,12 +102,10 @@ def generate_response(model, tokenizer, prompt, video_tensor, gen_kwargs=None):
     # 生成回答
     with torch.inference_mode():
         try:
-            output_ids = model.generate(input_ids, images=[video_tensor], modalities=["video"], **gen_kwargs)
-            
-            # 提取回答
-            ind = torch.where(output_ids[0] == 198)[0][-1] if 198 in output_ids[0] else -1
-            if ind >= 0:
-                output_ids = output_ids[:, ind + 1:]
+            with torch.inference_mode():
+                output_ids = model.generate(input_ids, images=[video_tensor],time_embedding=time_stamps, modalities=["video"], **gen_kwargs)
+
+
             outputs = tokenizer.batch_decode(output_ids, skip_special_tokens=True)[0].strip()
             
             return outputs

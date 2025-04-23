@@ -4,7 +4,7 @@ import logging.handlers
 import os
 import sys
 import numpy as np
-
+import cv2
 import requests
 
 from videoxlpro.videoxlpro.constants import LOGDIR
@@ -21,28 +21,92 @@ try:
 except ImportError:
     print("Please install pyav to use video processing functions.")
 
+def process_video_with_pyav(video_file,scale,data_args):
+    #print(video_file)
+    cap = cv2.VideoCapture(video_file)
+    if not cap.isOpened():
+        print(f"Error: 无法打开视频文件 {video_file}")
+        return None, None
 
-def process_video_with_pyav(video_file, data_args):
-    container = av.open(video_file)
-    stream = container.streams.video[0]
-    total_frame_num = stream.frames
-    avg_fps = round(stream.average_rate / data_args.video_fps)
+    fps = cap.get(cv2.CAP_PROP_FPS)
+    total_frame_num = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    video_duration_seconds = total_frame_num / fps if fps > 0 else 0
+
+    video_fps = data_args.video_fps
+
+    avg_fps = round(fps / video_fps)
     frame_idx = [i for i in range(0, total_frame_num, avg_fps)]
-    if data_args.frames_upbound > 0:
-        if len(frame_idx) > data_args.frames_upbound:
-            uniform_sampled_frames = np.linspace(0, total_frame_num - 1, data_args.frames_upbound, dtype=int)
-            frame_idx = uniform_sampled_frames.tolist()
 
+    if data_args.frames_upbound > 0 and len(frame_idx) > data_args.frames_upbound:
+        uniform_sampled_frames = np.linspace(0, total_frame_num - 1, data_args.frames_upbound, dtype=int)
+        frame_idx = uniform_sampled_frames.tolist()
+
+    # 读取视频帧
     video_frames = []
-    for index, frame in enumerate(container.decode(video=0)):
+    timestamps = []
+    for index in range(total_frame_num):
+        ret, frame = cap.read()
+        if not ret:
+            break
         if index in frame_idx:
-            video_frames.append(frame.to_rgb().to_ndarray())
-            if len(video_frames) == len(frame_idx):  # Stop decoding once we have all needed frames
+            video_frames.append(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))  # 转换为 RGB
+            timestamps.append(round(index / fps,1)) 
+            if len(video_frames) == len(frame_idx):  # 达到所需帧数后停止
                 break
+    cap.release()
 
+    # 将帧堆叠为 numpy 数组
     video = np.stack(video_frames)
-    return video
+    #print(scale,'*',timestamps)
+    if scale!=1:
+        video_duration_seconds=video_duration_seconds*scale
+        timestamps = (np.array(timestamps) * scale).tolist()
+    #print(timestamps)
+    #print(video_duration_seconds,timestamps)
+    return video, video_duration_seconds,timestamps
+# def process_video_with_pyav(video_file,scale,data_args):
+#     container = av.open(video_file)
+#     # !!! This is the only difference. Using auto threading
+#     container.streams.video[0].thread_type = "AUTO"
 
+#     video_frames = []
+#     for packet in container.demux():
+#         if packet.stream.type == 'video':
+#             for frame in packet.decode():
+#                 video_frames.append(frame)
+    
+#     if not video_frames:
+#         print(f"Error: 无法从视频文件 {video_file} 中获取帧")
+#         return None, None, None
+    
+#     total_frame_num = len(video_frames)
+#     video_time = video_frames[-1].time  # 视频总时长(秒)
+#     fps = total_frame_num / video_time if video_time > 0 else 0
+    
+#     video_fps = data_args.video_fps
+#     avg_fps = round(fps / video_fps)
+#     frame_idx = [i for i in range(0, total_frame_num, avg_fps)]
+
+#     if data_args.frames_upbound > 0 and len(frame_idx) > data_args.frames_upbound:
+#         uniform_sampled_frames = np.linspace(0, total_frame_num - 1, data_args.frames_upbound, dtype=int)
+#         frame_idx = uniform_sampled_frames.tolist()
+
+#     # 获取选中的帧和时间戳
+#     frames = []
+#     timestamps = []
+#     for idx in frame_idx:
+#         frame = video_frames[idx]
+#         frames.append(frame.to_ndarray(format="rgb24"))
+#         timestamps.append(round(frame.time, 1))  # 使用帧的实际时间戳
+    
+#     video_duration_seconds = video_time
+#     video = np.stack(frames)
+#     #print(scale,timestamps)
+#     if scale!=1:
+#         video_duration_seconds=video_duration_seconds*scale
+#         timestamps = (np.array(timestamps) * scale).tolist()
+#     #print(timestamps)
+#     return video, video_duration_seconds, timestamps
 
 def rank0_print(*args):
     if dist.is_initialized():
