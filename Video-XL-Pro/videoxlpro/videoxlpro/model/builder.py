@@ -133,7 +133,7 @@ def load_pretrained_model(model_path, model_base, model_name, load_8bit=False, l
                 or "llava-v1.6-34b" in model_name.lower()
                 or "llava-v1.5" in model_name.lower()
             ):
-                from longva.longva.model.language_model.llava_llama import LlavaConfig
+                from longva.model.language_model.llava_llama import LlavaConfig
 
                 tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
                 if customized_config is None:
@@ -155,7 +155,7 @@ def load_pretrained_model(model_path, model_base, model_name, load_8bit=False, l
         else:
             rank0_print(f"Loaded LLaVA model: {model_path}")
             if "mixtral" in model_name.lower():
-                from longva.longva.model.language_model.llava_mixtral import LlavaMixtralConfig
+                from longva.model.language_model.llava_mixtral import LlavaMixtralConfig
 
                 tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
                 if customized_config is None:
