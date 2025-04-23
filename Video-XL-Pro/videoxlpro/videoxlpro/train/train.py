@@ -42,6 +42,7 @@ from torch.utils.data import Dataset
 from longva.constants import IGNORE_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN, IMAGE_TOKEN_INDEX
 from longva.train.llava_trainer import LLaVATrainer
 
+# from transformers import T5Tokenizer, T5EncoderModel
 from longva import conversation as conversation_lib
 from longva.model import *
 from longva.mm_utils import process_highres_image, process_anyres_image, process_highres_image_crop_split, tokenizer_image_token
@@ -108,59 +109,6 @@ class ModelArguments:
     pos_skipping_range: Optional[int] = field(default=4096)
 
 
-    enable_beacon: bool = field(
-        default=True,
-        metadata={'help': 'Enable activation beacon?'}
-    )
-    beacon_window: Optional[int] = field(
-        default=None,
-        metadata={'help': 'The initial sliding window size.'}
-    )
-    beacon_stride: Optional[int] = field(
-        default=None,
-        metadata={'help': 'The stride of the sliding window.'}
-    )
-    beacon_attn: Optional[str] = field(
-        default=None,
-        metadata={'help': 'How to assign attention masks of beacon tokens? {segmentation, step-expansion, full-converage}'}
-    )
-    beacon_ratio: Optional[List[int]] = field(
-        default=None,
-        metadata={'help': 'Condensing ratios for beacons.'}
-    )
-    beacon_ratio_mix: Optional[str] = field(
-        default=None,
-        metadata={'help': 'How to determine the beacon_ratio for each input. {step-random, instance-random, adapt-x}'}
-    )
-    beacon_param: Optional[List[str]] = field(
-        default=None,
-        metadata={'help': 'The introduced parameters for beacon.'}
-    )
-    beacon_embed_init: str = field(
-        default="eos",
-        metadata={'help': 'Initialize beacon embedding from eos/bos embedding.'}
-    )
-    beacon_sink_size: Optional[int] = field(
-        default=None,
-        metadata={'help': 'The number of activations that are always kept in the head of the sequence according to StreamingLLM.'}
-    )
-    beacon_attend_prev: Optional[bool] = field(
-        default=None,
-        metadata={'help': 'Can beacon tokens attend to previous beacon tokens?'}
-    )
-    beacon_pos: Optional[str] = field(
-        default=None,
-        metadata={'help': 'Where to put beacon tokens? {append, interleave}'}
-    )
-    beacon_parallel_window: Optional[int] = field(
-        default=None,
-        metadata={'help': 'How many windows to run in parallel?'}
-    )
-    beacon_accum: Optional[bool] = field(
-        default=True,
-        metadata={'help': 'Can beacon tokens attend to previous beacon tokens?'}
-    )
-
 
 @dataclass
 class DataArguments:
@@ -211,6 +159,7 @@ class TrainingArguments(transformers.TrainingArguments):
 
     group_by_stride: str = "none"
     sort_by_stride: Optional[str] = None
+    
     # use_reentrant: bool = field(default=False)
 
 # @dataclass
@@ -603,28 +552,47 @@ def preprocess_gemma(sources: List[List[Dict[str, str]]], tokenizer: transformer
         labels=targets,
     )
 
-
-def preprocess_qwen(sources, tokenizer: transformers.PreTrainedTokenizer, has_image: bool = False, max_len=2048, system_message: str = "You are a helpful assistant.") -> Dict:
+def preprocess_qwen(sources, tokenizer: transformers.PreTrainedTokenizer, has_image: bool = False, max_len=2048, system_message: str = "You are a helpful assistant.",time_stamps=None) -> Dict:
     roles = {"human": "<|im_start|>user", "gpt": "<|im_start|>assistant"}
 
-    im_start, im_end = tokenizer.additional_special_tokens_ids
+    if len(tokenizer.additional_special_tokens_ids)==2:
+        im_start, im_end= tokenizer.additional_special_tokens_ids
+    else:
+        im_start, im_end,_,_,_,_,_,_,_,_,_,_,_ = tokenizer.additional_special_tokens_ids
     nl_tokens = tokenizer("\n").input_ids
     _system = tokenizer("system").input_ids + nl_tokens
     _user = tokenizer("user").input_ids + nl_tokens
     _assistant = tokenizer("assistant").input_ids + nl_tokens
 
     # Apply prompt templates
+    
     input_ids, targets = [], []
+    #text_selects = []
     for i, source in enumerate(sources):
         if roles[source[0]["from"]] != roles["human"]:
             source = source[1:]
-
+            
+        # print('')
+        # print(i,source,end='source\n')
+        #[{'from': 'human', 'value': '<image>\nConcisely depict the cooking technique demonstrated in the following clip.'}, {'from': 'gpt', 'value': 'cut carrots into small pieces'}]
+        
         input_id, target = [], []
+        # text_select=[]
+        
         system = [im_start] + _system + tokenizer(system_message).input_ids + [im_end] + nl_tokens
         input_id += system
         target += [im_start] + [IGNORE_INDEX] * (len(system) - 3) + [im_end] + nl_tokens
         assert len(input_id) == len(target)
         for j, sentence in enumerate(source):
+            
+            # print("")
+            # print(j,sentence,end=' sentence\n')
+            #{'from': 'human', 'value': '<image>\nWho wrote this book?\nAnswer the question using a single word or phrase.'}
+            # if sentence['from']=='human':
+            #     question=sentence['value'].replace('<image>\n','')
+            #     inputs_text_select = t5_tokenizer(question).input_ids
+            #     text_select+=inputs_text_select
+            
             role = roles[sentence["from"]]
             if has_image and "<image>" in sentence["value"]:
                 num_im = len(re.findall(DEFAULT_IMAGE_TOKEN, sentence["value"]))
@@ -647,14 +615,57 @@ def preprocess_qwen(sources, tokenizer: transformers.PreTrainedTokenizer, has_im
         assert len(input_id) == len(target)
         # input_id += [tokenizer.pad_token_id] * (max_len - len(input_id))
         # target += [IGNORE_INDEX] * (max_len - len(target))
+        # text_selects.append(text_select)
         input_ids.append(input_id)
         targets.append(target)
     input_ids = torch.tensor(input_ids, dtype=torch.long)
     targets = torch.tensor(targets, dtype=torch.long)
+    
+    time_embedding=None
+    if time_stamps[-1]==0.0:
+
+        compress_frame = time_stamps
+        time_embedding = []
+        for time in compress_frame:
+            time="{:06.1f}".format(time)
+            item = f"Time {time}s:"
+            #print(len(tokenizer(item).input_ids),144)
+            time_embedding.append(tokenizer(item).input_ids)
+            time_embedding.append([151654]*144)
+
+        time_embedding = [[item for sublist in time_embedding for item in sublist]]
+
+        time_embedding = torch.tensor(time_embedding, dtype=torch.long)
+    elif time_stamps is not None:
+
+        token_frames_sum=(len(time_stamps)+3)//4
+
+        compress_frame = time_stamps[::4]  # 每隔4个取一个
+
+        time_embedding = []
+        for time in compress_frame:
+            time="{:06.1f}".format(time)
+            item = f"Time {time}s:"
+            #print(len(tokenizer(item).input_ids),144)
+            time_embedding.append(tokenizer(item).input_ids)
+            time_embedding.append([151654]*144)
+
+            #time_embedding.append(item)
+            
+        time_embedding = [[item for sublist in time_embedding for item in sublist]]
+        
+        #mask = (time_embedding == IMAGE_TOKEN_INDEX)
+        #print(len(mask),mask[:200],end='**\n')
+        
+        time_embedding = torch.tensor(time_embedding, dtype=torch.long)
+        #time_embedding=tokenizer(time_embedding).input_ids
+        #print(time_embedding[:250])
 
     return dict(
         input_ids=input_ids,  # tensor(bs x seq_len)
         labels=targets,  # tensor(bs x seq_len)
+        time_embedding=time_embedding,
+        #text_select=text_selects,
         # attention_mask=input_ids.ne(tokenizer.pad_token_id), # tensor(bs x seq_len)
     )
 
@@ -922,8 +933,7 @@ def preprocess_plain(
 
     return dict(input_ids=input_ids, labels=targets)
 
-
-def preprocess(sources: Sequence[str], tokenizer: transformers.PreTrainedTokenizer, has_image: bool = False) -> Dict:
+def preprocess(sources: Sequence[str], tokenizer: transformers.PreTrainedTokenizer, has_image: bool = False,time_stamps=None) -> Dict:
     """
     Given a list of sources, each is a conversation list. This transform:
     1. Add signal '### ' at the beginning each sentence, with end signal '\n';
@@ -931,6 +941,7 @@ def preprocess(sources: Sequence[str], tokenizer: transformers.PreTrainedTokeniz
     3. Tokenize the concatenated conversation;
     4. Make a deepcopy as the target. Mask human words with IGNORE_INDEX.
     """
+    #print("#####",conversation_lib.default_conversation.version)
     if conversation_lib.default_conversation.sep_style == conversation_lib.SeparatorStyle.PLAIN:
         return preprocess_plain(sources, tokenizer)
     if conversation_lib.default_conversation.sep_style == conversation_lib.SeparatorStyle.LLAMA_2:
@@ -940,12 +951,14 @@ def preprocess(sources: Sequence[str], tokenizer: transformers.PreTrainedTokeniz
     if conversation_lib.default_conversation.version == "mpt":
         return preprocess_mpt(sources, tokenizer, has_image=has_image)
     if conversation_lib.default_conversation.version == "qwen":
-        return preprocess_qwen(sources, tokenizer, has_image=has_image)
+        return preprocess_qwen(sources, tokenizer, has_image=has_image,time_stamps=time_stamps)
+    if conversation_lib.default_conversation.version == "qwen_2":
+        return preprocess_qwen2(sources, tokenizer, has_image=has_image)
     if conversation_lib.default_conversation.version == "gemma":
         return preprocess_gemma(sources, tokenizer, has_image=has_image)
     if conversation_lib.default_conversation.version == "llama_v3":
         return preprocess_llama3(sources, tokenizer, has_image=has_image)
-    # add end signal and concatenate together
+
     conversations = []
     for source in sources:
         header = f"{conversation_lib.default_conversation.system}\n\n"
@@ -1044,6 +1057,8 @@ class LazySupervisedDataset(Dataset):
 
         rank0_print("Formatting inputs...Skip in lazy mode")
         self.tokenizer = tokenizer
+        # if t5_tokenizer!=None:
+        #     self.t5_tokenizer = t5_tokenizer
         self.data_args = data_args
 
     def __len__(self):
@@ -1153,17 +1168,31 @@ class LazySupervisedDataset(Dataset):
         if isinstance(i, int):
             sources = [sources]
         assert len(sources) == 1, "Don't know why it is wrapped to a list"  # FIXME
-
+        
+        time_stamps=None
+        
         if "image" in sources[0]:
             image_file = self.list_data_dict[i]["image"]
             if type(image_file) is list:
                 image = [self.process_image(f) for f in image_file]
             else:
                 image = [self.process_image(image_file)]
+                
+            if image[0][0].shape[0]>1:
+                time_stamps=[0.0] * (image[0][0].shape[0]-1)
+            else:
+                time_stamps=[0.0] * (image[0][0].shape[0])
+            #print(image[0][0].shape,time_stamps)
             sources = preprocess_multimodal(copy.deepcopy([e["conversations"] for e in sources]), self.data_args)
 
         elif "video" in sources[0]:
             video_file = self.list_data_dict[i]["video"]
+            
+            if 'scale' in sources[0]:
+                scale=self.list_data_dict[i]["scale"]
+            else:
+                scale=1
+                
             video_folder = self.data_args.video_folder
             video_file = os.path.join(video_folder, video_file)
             suffix = video_file.split(".")[-1]
@@ -1171,47 +1200,16 @@ class LazySupervisedDataset(Dataset):
                 print("File {} not exist!".format(video_file))
 
             try:
-                video = process_video_with_pyav(video_file, self.data_args)
-                # video=np.load(video_file)
-                # video = np.load(video_file, mmap_mode='r')
-                # using videoreader
-                # if "shareVideoGPTV" not in video_file and "liangke" not in video_file:
-                # vr = VideoReader(video_file, ctx=cpu(0))
-                # total_frame_num = len(vr)
-                # avg_fps = round(vr.get_avg_fps() / self.data_args.video_fps)
-                # frame_idx = [i for i in range(0, total_frame_num, avg_fps)]
-                # if self.data_args.frames_upbound > 0:
-                #     if len(frame_idx) > self.data_args.frames_upbound:
-                #         uniform_sampled_frames = np.linspace(0, total_frame_num - 1, self.data_args.frames_upbound, dtype=int)
-                #         frame_idx = uniform_sampled_frames.tolist()
-                # video = vr.get_batch(frame_idx).asnumpy()
-                # video = np.array(video)
-                # else:
-                #     if "liangke" in video_file:
-                #         video_file = self.list_data_dict[i]["video"]
-                #     frame_files = [os.path.join(video_file, f) for f in os.listdir(video_file) if os.path.isfile(os.path.join(video_file, f))]
-                #     frame_files.sort()  # Ensure the frames are sorted if they are named sequentially
-
-                #     # TODO: Hard CODE: Determine the indices for uniformly sampling 10 frames
-                #     num_frames_to_sample = 10
-                #     total_frames = len(frame_files)
-                #     sampled_indices = np.linspace(0, total_frames - 1, num_frames_to_sample, dtype=int)
-
-                #     # Read and store the sampled frames
-                #     video = []
-                #     for idx in sampled_indices:
-                #         frame_path = frame_files[idx]
-                #         try:
-                #             with Image.open(frame_path) as img:
-                #                 frame = img.convert("RGB")
-                #                 video.append(frame)
-                #         except IOError:
-                #             print(f"Failed to read frame at path: {frame_path}")
-
+                video,video_duration,time_stamps = process_video_with_pyav(video_file,scale, self.data_args)
+                #print(time_stamps)
                 processor = self.data_args.image_processor
                 image = processor.preprocess(video, return_tensors="pt")["pixel_values"]
                 image = [(image, video[0].size, "video")]
                 sources = preprocess_multimodal(copy.deepcopy([e["conversations"] for e in sources]), self.data_args)
+                #print(sources)
+                
+                ######
+                
             except Exception as e:
                 print(f"Error: {e}")
                 print(f"Failed to read video file: {video_file}")
@@ -1220,7 +1218,12 @@ class LazySupervisedDataset(Dataset):
             sources = copy.deepcopy([e["conversations"] for e in sources])
 
         has_image = ("image" in self.list_data_dict[i]) or ("video" in self.list_data_dict[i])
-        data_dict = preprocess(sources, self.tokenizer, has_image=has_image)
+        has_image = True
+        
+        if time_stamps is not None:
+            data_dict = preprocess(sources, self.tokenizer, has_image=has_image,time_stamps=time_stamps)
+        else:
+            data_dict = preprocess(sources, self.tokenizer, has_image=has_image)
 
         if "prompt" in data_dict:
             prompt = data_dict["prompt"]
@@ -1228,7 +1231,14 @@ class LazySupervisedDataset(Dataset):
             prompt = None
 
         if isinstance(i, int):
-            data_dict = dict(input_ids=data_dict["input_ids"][0], labels=data_dict["labels"][0])
+            if 'time_embedding' in data_dict.keys():
+                if data_dict["time_embedding"] is not None:
+                    data_dict = dict(input_ids=data_dict["input_ids"][0], labels=data_dict["labels"][0],time_embedding=data_dict["time_embedding"][0])
+                else:
+                    data_dict = dict(input_ids=data_dict["input_ids"][0], labels=data_dict["labels"][0],time_embedding=data_dict["time_embedding"])
+            else:
+                data_dict = dict(input_ids=data_dict["input_ids"][0], labels=data_dict["labels"][0])
+            #data_dict = dict(input_ids=data_dict["input_ids"][0], labels=data_dict["labels"][0])
 
         # image exist in the data
         if "image" in self.list_data_dict[i]:
@@ -1246,7 +1256,6 @@ class LazySupervisedDataset(Dataset):
             data_dict["prompt"] = prompt
 
         data_dict["id"] = self.list_data_dict[i].get("id", i)
-
         return data_dict
 
 
@@ -1265,7 +1274,9 @@ class DataCollatorForSupervisedDataset(object):
         return input_ids
 
     def __call__(self, instances: Sequence[Dict]) -> Dict[str, torch.Tensor]:
-        input_ids, labels = tuple([instance[key] for instance in instances] for key in ("input_ids", "labels"))
+        #input_ids, labels= tuple([instance[key] for instance in instances] for key in ("input_ids", "labels"))
+        input_ids, labels, time_embedding = tuple([instance[key] for instance in instances] for key in ("input_ids", "labels", "time_embedding"))
+        # exit(0) &&&
         # input_ids, labels, ids = tuple([instance[key] for instance in instances] for key in ("input_ids", "labels", "id"))
         input_ids = [_input_ids[: self.tokenizer.model_max_length] for _input_ids in input_ids]
         labels = [_labels[: self.tokenizer.model_max_length] for _labels in labels]
@@ -1274,7 +1285,8 @@ class DataCollatorForSupervisedDataset(object):
             self.tokenizer.pad_token_id = 0 # This gets the best result. Don't know why.
         input_ids = self.pad_sequence(input_ids, batch_first=True, padding_value=self.tokenizer.pad_token_id)
         labels = self.pad_sequence(labels, batch_first=True, padding_value=IGNORE_INDEX)
-        batch = dict(input_ids=input_ids, labels=labels.long() if labels.dtype == torch.int32 else labels, attention_mask=input_ids.ne(self.tokenizer.pad_token_id))
+        batch = dict(input_ids=input_ids, labels=labels.long() if labels.dtype == torch.int32 else labels, attention_mask=input_ids.ne(self.tokenizer.pad_token_id),time_embedding=time_embedding)
+        #batch = dict(input_ids=input_ids, labels=labels.long() if labels.dtype == torch.int32 else labels, attention_mask=input_ids.ne(self.tokenizer.pad_token_id))
         # batch = dict(input_ids=input_ids, labels=labels, attention_mask=input_ids.ne(self.tokenizer.pad_token_id), ids=ids)
 
         if "image" in instances[0]:
@@ -1293,7 +1305,6 @@ class DataCollatorForSupervisedDataset(object):
 
         if "prompt" in instances[0]:
             batch["prompts"] = [instance["prompt"] for instance in instances]
-
         return batch
 
 
@@ -1325,20 +1336,6 @@ def get_model(model_args, training_args, bnb_model_from_pretrained_args):
         ]
     ):
         cfg_pretrained = AutoConfig.from_pretrained(model_args.model_name_or_path)
-
-    overwrite_config["beacon_window"] = model_args.beacon_window
-    overwrite_config["beacon_stride"] = model_args.beacon_stride
-    overwrite_config["beacon_attn"] = model_args.beacon_attn
-    overwrite_config["beacon_attend_prev"] = model_args.beacon_attend_prev
-    overwrite_config["beacon_sink_size"] = model_args.beacon_sink_size
-    overwrite_config["beacon_ratio"] = model_args.beacon_ratio
-    overwrite_config["beacon_ratio_mix"] = model_args.beacon_ratio_mix
-    overwrite_config["beacon_param"] = model_args.beacon_param
-    overwrite_config["beacon_pos"] = model_args.beacon_pos
-    overwrite_config["beacon_parallel_window"] = 1
-    overwrite_config["beacon_embed_init"] = "eos"
-    overwrite_config["enable_beacon"]=model_args.enable_beacon
-    overwrite_config["beacon_accum"]=model_args.beacon_accum
 
     if model_args.use_pos_skipping is not None and model_args.pos_skipping_range is not None:
         overwrite_config["use_pos_skipping"] = model_args.use_pos_skipping
@@ -1439,20 +1436,6 @@ def get_model(model_args, training_args, bnb_model_from_pretrained_args):
             else:
                 print("@@@@@@@@@@@@@@@")
                 
-                # print(customized_kwargs["config"])
-                # model_args_dict = vars(model_args)
-                # config = transformers.AutoConfig.from_pretrained(model_args.model_name_or_path, trust_remote_code=True)
-                # config.beacon_window = model_args.beacon_window
-                # config.beacon_stride=model_args.beacon_stride
-                # config.beacon_attn=model_args.beacon_attn
-                # config.beacon_attend_prev=model_args.beacon_attend_prev
-                # config.beacon_sink_size=model_args.beacon_sink_size
-                # config.beacon_ratio = model_args.beacon_ratio 
-                # config.beacon_ratio_mix = model_args.beacon_ratio_mix
-                # config.beacon_param= model_args.beacon_param
-                # config.beacon_pos = model_args.beacon_pos
-                # config.beacon_parallel_window=1
-                # config.beacon_embed_init="eos"
 
                 # print("config",config)
                 model = LlavaQwenForCausalLM.from_pretrained(
@@ -1492,8 +1475,8 @@ def train(attn_implementation=None):
     global local_rank
 
     parser = transformers.HfArgumentParser((ModelArguments, DataArguments, TrainingArguments))
+    
     model_args, data_args, training_args = parser.parse_args_into_dataclasses()
-  
 
     training_args.gradient_checkpointing_kwargs={"use_reentrant": False}
     training_args.group_by_stride="strict"
@@ -1730,16 +1713,12 @@ def train(attn_implementation=None):
                 if hasattr(module, "weight"):
                     if training_args.bf16 and module.weight.dtype == torch.float32:
                         module = module.to(torch.bfloat16)
-
+    
+    #t5_tokenizer = T5Tokenizer.from_pretrained('google-t5/t5-small')
     data_module = make_supervised_data_module(tokenizer=tokenizer, data_args=data_args)
 
     # trainer = LLaVATrainer(model=model, tokenizer=tokenizer, args=training_args, **data_module)
 
-    # for name,param in model.named_parameters():
-    #     if "beacon" not in name:
-    #         param.requires_grad_(False)
-
-    
     # print(model_args)
     trainer = LLaVATrainer(
         model=model,

@@ -1,10 +1,11 @@
 import sys
-sys.path.append('/share/LXRlxr0_0/code/abstudy/lmms-eval/longva')
+sys.path.append('/share/LXRlxr0_0/code/videoxlturbo3.0/videoxl_time_attention/longva')
 from longva.train.train import train
-import wandb
 import os
 import wandb
-wandb.login(key='1547db62a05790f3f88c42c2de42d12c77add5b4')
+wandb.init(mode="disabled")
+
+wandb.login(key='2b6c46299a43da99a3708813d1ffcd9a469cd192')
 # 设置超时时间为60秒
 os.environ["WANDB__SERVICE_WAIT"] = "600"
 if __name__ == "__main__":
