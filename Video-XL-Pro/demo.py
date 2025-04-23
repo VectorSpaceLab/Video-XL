@@ -13,8 +13,8 @@ warnings.filterwarnings('ignore')
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # 模型路径
-model_path = "/path/to/your/Video-XL-Pro-3B"
-video_path = "/path/to/your/video.mp4"
+model_path="/share/LXRlxr0_0/Video-XL-Pro-0412"
+video_path="/share/junjie/code/videofactory/Evaluation_LVBench/MLVU_Test/video/test_sports_7.mp4"
 
 # 使用 Auto 类加载模型
 model = AutoModelForCausalLM.from_pretrained(
@@ -35,7 +35,7 @@ image_processor = load_image_processor(model, tokenizer)
 max_frames_num = 128
 
 # 处理视频
-video_tensor = process_video(video_path, image_processor, model.device, max_frames_num)
+video_tensor,time_embed = process_video(video_path,tokenizer, image_processor, model.device, max_frames_num)
 
 # 生成参数
 gen_kwargs = {
@@ -44,15 +44,15 @@ gen_kwargs = {
     "top_p": 0.001,
     "num_beams": 1,
     "use_cache": True,
-    "max_new_tokens": 256
+    "max_new_tokens": 1024
 }
 
 # 文本提示
-prompt = "Describe this video."
+prompt = "Describe this video in detail."
 
 text = f"<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n<image>\n{prompt}<|im_end|>\n<|im_start|>assistant\n"
 
-response = generate_response(model, tokenizer, text, video_tensor, gen_kwargs)
+response = generate_response(model, tokenizer, text, video_tensor,time_embed, gen_kwargs)
 
 # 4. 输出结果
 print("\n===== 生成的回答 =====")
