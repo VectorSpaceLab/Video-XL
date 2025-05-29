@@ -161,7 +161,7 @@ bash ./NIAH/scripts/eval.sh
 
 ## Training Data
 Please refer to [train_samples](./assets/train_example.json) so you can finetune with your own image or video data.
-We have realsed our trainiing data in [link](https://huggingface.co/datasets/sy1998/Video_XL_Training/tree/main).
+We have released our training data in [link](https://huggingface.co/datasets/sy1998/Video_XL_Training/tree/main).
 
 ## Citation
 If you find this repository useful, please consider giving a star :star: and citation
