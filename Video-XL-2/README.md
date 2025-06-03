@@ -7,14 +7,13 @@
 </div>
 
 
-
-<!-- <div align='center'>
-<img src="./assets/arch.png" class="interpolation-image" alt="arch." height="80%" width="70%" />
-</div> -->
+<div align='center'>
+<img src="./assets/performance.png" class="interpolation-image" alt="arch." height="80%" width="70%" />
+</div>
 
 We introduce **Video-XL-2**, a new suite of multimodal models that achieves state-of-the-art (SOTA) performance and superior efficiency in long video understanding.
 
-### Video-XL-2 SOTA Performance and Unrivaled Efficiency
+### Video-XL-2: SOTA Performance and Unrivaled Efficiency
 **Video-XL-2** achieves SOTA performance in mainstream long video understanding benchmarks and leading performance in temporal grounding tasks when compared to open-source lightweight models. Furthermore, it boasts significant advantages over existing models in both memory consumption and inference speed."
 <!-- 
 <div align='center'>
@@ -100,7 +99,7 @@ print(response)
 ```
 
 ## Acknowledgement
-We thank the great work from [Video-XL Series](https://github.com/VectorSpaceLab/Video-XL), [LongVA](https://github.com/QwenLM/Qwen2-VL), [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval), [Qwen](https://github.com/QwenLM/Qwen)
+We thank the great work from [Video-XL Series](https://github.com/VectorSpaceLab/Video-XL), [LongVA](https://github.com/QwenLM/Qwen2-VL), [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval), [Qwen](https://github.com/QwenLM/Qwen).
 
 ## Citation
 
