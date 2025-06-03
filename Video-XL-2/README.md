@@ -1,8 +1,12 @@
 <div align='center'>
 <h1>Video-XL-2: A Better, Faster, and High-Frame-Count Model for Long Video Understanding.</h1>
 <h3></h3>
-| [Blog](https://unabletousegit.github.io/video-xl2.github.io/) | [Tech Report (Coming Soon)](YOUR_TECH_REPORT_LINK_HERE) | [🤗HF Models](https://huggingface.co/BAAI/Video-XL-2) |
+
+| [Blog](https://unabletousegit.github.io/video-xl2.github.io/) | [Tech Report (comming soon)](YOUR_TECH_REPORT_LINK_HERE) | [🤗HF Models](https://huggingface.co/BAAI/Video-XL-2) |
+
 </div>
+
+
 
 <!-- <div align='center'>
 <img src="./assets/arch.png" class="interpolation-image" alt="arch." height="80%" width="70%" />
