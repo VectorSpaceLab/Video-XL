@@ -108,7 +108,7 @@ The evaluation codes and scripts can be found in [./eval](./eval).
 
 
 ## Acknowledgement
-We thank the great work from [Video-XL Series](https://github.com/VectorSpaceLab/Video-XL), [LongVA](https://github.com/QwenLM/Qwen2-VL), [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval), [Qwen](https://github.com/QwenLM/Qwen).
+We thank the great work from [Video-XL Series](https://github.com/VectorSpaceLab/Video-XL), [LongVA](https://github.com/QwenLM/Qwen2-VL), [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval), [Qwen](https://github.com/QwenLM/Qwen),[VideoChat-Flash](https://github.com/OpenGVLab/VideoChat-Flash?tab=readme-ov-file).
 
 ## Citation
 
