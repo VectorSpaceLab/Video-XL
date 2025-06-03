@@ -1,7 +1,7 @@
 <div align='center'>
-<h1>Video-XL-2: A Better, Faster, and High-Frame-Count Model for Long Video Understanding.</h1h1>
+<h1>Video-XL-2: A Better, Faster, and High-Frame-Count Model for Long Video Understanding.</h1>
 <h3></h3>
-| [Blog](https://unabletousegit.github.io/video-xl2.github.io/) | [Tech Report(Comming Soon)] | [🤗HF Models](https://huggingface.co/BAAI/Video-XL-2) |
+| [Blog](https://unabletousegit.github.io/video-xl2.github.io/) | [Tech Report (Coming Soon)](YOUR_TECH_REPORT_LINK_HERE) | [🤗HF Models](https://huggingface.co/BAAI/Video-XL-2) |
 </div>
 
 <!-- <div align='center'>
@@ -25,7 +25,7 @@ We introduce **Video-XL-2**, a new suite of multimodal models that achieves stat
 
 ### TODO
 - [X] Release model weights.
-- [] Release the inference code.
+- [ ] Release the inference code.
 - [X] Release training code for sft.
 - [X] Release the evaluation code.
 
