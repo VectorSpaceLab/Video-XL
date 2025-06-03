@@ -33,16 +33,6 @@ We introduce **Video-XL-2**, a new suite of multimodal models that achieves stat
 - [X] Release the evaluation code.
 
 
-### Setup
-
-Clone this repository and install required packages:
-
-```shell
-git clone https://github.com/VectorSpaceLab/Video-XL
-cd Video-XL-2
-pip install -r requirements.txt
-```
-
 ### Model Weights
 
 | Model name| HF Weight | Modelscope  | 
@@ -51,6 +41,16 @@ pip install -r requirements.txt
 | **Video-XL-2/Stage4**           | [🤗 HF link](https://huggingface.co/BAAI/Video-XL-2) | [Modelscope link]()           |
 
 ### Quickstart
+
+#### Setup
+
+Clone this repository and install required packages:
+
+```shell
+git clone https://github.com/VectorSpaceLab/Video-XL
+cd Video-XL-2
+pip install -r requirements.txt
+```
 
 #### Use 🤗Transformers to run Video-XL-2 for video understanding
 ```python
@@ -97,6 +97,13 @@ with torch.inference_mode():
     
 print(response)
 ```
+
+### Training
+The training codes and scripts can be found in [./train](./train).
+
+### Evaluation
+The evaluation codes and scripts can be found in [./eval](./eval).
+
 
 ## Acknowledgement
 We thank the great work from [Video-XL Series](https://github.com/VectorSpaceLab/Video-XL), [LongVA](https://github.com/QwenLM/Qwen2-VL), [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval), [Qwen](https://github.com/QwenLM/Qwen).
