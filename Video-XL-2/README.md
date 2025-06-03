@@ -1,7 +1,7 @@
 ## Release Plan
 
 
-## :parrot: Introduction
+## Introduction
 
 ## Inference
 Refer to [hf README](https://huggingface.co/BAAI/Video-XL-2) to inference our model.
