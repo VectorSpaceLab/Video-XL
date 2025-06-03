@@ -29,8 +29,10 @@ We introduce **Video-XL-2**, a new suite of multimodal models that achieves stat
 ### TODO
 - [X] Release model weights.
 - [ ] Release the inference code.
-- [X] Release training code for sft.
+- [X] Release the training code for sft.
+- [ ] Release the training guidance.
 - [X] Release the evaluation code.
+- [ ] Release the evaluation guidance.
 
 
 ### Model Weights
