@@ -1,0 +1,8 @@
+group: lvbench
+task:
+  - lvbench_cartoon
+  - lvbench_documentary
+  - lvbench_live
+  - lvbench_selfmedia
+  - lvbench_sport
+  - lvbench_tv
