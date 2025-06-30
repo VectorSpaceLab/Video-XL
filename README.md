@@ -37,7 +37,7 @@ If you find this repository useful, please consider giving a star :star: and cit
   author={Qin, Minghao and Liu, Xiangrui and Liang, Zhengyang and Shu, Yan and Yuan, Huaying and Zhou, Juenjie and Xiao, Shitao and Zhao, Bo and Liu, Zheng},
   journal={arXiv preprint arXiv:2506.19225},
   year={2025}
-} 
+}
 ```
 
 ## Acknowledgement
