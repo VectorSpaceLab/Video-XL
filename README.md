@@ -31,6 +31,13 @@ If you find this repository useful, please consider giving a star :star: and cit
   journal={arXiv preprint arXiv:2503.18478},
   year={2025}
 }
+
+@article{qin2025video,
+  title={Video-XL-2: Towards Very Long-Video Understanding Through Task-Aware KV Sparsification},
+  author={Qin, Minghao and Liu, Xiangrui and Liang, Zhengyang and Shu, Yan and Yuan, Huaying and Zhou, Juenjie and Xiao, Shitao and Zhao, Bo and Liu, Zheng},
+  journal={arXiv preprint arXiv:2506.19225},
+  year={2025}
+}
 ```
 
 ## Acknowledgement
