@@ -1,0 +1,2405 @@
+{
+    "event understanding": {
+        "config": {
+            "selected_topk": 7,
+            "selected_chunk_size": 12,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "Cm73ma6Ibcs_How is the weather like in the opening?": [
+                17,
+                0,
+                19,
+                14,
+                18,
+                15,
+                16
+            ],
+            "Cm73ma6Ibcs_What does the protagonist do when the man with the gun keeps approaching her?": [
+                5,
+                8,
+                7,
+                6,
+                31,
+                24,
+                43
+            ],
+            "Cm73ma6Ibcs_What happens when the woman wearing a red kimono kneels?": [
+                32,
+                35,
+                34,
+                31,
+                36,
+                30,
+                33
+            ],
+            "Cm73ma6Ibcs_How many times does the protagonist knock on the green door?": [
+                38,
+                57,
+                58,
+                41,
+                55,
+                66,
+                56
+            ],
+            "Cm73ma6Ibcs_What does the protagonist see through the window after she is taken to the utility room?": [
+                20,
+                27,
+                6,
+                47,
+                3,
+                41,
+                49
+            ],
+            "Cm73ma6Ibcs_What is the protagonist primary objection at the spring?": [
+                31,
+                41,
+                56,
+                33,
+                27,
+                57,
+                38
+            ],
+            "Cm73ma6Ibcs_What else does the protagonist do in the shower besides taking a shower?": [
+                47,
+                49,
+                16,
+                42,
+                14,
+                67,
+                50
+            ],
+            "Cm73ma6Ibcs_When the protagonist moves the table at the restaurant, what happens to the things on the table?": [
+                4,
+                2,
+                3,
+                33,
+                7,
+                32,
+                6
+            ],
+            "Cm73ma6Ibcs_What does the protagonist cut off from the man who she fights in the snow in the end?": [
+                60,
+                59,
+                63,
+                62,
+                61,
+                24,
+                23
+            ],
+            "q01CUy_gwdU_What color is the scene at the begining?": [
+                45,
+                21,
+                43,
+                6,
+                36,
+                67,
+                66
+            ],
+            "q01CUy_gwdU_What does the woman in red do after she collides with the man?": [
+                19,
+                21,
+                7,
+                20,
+                18,
+                48,
+                67
+            ],
+            "q01CUy_gwdU_What does the man do after the second collision?": [
+                67,
+                66,
+                29,
+                74,
+                21,
+                44,
+                71
+            ],
+            "q01CUy_gwdU_Why does the man follow the woman in red after they meet for the third time?": [
+                19,
+                7,
+                18,
+                49,
+                21,
+                48,
+                35
+            ],
+            "q01CUy_gwdU_What best summarizes the first half of the events when the woman and the man meet for the third time?": [
+                5,
+                7,
+                62,
+                6,
+                34,
+                19,
+                52
+            ],
+            "q01CUy_gwdU_What does the man do after he sees the woman for the third time?": [
+                6,
+                25,
+                31,
+                7,
+                65,
+                19,
+                30
+            ],
+            "q01CUy_gwdU_What does the woman do after she sees a rolling stone on the ground": [
+                32,
+                59,
+                18,
+                57,
+                6,
+                21,
+                33
+            ],
+            "q01CUy_gwdU_Where do the man and the woman sit at where the woman is eating a pear?": [
+                10,
+                38,
+                9,
+                11,
+                63,
+                37,
+                24
+            ],
+            "q01CUy_gwdU_How is the weather before the season transitions to winter?": [
+                50,
+                52,
+                53,
+                51,
+                71,
+                72,
+                42
+            ],
+            "q01CUy_gwdU_When does the man meet the woman for the last time?": [
+                7,
+                25,
+                35,
+                18,
+                32,
+                6,
+                48
+            ],
+            "q01CUy_gwdU_What happens to the woman in the man's imagery when she is not around?": [
+                19,
+                6,
+                32,
+                62,
+                31,
+                7,
+                18
+            ],
+            "28CIeC8cZks_What does the girl use to find the person she is looking for in the video?": [
+                49,
+                47,
+                33,
+                53,
+                28,
+                44,
+                32
+            ],
+            "28CIeC8cZks_How many people are leaving by boat in the video?": [
+                73,
+                39,
+                70,
+                60,
+                67,
+                72,
+                10
+            ],
+            "28CIeC8cZks_The girl rescue a total of how many spirits?": [
+                33,
+                49,
+                58,
+                54,
+                56,
+                38,
+                53
+            ],
+            "TJR1oYDDTwg_What is the character doing between 01:05-01:09?": [
+                16,
+                27,
+                20,
+                8,
+                5,
+                18,
+                15
+            ],
+            "TJR1oYDDTwg_What happens when the villain's mirror breaks?": [
+                16,
+                42,
+                5,
+                41,
+                6,
+                20,
+                8
+            ],
+            "TJR1oYDDTwg_How does the villain follow the prince, princess and dragon?": [
+                11,
+                9,
+                15,
+                20,
+                27,
+                40,
+                42
+            ],
+            "TJR1oYDDTwg_Why is the king so happy after using the telescope?": [
+                4,
+                39,
+                5,
+                33,
+                3,
+                50,
+                53
+            ],
+            "HfEVEGf1A8Q_What does the vampire do when the girl first finds him?": [
+                60,
+                45,
+                38,
+                57,
+                27,
+                10,
+                32
+            ],
+            "HfEVEGf1A8Q_What happens in the vampire's dream after he faints in front of the girl?": [
+                60,
+                38,
+                45,
+                25,
+                32,
+                10,
+                57
+            ],
+            "HfEVEGf1A8Q_Where does the girl take the vampire after the exam?": [
+                32,
+                20,
+                6,
+                19,
+                31,
+                69,
+                30
+            ],
+            "2sriHX3PbXw_Why do the two women break down and cover their ears?": [
+                11,
+                10,
+                45,
+                6,
+                46,
+                9,
+                55
+            ],
+            "2sriHX3PbXw_After two groups of people collide, which direction do the six people wearing the same outfit go to?": [
+                18,
+                11,
+                13,
+                22,
+                66,
+                57,
+                58
+            ],
+            "2sriHX3PbXw_How do people in the government communicate with everyone?": [
+                16,
+                18,
+                20,
+                44,
+                22,
+                27,
+                23
+            ],
+            "2sriHX3PbXw_After the performance of three people riding on top of each other, what's the next performance?": [
+                50,
+                56,
+                24,
+                26,
+                58,
+                61,
+                49
+            ],
+            "_zrgbA3FMVE_How does the red-haired girl who plays bass look from 01:42-01:47?": [
+                18,
+                10,
+                16,
+                31,
+                17,
+                3,
+                11
+            ],
+            "_zrgbA3FMVE_Why does the three girls run?": [
+                11,
+                10,
+                38,
+                22,
+                32,
+                70,
+                5
+            ],
+            "_zrgbA3FMVE_What does the three girls do between 07:48-07:50?": [
+                11,
+                10,
+                38,
+                48,
+                8,
+                44,
+                32
+            ],
+            "_zrgbA3FMVE_What are two men in suits doing in front of a screen?": [
+                47,
+                25,
+                15,
+                14,
+                26,
+                53,
+                68
+            ],
+            "_zrgbA3FMVE_After returning to school through the slide, where does the girl with orange hair appear?": [
+                38,
+                9,
+                11,
+                18,
+                16,
+                39,
+                31
+            ],
+            "_zrgbA3FMVE_What happens when the boy at the vending machine is about to press the button?": [
+                15,
+                2,
+                16,
+                19,
+                47,
+                33,
+                13
+            ],
+            "_zrgbA3FMVE_Where is the girl with short blond hair taken by two men in suits wearing sunglasses?": [
+                8,
+                26,
+                14,
+                7,
+                34,
+                69,
+                15
+            ],
+            "_zrgbA3FMVE_Where are the three girls transported?": [
+                48,
+                32,
+                33,
+                10,
+                11,
+                44,
+                8
+            ],
+            "_zrgbA3FMVE_What happens after three girls got on motorcycles?": [
+                70,
+                24,
+                7,
+                11,
+                10,
+                38,
+                5
+            ],
+            "qAIRFyR6NyQ_How many birthdays does the protagonist celebrate in the video?": [
+                41,
+                64,
+                71,
+                65,
+                49,
+                31,
+                23
+            ],
+            "qAIRFyR6NyQ_Why are the people cheering and jumping for joy in the video?": [
+                58,
+                72,
+                64,
+                70,
+                8,
+                61,
+                2
+            ],
+            "qAIRFyR6NyQ_What is the first gift the protagonist received for her third birthday?": [
+                41,
+                63,
+                6,
+                49,
+                5,
+                4,
+                28
+            ],
+            "qAIRFyR6NyQ_What color clothes does the protagonist wear when she is taken away to the concentration camp?": [
+                40,
+                39,
+                28,
+                23,
+                27,
+                48,
+                68
+            ],
+            "Za2Z_JRxCuk____ as the protagonist lockpicking the door ": [
+                8,
+                22,
+                7,
+                9,
+                44,
+                46,
+                47
+            ],
+            "Za2Z_JRxCuk_What happens to the protagonist after she climbs up from the underground tunnel that is filled with water?": [
+                27,
+                58,
+                33,
+                24,
+                8,
+                25,
+                5
+            ],
+            "Za2Z_JRxCuk_Do the guards find the protagonist before 07:19?": [
+                64,
+                46,
+                44,
+                23,
+                13,
+                9,
+                11
+            ],
+            "Za2Z_JRxCuk_How does the protagonist go through the passage at 10:33?": [
+                49,
+                23,
+                46,
+                3,
+                27,
+                34,
+                44
+            ],
+            "Za2Z_JRxCuk_What do the people do at the place that has a bucket with ice water?": [
+                36,
+                37,
+                71,
+                16,
+                72,
+                17,
+                43
+            ],
+            "Za2Z_JRxCuk_Where does the protagonist find one of her friend?": [
+                64,
+                67,
+                49,
+                33,
+                46,
+                56,
+                3
+            ],
+            "Za2Z_JRxCuk_Why does the tall man cut off the chains at 21:49?": [
+                47,
+                48,
+                28,
+                41,
+                27,
+                8,
+                15
+            ],
+            "Za2Z_JRxCuk_Which sentence best describes the outcome of the fight between the protagonist and the first time she encounters a group of Samurais?": [
+                20,
+                31,
+                28,
+                64,
+                63,
+                33,
+                29
+            ],
+            "Za2Z_JRxCuk_Which sentence best describes the outcome of the fight between the protagonist and the second time she encounters a group of Samurais?": [
+                20,
+                28,
+                31,
+                63,
+                64,
+                13,
+                33
+            ],
+            "qYMnM5blZIE_What is the first scene of the video?": [
+                0,
+                7,
+                24,
+                42,
+                52,
+                11,
+                40
+            ],
+            "qYMnM5blZIE_How is the weather when the ladybug picks up the apple?": [
+                3,
+                4,
+                5,
+                43,
+                2,
+                48,
+                6
+            ],
+            "qYMnM5blZIE_What is counterintuitive about the sailing?": [
+                59,
+                32,
+                60,
+                26,
+                45,
+                21,
+                31
+            ],
+            "qYMnM5blZIE_How is the weather at 59:55-59:57?": [
+                27,
+                29,
+                1,
+                0,
+                16,
+                44,
+                14
+            ],
+            "qYMnM5blZIE_How do the ant and the spider get out of the shark's stomach?": [
+                46,
+                26,
+                51,
+                15,
+                10,
+                11,
+                28
+            ],
+            "qYMnM5blZIE_One time a smaller insect saves a larger insect of the same class in the rainforest, what happens?": [
+                35,
+                33,
+                55,
+                37,
+                24,
+                28,
+                64
+            ],
+            "qYMnM5blZIE_How do the two ladybugs escape the attack from a group of mantises?": [
+                55,
+                56,
+                35,
+                43,
+                41,
+                33,
+                47
+            ],
+            "qYMnM5blZIE_How many insects are on the board when they arrive at the caterpillar kingdom?": [
+                64,
+                62,
+                10,
+                60,
+                47,
+                13,
+                40
+            ],
+            "gXnhqF0TqqI_Where are the woman and children when they first appear in the video?": [
+                2,
+                71,
+                39,
+                47,
+                50,
+                59,
+                45
+            ],
+            "gXnhqF0TqqI_What does the first animal appear in the cartoon do when it just appears?": [
+                18,
+                65,
+                39,
+                42,
+                56,
+                60,
+                19
+            ],
+            "gXnhqF0TqqI_What happens after the mole and water vole first go ashore from the boat?": [
+                57,
+                19,
+                7,
+                8,
+                10,
+                38,
+                6
+            ],
+            "gXnhqF0TqqI_What happens after the frog first picks up the whip?": [
+                17,
+                61,
+                13,
+                67,
+                42,
+                14,
+                45
+            ],
+            "gXnhqF0TqqI_What happens first in the second day in the cartoon?": [
+                7,
+                3,
+                21,
+                67,
+                36,
+                68,
+                39
+            ],
+            "gXnhqF0TqqI_What happens from 25:33-27:44?": [
+                0,
+                53,
+                25,
+                23,
+                11,
+                47,
+                54
+            ],
+            "gXnhqF0TqqI_What is the weather like after the water vole finds mole in the forest?": [
+                55,
+                19,
+                57,
+                8,
+                38,
+                36,
+                7
+            ],
+            "gXnhqF0TqqI_What happens to the toad after a man stops his blue car?": [
+                61,
+                17,
+                62,
+                40,
+                50,
+                43,
+                14
+            ],
+            "gXnhqF0TqqI_Where is the toad after it drives the blue car?": [
+                61,
+                14,
+                43,
+                62,
+                17,
+                40,
+                50
+            ],
+            "gXnhqF0TqqI_When does the animation end?": [
+                60,
+                21,
+                20,
+                56,
+                54,
+                58,
+                18
+            ],
+            "SRq0weUKskM_What is the type of the video?": [
+                74,
+                0,
+                31,
+                17,
+                13,
+                34,
+                62
+            ],
+            "SRq0weUKskM_What does the fairy do on a stone near a river when the doll is floating on the river?": [
+                10,
+                48,
+                11,
+                50,
+                22,
+                9,
+                35
+            ],
+            "SRq0weUKskM_What is the fairy's reaction when she first sees the doll after looking at a drop of water as a mirror?": [
+                50,
+                10,
+                22,
+                25,
+                35,
+                48,
+                9
+            ],
+            "SRq0weUKskM_Where does the frog and the fairy talk for the first time?": [
+                16,
+                47,
+                44,
+                13,
+                50,
+                46,
+                14
+            ],
+            "81SbCR6p3Z0_What are the changes in the scene from 01:05-01:10?": [
+                46,
+                61,
+                42,
+                44,
+                22,
+                35,
+                9
+            ],
+            "81SbCR6p3Z0_What is the weather like in this scene from 05:54-05:59?": [
+                16,
+                5,
+                63,
+                46,
+                6,
+                61,
+                15
+            ],
+            "81SbCR6p3Z0_What is the relationship between two people on the screen from 27:20-27:25?": [
+                54,
+                47,
+                20,
+                37,
+                36,
+                30,
+                45
+            ],
+            "81SbCR6p3Z0_What kind of scene transitions are there from 37:24-37:29?": [
+                74,
+                0,
+                16,
+                49,
+                42,
+                58,
+                46
+            ],
+            "81SbCR6p3Z0_What is this scene during 43:15-43:21?": [
+                1,
+                63,
+                0,
+                42,
+                52,
+                9,
+                67
+            ],
+            "81SbCR6p3Z0_Why does the boy fall during 45:01-45:07?": [
+                22,
+                42,
+                16,
+                44,
+                63,
+                45,
+                36
+            ],
+            "81SbCR6p3Z0_What happen during this period from 50:54-51:15?": [
+                55,
+                52,
+                43,
+                62,
+                56,
+                35,
+                67
+            ],
+            "S8vPx-u9p_A_What type is this video?": [
+                1,
+                55,
+                0,
+                64,
+                57,
+                16,
+                11
+            ],
+            "S8vPx-u9p_A_Where does the rain come from when the man in black first open his umbrella?": [
+                5,
+                37,
+                4,
+                2,
+                0,
+                22,
+                63
+            ],
+            "S8vPx-u9p_A_What kind of weather follows the first rainy days?": [
+                4,
+                37,
+                26,
+                5,
+                12,
+                19,
+                8
+            ],
+            "S8vPx-u9p_A_What happens that makes the flowers in the pot die?": [
+                6,
+                22,
+                24,
+                23,
+                7,
+                25,
+                21
+            ],
+            "S8vPx-u9p_A_What does the queen do to the little boy after bringing him to the wild?": [
+                46,
+                9,
+                34,
+                39,
+                36,
+                53,
+                61
+            ],
+            "S8vPx-u9p_A_What is the facial expression of the little girl when she wakes up in the garden and walks alone?": [
+                24,
+                23,
+                22,
+                13,
+                12,
+                10,
+                34
+            ],
+            "S8vPx-u9p_A_Where does the black bird on the beach take the little girl to?": [
+                27,
+                28,
+                26,
+                29,
+                31,
+                34,
+                48
+            ],
+            "QgWRyDV9Ozs_What was Thumbelina doing before she falls into the three-egg nest?": [
+                28,
+                6,
+                4,
+                27,
+                33,
+                30,
+                62
+            ],
+            "QgWRyDV9Ozs_Where does Thumbelina sit listening to the old woman's story?": [
+                6,
+                3,
+                33,
+                28,
+                7,
+                74,
+                12
+            ],
+            "QgWRyDV9Ozs_What does the prince do when he finds Thumbelina and picks her up?": [
+                18,
+                74,
+                73,
+                6,
+                19,
+                33,
+                27
+            ],
+            "pXD3txG2bVQ_What happens after the boy looks very down in the middle of the man and the woman?": [
+                58,
+                57,
+                19,
+                29,
+                18,
+                4,
+                36
+            ],
+            "pXD3txG2bVQ_Who do the boy and the cat meet on the way they first leave home?": [
+                1,
+                2,
+                5,
+                23,
+                41,
+                62,
+                0
+            ],
+            "pXD3txG2bVQ_What happens after the boy and the cat meet the dog for the first time?": [
+                38,
+                23,
+                42,
+                6,
+                5,
+                20,
+                34
+            ],
+            "pXD3txG2bVQ_Who appears first when the boy, cat and dog are cleaning the house?": [
+                7,
+                8,
+                5,
+                42,
+                22,
+                20,
+                6
+            ],
+            "pXD3txG2bVQ_What does the man with the mustache do when boy, cat, and dog carrying treasure chest, shovel and pickaxe back?": [
+                11,
+                41,
+                54,
+                6,
+                8,
+                7,
+                67
+            ],
+            "pXD3txG2bVQ_Why does the man with the mustache chase the bird when boy, cat, and dog carrying treasure chest, shovel and pickaxe back?": [
+                11,
+                41,
+                6,
+                54,
+                43,
+                63,
+                8
+            ],
+            "pXD3txG2bVQ_What does the couple do after boy, cat, and dog carrying treasure chest, shovel and pickaxe back?": [
+                11,
+                47,
+                6,
+                41,
+                5,
+                7,
+                20
+            ],
+            "pXD3txG2bVQ_What happens when the boy is writing a letter for the first time?": [
+                5,
+                17,
+                4,
+                59,
+                60,
+                58,
+                53
+            ],
+            "pXD3txG2bVQ_Who appears when the boy have a fever and after the cat open the dor?": [
+                20,
+                1,
+                2,
+                0,
+                53,
+                22,
+                21
+            ],
+            "pXD3txG2bVQ_What happens to the family in the railway station?": [
+                29,
+                30,
+                47,
+                60,
+                58,
+                0,
+                16
+            ],
+            "pXD3txG2bVQ_What does the scene switch to after the boy, cat, and dog having meal together for the first time with a trophy on the table in the second cartoon?": [
+                35,
+                45,
+                9,
+                26,
+                10,
+                4,
+                44
+            ],
+            "pXD3txG2bVQ_What does the cat do after the man in brown having meal with the boy, cat, and dog?": [
+                10,
+                35,
+                12,
+                9,
+                4,
+                22,
+                5
+            ],
+            "pXD3txG2bVQ_What is inside the yellow box replaced by the cat and from the man in brown?": [
+                41,
+                4,
+                8,
+                58,
+                43,
+                44,
+                1
+            ],
+            "pXD3txG2bVQ_What happens after the yellow box is replaced by the cat?": [
+                41,
+                4,
+                1,
+                8,
+                2,
+                0,
+                43
+            ],
+            "pXD3txG2bVQ_What is the weather like in the beginning of the third catoon?": [
+                1,
+                52,
+                8,
+                0,
+                72,
+                73,
+                6
+            ],
+            "RjDrZkBwzho_What does the black and pink shrew do after climbing the window?": [
+                3,
+                1,
+                16,
+                6,
+                2,
+                18,
+                74
+            ],
+            "RjDrZkBwzho_How many shots does Sheriff Black Cat fire after he finds the black mice?": [
+                8,
+                15,
+                34,
+                21,
+                40,
+                1,
+                13
+            ],
+            "RjDrZkBwzho_Why does \"one ear\" change its name to \"one ear\"?": [
+                20,
+                43,
+                19,
+                16,
+                71,
+                5,
+                30
+            ],
+            "RjDrZkBwzho_Who eats Mr. Mantis?": [
+                39,
+                38,
+                37,
+                31,
+                34,
+                35,
+                33
+            ],
+            "RjDrZkBwzho_What is the weather like when the panda is caught?": [
+                59,
+                58,
+                63,
+                60,
+                0,
+                74,
+                1
+            ],
+            "XNtNNplAwiI_What are the skills of the red calabash boy?": [
+                7,
+                37,
+                32,
+                11,
+                12,
+                47,
+                1
+            ],
+            "XNtNNplAwiI_How does the snake find out that the orange calabash boy had arrived?": [
+                11,
+                7,
+                32,
+                36,
+                47,
+                37,
+                18
+            ],
+            "XNtNNplAwiI_What happens after the orange calabash boy come to save grandpa?": [
+                7,
+                32,
+                47,
+                11,
+                37,
+                12,
+                18
+            ],
+            "XNtNNplAwiI_Who does the orange calabash boy meet after he drops into the cliff?": [
+                32,
+                37,
+                7,
+                71,
+                18,
+                19,
+                47
+            ],
+            "XNtNNplAwiI_What are the skills of the orange calabash boy?": [
+                7,
+                37,
+                32,
+                47,
+                11,
+                36,
+                18
+            ],
+            "XNtNNplAwiI_What is the end of the pangolin?": [
+                27,
+                3,
+                11,
+                6,
+                55,
+                16,
+                26
+            ],
+            "XNtNNplAwiI_What are the skills of the blue calabash boy?": [
+                37,
+                36,
+                32,
+                19,
+                7,
+                11,
+                12
+            ],
+            "XNtNNplAwiI_Who steals the S-shaped jade?": [
+                1,
+                36,
+                0,
+                15,
+                65,
+                4,
+                8
+            ],
+            "XNtNNplAwiI_Who saves the grandfather who fell on the cliff?": [
+                2,
+                25,
+                28,
+                3,
+                6,
+                51,
+                49
+            ],
+            "XNtNNplAwiI_How many calabashs are there on the calabash vine?": [
+                7,
+                11,
+                37,
+                32,
+                36,
+                10,
+                47
+            ],
+            "XNtNNplAwiI_What category does the video belong to?": [
+                74,
+                73,
+                36,
+                0,
+                67,
+                12,
+                18
+            ],
+            "XNtNNplAwiI_What is the first animal to be frozen?": [
+                9,
+                2,
+                33,
+                1,
+                65,
+                53,
+                20
+            ]
+        }
+    },
+    "entity recognition": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 12,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "Cm73ma6Ibcs_How many sticks does the protagonist put in the incense burner?": [
+                13,
+                50,
+                14,
+                53,
+                41,
+                61
+            ],
+            "Cm73ma6Ibcs_How many people are carrying the sedan chair for the woman?": [
+                30,
+                26,
+                29,
+                27,
+                28,
+                38
+            ],
+            "Cm73ma6Ibcs_What does the protagonist wipe her face with when she is knocked to the ground during a solo fight?": [
+                50,
+                43,
+                60,
+                8,
+                16,
+                54
+            ],
+            "Cm73ma6Ibcs_What part of the cook is different from other people?": [
+                3,
+                4,
+                6,
+                2,
+                7,
+                33
+            ],
+            "q01CUy_gwdU_What color is the first plane?": [
+                13,
+                44,
+                43,
+                45,
+                29,
+                46
+            ],
+            "q01CUy_gwdU_What appears on the screen after the fictional character from the man's book appears in the air for the first time, traveling between buildings?": [
+                2,
+                70,
+                6,
+                62,
+                68,
+                48
+            ],
+            "q01CUy_gwdU_What does the woman do before throwing the Coca-Cola can into the air?": [
+                21,
+                32,
+                40,
+                23,
+                42,
+                48
+            ],
+            "28CIeC8cZks_What color hair do the two kids have in the video?": [
+                5,
+                1,
+                6,
+                27,
+                24,
+                28
+            ],
+            "28CIeC8cZks_What color is the necklace around the neck of the elderly person in the video?": [
+                24,
+                28,
+                22,
+                61,
+                27,
+                52
+            ],
+            "28CIeC8cZks_What is on the head of the older brother of the two childreno?": [
+                46,
+                27,
+                24,
+                66,
+                5,
+                12
+            ],
+            "28CIeC8cZks_What color are the balls held by the two people in the video?": [
+                31,
+                1,
+                32,
+                36,
+                2,
+                35
+            ],
+            "28CIeC8cZks_What color is the crystal on the object held by the girl?": [
+                47,
+                32,
+                49,
+                9,
+                2,
+                50
+            ],
+            "TJR1oYDDTwg_How many birds are there flying at the beginning of the video?": [
+                0,
+                61,
+                31,
+                66,
+                65,
+                24
+            ],
+            "TJR1oYDDTwg_How many doors have colored lights at 00:29?": [
+                37,
+                22,
+                2,
+                7,
+                0,
+                16
+            ],
+            "TJR1oYDDTwg_What color are the clothes on the two men playing the trumpet?": [
+                3,
+                71,
+                41,
+                50,
+                43,
+                38
+            ],
+            "TJR1oYDDTwg_After the king talk to the green Dragon, who embraces the king?": [
+                39,
+                9,
+                40,
+                28,
+                33,
+                53
+            ],
+            "TJR1oYDDTwg_What are the patterns on the shawls of Kings and queens?": [
+                50,
+                71,
+                52,
+                69,
+                33,
+                39
+            ],
+            "TJR1oYDDTwg_What color are the teeth in the middle of the green dragon?": [
+                28,
+                70,
+                26,
+                13,
+                2,
+                23
+            ],
+            "TJR1oYDDTwg_Who save the green dragon from the net?": [
+                23,
+                26,
+                28,
+                22,
+                10,
+                19
+            ],
+            "TJR1oYDDTwg_Who grasps the villain in the net?": [
+                8,
+                7,
+                23,
+                16,
+                24,
+                20
+            ],
+            "TJR1oYDDTwg_What instruments do the prince and princess play respectively during the performance?": [
+                3,
+                35,
+                9,
+                50,
+                39,
+                71
+            ],
+            "TJR1oYDDTwg_When the prince and princess play, the green dragon is singing in the sky while dropping what?": [
+                28,
+                9,
+                35,
+                53,
+                10,
+                39
+            ],
+            "TJR1oYDDTwg_What is on the green dragon at 27:08?": [
+                28,
+                2,
+                23,
+                70,
+                10,
+                53
+            ],
+            "HfEVEGf1A8Q_Who gets the lollipop last?": [
+                9,
+                7,
+                8,
+                58,
+                2,
+                3
+            ],
+            "HfEVEGf1A8Q_What does dokkaebi do after dancing alone?": [
+                72,
+                74,
+                73,
+                29,
+                24,
+                27
+            ],
+            "HfEVEGf1A8Q_How many monsters does the ghost hunter capture first?": [
+                34,
+                10,
+                44,
+                56,
+                62,
+                1
+            ],
+            "HfEVEGf1A8Q_Who stop the ghost hunter at last?": [
+                34,
+                0,
+                10,
+                1,
+                56,
+                49
+            ],
+            "2sriHX3PbXw_How many round glasses are there in the round frame above the house?": [
+                3,
+                69,
+                72,
+                73,
+                2,
+                56
+            ],
+            "2sriHX3PbXw_What are running around the street?": [
+                64,
+                63,
+                68,
+                65,
+                31,
+                72
+            ],
+            "2sriHX3PbXw_How many mice run across the roof above the street?": [
+                31,
+                32,
+                33,
+                6,
+                28,
+                35
+            ],
+            "2sriHX3PbXw_There is a group of people wearing the same outfit, lining up in a line across the street. How many people are there": [
+                13,
+                45,
+                44,
+                11,
+                65,
+                15
+            ],
+            "2sriHX3PbXw_How many people are there in the government?": [
+                44,
+                16,
+                27,
+                42,
+                9,
+                54
+            ],
+            "2sriHX3PbXw_When the people in the government are thinking, what kind of person comes into the meeting room?": [
+                20,
+                18,
+                22,
+                16,
+                27,
+                19
+            ],
+            "2sriHX3PbXw_What kind of flying creatures can the person summon with a flute?": [
+                58,
+                52,
+                59,
+                38,
+                34,
+                26
+            ],
+            "2sriHX3PbXw_How much does the man with a long nose get paid?": [
+                25,
+                52,
+                49,
+                46,
+                48,
+                44
+            ],
+            "2sriHX3PbXw_One of the events for the celebration is a number of people riding on top of each other and performing acrobatics. How many people are there?": [
+                13,
+                54,
+                61,
+                59,
+                60,
+                58
+            ],
+            "2sriHX3PbXw_Where does the man with long nose spend his night?": [
+                25,
+                52,
+                51,
+                49,
+                45,
+                44
+            ],
+            "_zrgbA3FMVE_What instruments are already on the stage before the actors come on?": [
+                1,
+                73,
+                50,
+                0,
+                74,
+                72
+            ],
+            "_zrgbA3FMVE_What color vest is the man lifting weights wearing?": [
+                2,
+                53,
+                58,
+                55,
+                21,
+                20
+            ],
+            "_zrgbA3FMVE_After the girl with long black hair presses the wrench on the machine, what picture appears?": [
+                41,
+                6,
+                35,
+                13,
+                19,
+                42
+            ],
+            "_zrgbA3FMVE_Why does the boat where the man with gray hair in a suit sink into the river?": [
+                15,
+                22,
+                20,
+                26,
+                21,
+                25
+            ],
+            "_zrgbA3FMVE_What changes do the people in the hall share?": [
+                38,
+                17,
+                39,
+                16,
+                9,
+                15
+            ],
+            "_zrgbA3FMVE_How many knives are hanging on the wall of the kitchen where the chef is?": [
+                41,
+                42,
+                40,
+                0,
+                20,
+                39
+            ],
+            "qAIRFyR6NyQ_What color are the birds at the beginning of the video?": [
+                70,
+                8,
+                64,
+                9,
+                45,
+                74
+            ],
+            "qAIRFyR6NyQ_What color hat does the protagonist wear the day she leaves her home?": [
+                18,
+                69,
+                17,
+                3,
+                14,
+                19
+            ],
+            "qAIRFyR6NyQ_When the protagonist first enters the building with a hidden door disguised as a bookshelf, how many people are in the room?": [
+                31,
+                36,
+                44,
+                20,
+                34,
+                3
+            ],
+            "qAIRFyR6NyQ_Where does the boy first kiss the girl?": [
+                34,
+                45,
+                59,
+                38,
+                3,
+                60
+            ],
+            "Za2Z_JRxCuk_How is the second guard killed?": [
+                32,
+                34,
+                61,
+                33,
+                28,
+                30
+            ],
+            "Za2Z_JRxCuk_What is hidden behind the stone at the garden?": [
+                6,
+                36,
+                9,
+                5,
+                39,
+                24
+            ],
+            "Za2Z_JRxCuk_How does the protagonist defend herself against the monkeys army?": [
+                41,
+                39,
+                33,
+                30,
+                64,
+                3
+            ],
+            "qYMnM5blZIE_What does the ladybug do at the beginning?": [
+                43,
+                55,
+                47,
+                66,
+                6,
+                67
+            ],
+            "qYMnM5blZIE_An ant and a spider go sailing. What is inside the cabin?": [
+                44,
+                29,
+                28,
+                30,
+                26,
+                66
+            ],
+            "qYMnM5blZIE_What insect do the ladybugs save from a spider?": [
+                5,
+                43,
+                47,
+                13,
+                66,
+                37
+            ],
+            "qYMnM5blZIE_How many mantises appear attack the two ladybugs at the shore?": [
+                56,
+                41,
+                64,
+                55,
+                43,
+                62
+            ],
+            "qYMnM5blZIE_Where did their ship go at 71:27-74:30?": [
+                21,
+                59,
+                32,
+                46,
+                27,
+                60
+            ],
+            "qYMnM5blZIE_What is on the stone at the construction site in the end?": [
+                63,
+                53,
+                50,
+                70,
+                11,
+                52
+            ],
+            "gXnhqF0TqqI_What color of clothes does the water vole wear when it first appears?": [
+                19,
+                57,
+                55,
+                64,
+                8,
+                10
+            ],
+            "SRq0weUKskM_What falls in the water at the beginning of the video?": [
+                3,
+                10,
+                34,
+                24,
+                1,
+                0
+            ],
+            "SRq0weUKskM_What is the color of the fruit which is played by children?": [
+                1,
+                9,
+                8,
+                3,
+                36,
+                46
+            ],
+            "SRq0weUKskM_What is the first human girl holding when she first appears in the video?": [
+                49,
+                22,
+                48,
+                51,
+                50,
+                36
+            ],
+            "SRq0weUKskM_Where is the blue fairy?": [
+                32,
+                31,
+                50,
+                19,
+                47,
+                40
+            ],
+            "SRq0weUKskM____ help the blue fairy to get back to the hat by letting her bounce on their bodies.": [
+                32,
+                30,
+                50,
+                29,
+                47,
+                13
+            ],
+            "SRq0weUKskM_What does the bear first catch?": [
+                67,
+                33,
+                43,
+                28,
+                31,
+                42
+            ],
+            "SRq0weUKskM_How many fairies are trapped on the spider web?": [
+                18,
+                25,
+                50,
+                22,
+                48,
+                35
+            ],
+            "SRq0weUKskM_What appears at the branch of the tree talking to the bear and frog in the night?": [
+                47,
+                46,
+                28,
+                70,
+                44,
+                14
+            ],
+            "81SbCR6p3Z0_What is the little girl doing from 08:34-08:38?": [
+                14,
+                55,
+                36,
+                44,
+                37,
+                35
+            ],
+            "81SbCR6p3Z0_What is the maid doing from 13:11-13:24?": [
+                9,
+                51,
+                1,
+                14,
+                13,
+                10
+            ],
+            "81SbCR6p3Z0_What content is depicted in the video during 42:52-43:00?": [
+                42,
+                6,
+                0,
+                27,
+                7,
+                52
+            ],
+            "81SbCR6p3Z0_What is the boy doing at 43:29-43:31?": [
+                36,
+                63,
+                45,
+                35,
+                37,
+                1
+            ],
+            "81SbCR6p3Z0_How is this man's mood form 44:18-44:21?": [
+                52,
+                62,
+                51,
+                45,
+                66,
+                67
+            ],
+            "81SbCR6p3Z0_What actions are the girl and her cat doing form 51:44-51:47?": [
+                32,
+                56,
+                57,
+                21,
+                33,
+                18
+            ],
+            "S8vPx-u9p_A_What appears first after the cast list?": [
+                0,
+                64,
+                9,
+                1,
+                39,
+                11
+            ],
+            "S8vPx-u9p_A_What does the person want to pull out from the book?": [
+                1,
+                13,
+                0,
+                34,
+                45,
+                38
+            ],
+            "S8vPx-u9p_A_How many swallows live in the birdhouse?": [
+                6,
+                21,
+                32,
+                48,
+                34,
+                19
+            ],
+            "S8vPx-u9p_A_What color is the flower planted by the boy when he and the girl plant the flower?": [
+                6,
+                12,
+                22,
+                7,
+                19,
+                63
+            ],
+            "S8vPx-u9p_A_What is located in the sea?": [
+                26,
+                8,
+                57,
+                55,
+                0,
+                20
+            ],
+            "S8vPx-u9p_A_What does the queen living in the palace have?": [
+                36,
+                21,
+                40,
+                39,
+                35,
+                22
+            ],
+            "S8vPx-u9p_A_What is on the other side of the river when the girl rides on a boat in spring?": [
+                20,
+                21,
+                62,
+                6,
+                63,
+                18
+            ],
+            "S8vPx-u9p_A_What are put into the  gold carriage?": [
+                40,
+                21,
+                63,
+                22,
+                23,
+                34
+            ],
+            "S8vPx-u9p_A_Are there foxes in the place that has a cage with rabbits?": [
+                51,
+                70,
+                69,
+                50,
+                45,
+                65
+            ],
+            "S8vPx-u9p_A_What does the old witch take from the little girl's arm while she is sleeping?": [
+                23,
+                43,
+                34,
+                35,
+                24,
+                41
+            ],
+            "QgWRyDV9Ozs_What color is the feather on the hat worn by the swallow at the beginning of the film?": [
+                70,
+                0,
+                1,
+                43,
+                32,
+                41
+            ],
+            "QgWRyDV9Ozs_Who saves Thumbelina from falling into the pool?": [
+                28,
+                29,
+                4,
+                12,
+                27,
+                66
+            ],
+            "QgWRyDV9Ozs_Where does Thumbelina hide when she is scared by the pocket Prince?": [
+                18,
+                12,
+                19,
+                6,
+                74,
+                8
+            ],
+            "QgWRyDV9Ozs_What does the prince give Thumbelina when he sends her back from a trip with him?": [
+                18,
+                74,
+                19,
+                73,
+                28,
+                27
+            ],
+            "QgWRyDV9Ozs_When the toads leaves, who is the first to appear before Thumbelina and help her?": [
+                27,
+                34,
+                28,
+                30,
+                40,
+                6
+            ],
+            "QgWRyDV9Ozs_How does the swallows in hats get to the rocks on the shore?": [
+                32,
+                1,
+                41,
+                31,
+                70,
+                48
+            ],
+            "QgWRyDV9Ozs_What color is the bouquet Thumbelina holding when she marry the prince?": [
+                73,
+                74,
+                66,
+                18,
+                6,
+                33
+            ],
+            "QgWRyDV9Ozs_What color is the peach heart on the old woman's chest?": [
+                51,
+                5,
+                7,
+                3,
+                2,
+                57
+            ],
+            "pXD3txG2bVQ_What color is the bird when boy, cat, and dog carrying treasure chest, shovel and pickaxe back?": [
+                11,
+                6,
+                5,
+                41,
+                8,
+                7
+            ],
+            "pXD3txG2bVQ_What color is the rabbit after the yellow box is replaced by the cat?": [
+                0,
+                53,
+                41,
+                46,
+                23,
+                24
+            ],
+            "RjDrZkBwzho_How many pink and blue shrews are talking to the big mouse?": [
+                3,
+                4,
+                1,
+                5,
+                2,
+                46
+            ],
+            "RjDrZkBwzho_After finding a row of switches, which switch does Sheriff Black Cat press?": [
+                21,
+                13,
+                12,
+                40,
+                22,
+                7
+            ],
+            "RjDrZkBwzho_What are the policemen locked up in?": [
+                15,
+                61,
+                63,
+                36,
+                52,
+                12
+            ],
+            "RjDrZkBwzho_What's the panda's hand?": [
+                63,
+                59,
+                28,
+                72,
+                1,
+                19
+            ],
+            "RjDrZkBwzho_What is the elephant eating after the monkey has finished talking?": [
+                30,
+                27,
+                45,
+                19,
+                46,
+                17
+            ],
+            "RjDrZkBwzho_What color is the bow tie on Miss Mantis's chest?": [
+                39,
+                34,
+                37,
+                35,
+                38,
+                31
+            ],
+            "RjDrZkBwzho_How many guns does the dove have in her hand to attack the criminals?": [
+                15,
+                1,
+                63,
+                62,
+                34,
+                56
+            ],
+            "XNtNNplAwiI_Who rescues the orange calabash boy and the grandfather": [
+                7,
+                32,
+                47,
+                11,
+                37,
+                18
+            ],
+            "XNtNNplAwiI_Who smashes the magic mirror?": [
+                5,
+                69,
+                70,
+                48,
+                61,
+                45
+            ],
+            "XNtNNplAwiI_What does the blue calabash boy use to scratch the scorpion's nose, causing the scorpion to sneeze?": [
+                11,
+                36,
+                10,
+                52,
+                32,
+                27
+            ]
+        }
+    },
+    "reasoning": {
+        "config": {
+            "selected_topk": 4,
+            "selected_chunk_size": 12,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "Cm73ma6Ibcs_Why are the mother and child, who line in front of the protagonist, unable to enter the city?": [
+                68,
+                16,
+                27,
+                67
+            ],
+            "Cm73ma6Ibcs_Why does the protagonist tie iron to her limbs?": [
+                43,
+                50,
+                44,
+                45
+            ],
+            "Cm73ma6Ibcs_Why does the protagonist aim her sword at the cook?": [
+                44,
+                6,
+                43,
+                3
+            ],
+            "28CIeC8cZks_Where is the camera angle locate at 03:19 in the video?": [
+                22,
+                28,
+                38,
+                5
+            ],
+            "28CIeC8cZks_Why does the girl wear a mask in the video?": [
+                47,
+                9,
+                30,
+                31
+            ],
+            "TJR1oYDDTwg_Does the Queen go first or does the king go first?": [
+                52,
+                39,
+                4,
+                9
+            ],
+            "TJR1oYDDTwg_What festival are they celebrating?": [
+                3,
+                36,
+                2,
+                33
+            ],
+            "HfEVEGf1A8Q_Why doesn't the vampire want the lollipop?": [
+                9,
+                7,
+                2,
+                57
+            ],
+            "HfEVEGf1A8Q_Why the girl faints after the Frankenstein enters the room in the night she hides in the cabinet?": [
+                2,
+                25,
+                28,
+                55
+            ],
+            "HfEVEGf1A8Q_Why does vampire bang his head on a table?": [
+                32,
+                7,
+                6,
+                33
+            ],
+            "2sriHX3PbXw_What is the image of the government?": [
+                16,
+                20,
+                17,
+                9
+            ],
+            "qAIRFyR6NyQ_Why does the family use candle for illumination?": [
+                40,
+                39,
+                49,
+                23
+            ],
+            "Za2Z_JRxCuk_Does the protagonist wear a pair of glasses in the video?": [
+                23,
+                64,
+                21,
+                44
+            ],
+            "Za2Z_JRxCuk_What might be the best film rating system according to the Motion Picture Association?": [
+                74,
+                73,
+                72,
+                0
+            ],
+            "qYMnM5blZIE_What can be inferred about the interaction between the ladybugs and the coconut?": [
+                49,
+                50,
+                43,
+                41
+            ],
+            "gXnhqF0TqqI_Why does the first animal appear in the cartoon rub his eyes?": [
+                18,
+                64,
+                39,
+                38
+            ],
+            "SRq0weUKskM_Is this a recent cartoon?": [
+                7,
+                6,
+                65,
+                59
+            ],
+            "81SbCR6p3Z0_Why does the gardener suddenly laugh from 14:15-14:18?": [
+                71,
+                0,
+                15,
+                11
+            ],
+            "81SbCR6p3Z0_Why does the girl pick up a handful of water during 43:22-43:27?": [
+                62,
+                67,
+                14,
+                55
+            ],
+            "81SbCR6p3Z0_Why does the man wearing a hat smile from 46:20-46:25?": [
+                42,
+                30,
+                29,
+                51
+            ],
+            "QgWRyDV9Ozs_Why does the dog become agitated when Thumbelina comes out of the teapot to talk to the prince?": [
+                62,
+                3,
+                55,
+                12
+            ],
+            "pXD3txG2bVQ_Why does the cat looks so happy while it is operating the sewing machine?": [
+                33,
+                17,
+                22,
+                13
+            ],
+            "RjDrZkBwzho_Why does the mice run away?": [
+                46,
+                49,
+                18,
+                5
+            ],
+            "XNtNNplAwiI_Why is this old man shaking when he appears?": [
+                6,
+                4,
+                3,
+                5
+            ]
+        }
+    },
+    "summarization": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 12,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "Cm73ma6Ibcs_After the man with the gun threatens the cook, what does the protagonist do?": [
+                5,
+                6,
+                3,
+                7,
+                4,
+                2
+            ],
+            "q01CUy_gwdU_What happens from 01:58-02:46?": [
+                45,
+                6,
+                50,
+                41,
+                42,
+                4
+            ],
+            "q01CUy_gwdU_What happens from 35:52-36:41?": [
+                50,
+                6,
+                45,
+                74,
+                71,
+                72
+            ],
+            "HfEVEGf1A8Q_What happens to the girl and the vampire?": [
+                32,
+                45,
+                28,
+                38,
+                27,
+                60
+            ],
+            "Za2Z_JRxCuk_What happens in the video?": [
+                73,
+                33,
+                28,
+                42,
+                2,
+                58
+            ],
+            "qYMnM5blZIE_What do the ladybugs do at dusk?": [
+                6,
+                47,
+                43,
+                13,
+                66,
+                55
+            ]
+        }
+    },
+    "temporal grounding": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 12,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "q01CUy_gwdU_What happens from 37:30-38:05?": [
+                50,
+                6,
+                45,
+                56,
+                29,
+                74
+            ],
+            "28CIeC8cZks_What color light is emanating from the woman's arm at 36:05 in the video?": [
+                38,
+                32,
+                58,
+                42,
+                35,
+                48
+            ],
+            "28CIeC8cZks_What color are the runes on the bottom of the girl's feet at 38:18 in the video?": [
+                53,
+                27,
+                32,
+                22,
+                33,
+                69
+            ],
+            "_zrgbA3FMVE_What are the green numbers that appear between 36:05-36:06?": [
+                60,
+                30,
+                62,
+                67,
+                55,
+                61
+            ],
+            "qAIRFyR6NyQ_What room are the two people eagerly waiting in at 41:17?": [
+                22,
+                36,
+                27,
+                41,
+                40,
+                20
+            ],
+            "Za2Z_JRxCuk_What factor does not make the fight from 13:08-16:06 difficult?": [
+                53,
+                32,
+                70,
+                31,
+                50,
+                29
+            ],
+            "QgWRyDV9Ozs_What is the relationship between the three characters who appear at 35:29?": [
+                70,
+                40,
+                67,
+                34,
+                46,
+                4
+            ],
+            "QgWRyDV9Ozs_What was written above the hole at 39:19?": [
+                2,
+                47,
+                0,
+                7,
+                48,
+                51
+            ],
+            "QgWRyDV9Ozs_What are the two figures doing between 47:35-49:05?": [
+                60,
+                46,
+                45,
+                70,
+                48,
+                40
+            ],
+            "RjDrZkBwzho_How many policemen are riding cars from 10:05-10:07?": [
+                61,
+                11,
+                40,
+                0,
+                8,
+                31
+            ],
+            "RjDrZkBwzho_What is the name of the newspaper that the mice read at 45:38?": [
+                46,
+                5,
+                16,
+                74,
+                45,
+                42
+            ],
+            "XNtNNplAwiI_When does the second calabash boy come out of the calabash?": [
+                7,
+                37,
+                32,
+                11,
+                47,
+                36
+            ]
+        }
+    },
+    "key information retrieval": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 12,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "Cm73ma6Ibcs_What year appears in the opening caption of the video?": [
+                0,
+                74,
+                21,
+                39,
+                1,
+                71
+            ],
+            "TJR1oYDDTwg_What is the first word in the video?": [
+                0,
+                74,
+                1,
+                73,
+                36,
+                12
+            ],
+            "HfEVEGf1A8Q_When is the school let out in the afternoon?": [
+                4,
+                15,
+                30,
+                22,
+                42,
+                12
+            ],
+            "HfEVEGf1A8Q_Who is the director of this video?": [
+                71,
+                74,
+                29,
+                67,
+                73,
+                20
+            ],
+            "2sriHX3PbXw_Who is the narrator?": [
+                72,
+                73,
+                74,
+                44,
+                16,
+                51
+            ],
+            "_zrgbA3FMVE_What is the license plate number of the purple car driven by a woman with long black hair?": [
+                7,
+                69,
+                16,
+                6,
+                27,
+                42
+            ],
+            "_zrgbA3FMVE_What letter appears on the computer after the girl with orange hair comes down from the bed and turns on the computer?": [
+                18,
+                31,
+                19,
+                9,
+                16,
+                43
+            ],
+            "qAIRFyR6NyQ_What year is written on the first cake appears in the video?": [
+                41,
+                71,
+                62,
+                4,
+                63,
+                31
+            ],
+            "qAIRFyR6NyQ_What change occurred to the lighting tool when the girl writes in her diary?": [
+                44,
+                63,
+                6,
+                49,
+                24,
+                47
+            ],
+            "qAIRFyR6NyQ_What year is written on the second cake appears in the video?": [
+                41,
+                62,
+                71,
+                63,
+                4,
+                31
+            ],
+            "Za2Z_JRxCuk_Which platform does the video stream on first?": [
+                74,
+                73,
+                0,
+                57,
+                30,
+                71
+            ],
+            "qYMnM5blZIE_There is a scene of a worker packing up stuff. What is the destination of the last package?": [
+                12,
+                22,
+                17,
+                21,
+                70,
+                23
+            ],
+            "qYMnM5blZIE_What is written on the sign when a group of workers wearing orange protective gear hammer to the ground?": [
+                63,
+                53,
+                64,
+                52,
+                18,
+                70
+            ]
+        }
+    }
+}

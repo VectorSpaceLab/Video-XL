@@ -1,0 +1,1790 @@
+{
+    "event understanding": {
+        "config": {
+            "selected_topk": 4,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "CgvJqGxzRfE_What type of video is this?": [
+                74,
+                25,
+                14,
+                27
+            ],
+            "CgvJqGxzRfE_How many coaches are turning for the second player?": [
+                72,
+                7,
+                34,
+                27
+            ],
+            "CgvJqGxzRfE_Which judge turns last when the ninth contestant performs?": [
+                74,
+                72,
+                11,
+                7
+            ],
+            "CgvJqGxzRfE_All the players in the video get ___ -Chair Turns.": [
+                74,
+                57,
+                7,
+                48
+            ],
+            "EwskdNETNx8_Who is the first coach to turn around during the third contestant's performance?": [
+                21,
+                73,
+                12,
+                33
+            ],
+            "EwskdNETNx8_How many coaches turn their chairs during the performance from 24:49-26:00?": [
+                21,
+                33,
+                12,
+                71
+            ],
+            "vZV2WCKMsKs_What talent do Olga and Bonnie have?": [
+                8,
+                45,
+                62,
+                36
+            ],
+            "vZV2WCKMsKs_How many dogs does Diana Vedyashinka perform with?": [
+                11,
+                62,
+                63,
+                65
+            ],
+            "vZV2WCKMsKs_How many \"Yes\"does Bogart get?": [
+                58,
+                46,
+                8,
+                65
+            ],
+            "vZV2WCKMsKs_What's on the black cloth that appears in front of the judges?": [
+                33,
+                41,
+                49,
+                12
+            ],
+            "vZV2WCKMsKs_How many piles are the cards in front of the judges divided into by the woman in red?": [
+                33,
+                5,
+                36,
+                22
+            ],
+            "vZV2WCKMsKs_What is the one last thing the man in the yellow T-shirt wants Joe to do?": [
+                42,
+                41,
+                0,
+                44
+            ],
+            "vZV2WCKMsKs_What is the last interaction between Joe and Chico?": [
+                16,
+                71,
+                35,
+                42
+            ],
+            "sk00epALZps_What type of video is this?": [
+                38,
+                40,
+                27,
+                25
+            ],
+            "sk00epALZps_What happens from 40:39-40:45?": [
+                40,
+                58,
+                8,
+                7
+            ],
+            "sk00epALZps_What happens from 39:10-39:17?": [
+                0,
+                7,
+                58,
+                5
+            ],
+            "AeEYQ62t8hA_What does the men in suits do to the invitations when they talk to James Corden in pajamas?": [
+                30,
+                25,
+                29,
+                26
+            ],
+            "AeEYQ62t8hA_What does the man in khaki suit do in the next scene after the scene of a photo of five people end?": [
+                35,
+                41,
+                43,
+                20
+            ],
+            "AeEYQ62t8hA_What does the man in the rightmost do from 22:51-23:11?": [
+                7,
+                8,
+                31,
+                26
+            ],
+            "AeEYQ62t8hA_After the host let go of the hand of the man in the drab suit, what is the interaction with him and the man with the white beard?": [
+                28,
+                6,
+                29,
+                52
+            ],
+            "AeEYQ62t8hA_What does James Corden do when he finishes his monologue at his desk?": [
+                16,
+                11,
+                18,
+                58
+            ],
+            "NzCO0G8AGLU_What is the category of this video?": [
+                56,
+                37,
+                34,
+                1
+            ],
+            "NzCO0G8AGLU_What are the men doing at 00:26?": [
+                42,
+                58,
+                53,
+                26
+            ],
+            "NzCO0G8AGLU_After Andy's personal information and introduction, which person is next in the picture?": [
+                56,
+                17,
+                58,
+                59
+            ],
+            "NzCO0G8AGLU_What are the two men doing at 35:40?": [
+                61,
+                53,
+                42,
+                24
+            ],
+            "NzCO0G8AGLU_How are two pigs treat after they show up on the island?": [
+                33,
+                31,
+                30,
+                39
+            ],
+            "Vk_Af0htZGU_How many pairs of guests participated in the program in total?": [
+                14,
+                11,
+                28,
+                42
+            ],
+            "Vk_Af0htZGU_What happens right before Tawanna hugs Tyisha?": [
+                11,
+                6,
+                71,
+                7
+            ],
+            "Vk_Af0htZGU_What is the host preparing to do at 01:25?": [
+                68,
+                71,
+                35,
+                60
+            ],
+            "Vk_Af0htZGU_What type of video is this?": [
+                58,
+                31,
+                68,
+                74
+            ],
+            "moALQl818ZY_What changes have occurred in the scene from the scene when a woman is interviewed with words of 'LEBANON, NJ 5:03PM' and just turn to 'LEBANON, NJ 5:04PM'?": [
+                42,
+                3,
+                44,
+                0
+            ],
+            "moALQl818ZY_What events did the host report on after the report of the first earthquake?": [
+                45,
+                6,
+                47,
+                9
+            ],
+            "moALQl818ZY_What events did the host report on after the report with the keyword of BIDEN?": [
+                39,
+                72,
+                10,
+                38
+            ],
+            "moALQl818ZY_What events did the host report on after the report with the keyword of ISRAEL?": [
+                53,
+                15,
+                52,
+                14
+            ],
+            "moALQl818ZY_What events did the host report on after the report with the keyword of MARKET?": [
+                72,
+                0,
+                35,
+                38
+            ],
+            "moALQl818ZY_What is the day and night situation in the scene when the journalist in Jerusalem is interviewed?": [
+                52,
+                53,
+                14,
+                13
+            ],
+            "moALQl818ZY_What happens that cause global trade disrupted?": [
+                10,
+                38,
+                11,
+                56
+            ],
+            "9tBsMSDoDqk_What interactions occurred between the girl and the doll during 08:14-08:33?": [
+                18,
+                17,
+                29,
+                24
+            ],
+            "k2FIFQIYBvA_How many cards are in the playing cards when the man in the hat takes them out for the last time?": [
+                19,
+                64,
+                65,
+                63
+            ],
+            "k2FIFQIYBvA_Where does the man put the drawn cards?": [
+                19,
+                13,
+                63,
+                17
+            ],
+            "k2FIFQIYBvA_What happens when David put the man's hand on the card?": [
+                63,
+                65,
+                17,
+                13
+            ],
+            "k2FIFQIYBvA_What happens when the audience takes out the cards in their pockets?": [
+                64,
+                17,
+                54,
+                19
+            ],
+            "W-BnDvXXfOs_The person singing the third song is sitting on what?": [
+                64,
+                38,
+                65,
+                30
+            ],
+            "W-BnDvXXfOs_How do the two actors walk down from their seats in the seventh song?": [
+                49,
+                26,
+                28,
+                39
+            ],
+            "W-BnDvXXfOs_What instrument is the person who takes the stage first playing in the fifteenth song?": [
+                29,
+                18,
+                30,
+                19
+            ],
+            "W-BnDvXXfOs_What color is the hair of the first person playing the piano in the seventeenth song of the video?": [
+                49,
+                59,
+                13,
+                69
+            ],
+            "W-BnDvXXfOs_How many songs performed by how many singers in the first eleven minutes of this video?": [
+                59,
+                30,
+                3,
+                24
+            ],
+            "4LA_tH-VSnQ_Does this video primarily focus on sports, news, entertainment, or something else?": [
+                1,
+                64,
+                31,
+                0
+            ],
+            "4LA_tH-VSnQ_Can you determine the location or context of the video when the woman refusing the man?": [
+                59,
+                27,
+                49,
+                15
+            ],
+            "vHlSoxg8WHo_How many men are shown on the screen between Brittany and the male host?": [
+                2,
+                41,
+                32,
+                6
+            ],
+            "vHlSoxg8WHo_What is Raymond doing after his name comes up for the first time?": [
+                3,
+                8,
+                1,
+                4
+            ],
+            "vHlSoxg8WHo_Who Raymond prefer to continue his relationship with?": [
+                3,
+                8,
+                1,
+                4
+            ],
+            "vHlSoxg8WHo_How many people could possibly be Travion's father?": [
+                3,
+                1,
+                8,
+                49
+            ],
+            "vHlSoxg8WHo_What happens to Janice and Tom when they get to the stage?": [
+                40,
+                37,
+                38,
+                39
+            ],
+            "vHlSoxg8WHo_Do Sean and Tara have a good relationship?": [
+                3,
+                1,
+                41,
+                22
+            ],
+            "vHlSoxg8WHo_What does Yvette do in Mario and Sierra's relationship?": [
+                68,
+                69,
+                70,
+                71
+            ],
+            "vHlSoxg8WHo_How many cases are there on the show where the biological fathers were not found?": [
+                49,
+                48,
+                20,
+                24
+            ],
+            "pe_LddfHAUU_What type of video is this?": [
+                69,
+                70,
+                6,
+                53
+            ],
+            "pe_LddfHAUU_What does the contestant, wearing only black leggings, with a skeleton painted on his top and a skull face painted on his face, perform?": [
+                30,
+                29,
+                9,
+                3
+            ],
+            "pe_LddfHAUU_What is the talent show format of this show?": [
+                71,
+                60,
+                41,
+                39
+            ],
+            "JTa_Ue2MSwc_What is the first interview's name?": [
+                58,
+                17,
+                20,
+                16
+            ],
+            "JTa_Ue2MSwc_What happens after Kindall comes to the stage?": [
+                31,
+                20,
+                72,
+                35
+            ],
+            "JTa_Ue2MSwc_What does Sierra do after the first male guest show up on the stage?": [
+                3,
+                1,
+                5,
+                54
+            ],
+            "JTa_Ue2MSwc_What does Dominique do after the man with red shirt and black and red pants comes to the stage?": [
+                23,
+                67,
+                52,
+                72
+            ],
+            "JTa_Ue2MSwc_Who is the last one appear during the second interview?": [
+                58,
+                50,
+                20,
+                51
+            ],
+            "JTa_Ue2MSwc_What happens to the green dress woman after Brian dumps his girlfriend?": [
+                29,
+                34,
+                28,
+                32
+            ],
+            "JTa_Ue2MSwc_What does the man wearing blue T-shirt and jeans do?": [
+                47,
+                48,
+                69,
+                42
+            ],
+            "JTa_Ue2MSwc_What happens during the third interview?": [
+                31,
+                72,
+                65,
+                28
+            ],
+            "JTa_Ue2MSwc_Who does Austin choose?": [
+                61,
+                71,
+                74,
+                35
+            ],
+            "JTa_Ue2MSwc_What does the woman wearing a red shirt with #1 fan on it do?": [
+                67,
+                72,
+                68,
+                73
+            ],
+            "20lTg3yUrO4_What happens from 01:05-02:45?": [
+                67,
+                65,
+                0,
+                40
+            ],
+            "20lTg3yUrO4_Where does the fire disaster happen?": [
+                4,
+                7,
+                63,
+                6
+            ],
+            "20lTg3yUrO4_In which topic does a man wearing a beige cowboy hat, standing in front of a green podium appear while talking to a red microphone?": [
+                10,
+                9,
+                8,
+                49
+            ],
+            "20lTg3yUrO4_In which topic does a woman wearing a blue hat with the letter Aseyori Lekan Si appear?": [
+                19,
+                18,
+                24,
+                10
+            ],
+            "20lTg3yUrO4_What happens from 15:47-19:10?": [
+                0,
+                61,
+                35,
+                34
+            ],
+            "20lTg3yUrO4_How many parcels of Cannabis do men arrest with in Kogi State?": [
+                25,
+                42,
+                10,
+                50
+            ],
+            "20lTg3yUrO4_Which topic shows an old, black Volkswagen car?": [
+                25,
+                3,
+                66,
+                67
+            ],
+            "20lTg3yUrO4_Who apologises to Nigerians?": [
+                10,
+                24,
+                19,
+                54
+            ],
+            "20lTg3yUrO4_Which topic is right before the discussion of oil production?": [
+                55,
+                51,
+                33,
+                67
+            ],
+            "20lTg3yUrO4_What topic has a scene that includes three Toyota SUV police cars?": [
+                25,
+                42,
+                71,
+                11
+            ]
+        }
+    },
+    "entity recognition": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "CgvJqGxzRfE_What color top is the second conteatant wearing?": [
+                10,
+                11,
+                74,
+                18,
+                42,
+                36
+            ],
+            "CgvJqGxzRfE_What instrument is the man playing while the girl, wearing a blue sweetheart bandeau top and wide jeans with holes on them, sings?": [
+                3,
+                39,
+                4,
+                18,
+                62,
+                23
+            ],
+            "CgvJqGxzRfE_What color coat does the sixth contestant wear?": [
+                74,
+                72,
+                10,
+                53,
+                11,
+                38
+            ],
+            "CgvJqGxzRfE_What instrument is the eighth contestant playing?": [
+                13,
+                71,
+                10,
+                41,
+                43,
+                15
+            ],
+            "CgvJqGxzRfE_What color shirt is the tenth contestant singing on stage wearing?": [
+                74,
+                35,
+                18,
+                2,
+                19,
+                41
+            ],
+            "CgvJqGxzRfE_What happens after the 11th contestant performs?": [
+                74,
+                35,
+                71,
+                0,
+                41,
+                13
+            ],
+            "CgvJqGxzRfE_What does the second girl on the right do between 32:00-32:05?": [
+                11,
+                74,
+                4,
+                35,
+                53,
+                44
+            ],
+            "CgvJqGxzRfE_Who turns around first when the 17th contestant performs?": [
+                74,
+                35,
+                0,
+                71,
+                2,
+                36
+            ],
+            "CgvJqGxzRfE_What does the blonde woman do during Joao Duarte's performance?": [
+                69,
+                24,
+                25,
+                63,
+                50,
+                39
+            ],
+            "CgvJqGxzRfE_What color is the 24th contestant on stage wearing?": [
+                74,
+                35,
+                10,
+                36,
+                42,
+                0
+            ],
+            "CgvJqGxzRfE_What hairstyle does the woman who sings \"El Me Minti\u00f3\" have?": [
+                24,
+                68,
+                25,
+                49,
+                36,
+                67
+            ],
+            "CgvJqGxzRfE_What is the main color of the scene while the contestant sings \"Kiss Me\"?": [
+                41,
+                10,
+                9,
+                35,
+                59,
+                74
+            ],
+            "EwskdNETNx8_How many contestants can be seen playing the piano in the video?": [
+                42,
+                41,
+                5,
+                33,
+                4,
+                19
+            ],
+            "EwskdNETNx8_What color are the pants worn by the first contestant in the video?": [
+                12,
+                61,
+                63,
+                52,
+                55,
+                53
+            ],
+            "EwskdNETNx8_What accessory is the second contestant wearing around his neck?": [
+                3,
+                2,
+                12,
+                63,
+                71,
+                19
+            ],
+            "EwskdNETNx8_What instrument is the fifth contestant using during their performance?": [
+                16,
+                19,
+                28,
+                33,
+                41,
+                4
+            ],
+            "EwskdNETNx8_How many rings are the 12th contestant wearing on their hands?": [
+                42,
+                71,
+                33,
+                19,
+                41,
+                26
+            ],
+            "vZV2WCKMsKs_What is the name of the third group?": [
+                28,
+                44,
+                33,
+                41,
+                68,
+                20
+            ],
+            "vZV2WCKMsKs_Who is the woman wearing a tall hat, dressed head to toe in black, holding a magician stick, and the dog wearing black clothes with a silver star?": [
+                7,
+                8,
+                6,
+                72,
+                9,
+                12
+            ],
+            "vZV2WCKMsKs_What is the decoration on the neck of the black and white dog that comes out after the puppy wearing the red bow?": [
+                35,
+                17,
+                5,
+                61,
+                34,
+                52
+            ],
+            "vZV2WCKMsKs_How many legs does Bogart have?": [
+                2,
+                5,
+                20,
+                58,
+                0,
+                3
+            ],
+            "vZV2WCKMsKs_How many judges are there?": [
+                31,
+                41,
+                46,
+                25,
+                33,
+                32
+            ],
+            "vZV2WCKMsKs_How many dogs go on the stage in the first hour of this video?": [
+                28,
+                24,
+                11,
+                12,
+                37,
+                18
+            ],
+            "sk00epALZps_What is Kobe's sitting posture at 05:32?": [
+                22,
+                10,
+                32,
+                23,
+                14,
+                9
+            ],
+            "sk00epALZps_At 14:23, what does Kobe do with reporters?": [
+                53,
+                23,
+                44,
+                12,
+                10,
+                68
+            ],
+            "sk00epALZps_Who is sitting to the right of Kobe?": [
+                53,
+                48,
+                10,
+                22,
+                32,
+                74
+            ],
+            "sk00epALZps_From the audience's point of view, what color are the shoes on Kobe's left?": [
+                48,
+                53,
+                49,
+                74,
+                47,
+                31
+            ],
+            "sk00epALZps_Who assists Fisher's three-pointer?": [
+                32,
+                49,
+                48,
+                50,
+                71,
+                72
+            ],
+            "sk00epALZps_What is the person closest to the picture wearing at 20:29?": [
+                27,
+                54,
+                53,
+                45,
+                40,
+                52
+            ],
+            "sk00epALZps_At 23:50, what color tie is the host wearing?": [
+                8,
+                57,
+                51,
+                26,
+                52,
+                34
+            ],
+            "sk00epALZps_Which team is wearing the green jersey?": [
+                44,
+                48,
+                50,
+                49,
+                51,
+                71
+            ],
+            "sk00epALZps_After Fisher scores , what does the white team No. 20 do?": [
+                47,
+                50,
+                46,
+                45,
+                51,
+                41
+            ],
+            "AeEYQ62t8hA_In the next shot after James Corden's driving, what position does he speak in?": [
+                12,
+                11,
+                58,
+                16,
+                57,
+                55
+            ],
+            "AeEYQ62t8hA_What color is the camera directs at the only woman on stage as James Corden speaks from 31:46 to 31:51?": [
+                11,
+                12,
+                10,
+                33,
+                55,
+                58
+            ],
+            "AeEYQ62t8hA_What color is James Corden wearing in the next shot after he wakes up from his dream?": [
+                12,
+                11,
+                58,
+                18,
+                16,
+                55
+            ],
+            "AeEYQ62t8hA_When James Corden is talking to another man through the door, what is the word in the red area on the door?": [
+                6,
+                5,
+                12,
+                8,
+                11,
+                3
+            ],
+            "NzCO0G8AGLU_Which two men get lost in the forest?": [
+                66,
+                24,
+                21,
+                17,
+                7,
+                64
+            ],
+            "NzCO0G8AGLU_What's the name of the 36-year-old cameraman?": [
+                1,
+                59,
+                58,
+                17,
+                53,
+                56
+            ],
+            "NzCO0G8AGLU_Who falls and ruptures?": [
+                19,
+                62,
+                44,
+                17,
+                53,
+                21
+            ],
+            "NzCO0G8AGLU_Are there any changes in the man's emotion from 34:49-35:08?": [
+                61,
+                58,
+                44,
+                42,
+                53,
+                60
+            ],
+            "Vk_Af0htZGU_What is the woman doing at 02:16?": [
+                19,
+                1,
+                18,
+                60,
+                68,
+                4
+            ],
+            "Vk_Af0htZGU_What is on the right side of the screen when the mother of the second female protagonist talks individually?": [
+                57,
+                73,
+                19,
+                31,
+                26,
+                68
+            ],
+            "moALQl818ZY_What is the change in the number of camera images 03:19-03:21?": [
+                23,
+                41,
+                26,
+                37,
+                12,
+                28
+            ],
+            "moALQl818ZY_What is the change in the number of camera images when the scene of a woman, who is interviewed with words of 'LEBANON, NJ 5:06PM' switched?": [
+                42,
+                0,
+                3,
+                44,
+                13,
+                36
+            ],
+            "moALQl818ZY_What events does the reporter, who is wearing a yellow dress, report about in the restaurant?": [
+                21,
+                58,
+                20,
+                19,
+                57,
+                3
+            ],
+            "moALQl818ZY_How many people appear in the screen when NCAA WOMAN'S BASKETBALL VP is interviewed?": [
+                73,
+                36,
+                74,
+                34,
+                37,
+                71
+            ],
+            "moALQl818ZY_What is the change in the number of camera images 41:20-41:22?": [
+                41,
+                26,
+                36,
+                37,
+                28,
+                63
+            ],
+            "moALQl818ZY_What are the actions of people in the first picture in the The Five Thing #4?": [
+                48,
+                42,
+                3,
+                37,
+                71,
+                74
+            ],
+            "9tBsMSDoDqk_What actions are performed by the judge in this scene from 28:38-28:50?": [
+                50,
+                57,
+                39,
+                33,
+                35,
+                74
+            ],
+            "k2FIFQIYBvA_How many people are there at the beginning of the video?": [
+                52,
+                51,
+                64,
+                74,
+                4,
+                54
+            ],
+            "k2FIFQIYBvA_What does the man standing in the middle drink?": [
+                3,
+                2,
+                26,
+                25,
+                27,
+                1
+            ],
+            "k2FIFQIYBvA_What is the first playing card that the man in the white shirt put on the table?": [
+                63,
+                65,
+                64,
+                19,
+                17,
+                13
+            ],
+            "k2FIFQIYBvA_What does the decoration on the man's chest with glasses replace?": [
+                67,
+                56,
+                43,
+                71,
+                36,
+                20
+            ],
+            "k2FIFQIYBvA_What card does the woman draw?": [
+                40,
+                41,
+                19,
+                13,
+                39,
+                10
+            ],
+            "k2FIFQIYBvA_What does David spit out from the mouth that is stitches with a needle?": [
+                43,
+                36,
+                37,
+                68,
+                33,
+                35
+            ],
+            "k2FIFQIYBvA_What is the envelope when it is opened?": [
+                57,
+                56,
+                54,
+                50,
+                58,
+                59
+            ],
+            "k2FIFQIYBvA_How many microphones are there on the table?": [
+                58,
+                73,
+                52,
+                57,
+                33,
+                56
+            ],
+            "k2FIFQIYBvA_What does the man put on the table for people to see?": [
+                63,
+                22,
+                19,
+                13,
+                21,
+                58
+            ],
+            "k2FIFQIYBvA_Which card does David pin on the table?": [
+                4,
+                63,
+                40,
+                13,
+                19,
+                10
+            ],
+            "k2FIFQIYBvA_How many magic tricks played with cards are performed on the stage?": [
+                17,
+                19,
+                41,
+                9,
+                64,
+                40
+            ],
+            "k2FIFQIYBvA_How many performance does frog been spat out by Jimmy in this video?": [
+                73,
+                52,
+                50,
+                54,
+                32,
+                22
+            ],
+            "W-BnDvXXfOs_The first song is sung by ____ people together.": [
+                30,
+                16,
+                32,
+                69,
+                59,
+                1
+            ],
+            "W-BnDvXXfOs_The eighth song is a chorus sung by ___ people.": [
+                30,
+                50,
+                71,
+                73,
+                24,
+                32
+            ],
+            "W-BnDvXXfOs_How many male singers are there in the tenth song of the video?": [
+                30,
+                5,
+                3,
+                61,
+                51,
+                27
+            ],
+            "W-BnDvXXfOs_How many Black individuals are there in the tenth song?": [
+                3,
+                5,
+                73,
+                4,
+                21,
+                13
+            ],
+            "W-BnDvXXfOs_What number is on the pink hat worn by the singer in the video?": [
+                64,
+                38,
+                61,
+                57,
+                35,
+                58
+            ],
+            "W-BnDvXXfOs_In the second-to-last song, how many singers are playing instruments?": [
+                59,
+                62,
+                18,
+                28,
+                30,
+                64
+            ],
+            "4LA_tH-VSnQ_From the attire of the scene, who is the man that the girls claimed to be the father of their children in this segment of the video?": [
+                65,
+                9,
+                59,
+                3,
+                2,
+                31
+            ],
+            "4LA_tH-VSnQ_Can you describe the facial expression shown by the girl at 18:55?": [
+                31,
+                30,
+                35,
+                40,
+                59,
+                39
+            ],
+            "4LA_tH-VSnQ_How does the movement of the host change throughout the video?": [
+                35,
+                59,
+                15,
+                44,
+                31,
+                45
+            ],
+            "vHlSoxg8WHo_What's the relationship between Raymond and Jason?": [
+                3,
+                8,
+                1,
+                20,
+                4,
+                50
+            ],
+            "vHlSoxg8WHo_What can we know about Brittany?": [
+                2,
+                63,
+                29,
+                41,
+                42,
+                32
+            ],
+            "vHlSoxg8WHo_What's the relationship between Brad and Lily?": [
+                62,
+                64,
+                41,
+                63,
+                43,
+                42
+            ],
+            "vHlSoxg8WHo_How many children appeared in this show?": [
+                24,
+                21,
+                7,
+                73,
+                39,
+                67
+            ],
+            "pe_LddfHAUU_What does the third contestant do after he shows up in front of the judges?": [
+                65,
+                13,
+                63,
+                64,
+                59,
+                72
+            ],
+            "pe_LddfHAUU_What is the third dangerous thing the second contestant do with the drill?": [
+                13,
+                10,
+                59,
+                22,
+                7,
+                14
+            ],
+            "pe_LddfHAUU_Who does the dancer group wearing suits pay tribute to?": [
+                38,
+                40,
+                41,
+                31,
+                73,
+                26
+            ],
+            "pe_LddfHAUU_What does one of the group members do after the show for the performance that involves thundering storms in the background?": [
+                51,
+                26,
+                5,
+                74,
+                25,
+                59
+            ],
+            "pe_LddfHAUU_What organ does the Baron of the Universe use to pull heavy objects?": [
+                74,
+                62,
+                16,
+                72,
+                23,
+                22
+            ],
+            "JTa_Ue2MSwc_Which animal's picture does Sierra show to the audience?": [
+                2,
+                3,
+                11,
+                1,
+                5,
+                7
+            ],
+            "JTa_Ue2MSwc_What does Sierra do after her former roommate comes to the stage?": [
+                1,
+                3,
+                13,
+                52,
+                66,
+                58
+            ],
+            "JTa_Ue2MSwc_What color of cloths does Alexis wear?": [
+                28,
+                34,
+                6,
+                4,
+                30,
+                26
+            ],
+            "JTa_Ue2MSwc_Who is Austin's girlfriend?": [
+                34,
+                32,
+                24,
+                35,
+                22,
+                31
+            ],
+            "JTa_Ue2MSwc_Who is the man in the blue shirt with white button?": [
+                71,
+                47,
+                70,
+                49,
+                69,
+                48
+            ],
+            "20lTg3yUrO4_What is displayed on the screen in the new alive room right before an advertisement featuring Cardi B?": [
+                74,
+                55,
+                40,
+                19,
+                2,
+                42
+            ],
+            "20lTg3yUrO4_What color suit is the female anchor who also has a chest bracelet and gold bracelet?": [
+                42,
+                19,
+                74,
+                55,
+                67,
+                41
+            ],
+            "20lTg3yUrO4_Who talks in front of a white building with green plants outside it, wearing an exotic hat?": [
+                71,
+                72,
+                57,
+                10,
+                29,
+                19
+            ]
+        }
+    },
+    "reasoning": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "EwskdNETNx8_What type of song is the eighth contestant singing according to the refection of coaches?": [
+                71,
+                59,
+                58,
+                3,
+                34,
+                16
+            ],
+            "vZV2WCKMsKs_Why do the four judges stand up for Amber and Nymeria?": [
+                54,
+                35,
+                29,
+                47,
+                23,
+                39
+            ],
+            "vZV2WCKMsKs_Why does Miracle's owner play a video clip?": [
+                35,
+                36,
+                48,
+                34,
+                37,
+                55
+            ],
+            "sk00epALZps_What's the part of the interview where Kobe wears a gray suit?": [
+                10,
+                22,
+                11,
+                12,
+                14,
+                19
+            ],
+            "AeEYQ62t8hA_What is the thing that happens from 12:37-16:52?": [
+                31,
+                23,
+                22,
+                7,
+                18,
+                15
+            ],
+            "NzCO0G8AGLU_What color comb is this woman using to comb the pig?": [
+                39,
+                31,
+                40,
+                38,
+                33,
+                30
+            ],
+            "NzCO0G8AGLU_What color is the dotted line at 12:06 on the map?": [
+                22,
+                24,
+                15,
+                23,
+                16,
+                14
+            ],
+            "NzCO0G8AGLU_How many years older is Paul than Beth?": [
+                56,
+                59,
+                58,
+                17,
+                31,
+                44
+            ],
+            "Vk_Af0htZGU_What is the attitude of the audience at 04:11?": [
+                60,
+                42,
+                14,
+                68,
+                40,
+                59
+            ],
+            "Vk_Af0htZGU_Why are the audience so happy at 04:19?": [
+                14,
+                42,
+                59,
+                62,
+                60,
+                0
+            ],
+            "Vk_Af0htZGU_What is the girl preparing to do to the boy at 08:47?": [
+                56,
+                43,
+                60,
+                18,
+                19,
+                55
+            ],
+            "9tBsMSDoDqk_Why does Brynn Cummings' mother wipe away tears?": [
+                15,
+                30,
+                24,
+                38,
+                62,
+                33
+            ],
+            "4LA_tH-VSnQ_Did the two girls make up, judging from their behavior from 36:20 to 36:25?": [
+                1,
+                7,
+                3,
+                6,
+                0,
+                5
+            ],
+            "4LA_tH-VSnQ_How do the two audience in the front row look at 39:29?": [
+                68,
+                74,
+                30,
+                72,
+                44,
+                15
+            ],
+            "4LA_tH-VSnQ_How does the man in the blue shirt feel about the arrival of the man in the pink shirt at 42:56?": [
+                55,
+                67,
+                50,
+                66,
+                56,
+                68
+            ],
+            "vHlSoxg8WHo_Who did not take a DNA test in the first segment?": [
+                24,
+                20,
+                36,
+                14,
+                58,
+                48
+            ],
+            "vHlSoxg8WHo_How do we understand Keisha's angry expression?": [
+                12,
+                53,
+                11,
+                57,
+                15,
+                58
+            ],
+            "vHlSoxg8WHo_What is the audience's attitude towards Yvette and Mario?": [
+                68,
+                70,
+                71,
+                11,
+                74,
+                67
+            ],
+            "pe_LddfHAUU_What is everyone's reaction after lighting the red box?": [
+                7,
+                6,
+                23,
+                8,
+                36,
+                53
+            ]
+        }
+    },
+    "summarization": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "EwskdNETNx8_In what order do the judges turn around when Adele sings?": [
+                29,
+                30,
+                31,
+                54,
+                33,
+                2
+            ],
+            "sk00epALZps_How many times did Kobe Bryant appear and in what years was he invited to this show in the video?": [
+                53,
+                74,
+                40,
+                10,
+                9,
+                12
+            ],
+            "NzCO0G8AGLU_What happens before and after the men caught the fish in the video?": [
+                68,
+                69,
+                45,
+                65,
+                66,
+                58
+            ],
+            "moALQl818ZY_Though what means did the news of the earthquake in New York be reported?": [
+                45,
+                42,
+                2,
+                5,
+                6,
+                44
+            ],
+            "9tBsMSDoDqk_What does Mandy do after she stands in front of the judges' table?": [
+                30,
+                33,
+                44,
+                43,
+                21,
+                37
+            ],
+            "vHlSoxg8WHo_What happened after the program start and before the first break?": [
+                13,
+                58,
+                66,
+                41,
+                20,
+                17
+            ],
+            "pe_LddfHAUU_What was the performance of the second performer?": [
+                24,
+                28,
+                13,
+                2,
+                60,
+                21
+            ],
+            "20lTg3yUrO4_How was news of the 'Dosumu fire disaster' be reported in the video?": [
+                5,
+                4,
+                7,
+                6,
+                63,
+                3
+            ]
+        }
+    },
+    "temporal grounding": {
+        "config": {
+            "selected_topk": 4,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "AeEYQ62t8hA_What does the man do from 00:27-00:33?": [
+                31,
+                8,
+                7,
+                6
+            ],
+            "AeEYQ62t8hA_When does Jams Corden appear on the stage?": [
+                11,
+                12,
+                33,
+                58
+            ],
+            "NzCO0G8AGLU_At 12:26, how old is Abby?": [
+                17,
+                56,
+                38,
+                59
+            ],
+            "moALQl818ZY_How many news events were told during this time 24:04-27:10?": [
+                44,
+                42,
+                1,
+                3
+            ],
+            "9tBsMSDoDqk_Where does this scene at 14:45 take place?": [
+                70,
+                35,
+                4,
+                74
+            ],
+            "W-BnDvXXfOs_What color is the hair of the Black man at 19:13 in the video?": [
+                13,
+                47,
+                21,
+                22
+            ],
+            "W-BnDvXXfOs_What pattern is in the center of the video at 47:38?": [
+                69,
+                72,
+                49,
+                52
+            ],
+            "4LA_tH-VSnQ_How does the man in the blue shirt feel after all the results are revealed at 11:24?": [
+                15,
+                44,
+                55,
+                47
+            ],
+            "4LA_tH-VSnQ_What actions are performed by the main girl of the story in this scene from 32:14-33:00?": [
+                7,
+                55,
+                60,
+                52
+            ],
+            "vHlSoxg8WHo_Who is the person at 00:02?": [
+                20,
+                73,
+                42,
+                74
+            ],
+            "vHlSoxg8WHo_What happens between 05:05-05:57?": [
+                20,
+                35,
+                48,
+                24
+            ]
+        }
+    },
+    "key information retrieval": {
+        "config": {
+            "selected_topk": 4,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "CgvJqGxzRfE_What is the name of the judge who is second to the left from the camera's view during the first performance?": [
+                42,
+                37,
+                72,
+                0
+            ],
+            "CgvJqGxzRfE_Who turns first for the contestant with curly hair, wearing glasses, and a white and blue sweatshirt?": [
+                35,
+                27,
+                72,
+                34
+            ],
+            "EwskdNETNx8_What color are the lights on the coaches' chairs when they turn around?": [
+                12,
+                43,
+                21,
+                62
+            ],
+            "EwskdNETNx8_What is the name of the song sung by the third contestant?": [
+                31,
+                2,
+                3,
+                58
+            ],
+            "EwskdNETNx8_What is the name of the tenth contestant displayed on the screen?": [
+                33,
+                19,
+                21,
+                4
+            ],
+            "EwskdNETNx8_Who is the original singer of the song 'Anyone' that one of the contestants sings in the video?": [
+                35,
+                34,
+                63,
+                53
+            ],
+            "vZV2WCKMsKs_What is the name of the dog that plays the piano?": [
+                3,
+                28,
+                55,
+                69
+            ],
+            "vZV2WCKMsKs_What do Buddy and Aaron perform?": [
+                14,
+                49,
+                58,
+                4
+            ],
+            "vZV2WCKMsKs_What is written on the paper that Heather holds in her hand?": [
+                33,
+                46,
+                68,
+                34
+            ],
+            "vZV2WCKMsKs_How many \"woofs\" does Chico have?": [
+                35,
+                28,
+                34,
+                69
+            ],
+            "sk00epALZps_What color tie is the host wearing?": [
+                57,
+                34,
+                8,
+                52
+            ],
+            "sk00epALZps_What's the date on the screen when Kobe comes on stage?": [
+                53,
+                40,
+                74,
+                49
+            ],
+            "sk00epALZps_What color is Kobe's tie at the beginning of the video?": [
+                49,
+                48,
+                74,
+                53
+            ],
+            "sk00epALZps_What does Kobe in a black suit take out of his pants pocket?": [
+                10,
+                53,
+                68,
+                9
+            ],
+            "Vk_Af0htZGU_How old is Magan?": [
+                20,
+                17,
+                58,
+                23
+            ],
+            "moALQl818ZY_What words appear on the screen after the blue scene with white word 'TAIWAN' shifted to picture?": [
+                9,
+                48,
+                49,
+                50
+            ],
+            "moALQl818ZY_What words appear on the screen when there is a basketball player and P&G logos appear at the same time?": [
+                23,
+                34,
+                71,
+                61
+            ],
+            "moALQl818ZY_What are the white words on the screen that change to Economy?": [
+                38,
+                0,
+                56,
+                18
+            ],
+            "9tBsMSDoDqk_What word is printed on each cup?": [
+                70,
+                33,
+                7,
+                48
+            ],
+            "9tBsMSDoDqk_What card did the male judge draw?": [
+                70,
+                69,
+                7,
+                61
+            ],
+            "k2FIFQIYBvA_What are the letters in everyone's hands?": [
+                54,
+                17,
+                50,
+                51
+            ],
+            "W-BnDvXXfOs_What color clothes is the third singer, appearing on the stage, wearing in the second song?": [
+                5,
+                30,
+                17,
+                35
+            ],
+            "W-BnDvXXfOs_What genders are the two people singing in the fourth song in the video?": [
+                30,
+                17,
+                70,
+                5
+            ],
+            "W-BnDvXXfOs_Where are the first two singers sitting in the sixth song of the video?": [
+                26,
+                39,
+                64,
+                65
+            ],
+            "W-BnDvXXfOs_What color clothes is the person playing the piano wearing in the fourth song?": [
+                49,
+                64,
+                59,
+                50
+            ],
+            "W-BnDvXXfOs_What color light does the first singer walk out from at the beginning of the eighteenth song?": [
+                69,
+                3,
+                33,
+                4
+            ],
+            "W-BnDvXXfOs_What color is the sky in the last song?": [
+                4,
+                0,
+                69,
+                70
+            ],
+            "4LA_tH-VSnQ_How old is Katherine, according to the subtitles?": [
+                40,
+                28,
+                70,
+                4
+            ],
+            "vHlSoxg8WHo_How old is IEZESHA?": [
+                53,
+                57,
+                54,
+                58
+            ],
+            "pe_LddfHAUU_What color bag does the medical care technician carry in the backstage during Andrew Stanton's performance?": [
+                59,
+                37,
+                5,
+                60
+            ],
+            "pe_LddfHAUU_What text is shown before the scene of a dark brown leather sofa turns around?": [
+                15,
+                33,
+                34,
+                9
+            ],
+            "pe_LddfHAUU_What is written on the blackboard with chalk itself, but no one is around?": [
+                36,
+                18,
+                47,
+                3
+            ],
+            "pe_LddfHAUU_What color neckties do clowns wear?": [
+                41,
+                38,
+                40,
+                9
+            ],
+            "pe_LddfHAUU_Why the age for Baba Yega is 21-33?": [
+                58,
+                19,
+                30,
+                21
+            ],
+            "JTa_Ue2MSwc_What words appear to the right of \"Jerry Springer\" when the background is a girl with pink curly hair?": [
+                0,
+                11,
+                15,
+                64
+            ],
+            "JTa_Ue2MSwc_Who cheats on Sierra with Kindall?": [
+                66,
+                72,
+                31,
+                28
+            ],
+            "JTa_Ue2MSwc_What is the name of Sierra's former roommate?": [
+                1,
+                3,
+                5,
+                62
+            ],
+            "JTa_Ue2MSwc_Who is in an online relationship with another woman's man?": [
+                23,
+                16,
+                34,
+                32
+            ],
+            "JTa_Ue2MSwc_What is the name of Dominique's crush?": [
+                23,
+                17,
+                18,
+                16
+            ],
+            "JTa_Ue2MSwc_What does the green dress woman claim?": [
+                29,
+                28,
+                34,
+                35
+            ],
+            "JTa_Ue2MSwc_What is the theme of the forth interview?": [
+                66,
+                65,
+                58,
+                11
+            ],
+            "JTa_Ue2MSwc_What is the name of the stripper?": [
+                51,
+                13,
+                54,
+                8
+            ],
+            "20lTg3yUrO4_Who is the producer of the video?": [
+                42,
+                30,
+                41,
+                67
+            ],
+            "20lTg3yUrO4_Who declares him as the State's political leader in the news related to River Politics?": [
+                8,
+                9,
+                14,
+                11
+            ],
+            "20lTg3yUrO4_Who is the man wearing a black hat with \"2024\" on it during the APC Primary Election?": [
+                17,
+                18,
+                31,
+                15
+            ]
+        }
+    }
+}

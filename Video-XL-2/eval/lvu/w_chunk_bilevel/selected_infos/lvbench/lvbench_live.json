@@ -1,0 +1,2352 @@
+{
+    "event understanding": {
+        "config": {
+            "selected_topk": 7,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "t-RtDI2RWQs_Which movie wins the most awards at the ceremony?": [
+                31,
+                47,
+                36,
+                59,
+                54,
+                35,
+                12
+            ],
+            "t-RtDI2RWQs_Which category winner is absent for the award presentation?": [
+                74,
+                47,
+                49,
+                36,
+                15,
+                21,
+                31
+            ],
+            "t-RtDI2RWQs_Which animal, wearing a black bowtie, is a special guest at the event?": [
+                39,
+                36,
+                53,
+                38,
+                54,
+                42,
+                28
+            ],
+            "t-RtDI2RWQs_Which film wins the Best Animated Feature Film?": [
+                20,
+                21,
+                0,
+                74,
+                31,
+                47,
+                35
+            ],
+            "t-RtDI2RWQs_Which award is announced right after the Best Adapted Screenplay award?": [
+                74,
+                47,
+                59,
+                31,
+                23,
+                26,
+                36
+            ],
+            "t-RtDI2RWQs_Who is the best Best Director?": [
+                74,
+                39,
+                31,
+                47,
+                36,
+                35,
+                52
+            ],
+            "t-RtDI2RWQs_Who is the Best Lead Actress?": [
+                74,
+                60,
+                62,
+                61,
+                14,
+                16,
+                13
+            ],
+            "t-RtDI2RWQs_Which film wins the Best Picture?": [
+                47,
+                31,
+                74,
+                20,
+                36,
+                0,
+                57
+            ],
+            "t-RtDI2RWQs_What is the second to last award presented?": [
+                59,
+                49,
+                48,
+                50,
+                56,
+                52,
+                60
+            ],
+            "8QdE--Y-x7U_Where are the Nobel laureates in physiology or medicine come from?": [
+                23,
+                21,
+                11,
+                60,
+                27,
+                28,
+                39
+            ],
+            "8QdE--Y-x7U_How many hosts have changed?": [
+                54,
+                52,
+                56,
+                50,
+                53,
+                2,
+                21
+            ],
+            "8QdE--Y-x7U_How many female winners are there in this Nobel Prize?": [
+                39,
+                11,
+                64,
+                38,
+                60,
+                22,
+                56
+            ],
+            "8QdE--Y-x7U_What kind of awards have two winners?": [
+                61,
+                4,
+                25,
+                39,
+                31,
+                64,
+                30
+            ],
+            "8QdE--Y-x7U_How many people won this year?": [
+                70,
+                3,
+                69,
+                1,
+                61,
+                62,
+                39
+            ],
+            "8QdE--Y-x7U_Who left first after the award ceremony?": [
+                3,
+                62,
+                4,
+                66,
+                39,
+                31,
+                61
+            ],
+            "8QdE--Y-x7U_What happened on the stage after the royal family left?": [
+                3,
+                63,
+                6,
+                5,
+                1,
+                62,
+                4
+            ],
+            "idZkam9zqAs_What type of video is this?": [
+                6,
+                63,
+                5,
+                4,
+                3,
+                64,
+                65
+            ],
+            "idZkam9zqAs_Does P!nk kiss the bassist while performing in a light pink leather short jacket?": [
+                61,
+                42,
+                40,
+                11,
+                39,
+                41,
+                62
+            ],
+            "idZkam9zqAs_Was the male bassist by P!nk's side the entire time when she performed in a furry pink top and blue skirt?": [
+                39,
+                42,
+                40,
+                45,
+                43,
+                41,
+                44
+            ],
+            "xECIRjlxM3U_When does the little mermaid appear for the first time?": [
+                31,
+                30,
+                43,
+                5,
+                6,
+                33,
+                17
+            ],
+            "xECIRjlxM3U_When does the mermaid have legs?": [
+                31,
+                9,
+                43,
+                30,
+                5,
+                10,
+                6
+            ],
+            "xECIRjlxM3U_What does the mermaid do when a group of seagulls are performing?": [
+                6,
+                5,
+                30,
+                43,
+                9,
+                69,
+                31
+            ],
+            "xECIRjlxM3U_What is the first event that involves a group of maids wearing yellow hats?": [
+                44,
+                45,
+                41,
+                40,
+                47,
+                46,
+                50
+            ],
+            "xECIRjlxM3U_What does the scene switch to after the mermaid gets dress at dawn?": [
+                31,
+                30,
+                43,
+                6,
+                5,
+                33,
+                9
+            ],
+            "xECIRjlxM3U_Who appears on the scene with two servants and a seashell in the background?": [
+                6,
+                10,
+                43,
+                44,
+                49,
+                39,
+                5
+            ],
+            "xECIRjlxM3U_Where are the prince and the mermaid before they go back to the palace?": [
+                31,
+                70,
+                10,
+                33,
+                43,
+                9,
+                62
+            ],
+            "xECIRjlxM3U_What does the mermaid do after the first time she and the merman hugs after she is taken away by the witch?": [
+                31,
+                36,
+                68,
+                32,
+                6,
+                9,
+                30
+            ],
+            "xECIRjlxM3U_What is the last major event?": [
+                73,
+                1,
+                74,
+                0,
+                36,
+                38,
+                68
+            ],
+            "xECIRjlxM3U_What is the final climax event?": [
+                12,
+                1,
+                36,
+                74,
+                13,
+                66,
+                38
+            ],
+            "xECIRjlxM3U_What category does the video beloge to?": [
+                74,
+                73,
+                65,
+                1,
+                0,
+                63,
+                64
+            ],
+            "o-gLbgpzCc8_What type of video is this?": [
+                17,
+                68,
+                31,
+                35,
+                1,
+                60,
+                58
+            ],
+            "o-gLbgpzCc8_When the black screen appears on the stage for the first time, from the perspective of the audience, from which direction does Aladdin appear?": [
+                19,
+                58,
+                31,
+                74,
+                54,
+                17,
+                33
+            ],
+            "o-gLbgpzCc8_What are the actors not doing among the audience?": [
+                0,
+                34,
+                35,
+                38,
+                60,
+                71,
+                58
+            ],
+            "o-gLbgpzCc8_When the actors take their final call, how many people in white and purple clothes are the first to appear on the stage?": [
+                38,
+                71,
+                40,
+                37,
+                36,
+                39,
+                8
+            ],
+            "o-gLbgpzCc8_Where does the red fruit that Aladdin give to the princess come from?": [
+                16,
+                66,
+                58,
+                10,
+                26,
+                22,
+                17
+            ],
+            "QWXlvx1GoTY_Who is interviewed before Nieves Navarro?": [
+                12,
+                11,
+                8,
+                3,
+                14,
+                6,
+                10
+            ],
+            "QWXlvx1GoTY_Who is the second person to speak on stage?": [
+                8,
+                3,
+                12,
+                7,
+                17,
+                11,
+                10
+            ],
+            "QWXlvx1GoTY_Jonathan Davidson shows a video about what brand during his talk?": [
+                15,
+                5,
+                7,
+                4,
+                20,
+                14,
+                33
+            ],
+            "QWXlvx1GoTY_What is the video doing at the beginning?": [
+                9,
+                3,
+                8,
+                0,
+                19,
+                10,
+                15
+            ],
+            "QWXlvx1GoTY_How many times does Jeetu Patel speak on stage?": [
+                34,
+                18,
+                8,
+                35,
+                62,
+                36,
+                37
+            ],
+            "-hgaSElC3wU_What is the game the two children play with the two calico cats?": [
+                4,
+                5,
+                3,
+                2,
+                25,
+                1,
+                26
+            ],
+            "-hgaSElC3wU_How do cats communicate their thoughts?": [
+                5,
+                3,
+                4,
+                1,
+                2,
+                0,
+                54
+            ],
+            "-WnyRMZqV1U_What does the presenter do to Brad Pitt when he wins the award?": [
+                3,
+                2,
+                48,
+                4,
+                22,
+                16,
+                14
+            ],
+            "-WnyRMZqV1U_Where does the movie directed by Gary Rydstrom, Tom Johnson and Mark Ulano take place?": [
+                33,
+                9,
+                70,
+                36,
+                1,
+                12,
+                69
+            ],
+            "-WnyRMZqV1U_Who are the two people dressing as animals?": [
+                45,
+                46,
+                6,
+                8,
+                20,
+                17,
+                69
+            ],
+            "-WnyRMZqV1U_What is the relationship between Bong Joon Ho and the elderly man whom people are standing up and applauding for during his speech?": [
+                57,
+                51,
+                55,
+                10,
+                11,
+                56,
+                52
+            ],
+            "-WnyRMZqV1U_What is the nationality of the producers for the Best Picture award?": [
+                14,
+                33,
+                6,
+                50,
+                15,
+                48,
+                39
+            ],
+            "7HjNIPIgUg4_Which of the following awards is actually presented in the video?": [
+                69,
+                27,
+                63,
+                22,
+                60,
+                49,
+                28
+            ],
+            "7HjNIPIgUg4_How many winners did not come to the scene to receive their awards?": [
+                45,
+                74,
+                63,
+                49,
+                22,
+                53,
+                28
+            ],
+            "7HjNIPIgUg4_How many times has Ronaldo been on stage?": [
+                55,
+                7,
+                54,
+                56,
+                8,
+                68,
+                67
+            ],
+            "7HjNIPIgUg4_There are ___\u00a0 awards related to the club.": [
+                49,
+                69,
+                42,
+                29,
+                57,
+                21,
+                74
+            ],
+            "7HjNIPIgUg4_How many awards did Manchester City win in this awards?": [
+                69,
+                57,
+                58,
+                51,
+                40,
+                38,
+                42
+            ],
+            "7HjNIPIgUg4_What award did Ronaldo win?": [
+                55,
+                54,
+                56,
+                67,
+                7,
+                8,
+                68
+            ],
+            "8NHmfpkxTSw_What is the format of the Nobel Peace Prize award?": [
+                11,
+                66,
+                10,
+                14,
+                22,
+                33,
+                43
+            ],
+            "8NHmfpkxTSw_What happened after the 2020 and 2021 winners were introduced?": [
+                74,
+                11,
+                2,
+                36,
+                16,
+                43,
+                69
+            ],
+            "YlQugR7KSKg_Where is the podium located?": [
+                55,
+                63,
+                57,
+                27,
+                35,
+                8,
+                30
+            ],
+            "YlQugR7KSKg_How many Nobel Prizes in physiology or medicine have been awarded?": [
+                10,
+                38,
+                37,
+                22,
+                66,
+                13,
+                6
+            ],
+            "lDlA7cfNk8A_How many winners are there this year?": [
+                74,
+                56,
+                43,
+                22,
+                29,
+                21,
+                70
+            ],
+            "lDlA7cfNk8A_What is the Nobel Prize in Physics awarded after?": [
+                55,
+                5,
+                27,
+                50,
+                56,
+                51,
+                28
+            ],
+            "lDlA7cfNk8A_How many categories of awards are awarded by three winners?": [
+                56,
+                29,
+                28,
+                21,
+                42,
+                53,
+                54
+            ],
+            "f8DKD78BrQA_What type of video is this": [
+                0,
+                1,
+                20,
+                41,
+                7,
+                67,
+                66
+            ],
+            "f8DKD78BrQA_What is the promotional video about that mentions Nvlink Switch System?": [
+                74,
+                53,
+                72,
+                73,
+                54,
+                47,
+                45
+            ],
+            "f8DKD78BrQA_What is this video mainly about?": [
+                0,
+                1,
+                8,
+                67,
+                43,
+                39,
+                66
+            ],
+            "FaV0tIaWWEg_What category does the video belong to?": [
+                0,
+                66,
+                65,
+                10,
+                33,
+                6,
+                12
+            ],
+            "FaV0tIaWWEg_How many videos are played during Satya Nadella's speech?": [
+                5,
+                43,
+                67,
+                68,
+                7,
+                60,
+                65
+            ],
+            "FaV0tIaWWEg_In the video, how many people are standing on the stage speaking?": [
+                59,
+                65,
+                54,
+                42,
+                7,
+                18,
+                15
+            ],
+            "rk24OUu_kJQ_What is this video about?": [
+                3,
+                2,
+                0,
+                39,
+                43,
+                38,
+                17
+            ],
+            "rk24OUu_kJQ_What word best describes the atmosphere of the second song?": [
+                2,
+                66,
+                55,
+                36,
+                51,
+                17,
+                31
+            ],
+            "rk24OUu_kJQ_There is a song in which the female singer wears a tight fitting astronaut suit. How does she leave the stage?": [
+                13,
+                20,
+                5,
+                18,
+                14,
+                72,
+                48
+            ],
+            "rk24OUu_kJQ_How many coats does the female singer change between when she gets off the music box and when she enters it again?": [
+                18,
+                37,
+                5,
+                19,
+                55,
+                17,
+                20
+            ],
+            "rk24OUu_kJQ_What does the singer do after she sits down next to the pianist?": [
+                29,
+                31,
+                32,
+                33,
+                36,
+                54,
+                34
+            ],
+            "rk24OUu_kJQ_How many bracelets does the main singer wear during the song where she pushes a dancer wearing a red hat, interacts with him, and then interacts with another dancer wearing a black hat?": [
+                23,
+                59,
+                27,
+                26,
+                68,
+                25,
+                24
+            ],
+            "16Z-XQh9jhk_What are the costumes of the dancers between 03:30-04:20?": [
+                20,
+                61,
+                53,
+                28,
+                15,
+                18,
+                69
+            ],
+            "16Z-XQh9jhk_What are the dancers with pink ponytails wearing on their heads?": [
+                20,
+                53,
+                56,
+                28,
+                61,
+                18,
+                17
+            ],
+            "16Z-XQh9jhk_After the performance of TV headgear, what color are the lights in the next scene?": [
+                15,
+                20,
+                52,
+                53,
+                35,
+                14,
+                51
+            ],
+            "QB7FoIpx8os_What unit appears in the frame at 06:11 in the video?": [
+                14,
+                43,
+                42,
+                15,
+                45,
+                55,
+                7
+            ],
+            "QB7FoIpx8os_Which side of the stage does the second speaker pick up the chip from?": [
+                65,
+                66,
+                10,
+                24,
+                64,
+                38,
+                50
+            ],
+            "QB7FoIpx8os_What's the posture of the person at 14:09?": [
+                55,
+                68,
+                15,
+                14,
+                43,
+                74,
+                62
+            ],
+            "QB7FoIpx8os_What position on the stage is the second person demonstrating the operation standing?": [
+                42,
+                74,
+                48,
+                39,
+                13,
+                45,
+                68
+            ],
+            "QB7FoIpx8os_What brand of car appears in the video?": [
+                0,
+                7,
+                52,
+                74,
+                6,
+                27,
+                38
+            ]
+        }
+    },
+    "entity recognition": {
+        "config": {
+            "selected_topk": 7,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "t-RtDI2RWQs_Which movie does the host parody in his first appearance?": [
+                0,
+                27,
+                21,
+                31,
+                20,
+                38,
+                39
+            ],
+            "t-RtDI2RWQs_When the Best Supporting Actor winner goes offstage, what is the color of the outfit of the person sitting next to him?": [
+                28,
+                39,
+                54,
+                31,
+                36,
+                38,
+                1
+            ],
+            "t-RtDI2RWQs_How many times does Christopher Nolan came onstage?": [
+                58,
+                59,
+                47,
+                24,
+                35,
+                55,
+                51
+            ],
+            "t-RtDI2RWQs_What does the best supporting actress winner wear?": [
+                14,
+                63,
+                60,
+                23,
+                61,
+                64,
+                16
+            ],
+            "t-RtDI2RWQs_Which film wins the Best Original Screenplay award?": [
+                74,
+                47,
+                31,
+                24,
+                59,
+                57,
+                36
+            ],
+            "t-RtDI2RWQs_Who is the Best Supporting Actor?": [
+                35,
+                74,
+                36,
+                52,
+                38,
+                47,
+                40
+            ],
+            "t-RtDI2RWQs_Why does Gosling wear pink suit when performing?": [
+                43,
+                42,
+                44,
+                27,
+                45,
+                21,
+                25
+            ],
+            "8QdE--Y-x7U_Where is the podium located, respective to the people on the stage?": [
+                66,
+                3,
+                5,
+                39,
+                18,
+                31,
+                19
+            ],
+            "8QdE--Y-x7U_What kind of clothes do winners of the Nobel Prize in Physiology or Medicine wear?": [
+                60,
+                39,
+                62,
+                64,
+                56,
+                28,
+                68
+            ],
+            "8QdE--Y-x7U_What color are the stools on which the four members of the royal family sit?": [
+                3,
+                62,
+                1,
+                4,
+                5,
+                61,
+                0
+            ],
+            "8QdE--Y-x7U_What color is the ribbon on the man who accompanied the first winner of the Nobel Prize in Physics?": [
+                39,
+                60,
+                24,
+                11,
+                21,
+                59,
+                27
+            ],
+            "8QdE--Y-x7U_What color is the bow tie worn by the man who presided over the Nobel Prize in Chemistry?": [
+                38,
+                60,
+                68,
+                59,
+                72,
+                14,
+                73
+            ],
+            "8QdE--Y-x7U_Where is the woman in a blue dress sitting on the right side of the podium?": [
+                5,
+                46,
+                48,
+                11,
+                22,
+                10,
+                4
+            ],
+            "8QdE--Y-x7U_Where is the harp player, respective to the people on the stage?": [
+                33,
+                63,
+                52,
+                51,
+                43,
+                16,
+                53
+            ],
+            "idZkam9zqAs_What color does P!nk's clothes change after the first hanging wire performance?": [
+                10,
+                9,
+                12,
+                11,
+                71,
+                73,
+                28
+            ],
+            "idZkam9zqAs_When P!nk performs hanging wire for the first time, what shape of lighting prop does she fall from?": [
+                71,
+                72,
+                73,
+                23,
+                2,
+                24,
+                61
+            ],
+            "idZkam9zqAs_When the piano performance occurs, what colors are the piano and the player's clothes?": [
+                26,
+                67,
+                11,
+                74,
+                21,
+                27,
+                65
+            ],
+            "idZkam9zqAs_How many flamingo props appear on the stage?": [
+                7,
+                5,
+                6,
+                60,
+                66,
+                8,
+                55
+            ],
+            "idZkam9zqAs_When the flamingo prop appears on the stage, which animal does not appear on the big screen behind the stage?": [
+                5,
+                7,
+                6,
+                60,
+                66,
+                62,
+                61
+            ],
+            "idZkam9zqAs_When P!nk performs wearing a light pink leather jacket, what is the main color of the lighting on the stage?": [
+                61,
+                11,
+                62,
+                12,
+                39,
+                8,
+                40
+            ],
+            "idZkam9zqAs_What does P!nk wear underneath when taking off her furry pink coat?": [
+                39,
+                42,
+                40,
+                61,
+                11,
+                41,
+                7
+            ],
+            "idZkam9zqAs_How many people use the trampolines on stage during the performance?": [
+                4,
+                2,
+                72,
+                3,
+                71,
+                60,
+                73
+            ],
+            "idZkam9zqAs_Before the pink shopping cart prop appearing on stage, what shape of headgears do the people off the stage wear?": [
+                2,
+                66,
+                6,
+                5,
+                3,
+                7,
+                1
+            ],
+            "idZkam9zqAs_In what posture does P!nk sing at 49:00?": [
+                28,
+                10,
+                61,
+                9,
+                12,
+                31,
+                11
+            ],
+            "idZkam9zqAs_How does P!nk interact with the audience in the final part of the show?": [
+                10,
+                11,
+                9,
+                28,
+                61,
+                31,
+                42
+            ],
+            "idZkam9zqAs_What color is the stage lighting when a solo dancer appears on the stage?": [
+                21,
+                22,
+                66,
+                56,
+                55,
+                65,
+                60
+            ],
+            "xECIRjlxM3U_What color is the prince's belt?": [
+                70,
+                71,
+                62,
+                65,
+                72,
+                63,
+                9
+            ],
+            "xECIRjlxM3U_Who helps the mermaid to grow legs again?": [
+                9,
+                31,
+                43,
+                10,
+                30,
+                15,
+                68
+            ],
+            "o-gLbgpzCc8_What is the first animal to appear on the stage?": [
+                1,
+                49,
+                20,
+                3,
+                35,
+                4,
+                54
+            ],
+            "o-gLbgpzCc8_What crutch is the man in the cloak holding?": [
+                60,
+                62,
+                15,
+                61,
+                40,
+                58,
+                4
+            ],
+            "o-gLbgpzCc8_What is the first kind of bird to appear on the stage?": [
+                43,
+                4,
+                54,
+                48,
+                55,
+                32,
+                29
+            ],
+            "o-gLbgpzCc8_What color is the belt which worn by the character appear on stage first?": [
+                14,
+                44,
+                24,
+                74,
+                31,
+                73,
+                8
+            ],
+            "o-gLbgpzCc8_What color pants are the first woman dancing on stage wearing?": [
+                19,
+                28,
+                29,
+                44,
+                7,
+                8,
+                10
+            ],
+            "o-gLbgpzCc8_What color is the background of the stage when Aladdin is arrested by three men with knives?": [
+                58,
+                63,
+                9,
+                24,
+                61,
+                26,
+                8
+            ],
+            "o-gLbgpzCc8_What kind of clothes does the genie wear when he appears for the second time?": [
+                24,
+                41,
+                26,
+                68,
+                60,
+                58,
+                25
+            ],
+            "o-gLbgpzCc8_When the Buddha statue appears, how many people are next to it?": [
+                50,
+                16,
+                71,
+                41,
+                17,
+                39,
+                51
+            ],
+            "o-gLbgpzCc8_When the genie of the magic lamp comes on stage for the curtain call, what is he holding in his hand?": [
+                58,
+                60,
+                26,
+                54,
+                40,
+                38,
+                53
+            ],
+            "QWXlvx1GoTY_Which moderator is the last to speak?": [
+                9,
+                8,
+                7,
+                15,
+                4,
+                10,
+                2
+            ],
+            "QWXlvx1GoTY_What color are the cups on the table of the two presenters?": [
+                9,
+                10,
+                7,
+                2,
+                15,
+                8,
+                3
+            ],
+            "QWXlvx1GoTY_What color is the hostess of the first set of live hosts they connected wearing?": [
+                8,
+                9,
+                11,
+                12,
+                10,
+                16,
+                7
+            ],
+            "QWXlvx1GoTY_Who interviews Rodney Clark?": [
+                8,
+                7,
+                9,
+                6,
+                3,
+                10,
+                14
+            ],
+            "QWXlvx1GoTY_How many women are there to speak on the stage?": [
+                11,
+                12,
+                10,
+                54,
+                3,
+                55,
+                56
+            ],
+            "QWXlvx1GoTY_Which guest does Ronak Desai invite on stage in the middle of his speech?": [
+                17,
+                34,
+                3,
+                7,
+                18,
+                64,
+                35
+            ],
+            "QWXlvx1GoTY_What does Fletcher Previn do when he gets on stage?": [
+                3,
+                17,
+                71,
+                30,
+                10,
+                73,
+                7
+            ],
+            "QWXlvx1GoTY_How many chairs are there in the picture at 01:42?": [
+                1,
+                7,
+                14,
+                3,
+                25,
+                10,
+                9
+            ],
+            "-hgaSElC3wU_What is the planet hanging on the stage background?": [
+                39,
+                8,
+                27,
+                10,
+                66,
+                52,
+                36
+            ],
+            "-hgaSElC3wU_What kind of hat does the little boy wear?": [
+                43,
+                45,
+                26,
+                56,
+                3,
+                40,
+                46
+            ],
+            "-hgaSElC3wU_What color skirts do cats holding white fans wear?": [
+                54,
+                48,
+                47,
+                53,
+                0,
+                13,
+                14
+            ],
+            "-hgaSElC3wU_Which movement does the cat, wearing a sparkling black suit, black bow tie, and tight pants, perform?": [
+                23,
+                4,
+                24,
+                5,
+                0,
+                54,
+                74
+            ],
+            "-WnyRMZqV1U_Who is the first man in red?": [
+                68,
+                18,
+                60,
+                70,
+                17,
+                15,
+                39
+            ],
+            "-WnyRMZqV1U_For each award, the number of presenters is different. What are the maximum and minimum numbers of presenters in the video?": [
+                60,
+                27,
+                47,
+                68,
+                21,
+                31,
+                42
+            ],
+            "-WnyRMZqV1U_What clothes do three winners who win Best Makeup and Hairstyling Design wear?": [
+                21,
+                52,
+                20,
+                74,
+                73,
+                7,
+                8
+            ],
+            "-WnyRMZqV1U_Compared to the character the Best Actor portrayed in the movie, the Best Actor winner is ___ on the stage.": [
+                60,
+                36,
+                59,
+                39,
+                37,
+                32,
+                33
+            ],
+            "-WnyRMZqV1U_What does the last present wear?": [
+                1,
+                70,
+                21,
+                8,
+                69,
+                12,
+                17
+            ],
+            "7HjNIPIgUg4_How many microphones does the male host have in his opening speech?": [
+                14,
+                15,
+                65,
+                73,
+                64,
+                39,
+                56
+            ],
+            "7HjNIPIgUg4_What did the hostess do when he invited Ronaldo to the stage for the first time?": [
+                7,
+                55,
+                8,
+                14,
+                6,
+                56,
+                68
+            ],
+            "7HjNIPIgUg4_What does Ronaldo wear?": [
+                7,
+                55,
+                8,
+                54,
+                56,
+                13,
+                68
+            ],
+            "7HjNIPIgUg4_Who applauded for Edson Santana de Moraes when he took the stage to accept the award?": [
+                61,
+                41,
+                60,
+                69,
+                55,
+                39,
+                6
+            ],
+            "7HjNIPIgUg4_Cristiano Ronaldo took the stage to accept the award for the first time and won ___ trophies.": [
+                56,
+                55,
+                68,
+                54,
+                8,
+                48,
+                41
+            ],
+            "7HjNIPIgUg4_Manchester City FC took home a total of ___ trophies when they received the award": [
+                69,
+                57,
+                51,
+                58,
+                21,
+                74,
+                50
+            ],
+            "8NHmfpkxTSw_Who is the green sculpture directly behind the stage?": [
+                2,
+                55,
+                31,
+                6,
+                1,
+                62,
+                7
+            ],
+            "8NHmfpkxTSw_What does the microphone use for the presenter?": [
+                40,
+                50,
+                24,
+                52,
+                53,
+                65,
+                38
+            ],
+            "8NHmfpkxTSw_How many tiers of seats are there behind the rostrum?": [
+                3,
+                0,
+                4,
+                16,
+                15,
+                68,
+                71
+            ],
+            "8NHmfpkxTSw_How many women are there in the first row on the right hand side of the host?": [
+                3,
+                16,
+                70,
+                4,
+                0,
+                69,
+                15
+            ],
+            "8NHmfpkxTSw_What color dress does the lady who sings bel canto wear?": [
+                48,
+                50,
+                40,
+                3,
+                57,
+                74,
+                38
+            ],
+            "8NHmfpkxTSw_What is the gender of the Nobel Prize winners in physics?": [
+                56,
+                11,
+                33,
+                67,
+                10,
+                24,
+                26
+            ],
+            "8NHmfpkxTSw_Where does the orchestra conductor stand?": [
+                61,
+                57,
+                37,
+                28,
+                8,
+                58,
+                59
+            ],
+            "YlQugR7KSKg_Which side of the stage was empty at the opening?": [
+                30,
+                61,
+                69,
+                71,
+                27,
+                55,
+                72
+            ],
+            "YlQugR7KSKg_What is the main color of the decoration design of the whole stage?": [
+                42,
+                30,
+                48,
+                54,
+                69,
+                27,
+                55
+            ],
+            "YlQugR7KSKg_Who appears on the screen at 38:13?": [
+                70,
+                61,
+                11,
+                30,
+                69,
+                41,
+                72
+            ],
+            "YlQugR7KSKg_What color is the wall light around the stage?": [
+                71,
+                69,
+                21,
+                57,
+                30,
+                0,
+                41
+            ],
+            "YlQugR7KSKg_How many women are there on the right side of the stage, from the perspective of the camera view?": [
+                42,
+                15,
+                1,
+                72,
+                73,
+                46,
+                60
+            ],
+            "YlQugR7KSKg_Who leaves the venue first after the awards?": [
+                73,
+                71,
+                72,
+                69,
+                41,
+                57,
+                21
+            ],
+            "YlQugR7KSKg_What clothes does the person who presides over the Nobel Prize in Chemistry wear?": [
+                40,
+                10,
+                28,
+                41,
+                68,
+                66,
+                29
+            ],
+            "YlQugR7KSKg_How many hosts have changed?": [
+                17,
+                31,
+                58,
+                59,
+                32,
+                48,
+                34
+            ],
+            "lDlA7cfNk8A_The stool on which the winner sits is ___.": [
+                42,
+                26,
+                23,
+                56,
+                8,
+                29,
+                43
+            ],
+            "lDlA7cfNk8A_What color is the decoration on the edge of the stage?": [
+                49,
+                43,
+                35,
+                1,
+                10,
+                59,
+                2
+            ],
+            "lDlA7cfNk8A_What color stool does the royal family sit on?": [
+                0,
+                10,
+                72,
+                73,
+                2,
+                19,
+                71
+            ],
+            "lDlA7cfNk8A_How many hostesses are there?": [
+                31,
+                71,
+                48,
+                46,
+                44,
+                47,
+                35
+            ],
+            "lDlA7cfNk8A_Who sits in front of the cellist?": [
+                13,
+                57,
+                58,
+                61,
+                4,
+                59,
+                23
+            ],
+            "lDlA7cfNk8A_What color is the bow tie of the Nobel Prize winner in literature?": [
+                8,
+                23,
+                24,
+                25,
+                4,
+                56,
+                29
+            ],
+            "lDlA7cfNk8A_How many microphones are there on the podium?": [
+                67,
+                66,
+                27,
+                65,
+                68,
+                24,
+                35
+            ],
+            "lDlA7cfNk8A_Where is the podium located, respective to the people on the stage?": [
+                74,
+                43,
+                22,
+                10,
+                67,
+                56,
+                72
+            ],
+            "f8DKD78BrQA_What did Jensen Huang do after the end of the first promotional video?": [
+                18,
+                27,
+                53,
+                59,
+                52,
+                21,
+                60
+            ],
+            "f8DKD78BrQA_What brand is the green SUV?": [
+                63,
+                64,
+                62,
+                66,
+                10,
+                53,
+                61
+            ],
+            "FaV0tIaWWEg_What color are the straps worn around the audience's necks?": [
+                6,
+                30,
+                33,
+                65,
+                59,
+                73,
+                5
+            ],
+            "FaV0tIaWWEg_After the press conference started, during the first video played, a yellow square appeared. What is the pattern in this yellow square?": [
+                24,
+                67,
+                33,
+                29,
+                4,
+                5,
+                7
+            ],
+            "FaV0tIaWWEg_Who is the earliest character in the entire video?": [
+                10,
+                1,
+                6,
+                0,
+                45,
+                9,
+                65
+            ],
+            "FaV0tIaWWEg_Who is Mohd Adbuallah Khan?": [
+                73,
+                72,
+                69,
+                64,
+                68,
+                70,
+                71
+            ],
+            "FaV0tIaWWEg_What main color is the cover of the book held by the little Indian girl wearing a blue turban?": [
+                70,
+                69,
+                73,
+                64,
+                72,
+                1,
+                3
+            ],
+            "rk24OUu_kJQ_What instrument does the first person who wears black outfit play?": [
+                7,
+                4,
+                23,
+                50,
+                73,
+                38,
+                5
+            ],
+            "rk24OUu_kJQ_How many dancers are there when Britney Spears first stands on the ground?": [
+                44,
+                43,
+                48,
+                47,
+                45,
+                63,
+                60
+            ],
+            "rk24OUu_kJQ_How many backup dancers struggle out of the silver cloth that is placed on the ground?": [
+                62,
+                63,
+                49,
+                70,
+                9,
+                11,
+                5
+            ],
+            "rk24OUu_kJQ_There is a song in which the backup dancers wear black-and-white striped clothes. What colors are the flags that some dancers wave?": [
+                11,
+                10,
+                9,
+                7,
+                30,
+                22,
+                62
+            ],
+            "rk24OUu_kJQ_How does the audience near the stage at the first floor watch the performance?": [
+                15,
+                65,
+                66,
+                4,
+                17,
+                28,
+                25
+            ],
+            "rk24OUu_kJQ_How many candles are there on the candlestick on top of the Yamaha piano?": [
+                29,
+                17,
+                28,
+                1,
+                40,
+                6,
+                4
+            ],
+            "rk24OUu_kJQ_There is a song in which the singer wears a green bikini and has a piece of fabric tied around her body. Where is the green fabric tied to?": [
+                61,
+                63,
+                60,
+                64,
+                62,
+                45,
+                47
+            ],
+            "rk24OUu_kJQ_Before the main singer comes on stage wearing a white dress with embellishments on it, there is a music band performing on the stage. How many musicians are playing the electric piano?": [
+                50,
+                51,
+                18,
+                19,
+                20,
+                29,
+                17
+            ],
+            "16Z-XQh9jhk_What was the first instrument to appear in the video?": [
+                59,
+                35,
+                23,
+                42,
+                18,
+                32,
+                21
+            ],
+            "16Z-XQh9jhk_What color is the female singer's microphone?": [
+                21,
+                18,
+                59,
+                24,
+                49,
+                30,
+                32
+            ],
+            "16Z-XQh9jhk_What shoes does the female singer wear?": [
+                12,
+                33,
+                28,
+                6,
+                44,
+                3,
+                24
+            ],
+            "16Z-XQh9jhk_What color are the decorative balls on the heads of the dancers at 19:59?": [
+                20,
+                61,
+                19,
+                15,
+                53,
+                60,
+                18
+            ],
+            "16Z-XQh9jhk_What color is her floor microphone stand?": [
+                37,
+                32,
+                30,
+                49,
+                21,
+                18,
+                24
+            ],
+            "16Z-XQh9jhk_How many dancers came on stage between 31:27-0:31:31?": [
+                20,
+                53,
+                28,
+                61,
+                15,
+                14,
+                68
+            ],
+            "16Z-XQh9jhk_What color has her wheat rack been changed to?": [
+                32,
+                59,
+                70,
+                6,
+                60,
+                49,
+                7
+            ],
+            "16Z-XQh9jhk_How many white lights were on at 45:08?": [
+                15,
+                59,
+                35,
+                37,
+                70,
+                1,
+                40
+            ],
+            "16Z-XQh9jhk_What color guitar is the female singer holding?": [
+                41,
+                23,
+                42,
+                46,
+                44,
+                24,
+                43
+            ],
+            "16Z-XQh9jhk_What color did the female singer change the microphone halfway?": [
+                59,
+                21,
+                18,
+                24,
+                6,
+                30,
+                49
+            ],
+            "16Z-XQh9jhk_What balls did the dancers carry onto the stage?": [
+                20,
+                61,
+                19,
+                60,
+                52,
+                53,
+                15
+            ],
+            "16Z-XQh9jhk_How many machines were blowing at the beginning of the concert?": [
+                1,
+                0,
+                61,
+                39,
+                26,
+                47,
+                58
+            ],
+            "16Z-XQh9jhk_What is Katy Perry's hair like?": [
+                18,
+                73,
+                42,
+                10,
+                72,
+                24,
+                65
+            ],
+            "16Z-XQh9jhk_How many colors are there in the background of rainbow decoration on the stage?": [
+                53,
+                15,
+                26,
+                52,
+                51,
+                25,
+                20
+            ],
+            "16Z-XQh9jhk_What are her earrings like?": [
+                42,
+                73,
+                70,
+                71,
+                2,
+                59,
+                6
+            ],
+            "16Z-XQh9jhk_How many microphones are there on the circular platform in the center of the stage?": [
+                59,
+                34,
+                52,
+                60,
+                8,
+                15,
+                68
+            ],
+            "QB7FoIpx8os_How many people are there at the beginning of the video?": [
+                74,
+                42,
+                0,
+                1,
+                54,
+                45,
+                11
+            ],
+            "QB7FoIpx8os_What color is the inner layer of clothing worn by the second speaker in the video?": [
+                42,
+                57,
+                10,
+                3,
+                21,
+                55,
+                74
+            ],
+            "QB7FoIpx8os_How many Asian speakers appear in the video?": [
+                39,
+                58,
+                59,
+                54,
+                21,
+                55,
+                37
+            ],
+            "QB7FoIpx8os_What color clothes is the speaker wearing during the live stream at the factory in the video?": [
+                42,
+                44,
+                74,
+                43,
+                48,
+                3,
+                39
+            ],
+            "QB7FoIpx8os_What color shoes is the sixth speaker wearing in the video?": [
+                48,
+                39,
+                11,
+                74,
+                51,
+                21,
+                42
+            ],
+            "QB7FoIpx8os_What color is the hair of the seventh speaker?": [
+                24,
+                26,
+                11,
+                25,
+                55,
+                57,
+                10
+            ],
+            "QB7FoIpx8os_Which speaker remains standing on the stage?": [
+                63,
+                11,
+                10,
+                47,
+                24,
+                66,
+                42
+            ],
+            "QB7FoIpx8os_What type of glasses frames does the last Asian speaker in the video have?": [
+                39,
+                58,
+                59,
+                0,
+                38,
+                37,
+                18
+            ],
+            "QB7FoIpx8os_Where is the microphone of the second speaker?": [
+                38,
+                40,
+                63,
+                68,
+                60,
+                37,
+                10
+            ]
+        }
+    },
+    "reasoning": {
+        "config": {
+            "selected_topk": 5,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "t-RtDI2RWQs_There is a performance of respectful tribal musicians playing a huge drum together. All of the drummers ___.": [
+                34,
+                33,
+                0,
+                43,
+                44
+            ],
+            "t-RtDI2RWQs_Gosling's performance mirrors a scene from a movie that stars ___.": [
+                24,
+                42,
+                61,
+                14,
+                63
+            ],
+            "t-RtDI2RWQs_Why is there letter on the screen when the Rock appears on the stage with another presenter?": [
+                30,
+                46,
+                53,
+                32,
+                28
+            ],
+            "8QdE--Y-x7U_How many hosts didn't wear any badges on their chests?": [
+                62,
+                68,
+                25,
+                61,
+                13
+            ],
+            "-hgaSElC3wU_From how other cats treat the cat with the white cane, we can infer about its status?": [
+                4,
+                5,
+                1,
+                23,
+                3
+            ],
+            "-WnyRMZqV1U_Is the scene where individuals are seen taking photos with the Pope part fictional or real? Which sentence best describes the place this scene happens?": [
+                60,
+                1,
+                23,
+                13,
+                50
+            ],
+            "7HjNIPIgUg4_What is the relationship between Ronaldo and the woman in the white dress sitting next to him?": [
+                7,
+                54,
+                8,
+                55,
+                56
+            ],
+            "8NHmfpkxTSw_What was the mood of the people at the scene most of the time?": [
+                3,
+                71,
+                36,
+                16,
+                74
+            ],
+            "YlQugR7KSKg_Do Nobel laureates in physiology or medicine wear suits?": [
+                10,
+                37,
+                66,
+                22,
+                38
+            ],
+            "f8DKD78BrQA_What's Jen-Hsun Huang's expression like when he talks about the development of AI?": [
+                59,
+                67,
+                15,
+                71,
+                22
+            ],
+            "f8DKD78BrQA_What does the promotional video show that mentions omniverse digital twin?": [
+                74,
+                0,
+                61,
+                66,
+                65
+            ],
+            "16Z-XQh9jhk_Why doesn't the dancer in red tights have hair?": [
+                6,
+                20,
+                34,
+                28,
+                7
+            ],
+            "QB7FoIpx8os_Why does the camera suddenly cut at 13:28 in the video?": [
+                65,
+                42,
+                63,
+                57,
+                14
+            ]
+        }
+    },
+    "summarization": {
+        "config": {
+            "selected_topk": 7,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "t-RtDI2RWQs_What happens after the presentation of the award for Best Supporting Actress?": [
+                63,
+                59,
+                74,
+                23,
+                49,
+                65,
+                14
+            ],
+            "-WnyRMZqV1U_What kind of content does the entire video cover?": [
+                23,
+                32,
+                6,
+                31,
+                60,
+                40,
+                46
+            ],
+            "16Z-XQh9jhk_What happens at Katy Perry's concert before her official appearance?": [
+                31,
+                26,
+                17,
+                61,
+                64,
+                10,
+                65
+            ]
+        }
+    },
+    "temporal grounding": {
+        "config": {
+            "selected_topk": 4,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "t-RtDI2RWQs_What happens from 25:50-30:15?": [
+                0,
+                27,
+                31,
+                39
+            ],
+            "t-RtDI2RWQs_What happens from 41:09-52:20?": [
+                0,
+                27,
+                31,
+                36
+            ],
+            "8QdE--Y-x7U_What happened between 65:02-65:29?": [
+                3,
+                2,
+                17,
+                33
+            ],
+            "xECIRjlxM3U_What happens from 17:16-17:40?": [
+                1,
+                0,
+                38,
+                50
+            ],
+            "xECIRjlxM3U_When does the prince and the mermaid meet face to face for the first time?": [
+                31,
+                70,
+                10,
+                6
+            ],
+            "xECIRjlxM3U_What happens from 87:02-88:22?": [
+                1,
+                50,
+                0,
+                38
+            ],
+            "xECIRjlxM3U_What happens from 110:35-110:44?": [
+                1,
+                38,
+                0,
+                50
+            ],
+            "QWXlvx1GoTY_What is written on the top dark blue board at 01:31?": [
+                64,
+                63,
+                51,
+                65
+            ],
+            "QWXlvx1GoTY_What is written in the orange circle in the picture that appears at 69:20?": [
+                42,
+                1,
+                64,
+                37
+            ],
+            "YlQugR7KSKg_From 24:30-24:33, what did G\u00e9rard Albert Mourou do?": [
+                65,
+                68,
+                12,
+                66
+            ],
+            "FaV0tIaWWEg_What do the people do from 29:27-29:33?": [
+                66,
+                67,
+                73,
+                72
+            ],
+            "FaV0tIaWWEg_What appears on the screen at 21:57?": [
+                41,
+                39,
+                29,
+                40
+            ],
+            "rk24OUu_kJQ_Who is on stage from 58:40-60:08, and what are they doing?": [
+                24,
+                20,
+                55,
+                5
+            ],
+            "16Z-XQh9jhk_How many TV hoods appeared after 05:45?": [
+                15,
+                53,
+                26,
+                20
+            ]
+        }
+    },
+    "key information retrieval": {
+        "config": {
+            "selected_topk": 7,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "t-RtDI2RWQs_What is the reaction of the Best Supporting Actress when she finds out she wins?": [
+                23,
+                63,
+                14,
+                61,
+                16,
+                26,
+                60
+            ],
+            "t-RtDI2RWQs_What is the nationality of the filmmaker who directs the Best International Feature Film? ": [
+                74,
+                31,
+                47,
+                0,
+                46,
+                59,
+                69
+            ],
+            "t-RtDI2RWQs_What happens when the Best Actress comes on stage?": [
+                14,
+                60,
+                61,
+                74,
+                63,
+                16,
+                13
+            ],
+            "t-RtDI2RWQs_Kemp Powers is the main director of which film?": [
+                47,
+                0,
+                74,
+                26,
+                39,
+                27,
+                37
+            ],
+            "idZkam9zqAs_When the three accompanying singers in black appear on the stage for the first time, how many keyboard players are behind them?": [
+                53,
+                57,
+                54,
+                63,
+                26,
+                58,
+                18
+            ],
+            "idZkam9zqAs_From the subtitles at the beginning of the concert, where can we tell the place P!nk's tour could be?": [
+                31,
+                42,
+                41,
+                40,
+                28,
+                43,
+                44
+            ],
+            "idZkam9zqAs_At 84:18 what color is the stage theme?": [
+                66,
+                21,
+                63,
+                55,
+                5,
+                6,
+                2
+            ],
+            "xECIRjlxM3U_What words are written in the background for an event that involves a group of princesses or royal girls?": [
+                64,
+                73,
+                44,
+                65,
+                45,
+                43,
+                35
+            ],
+            "QWXlvx1GoTY_What's the name of the host in the green skirt?": [
+                0,
+                8,
+                9,
+                7,
+                1,
+                3,
+                25
+            ],
+            "-hgaSElC3wU_What letter is on the black board placed on the second floor of the background? ": [
+                5,
+                6,
+                73,
+                4,
+                72,
+                3,
+                2
+            ],
+            "-WnyRMZqV1U_What frequently appears at the top left corner of the video?": [
+                23,
+                13,
+                7,
+                69,
+                6,
+                50,
+                12
+            ],
+            "7HjNIPIgUg4_Where is this event held?": [
+                7,
+                0,
+                9,
+                8,
+                21,
+                13,
+                51
+            ],
+            "7HjNIPIgUg4_What kind of award was given in the end?": [
+                74,
+                46,
+                21,
+                45,
+                53,
+                36,
+                63
+            ],
+            "8NHmfpkxTSw_How many people have won the Nobel Prize in Chemistry?": [
+                67,
+                33,
+                22,
+                11,
+                27,
+                24,
+                36
+            ],
+            "lDlA7cfNk8A_Which of the winners has a different color than the others?": [
+                56,
+                29,
+                43,
+                70,
+                21,
+                74,
+                42
+            ],
+            "lDlA7cfNk8A_What is the logo of the stage floor?": [
+                74,
+                1,
+                43,
+                59,
+                49,
+                73,
+                56
+            ],
+            "f8DKD78BrQA_What words are on the screen before the demo of Fourier Intelligence?": [
+                1,
+                45,
+                49,
+                26,
+                0,
+                27,
+                39
+            ],
+            "f8DKD78BrQA_What's on the screen behind Jen-Hsun Huang when he talks about Ansys Rescale?": [
+                59,
+                67,
+                50,
+                27,
+                61,
+                60,
+                66
+            ],
+            "f8DKD78BrQA_Which company do the presenters mention after the collaboration between NVIDIA and Google?": [
+                53,
+                37,
+                54,
+                10,
+                11,
+                47,
+                44
+            ],
+            "f8DKD78BrQA_Which area is used to demonstrate the AI forecast?": [
+                43,
+                34,
+                0,
+                33,
+                49,
+                71,
+                26
+            ],
+            "f8DKD78BrQA_Which company does the presenter mentions before Cohesity?": [
+                53,
+                54,
+                37,
+                3,
+                51,
+                36,
+                52
+            ],
+            "f8DKD78BrQA_Which company claims to first to provide AI-powered business insights from secondary data?": [
+                45,
+                59,
+                39,
+                54,
+                52,
+                66,
+                1
+            ],
+            "f8DKD78BrQA_Which company does the presenter mentions before NetApp?": [
+                53,
+                54,
+                37,
+                36,
+                51,
+                3,
+                48
+            ],
+            "f8DKD78BrQA_What brand of car is used to show 3DEXCITE?": [
+                62,
+                63,
+                64,
+                9,
+                61,
+                10,
+                26
+            ],
+            "FaV0tIaWWEg_When \"Pursuit of the Dream Machine\" appears on the screen behind the speaker, two lines of pictures are below the sentence. The timeline numbers ablove the first line of pictures are ____.": [
+                8,
+                9,
+                11,
+                64,
+                63,
+                61,
+                67
+            ],
+            "FaV0tIaWWEg_What is the logical sequence of the entire conference?": [
+                59,
+                35,
+                60,
+                42,
+                29,
+                55,
+                12
+            ],
+            "FaV0tIaWWEg_What appears on the screen at the end of the video?": [
+                29,
+                30,
+                33,
+                39,
+                65,
+                38,
+                41
+            ],
+            "QB7FoIpx8os_What color suit is the first speaker wearing in the video?": [
+                21,
+                74,
+                63,
+                62,
+                48,
+                42,
+                58
+            ],
+            "QB7FoIpx8os_What color clothes is the fifth speaker wearing in the video?": [
+                74,
+                42,
+                39,
+                48,
+                21,
+                11,
+                58
+            ]
+        }
+    }
+}

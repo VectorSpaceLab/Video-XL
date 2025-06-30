@@ -1,25 +1,29 @@
-# export OMP_NUM_THREADS=8
-# export NCCL_IB_DISABLE=0
-# export NCCL_IB_GID_INDEX=3
-cd /share/LXRlxr0_0/code/videoxl2/videoxl2
+cd /share/minghao/VideoProjects/Upload/Video-XL/Video-XL-2/train
 source activate /share/LXRlxr0_0/env/xl
 export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+export NCCL_DEBUG=WARN
+
+WORLD_SIZE=1
+MASTER_ADDR="127.0.0.1" # Or your machine's IP address if needed, but localhost is fine for single machine
+MASTER_PORT="29500" # Choose an available port
+RANK=0 # For a single node, the rank is 0
+NPROC_PER_NODE=8
 
 torchrun \
     --nnodes=$WORLD_SIZE \
-    --nproc_per_node=8 \
+    --nproc_per_node=$NPROC_PER_NODE \
     --master_addr=$MASTER_ADDR \
     --master_port=$MASTER_PORT \
     --node_rank=$RANK \
-    longva/longva/train/train_mem.py \
-    --deepspeed /share/LXRlxr0_0/code/videoxl2/videoxl2/zero1_qin.json \
+    videoxl2/train/train_mem.py \
+    --deepspeed ./deepspeed/zero1.json \
     --model_name_or_path /share/LXRlxr0_0/code/Qwen/Qwen2.5-7B-Instruct \
     --version qwen_1_5  \
-    --data_path /share/LXRlxr0_0/code/videoxl2/videoxl2/sum2.json \
-    --image_folder /share/ \
-    --video_folder /share/ \
-    --vision_tower  /share/LXRlxr0_0/code/videoxlturbo2.0/videoxl/google/siglip-so400m-patch14-384 \
+    --data_path ./datas/toy.yaml \
+    --vision_tower /share/LXRlxr0_0/code/videoxlturbo2.0/videoxl/google/siglip-so400m-patch14-384 \
     --pretrain_mm_mlp_adapter /share/LXRlxr0_0/code/videoxlturbo2.0/LongVA_stage2/checkpoints/pretrain_0308_qwen2.5_7b/mm_projector.bin \
+    --pretrain_dts /share/minghao/VideoProjects/lmm-eval-sparse/longva/longva/model/encoder.pth \
     --mm_projector_type mlp2x_gelu \
     --video_fps 1 \
     --frames_upbound 16 \
@@ -35,7 +39,7 @@ torchrun \
     --mm_use_im_start_end False \
     --mm_use_im_patch_token False \
     --bf16 True \
-    --output_dir checkpoints/videoxl2_0410 \
+    --output_dir ./checkpoints/videoxl2_stage3 \
     --num_train_epochs 1 \
     --per_device_train_batch_size 1 \
     --per_device_eval_batch_size 4 \
@@ -54,5 +58,5 @@ torchrun \
     --gradient_checkpointing True \
     --dataloader_num_workers 8 \
     --lazy_preprocess True \
-    --run_name finetune_i \
+    --run_name finetune_stage3 \
     --group_by_stride strict \

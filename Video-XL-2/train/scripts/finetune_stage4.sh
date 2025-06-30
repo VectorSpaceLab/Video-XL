@@ -1,19 +1,8 @@
-# export OMP_NUM_THREADS=8
-# export NCCL_IB_DISABLE=0
-# export NCCL_IB_GID_INDEX=3
-cd /share/LXRlxr0_0/code/videoxl2/videoxl2
+cd /share/minghao/VideoProjects/Upload/Video-XL/Video-XL-2/train
 source activate /share/LXRlxr0_0/env/xl
 export OMP_NUM_THREADS=1
 export MKL_NUM_THREADS=1
-# export NCCL_P2P_DISABLE=1 
-# export DISABLE_ADDMM_CUDA_LT=1
-# export TORCH_CUDNN_USE_HEURISTIC_MODE_B=1
 export NCCL_DEBUG=WARN
-
-# WORLD_SIZE=8
-# MASTER_ADDR="127.0.0.1"
-# MASTER_PORT=29500
-# RANK=0
 
 torchrun \
     --nnodes=$WORLD_SIZE \

@@ -1,0 +1,1901 @@
+{
+    "event understanding": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 12,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "rSE2YPcv89U_Which team scores the first goal of the match?": [
+                26,
+                57,
+                61,
+                73,
+                32,
+                6
+            ],
+            "rSE2YPcv89U_Who does the player pass the ball to when the top left corners indicates it is 18:30 into the game?": [
+                13,
+                24,
+                11,
+                15,
+                7,
+                69
+            ],
+            "rSE2YPcv89U_How many substitutions does Liverpool make?": [
+                63,
+                67,
+                46,
+                74,
+                73,
+                4
+            ],
+            "T1yhBv1ytzw_What is the category of this video?": [
+                30,
+                33,
+                5,
+                22,
+                13,
+                46
+            ],
+            "T1yhBv1ytzw_What is the score of Liverpool in the FA Cup at Anfield?": [
+                15,
+                16,
+                38,
+                37,
+                5,
+                6
+            ],
+            "T1yhBv1ytzw_Where does Keita hurt?": [
+                63,
+                32,
+                0,
+                27,
+                26,
+                7
+            ],
+            "T1yhBv1ytzw_Why does Elliott fall at 42:37?": [
+                39,
+                62,
+                2,
+                64,
+                29,
+                6
+            ],
+            "T1yhBv1ytzw_What is the best perform of Jones till now?": [
+                71,
+                64,
+                13,
+                21,
+                45,
+                16
+            ],
+            "T1yhBv1ytzw_Given all the performance, we can predict that ____ is the best player?": [
+                34,
+                0,
+                61,
+                30,
+                14,
+                46
+            ],
+            "T1yhBv1ytzw_What is the final score of the game?": [
+                71,
+                34,
+                23,
+                61,
+                10,
+                24
+            ],
+            "Xjf5N9S3jAA_Who comes to the sports field?": [
+                55,
+                4,
+                56,
+                54,
+                53,
+                35
+            ],
+            "Xjf5N9S3jAA_How many titles did Tsitsipas got?": [
+                61,
+                37,
+                28,
+                33,
+                25,
+                26
+            ],
+            "Xjf5N9S3jAA_Who won the first round?": [
+                0,
+                7,
+                68,
+                21,
+                66,
+                2
+            ],
+            "Xjf5N9S3jAA_When does one of the break time end?": [
+                67,
+                68,
+                34,
+                29,
+                33,
+                21
+            ],
+            "Xjf5N9S3jAA_What was the final score of the game?": [
+                65,
+                68,
+                45,
+                62,
+                40,
+                66
+            ],
+            "tKIFQI9cH2c_What happens at the beginning of the video?": [
+                49,
+                56,
+                36,
+                73,
+                33,
+                71
+            ],
+            "tKIFQI9cH2c_Why is the score 0-30 after the second ball?": [
+                43,
+                68,
+                45,
+                73,
+                25,
+                33
+            ],
+            "tKIFQI9cH2c_How does the point tie occur when the game score is 0-1 and the point score is 30-30?": [
+                67,
+                73,
+                11,
+                25,
+                47,
+                41
+            ],
+            "tKIFQI9cH2c_What happens after Serena's first stumble?": [
+                12,
+                37,
+                3,
+                18,
+                28,
+                70
+            ],
+            "tKIFQI9cH2c_What does the man in the green hat and coat do when the background shows 126km/h?": [
+                52,
+                71,
+                72,
+                20,
+                66,
+                4
+            ],
+            "tKIFQI9cH2c_After IBM is 155 and the tennis ball is out of bounds, what do the two people in green shirts at the top of the screen do?": [
+                52,
+                66,
+                43,
+                20,
+                18,
+                71
+            ],
+            "tKIFQI9cH2c_When does the game start?": [
+                36,
+                49,
+                25,
+                68,
+                24,
+                57
+            ],
+            "VTCDQYYKA9o_Is the staff wiping the table tennis table with their left hand or right hand?": [
+                59,
+                2,
+                6,
+                24,
+                15,
+                12
+            ],
+            "KLIa2UaE2KE_The ball was in during the video replay of the first set, so who scored this point?": [
+                13,
+                33,
+                24,
+                32,
+                34,
+                27
+            ],
+            "KLIa2UaE2KE_What did number seven do after being substituted in?": [
+                8,
+                10,
+                37,
+                61,
+                72,
+                60
+            ],
+            "oZEVgDXJwCc_Where is the football game held?": [
+                0,
+                19,
+                37,
+                7,
+                72,
+                21
+            ],
+            "oZEVgDXJwCc_What happens at 47:56 mark of the game?": [
+                24,
+                37,
+                19,
+                72,
+                59,
+                56
+            ],
+            "oZEVgDXJwCc_What happens at 65:13?": [
+                37,
+                24,
+                19,
+                74,
+                59,
+                36
+            ],
+            "oZEVgDXJwCc_In the entire match, how is the first goal scored?": [
+                12,
+                56,
+                27,
+                72,
+                25,
+                29
+            ],
+            "Hf-n1yfd8II_Who serves first?": [
+                74,
+                42,
+                1,
+                72,
+                26,
+                34
+            ],
+            "Hf-n1yfd8II_What is the primary reason for Lee Chong Wei's point loss in the first half of the match?": [
+                63,
+                40,
+                51,
+                34,
+                62,
+                74
+            ],
+            "Hf-n1yfd8II_What do the two players do after they warm up?": [
+                31,
+                2,
+                28,
+                4,
+                19,
+                24
+            ],
+            "Hf-n1yfd8II_When do the scores of Lin Dan and Li Chong Wei get 20 for the third game?": [
+                74,
+                51,
+                68,
+                44,
+                19,
+                62
+            ],
+            "JlrzSvCsIjE_Why does Team USA lose the first point of the second game of the first set?": [
+                26,
+                27,
+                13,
+                11,
+                29,
+                6
+            ],
+            "JlrzSvCsIjE_What are the players doing after interview?": [
+                70,
+                72,
+                69,
+                71,
+                65,
+                68
+            ],
+            "cXDT44zT8JY_Why is the referee clapping at 37:39 in the video?": [
+                7,
+                6,
+                9,
+                5,
+                61,
+                8
+            ],
+            "cXDT44zT8JY_At 32:20 in the video, what method is the man in white starting to use to strike the opponent?": [
+                66,
+                13,
+                14,
+                10,
+                12,
+                19
+            ],
+            "cXDT44zT8JY_Who is still celebrating after the game?": [
+                74,
+                3,
+                71,
+                7,
+                70,
+                0
+            ],
+            "cWEnogdsW78_Who initiates ground moves in the first round?": [
+                74,
+                40,
+                4,
+                73,
+                22,
+                14
+            ],
+            "cWEnogdsW78_At 11:14 in the video, how does Old Bruce Lee strike the opponent's head?": [
+                22,
+                29,
+                53,
+                71,
+                49,
+                61
+            ],
+            "cWEnogdsW78_Who is frequently being knocked down in the video?": [
+                40,
+                39,
+                49,
+                72,
+                71,
+                50
+            ],
+            "rp4NKWb7dXk_What type of video is this?": [
+                24,
+                16,
+                39,
+                7,
+                10,
+                23
+            ],
+            "rp4NKWb7dXk_What year is this game?": [
+                74,
+                36,
+                7,
+                12,
+                5,
+                3
+            ],
+            "rp4NKWb7dXk_What kind of competition is this?": [
+                40,
+                23,
+                12,
+                22,
+                60,
+                20
+            ],
+            "rp4NKWb7dXk_Who starts the game first?": [
+                3,
+                5,
+                22,
+                7,
+                8,
+                36
+            ],
+            "rp4NKWb7dXk_What does the first thing the second athlete do when she comes to playing field?": [
+                6,
+                7,
+                63,
+                69,
+                12,
+                23
+            ],
+            "rp4NKWb7dXk_How does Athlete No. 403 feel after completing her movements?": [
+                42,
+                62,
+                27,
+                12,
+                23,
+                9
+            ],
+            "rp4NKWb7dXk_How many countries send two athletes?": [
+                6,
+                64,
+                7,
+                74,
+                49,
+                66
+            ],
+            "rp4NKWb7dXk_What happened to the British athlete when she landed?": [
+                6,
+                42,
+                43,
+                39,
+                37,
+                66
+            ],
+            "rp4NKWb7dXk_What does the last athlete on the field do after she comes off the field?": [
+                6,
+                63,
+                71,
+                69,
+                7,
+                27
+            ],
+            "Aiem1w_TvaA_What is the scoring method for the first goal of the white team number 7?": [
+                22,
+                58,
+                54,
+                66,
+                26,
+                47
+            ],
+            "Aiem1w_TvaA_Who makes the last shot for Team USA in the first quarter?": [
+                67,
+                13,
+                70,
+                32,
+                61,
+                5
+            ],
+            "Aiem1w_TvaA_Why does White Team No. 8 stand at the free throw line for the first time?": [
+                35,
+                67,
+                25,
+                27,
+                33,
+                44
+            ],
+            "Aiem1w_TvaA_Who wins the game?": [
+                37,
+                74,
+                22,
+                38,
+                4,
+                61
+            ],
+            "Z86xysw5Ncc_What category does this video belong to?": [
+                74,
+                72,
+                73,
+                3,
+                40,
+                21
+            ],
+            "Z86xysw5Ncc_When does the first heat of the men's 100m startstart of a race?": [
+                3,
+                64,
+                48,
+                56,
+                28,
+                72
+            ],
+            "Z86xysw5Ncc_How to describe the video play speed from 04:42-05:09?": [
+                20,
+                58,
+                45,
+                44,
+                59,
+                16
+            ],
+            "Z86xysw5Ncc_Which statement is true for Men's 100M Round 1 Heat 1?": [
+                3,
+                56,
+                72,
+                64,
+                48,
+                40
+            ],
+            "Z86xysw5Ncc_How many seconds is the difference between the first and the second in Men's 100M Round 1 Heat 2?": [
+                48,
+                56,
+                64,
+                3,
+                72,
+                28
+            ],
+            "Z86xysw5Ncc_After Men 100M round 1 heat 2, who is the first athletes that shows up?": [
+                3,
+                56,
+                64,
+                27,
+                8,
+                40
+            ],
+            "Z86xysw5Ncc_When does Men's 100M Round 1 Heat 4 start preparing?": [
+                3,
+                64,
+                72,
+                56,
+                48,
+                28
+            ],
+            "Z86xysw5Ncc_What is the best record for Men's 100M Round 1 Heat 4?": [
+                64,
+                56,
+                3,
+                40,
+                72,
+                48
+            ],
+            "Z86xysw5Ncc_Who is the first in Men's 100M Roound 1 Heat 5?": [
+                3,
+                64,
+                40,
+                56,
+                48,
+                72
+            ],
+            "Z86xysw5Ncc_What place is Su Bingtian in for Men's 100M Round 1 Heat 6?": [
+                3,
+                34,
+                57,
+                15,
+                48,
+                68
+            ],
+            "hjoDzK0siaM_How many somersaults do the first contestant finish the show?": [
+                50,
+                67,
+                42,
+                40,
+                49,
+                47
+            ],
+            "hjoDzK0siaM_What mood is the fifth contestant in after the competition?": [
+                50,
+                42,
+                49,
+                60,
+                43,
+                70
+            ],
+            "hjoDzK0siaM_What is the number of the athlete who enters the field after athlete number 404?": [
+                66,
+                71,
+                70,
+                43,
+                4,
+                73
+            ],
+            "hjoDzK0siaM_After athlete number 404 finished their performance, what does she do for the audience?": [
+                50,
+                42,
+                66,
+                49,
+                67,
+                43
+            ],
+            "hjoDzK0siaM_Which country has the same number of players as Australia?": [
+                3,
+                4,
+                74,
+                59,
+                42,
+                0
+            ],
+            "2LH3JCGkEBU_What did the man do after kissing the woman's hands during the 2010 Free Dance performance in Vancouver?": [
+                8,
+                3,
+                15,
+                13,
+                74,
+                40
+            ],
+            "2LH3JCGkEBU_How many times do two contestants circle together between 10:20-10:34?": [
+                42,
+                51,
+                45,
+                35,
+                70,
+                15
+            ],
+            "2LH3JCGkEBU_How many games at the Vancouver 2010 Olympic Games are shown in the video?": [
+                8,
+                51,
+                15,
+                3,
+                63,
+                57
+            ],
+            "2LH3JCGkEBU_What is the opening move of the gala performance at Sochi 2014?": [
+                0,
+                7,
+                4,
+                6,
+                5,
+                73
+            ],
+            "2LH3JCGkEBU_What did the men do when the short program began in Sochi?": [
+                51,
+                8,
+                24,
+                15,
+                63,
+                3
+            ],
+            "2LH3JCGkEBU_What are the positions of the two men after the free dance at the Sochi Winter Olympics?": [
+                51,
+                63,
+                0,
+                52,
+                10,
+                8
+            ],
+            "2LH3JCGkEBU_In the footage from Sochi, how many games did the womon wear their hair up?": [
+                63,
+                8,
+                51,
+                57,
+                70,
+                56
+            ],
+            "2LH3JCGkEBU_How many Olympic Games are featured in the video?": [
+                63,
+                51,
+                57,
+                58,
+                8,
+                15
+            ],
+            "9-gOCOu_KGU_How many people participated in the final of Men's 10000M?": [
+                18,
+                2,
+                73,
+                1,
+                30,
+                38
+            ],
+            "9-gOCOu_KGU_What event happens after most of the athletes run 3200m?": [
+                18,
+                49,
+                58,
+                2,
+                32,
+                30
+            ],
+            "9-gOCOu_KGU_How many people do not complete the game in total?": [
+                1,
+                2,
+                74,
+                29,
+                33,
+                59
+            ]
+        }
+    },
+    "entity recognition": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 12,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "rSE2YPcv89U_What part of the body is used to score the second goal?": [
+                6,
+                40,
+                42,
+                53,
+                20,
+                44
+            ],
+            "rSE2YPcv89U_After the opposing team scored an own goal, how does the Liverpool players celebrate?": [
+                73,
+                63,
+                46,
+                62,
+                67,
+                70
+            ],
+            "T1yhBv1ytzw_Who is hit by Thiago and therefore, Thiago gets a warn?": [
+                32,
+                22,
+                62,
+                64,
+                63,
+                7
+            ],
+            "T1yhBv1ytzw_Who nearly gets the score at 21:09?": [
+                71,
+                10,
+                11,
+                54,
+                61,
+                8
+            ],
+            "T1yhBv1ytzw_Who scores the first goal?": [
+                29,
+                2,
+                42,
+                53,
+                39,
+                10
+            ],
+            "T1yhBv1ytzw_Who has the most attempts in Brighton?": [
+                57,
+                39,
+                41,
+                16,
+                74,
+                59
+            ],
+            "T1yhBv1ytzw_Who gets the second score?": [
+                71,
+                61,
+                10,
+                17,
+                14,
+                34
+            ],
+            "T1yhBv1ytzw_Who wants to cheat the referee at 51:24?": [
+                41,
+                52,
+                51,
+                48,
+                9,
+                31
+            ],
+            "T1yhBv1ytzw_Who substitutes Arnold?": [
+                74,
+                51,
+                64,
+                72,
+                56,
+                27
+            ],
+            "Xjf5N9S3jAA_Who is the first person being interviewed who is not a tennis athlete?": [
+                56,
+                6,
+                5,
+                55,
+                54,
+                53
+            ],
+            "Xjf5N9S3jAA_Who is the second person being interviewed who is not a tennis athlete?": [
+                56,
+                6,
+                5,
+                55,
+                4,
+                1
+            ],
+            "VTCDQYYKA9o_Who is the person in the video wearing red clothes and then taking them off to reveal the blue clothes underneath?": [
+                2,
+                56,
+                3,
+                34,
+                55,
+                67
+            ],
+            "VTCDQYYKA9o_From 28:50-28:57 in the video, what happens to the ball after Ma Long's final forehand stroke?": [
+                43,
+                32,
+                12,
+                21,
+                62,
+                48
+            ],
+            "VTCDQYYKA9o_In what order do the three athletes, from front to back, walk to the podium?": [
+                67,
+                68,
+                1,
+                71,
+                70,
+                73
+            ],
+            "VTCDQYYKA9o_Who is wearing the black mask and orange shirt in the video?": [
+                38,
+                69,
+                67,
+                71,
+                56,
+                65
+            ],
+            "KLIa2UaE2KE_Which player scored the tenth point for Italy in the first set of the video?": [
+                0,
+                12,
+                38,
+                37,
+                3,
+                34
+            ],
+            "KLIa2UaE2KE_What is the name of the player wearing number 16 for Brazil in the video?": [
+                40,
+                62,
+                2,
+                8,
+                1,
+                69
+            ],
+            "KLIa2UaE2KE_What is the number of the player being substituted when the game score is 0-2, point score is 14-15?": [
+                10,
+                8,
+                23,
+                59,
+                37,
+                15
+            ],
+            "KLIa2UaE2KE_A famous football star comes to watch the game, who is he?": [
+                62,
+                71,
+                16,
+                8,
+                10,
+                26
+            ],
+            "KLIa2UaE2KE_Which national team was the first to receive medals on the podium after the match?": [
+                67,
+                72,
+                65,
+                70,
+                64,
+                73
+            ],
+            "oZEVgDXJwCc_Who takes the first corner kick of the game?": [
+                58,
+                27,
+                35,
+                11,
+                40,
+                71
+            ],
+            "oZEVgDXJwCc_Why doesn't German's first corner kick go in?": [
+                9,
+                58,
+                0,
+                71,
+                55,
+                37
+            ],
+            "oZEVgDXJwCc_Which German player attempts the first shot?": [
+                9,
+                37,
+                0,
+                63,
+                71,
+                61
+            ],
+            "oZEVgDXJwCc_Who scores the first goal?": [
+                56,
+                12,
+                27,
+                25,
+                72,
+                9
+            ],
+            "Hf-n1yfd8II_Which country do the two players come from?": [
+                74,
+                42,
+                65,
+                71,
+                48,
+                51
+            ],
+            "Hf-n1yfd8II_Who get the first point for the second game?": [
+                74,
+                58,
+                45,
+                28,
+                70,
+                37
+            ],
+            "Hf-n1yfd8II_Who's that guy in orange and always coughing?": [
+                42,
+                26,
+                53,
+                59,
+                3,
+                5
+            ],
+            "Hf-n1yfd8II_What is the second sport that appears in the opening promotional video?": [
+                0,
+                68,
+                70,
+                2,
+                74,
+                29
+            ],
+            "JlrzSvCsIjE_Who is interviewed after the game?": [
+                70,
+                71,
+                69,
+                72,
+                68,
+                73
+            ],
+            "cXDT44zT8JY_The shirtless person on the stage in the video is who?": [
+                2,
+                0,
+                7,
+                74,
+                1,
+                71
+            ],
+            "cXDT44zT8JY_What color gloves does the referee wear?": [
+                7,
+                6,
+                71,
+                9,
+                1,
+                61
+            ],
+            "cXDT44zT8JY_Between 09:45-15:00, what demography predominates among the spectators on the sidelines?": [
+                8,
+                2,
+                74,
+                1,
+                7,
+                71
+            ],
+            "cXDT44zT8JY_What is the blue box appearing periodically in the bottom right corner of the video?": [
+                5,
+                7,
+                0,
+                2,
+                8,
+                71
+            ],
+            "cWEnogdsW78_Who's going to go first?": [
+                74,
+                73,
+                6,
+                40,
+                33,
+                2
+            ],
+            "cWEnogdsW78_How many people can be clearly seen on stage in the video at 12:42?": [
+                0,
+                2,
+                74,
+                4,
+                3,
+                6
+            ],
+            "cWEnogdsW78_Who is on the right side of the screen after the ground move in the third round?": [
+                74,
+                4,
+                3,
+                59,
+                58,
+                7
+            ],
+            "rp4NKWb7dXk_What action did she take?": [
+                9,
+                42,
+                39,
+                40,
+                15,
+                12
+            ],
+            "rp4NKWb7dXk_What color-based gymnastics clothes do the athletes with number 354 wear?": [
+                12,
+                21,
+                5,
+                40,
+                42,
+                56
+            ],
+            "rp4NKWb7dXk_What color gloves does athlete 404 have on his hand?": [
+                22,
+                24,
+                36,
+                48,
+                63,
+                23
+            ],
+            "rp4NKWb7dXk_What does the man in red do after high-fiving athlete No.385 after her performance?": [
+                48,
+                36,
+                30,
+                61,
+                49,
+                63
+            ],
+            "Aiem1w_TvaA_Who grabs the rebound when White Team No. 13 misses a three-pointer?": [
+                35,
+                41,
+                21,
+                69,
+                19,
+                58
+            ],
+            "hjoDzK0siaM_What are the differences in attire between the second and third contestants?": [
+                50,
+                58,
+                4,
+                51,
+                35,
+                3
+            ],
+            "hjoDzK0siaM_After the competition, three athletes follow behind the staff. Among them, where is the champion positioned among the three?": [
+                4,
+                3,
+                71,
+                2,
+                72,
+                70
+            ],
+            "hjoDzK0siaM_Who does the champion start celebrating with after the last athlete finishes their performance?": [
+                42,
+                74,
+                0,
+                28,
+                68,
+                50
+            ],
+            "hjoDzK0siaM_What is Mustafina doing when she is waiting for her score?": [
+                59,
+                52,
+                43,
+                49,
+                35,
+                51
+            ],
+            "2LH3JCGkEBU_What is the theme color of the Pyeongchang Winter Olympics?": [
+                63,
+                58,
+                69,
+                64,
+                60,
+                51
+            ],
+            "2LH3JCGkEBU_At the start of the gala performance at the Vancouver Winter Olympics, what colour were the stage lights?": [
+                42,
+                15,
+                70,
+                8,
+                0,
+                51
+            ],
+            "2LH3JCGkEBU_In this video, the Pyeongchang Winter Olympics clip how many outfits did the two people change?": [
+                46,
+                50,
+                58,
+                59,
+                64,
+                60
+            ],
+            "2LH3JCGkEBU_How many times did that woman wear the red dress in Vancouver?": [
+                17,
+                56,
+                18,
+                74,
+                7,
+                3
+            ],
+            "2LH3JCGkEBU_What pants did the men wear in the gala performance segment of the Vancouver Winter Olympics?": [
+                8,
+                51,
+                63,
+                58,
+                61,
+                56
+            ],
+            "2LH3JCGkEBU_How many people are in the waiting room with the two contestants for the short program team competition at Sochi 2014?": [
+                51,
+                8,
+                24,
+                15,
+                3,
+                42
+            ],
+            "9-gOCOu_KGU_Where is the scene shown in the video?": [
+                21,
+                8,
+                20,
+                68,
+                16,
+                46
+            ],
+            "9-gOCOu_KGU_Who is the man on the field?": [
+                4,
+                7,
+                74,
+                6,
+                17,
+                71
+            ],
+            "9-gOCOu_KGU_Who takes the lead when there is 19 laps to go?": [
+                38,
+                11,
+                57,
+                51,
+                23,
+                39
+            ],
+            "9-gOCOu_KGU_Who falls and loses a shoe?": [
+                72,
+                61,
+                8,
+                58,
+                73,
+                38
+            ],
+            "9-gOCOu_KGU_Who leaves the runway shortly after there are 9 more laps to go?": [
+                2,
+                52,
+                1,
+                61,
+                28,
+                49
+            ],
+            "9-gOCOu_KGU_Who is the women that comes to the sports field?": [
+                69,
+                74,
+                70,
+                1,
+                68,
+                2
+            ]
+        }
+    },
+    "reasoning": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 12,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "rSE2YPcv89U_Why did Player number 4 in white push down Player number 17 in purple during the match?": [
+                43,
+                4,
+                58,
+                55,
+                38,
+                45
+            ],
+            "T1yhBv1ytzw_What does the commentator say during 58:39-58:48": [
+                64,
+                51,
+                9,
+                52,
+                19,
+                71
+            ],
+            "Xjf5N9S3jAA_Where might the conversation take place?": [
+                55,
+                1,
+                56,
+                5,
+                54,
+                53
+            ],
+            "Xjf5N9S3jAA_What can we know about Djokovbic and Tsitsipas?": [
+                60,
+                15,
+                37,
+                47,
+                61,
+                68
+            ],
+            "Xjf5N9S3jAA_Who served first in this game?": [
+                32,
+                60,
+                28,
+                66,
+                68,
+                65
+            ],
+            "Xjf5N9S3jAA_Who scored the first score?": [
+                68,
+                2,
+                45,
+                65,
+                0,
+                32
+            ],
+            "Xjf5N9S3jAA_Why was the start of this game considered awful?": [
+                40,
+                62,
+                65,
+                37,
+                28,
+                24
+            ],
+            "tKIFQI9cH2c_What is Venus's expression when waiting for Serena to serve, when the game score is 1-2, point score is 30-40?": [
+                15,
+                64,
+                44,
+                66,
+                45,
+                52
+            ],
+            "tKIFQI9cH2c_What is Venus's mood at IBM 163 when she hit the ball out of bounds to make it 30-40?": [
+                52,
+                18,
+                15,
+                28,
+                42,
+                44
+            ],
+            "oZEVgDXJwCc_Why is Puyol so sad at 15:06?": [
+                74,
+                34,
+                59,
+                44,
+                15,
+                11
+            ],
+            "oZEVgDXJwCc_Why does Spain get a free kick for the first time?": [
+                1,
+                47,
+                52,
+                29,
+                60,
+                58
+            ],
+            "oZEVgDXJwCc_Which team is more likely to reach the final in the future?": [
+                0,
+                37,
+                64,
+                42,
+                1,
+                74
+            ],
+            "Hf-n1yfd8II_Why does Lee Chong Wei lose the the most points for the first game?": [
+                40,
+                34,
+                51,
+                74,
+                63,
+                62
+            ],
+            "Hf-n1yfd8II_How does Lian Dan feel at 58:07?": [
+                17,
+                74,
+                19,
+                68,
+                58,
+                2
+            ],
+            "JlrzSvCsIjE_Why is Tiafoe so happy when the game score is 1-1, point score is 40-0?": [
+                2,
+                30,
+                35,
+                41,
+                20,
+                33
+            ],
+            "JlrzSvCsIjE_Why does Tiafoe fall during the first score when the set score is 0-1, game score is 1-0?": [
+                35,
+                2,
+                30,
+                27,
+                20,
+                26
+            ],
+            "JlrzSvCsIjE_Why does the lens focus on a number when the set score is 0-1, game score is 1-1, point score is 15-15?": [
+                26,
+                57,
+                27,
+                17,
+                45,
+                12
+            ],
+            "JlrzSvCsIjE_Why do Tiafoe and Federer tap each other in the fourth game of the second set?": [
+                2,
+                35,
+                27,
+                26,
+                41,
+                54
+            ],
+            "cXDT44zT8JY_How old is Royce Gracie now?": [
+                5,
+                8,
+                4,
+                3,
+                73,
+                70
+            ],
+            "cWEnogdsW78_Who maintains the advantage throughout the entire match?": [
+                4,
+                74,
+                0,
+                40,
+                53,
+                39
+            ],
+            "Aiem1w_TvaA_Why are the fans in the audience so excited from 45:14-50:00?": [
+                2,
+                43,
+                5,
+                0,
+                33,
+                42
+            ],
+            "Aiem1w_TvaA_Why are the audience cheering when the score is 61-56?": [
+                33,
+                14,
+                68,
+                63,
+                42,
+                67
+            ],
+            "Aiem1w_TvaA_Why does James take free throws?": [
+                35,
+                58,
+                12,
+                70,
+                49,
+                56
+            ],
+            "9-gOCOu_KGU_Which match could this probably be?": [
+                59,
+                74,
+                0,
+                12,
+                2,
+                43
+            ],
+            "9-gOCOu_KGU_How many laps does a game take?": [
+                2,
+                1,
+                29,
+                35,
+                33,
+                60
+            ],
+            "9-gOCOu_KGU_How long did the entire game take in total?": [
+                2,
+                1,
+                74,
+                15,
+                31,
+                26
+            ],
+            "9-gOCOu_KGU_Who is the little girl that comes to the sports field?": [
+                69,
+                68,
+                67,
+                22,
+                47,
+                3
+            ]
+        }
+    },
+    "summarization": {
+        "config": {
+            "selected_topk": 4,
+            "selected_chunk_size": 12,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "rSE2YPcv89U_How is the situation in the first half of the match?": [
+                65,
+                0,
+                30,
+                55
+            ],
+            "rSE2YPcv89U_What happens in the second half of the game?": [
+                0,
+                1,
+                55,
+                48
+            ],
+            "tKIFQI9cH2c_What is the process and result of the first official ball of the first game?": [
+                48,
+                43,
+                23,
+                36
+            ],
+            "tKIFQI9cH2c_What is the highlight of the first inning in the video?": [
+                67,
+                71,
+                73,
+                72
+            ],
+            "tKIFQI9cH2c____ is best fitted commentary for the main events that take place between 19:30-20:08.": [
+                71,
+                20,
+                72,
+                67
+            ],
+            "tKIFQI9cH2c_What happens between the scores of 4-5 and 4-6 in the game?": [
+                33,
+                68,
+                25,
+                73
+            ],
+            "KLIa2UaE2KE_What is the content of the entire video about?": [
+                13,
+                29,
+                25,
+                19
+            ],
+            "Hf-n1yfd8II_Summarize the changes of the score for the second game": [
+                68,
+                74,
+                0,
+                70
+            ],
+            "Hf-n1yfd8II_How to evaluate Lin Dan's performance for the second game?": [
+                74,
+                19,
+                45,
+                64
+            ],
+            "JlrzSvCsIjE_Summarize the scoring in the first game of the first set?": [
+                26,
+                27,
+                57,
+                17
+            ],
+            "JlrzSvCsIjE_Summarize the scoring in the second game of the first set?": [
+                26,
+                27,
+                57,
+                17
+            ],
+            "JlrzSvCsIjE_Summarize the scoring in the third game of the first set?": [
+                26,
+                27,
+                17,
+                34
+            ],
+            "JlrzSvCsIjE_What happens in the sixth game of the first set?": [
+                6,
+                27,
+                26,
+                34
+            ],
+            "JlrzSvCsIjE_What happens in the third game of the second set?": [
+                27,
+                6,
+                26,
+                29
+            ],
+            "JlrzSvCsIjE_What happens in the fourth game of the second set?": [
+                26,
+                27,
+                6,
+                29
+            ],
+            "JlrzSvCsIjE_What happens in the first set?": [
+                27,
+                26,
+                68,
+                69
+            ],
+            "Aiem1w_TvaA_How to sum up the second game?": [
+                38,
+                22,
+                37,
+                61
+            ],
+            "Aiem1w_TvaA_What's the summary of Game 4?": [
+                74,
+                38,
+                61,
+                37
+            ]
+        }
+    },
+    "temporal grounding": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 12,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "rSE2YPcv89U_Which team is controlling the ball at 27:18 in the video?": [
+                7,
+                12,
+                15,
+                13,
+                18,
+                11
+            ],
+            "T1yhBv1ytzw_At 06:06, considering the player's facial expressions, whose belief and confidence is a little bit down?": [
+                64,
+                16,
+                38,
+                71,
+                6,
+                74
+            ],
+            "T1yhBv1ytzw_Who falls in the restricted area at 65:42?": [
+                52,
+                32,
+                67,
+                41,
+                63,
+                48
+            ],
+            "T1yhBv1ytzw_Who gets the ball and saves Brighton at 78:07?": [
+                39,
+                11,
+                28,
+                19,
+                71,
+                59
+            ],
+            "Xjf5N9S3jAA_How long did it take to transition from the warmup to the start of the match?": [
+                68,
+                37,
+                51,
+                13,
+                71,
+                60
+            ],
+            "VTCDQYYKA9o_How was the point won at 15:04 and had a slow motion replay from 15:10-15:14?": [
+                60,
+                36,
+                48,
+                12,
+                30,
+                65
+            ],
+            "oZEVgDXJwCc_When do the two teams first kick off?": [
+                0,
+                71,
+                63,
+                64,
+                36,
+                59
+            ],
+            "oZEVgDXJwCc_In 05:06 video time, who gets the ball from Pedro?": [
+                64,
+                67,
+                29,
+                1,
+                59,
+                73
+            ],
+            "Hf-n1yfd8II_Why does Lin Dan look so frustrated at 27:10?": [
+                74,
+                19,
+                36,
+                64,
+                55,
+                45
+            ],
+            "Hf-n1yfd8II_How to describe the feeling of Lee Chong Wei at 48:16?": [
+                62,
+                63,
+                34,
+                44,
+                40,
+                51
+            ],
+            "cXDT44zT8JY_At 42:40, why does the referee separate the two?": [
+                7,
+                6,
+                5,
+                9,
+                61,
+                2
+            ],
+            "9-gOCOu_KGU_What happens between 01:23-04:50?": [
+                63,
+                4,
+                61,
+                32,
+                2,
+                0
+            ],
+            "9-gOCOu_KGU_When does the first game start?": [
+                2,
+                1,
+                0,
+                74,
+                7,
+                61
+            ]
+        }
+    },
+    "key information retrieval": {
+        "config": {
+            "selected_topk": 5,
+            "selected_chunk_size": 12,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "rSE2YPcv89U_Which player is responsible for the first throw-in?": [
+                4,
+                57,
+                48,
+                34,
+                71
+            ],
+            "rSE2YPcv89U_How long does the entire match last?": [
+                73,
+                25,
+                66,
+                4,
+                48
+            ],
+            "rSE2YPcv89U_How does the goalkeeper prevent Liverpool's shot from scoring at 81:38 in the video?": [
+                46,
+                4,
+                67,
+                70,
+                63
+            ],
+            "rSE2YPcv89U_What color is the football in the video?": [
+                16,
+                43,
+                59,
+                4,
+                58
+            ],
+            "T1yhBv1ytzw_What is the stoppage time for the first half?": [
+                71,
+                11,
+                15,
+                64,
+                65
+            ],
+            "T1yhBv1ytzw_What is the score for the first half of the game?": [
+                71,
+                61,
+                10,
+                23,
+                54
+            ],
+            "tKIFQI9cH2c_After the game score is 3-5 and the point score is 30-30, what speed does the ball's display on the screen indicate for Venus's shot?": [
+                15,
+                68,
+                44,
+                52,
+                67
+            ],
+            "VTCDQYYKA9o_How many points does Fan Zhendong score in the fourth game?": [
+                43,
+                12,
+                25,
+                6,
+                51
+            ],
+            "KLIa2UaE2KE_Which country's flag is being waved at the beginning of the video?": [
+                0,
+                28,
+                57,
+                49,
+                29
+            ],
+            "KLIa2UaE2KE_Which team was leading before the eighteenth point in the second set?": [
+                17,
+                34,
+                51,
+                20,
+                52
+            ],
+            "KLIa2UaE2KE_Which team scored the first point of the third set?": [
+                33,
+                20,
+                24,
+                17,
+                3
+            ],
+            "oZEVgDXJwCc_What is the number of shots by Germany and Italy at the 30:00 mark of the game?": [
+                0,
+                37,
+                9,
+                71,
+                61
+            ],
+            "oZEVgDXJwCc_What is the number of the player who substitutes Boateng?": [
+                42,
+                9,
+                35,
+                24,
+                37
+            ],
+            "Hf-n1yfd8II_Who leads the score for the first game?": [
+                74,
+                1,
+                73,
+                68,
+                70
+            ],
+            "Hf-n1yfd8II_When does Lin Dan get his first point for the second game?": [
+                74,
+                19,
+                45,
+                64,
+                68
+            ],
+            "Hf-n1yfd8II_Which year does this match take place?": [
+                74,
+                1,
+                73,
+                72,
+                61
+            ],
+            "Hf-n1yfd8II_Who is the final winner?": [
+                74,
+                70,
+                1,
+                72,
+                71
+            ],
+            "JlrzSvCsIjE_What is Federer's average forehand topspin speed when the game score is 1-1, and point score is 30-0? ": [
+                17,
+                27,
+                26,
+                36,
+                61
+            ],
+            "JlrzSvCsIjE_How many times do the two teams hit the ball after the game score is 2-1, point score is 0-30?": [
+                26,
+                27,
+                57,
+                22,
+                34
+            ],
+            "JlrzSvCsIjE_What is the 1st serve percent of the two teams before the game score becomes 2-2?": [
+                26,
+                27,
+                40,
+                12,
+                57
+            ],
+            "cXDT44zT8JY_How long does the match last?": [
+                5,
+                8,
+                71,
+                38,
+                24
+            ],
+            "cWEnogdsW78_What is the hair color of Old Bruce Lee?": [
+                49,
+                22,
+                1,
+                29,
+                71
+            ],
+            "rp4NKWb7dXk_What is the main color of the venue?": [
+                0,
+                74,
+                3,
+                73,
+                1
+            ],
+            "rp4NKWb7dXk_What is the second athlete's number?": [
+                43,
+                6,
+                12,
+                49,
+                7
+            ],
+            "rp4NKWb7dXk_Which country does Athlete No. 365 come from?": [
+                6,
+                7,
+                74,
+                5,
+                12
+            ],
+            "rp4NKWb7dXk_What is this athlete's number?": [
+                7,
+                12,
+                6,
+                30,
+                24
+            ],
+            "rp4NKWb7dXk_What is the hairstyle of athlete 385?": [
+                6,
+                7,
+                69,
+                64,
+                12
+            ],
+            "rp4NKWb7dXk_What color is athlete 411 wearing?": [
+                67,
+                63,
+                7,
+                68,
+                62
+            ],
+            "Aiem1w_TvaA_What is LeBron James' free throw shooting percentage on the panel below the video?": [
+                27,
+                49,
+                12,
+                69,
+                13
+            ],
+            "Aiem1w_TvaA_What is the halftime score for Team USA vs Team Australia?": [
+                22,
+                61,
+                46,
+                60,
+                4
+            ],
+            "Aiem1w_TvaA_Who makes the penalty shot when the score is 81-68?": [
+                56,
+                63,
+                17,
+                68,
+                50
+            ],
+            "Z86xysw5Ncc_How many meters is the race about men in the video?": [
+                27,
+                56,
+                8,
+                28,
+                52
+            ],
+            "Z86xysw5Ncc_How many athletes in Men's 100M Start-List-Round 1 Heat 1?": [
+                3,
+                64,
+                56,
+                72,
+                48
+            ],
+            "Z86xysw5Ncc_What's the number on the back of Tyson Gay?": [
+                5,
+                8,
+                34,
+                27,
+                7
+            ],
+            "Z86xysw5Ncc_Who is the winner for Men's 100M Round 1 Heat 1?": [
+                3,
+                64,
+                56,
+                40,
+                72
+            ],
+            "Z86xysw5Ncc_Which Olympic Games do the games belong to?": [
+                21,
+                3,
+                26,
+                48,
+                33
+            ],
+            "Z86xysw5Ncc_Who runs on track 5 in round 1 heat 2?": [
+                72,
+                3,
+                22,
+                74,
+                56
+            ],
+            "Z86xysw5Ncc_How long does Justin Gatlin use in Men's 100M Round 1 Heat 2?": [
+                40,
+                11,
+                3,
+                15,
+                64
+            ],
+            "hjoDzK0siaM_The video begins with a person walking forward while holding a sign. What does the sign say?": [
+                71,
+                0,
+                72,
+                73,
+                70
+            ],
+            "hjoDzK0siaM_Where's the second-to-last contestant from in the opening introductions?": [
+                42,
+                43,
+                38,
+                35,
+                50
+            ],
+            "2LH3JCGkEBU_What is this video about?": [
+                56,
+                35,
+                3,
+                24,
+                63
+            ],
+            "2LH3JCGkEBU_Which country's athletes are the two protagonists in the video?": [
+                51,
+                63,
+                3,
+                8,
+                61
+            ],
+            "2LH3JCGkEBU_In Vancouver 2010, what was performed while wearing a white dress?": [
+                9,
+                14,
+                13,
+                8,
+                11
+            ],
+            "9-gOCOu_KGU_What competetion is going on based on the text in the video?": [
+                18,
+                7,
+                16,
+                61,
+                26
+            ],
+            "9-gOCOu_KGU_What is the score of the champion?": [
+                74,
+                2,
+                26,
+                61,
+                18
+            ]
+        }
+    }
+}

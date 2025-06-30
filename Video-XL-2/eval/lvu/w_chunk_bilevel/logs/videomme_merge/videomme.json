@@ -1,0 +1,67 @@
+{
+    "Counting Problem": {
+        "correct": 123,
+        "total": 268,
+        "accuracy": 45.8955223880597
+    },
+    "Information Synopsis": {
+        "correct": 264,
+        "total": 323,
+        "accuracy": 81.73374613003097
+    },
+    "Object Recognition": {
+        "correct": 246,
+        "total": 354,
+        "accuracy": 69.49152542372882
+    },
+    "Action Reasoning": {
+        "correct": 173,
+        "total": 285,
+        "accuracy": 60.70175438596491
+    },
+    "Object Reasoning": {
+        "correct": 288,
+        "total": 454,
+        "accuracy": 63.436123348017624
+    },
+    "Temporal Perception": {
+        "correct": 43,
+        "total": 55,
+        "accuracy": 78.18181818181819
+    },
+    "Attribute Perception": {
+        "correct": 168,
+        "total": 222,
+        "accuracy": 75.67567567567568
+    },
+    "Temporal Reasoning": {
+        "correct": 100,
+        "total": 177,
+        "accuracy": 56.49717514124294
+    },
+    "Action Recognition": {
+        "correct": 221,
+        "total": 313,
+        "accuracy": 70.6070287539936
+    },
+    "OCR Problems": {
+        "correct": 95,
+        "total": 139,
+        "accuracy": 68.34532374100719
+    },
+    "Spatial Perception": {
+        "correct": 35,
+        "total": 54,
+        "accuracy": 64.81481481481481
+    },
+    "Spatial Reasoning": {
+        "correct": 43,
+        "total": 56,
+        "accuracy": 76.78571428571429
+    },
+    "global": {
+        "total": 2700,
+        "correct": 1799,
+        "accuracy": 66.62962962962963
+    }
+}

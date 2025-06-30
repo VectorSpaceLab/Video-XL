@@ -1,0 +1,86 @@
+{
+    "results": {
+        "mlvu": {
+            "alias": "mlvu",
+            "mlvu_percetion_score,none": 73.87304507819687,
+            "mlvu_percetion_score_stderr,none": "N/A"
+        }
+    },
+    "group_subtasks": {
+        "mlvu": []
+    },
+    "configs": {
+        "mlvu": {
+            "task": "mlvu",
+            "dataset_path": "sy1998/temp",
+            "dataset_kwargs": {
+                "token": true
+            },
+            "test_split": "test",
+            "full_docs": false,
+            "process_results_use_image": false,
+            "doc_to_visual": "<function mlvu_doc_to_visual at 0x7f70904b7880>",
+            "doc_to_text": "<function mlvu_doc_to_text at 0x7f70351115a0>",
+            "doc_to_target": "answer",
+            "process_results": "<function mlvu_process_results at 0x7f7035111990>",
+            "description": "",
+            "target_delimiter": " ",
+            "fewshot_delimiter": "\n\n",
+            "num_fewshot": 0,
+            "metric_list": [
+                {
+                    "metric": "mlvu_percetion_score",
+                    "aggregation": "<function mlvu_aggregate_results at 0x7f7035111cf0>",
+                    "higher_is_better": true
+                }
+            ],
+            "output_type": "generate_until",
+            "generation_kwargs": {
+                "max_new_tokens": 16,
+                "temperature": 0.0,
+                "top_p": 1.0,
+                "num_beams": 1,
+                "do_sample": false,
+                "until": [
+                    "\n\n"
+                ]
+            },
+            "repeats": 1,
+            "should_decontaminate": false
+        }
+    },
+    "versions": {
+        "mlvu": "Yaml"
+    },
+    "n-shot": {
+        "mlvu": 0
+    },
+    "higher_is_better": {
+        "mlvu": {
+            "mlvu_percetion_score": true
+        }
+    },
+    "n-samples": {
+        "mlvu": {
+            "original": 2174,
+            "effective": 2174
+        }
+    },
+    "config": {
+        "model": "videoxl2",
+        "model_args": "pretrained=/share/minghao/Models2/Video-XL-2,conv_template=qwen_1_5,model_name=llava_qwen,max_frames_num=256,fps=1,max_fps=4,video_decode_backend=decord",
+        "batch_size": "1",
+        "batch_sizes": [],
+        "device": null,
+        "use_cache": null,
+        "limit": null,
+        "bootstrap_iters": 100000,
+        "gen_kwargs": "",
+        "random_seed": 0,
+        "numpy_seed": 1234,
+        "torch_seed": 1234,
+        "fewshot_seed": 1234
+    },
+    "git_hash": "21bf182",
+    "date": "0629_1551"
+}

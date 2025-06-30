@@ -1,0 +1,1444 @@
+{
+    "event understanding": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "TiQBTesZUJQ_What is the most likely animal the men try to hunt at 13:13?": [
+                44,
+                19,
+                50,
+                20,
+                33,
+                43
+            ],
+            "TiQBTesZUJQ_The video contains lots of ___ clips.": [
+                73,
+                74,
+                58,
+                66,
+                32,
+                64
+            ],
+            "TiQBTesZUJQ_What are the people going to do from 16:30-16:35?": [
+                35,
+                47,
+                36,
+                62,
+                26,
+                16
+            ],
+            "TiQBTesZUJQ_There is a close-up scene of a woman doing something on a leaf. She is ___.": [
+                54,
+                12,
+                8,
+                52,
+                34,
+                68
+            ],
+            "5dZ_lvDgevk_What type of video is this?": [
+                73,
+                48,
+                17,
+                61,
+                43,
+                11
+            ],
+            "5dZ_lvDgevk_Around what year do the blue and red lines intersect?": [
+                41,
+                22,
+                64,
+                58,
+                17,
+                4
+            ],
+            "5dZ_lvDgevk_Based on the visual cues, what is on the scene before the scene focus on a water glass with white top and gray bottom with words 'Promotional Video' in the upper left corner of the video": [
+                60,
+                26,
+                43,
+                37,
+                25,
+                13
+            ],
+            "5dZ_lvDgevk_How many people are interviewed in the M.I.T. AI Lab for using AI to learn about cancer detection with mammogram data?": [
+                19,
+                18,
+                21,
+                20,
+                11,
+                6
+            ],
+            "5dZ_lvDgevk_Based on the visual elements, can you identify the theme of this video?": [
+                60,
+                73,
+                4,
+                41,
+                17,
+                72
+            ],
+            "GcRKREorGSc_What animal is one of the five animals that appears in the picture walking on the grass?": [
+                38,
+                62,
+                64,
+                61,
+                63,
+                58
+            ],
+            "GcRKREorGSc_What color is the grass around the lioness lying alone in the grass?": [
+                50,
+                49,
+                1,
+                30,
+                66,
+                9
+            ],
+            "GcRKREorGSc_What happens after two lions lying on the grass enjoying sunshine, and then a bird standing on top of a rock?": [
+                1,
+                19,
+                9,
+                25,
+                30,
+                50
+            ],
+            "GcRKREorGSc_What appears on the screen before five deers eating the grass and then two giraffes walking on the grass?": [
+                34,
+                63,
+                6,
+                5,
+                64,
+                67
+            ],
+            "GcRKREorGSc_What is the second other animal that appears after the great kudu?": [
+                70,
+                0,
+                5,
+                67,
+                22,
+                6
+            ],
+            "GcRKREorGSc_What appears in the water before the scene of a hippo eating grass?": [
+                38,
+                56,
+                37,
+                57,
+                36,
+                23
+            ],
+            "GcRKREorGSc_What appears on the screen before the scene where a Nile monitor walks towards the right, making a hissing sound with its tongue, respective to the camera's view?": [
+                39,
+                7,
+                8,
+                11,
+                26,
+                72
+            ],
+            "GcRKREorGSc_What appears after a lilac-breasted roller shows up for the first time?": [
+                40,
+                39,
+                38,
+                20,
+                7,
+                41
+            ],
+            "GcRKREorGSc_What happens after the series of close-up shots of lions?": [
+                25,
+                50,
+                9,
+                1,
+                49,
+                19
+            ],
+            "xi6r3hZe5Tg_What type of video is this?": [
+                53,
+                74,
+                41,
+                52,
+                37,
+                0
+            ],
+            "Z4HGQL_McDQ_What happens from 04:45-05:25?": [
+                35,
+                37,
+                36,
+                34,
+                29,
+                30
+            ],
+            "Z4HGQL_McDQ_What is Samir Boulahya doing when his name first appears?": [
+                8,
+                15,
+                16,
+                72,
+                9,
+                25
+            ],
+            "Z4HGQL_McDQ_What is the item placed on the shelf after cleaning?": [
+                24,
+                73,
+                25,
+                26,
+                60,
+                54
+            ],
+            "Z4HGQL_McDQ_What is this man doing from 40:00-40:50?": [
+                37,
+                42,
+                0,
+                9,
+                5,
+                69
+            ],
+            "Z4HGQL_McDQ_What is the main color of the car interior?": [
+                53,
+                63,
+                65,
+                69,
+                55,
+                62
+            ],
+            "Z4HGQL_McDQ_What does the man do after introducing a ton of remover liquid stored in white plastic buckets on a shelf?": [
+                26,
+                24,
+                25,
+                73,
+                27,
+                28
+            ],
+            "Z4HGQL_McDQ_What is the second last event that happens in the video?": [
+                65,
+                0,
+                3,
+                19,
+                46,
+                47
+            ],
+            "aJI8XTa_DII_What did the audience do first after the soldiers wearing red hats shouted?": [
+                11,
+                40,
+                58,
+                4,
+                0,
+                27
+            ],
+            "aJI8XTa_DII_What was Putin's expression when he heard the speech Trump made?": [
+                22,
+                57,
+                71,
+                52,
+                16,
+                36
+            ],
+            "aJI8XTa_DII_How many trucks are there in the garage with soldiers in white direct the way in the next scene after the Russian plane takes off?": [
+                62,
+                69,
+                40,
+                26,
+                41,
+                4
+            ],
+            "aJI8XTa_DII_After Yevgenia Albats spoke, how did Putin and Biden communicate in the next scene?": [
+                59,
+                34,
+                14,
+                16,
+                51,
+                66
+            ],
+            "IsdbCjlZ5cQ_What is the place that the footage shows a red car passes when the light is green, and a person wearing a white shirt with a red circle on her left sleeve, a black pant, standing in front of the light?": [
+                50,
+                36,
+                2,
+                27,
+                9,
+                55
+            ],
+            "EpMLAQbSYAw_What place would Mohamed's interview most likely to take place?": [
+                20,
+                53,
+                52,
+                34,
+                28,
+                43
+            ],
+            "EpMLAQbSYAw_What is the category of this video?": [
+                74,
+                4,
+                16,
+                3,
+                33,
+                41
+            ],
+            "KktLi3UifPY_What are the two hosts looking for in the field?": [
+                21,
+                19,
+                20,
+                57,
+                58,
+                40
+            ],
+            "KktLi3UifPY_Why does the worker pour the small fish from the blue basket into the large container?": [
+                31,
+                59,
+                43,
+                58,
+                42,
+                60
+            ],
+            "KktLi3UifPY_Where is the fish head placed from 85:35-85:50?": [
+                60,
+                27,
+                43,
+                56,
+                61,
+                41
+            ],
+            "KktLi3UifPY_What is the last type of raw meat introduced in the video?": [
+                51,
+                12,
+                50,
+                52,
+                15,
+                45
+            ],
+            "wNCPgIVz15c_What liquid is added on top of the grilled chicken at the beginning of the video?": [
+                1,
+                16,
+                38,
+                9,
+                26,
+                10
+            ],
+            "wNCPgIVz15c_What does the food traveller do after eating the very spicy food?": [
+                7,
+                2,
+                1,
+                21,
+                28,
+                27
+            ],
+            "wNCPgIVz15c_What scene appears while the American is chewing the corn-wheat bread?": [
+                37,
+                49,
+                36,
+                57,
+                63,
+                47
+            ],
+            "wNCPgIVz15c_Is the lady in the video stirring the water in the pot clockwise or counterclockwise when making the onion garlic noodle soup?": [
+                56,
+                22,
+                15,
+                26,
+                48,
+                46
+            ],
+            "wNCPgIVz15c_What are the people holding the yellow ropes trying to do at the place that has trees with blooms?": [
+                60,
+                58,
+                35,
+                41,
+                74,
+                61
+            ],
+            "uW9mcG0rdLY_What category or genre does this video clip belong to?": [
+                74,
+                73,
+                19,
+                53,
+                15,
+                0
+            ],
+            "uW9mcG0rdLY_What key event takes place between the first appearance of the baby penguins and the elephant seal sunbathing on the shore?": [
+                60,
+                47,
+                61,
+                63,
+                34,
+                59
+            ],
+            "TZ0j6kr4ZJ0_What is the color of the sleeveless top one of the four people at the beginning of the video wear?": [
+                74,
+                62,
+                17,
+                23,
+                56,
+                45
+            ],
+            "TZ0j6kr4ZJ0_What type of melon is cut?": [
+                38,
+                39,
+                36,
+                19,
+                37,
+                74
+            ],
+            "TZ0j6kr4ZJ0_What do the people preparing food in the video have in common?": [
+                40,
+                37,
+                31,
+                39,
+                34,
+                36
+            ],
+            "TZ0j6kr4ZJ0_Where is the person with the number 9615 on their chest being interviewed in the video?": [
+                50,
+                46,
+                44,
+                52,
+                21,
+                43
+            ],
+            "TZ0j6kr4ZJ0_Where do the elementary school students sit when the teacher is teaching?": [
+                58,
+                59,
+                60,
+                57,
+                61,
+                45
+            ],
+            "ihfjEFGdZdc_What do workers do after they put up the chassis in 05:19?": [
+                10,
+                7,
+                51,
+                39,
+                50,
+                36
+            ],
+            "ihfjEFGdZdc_What does Dr. Conrad test?": [
+                31,
+                32,
+                27,
+                30,
+                29,
+                26
+            ],
+            "ihfjEFGdZdc_What is the installation process after installing the tires?": [
+                53,
+                46,
+                52,
+                56,
+                55,
+                48
+            ],
+            "vaL_vSdZKZo_What did the woman with the pearl earrings do when she got down the ladder?": [
+                54,
+                4,
+                8,
+                3,
+                55,
+                36
+            ],
+            "vaL_vSdZKZo_What happens in the next frame when the red helicopter flies by?": [
+                61,
+                25,
+                47,
+                59,
+                58,
+                57
+            ],
+            "vaL_vSdZKZo_What did Sergey Sarancha do before eating?": [
+                67,
+                11,
+                24,
+                12,
+                66,
+                26
+            ],
+            "vaL_vSdZKZo_How many times did Sergey Sarancha's interview segments appear?": [
+                67,
+                11,
+                13,
+                65,
+                24,
+                12
+            ]
+        }
+    },
+    "entity recognition": {
+        "config": {
+            "selected_topk": 4,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "TiQBTesZUJQ_There is a scene of of cutting trees to get the sap in the video. Immediately after it there is a scene of man's arm. What's tattooed on the man's arm?": [
+                9,
+                10,
+                42,
+                41
+            ],
+            "TiQBTesZUJQ_What tool do people use to pick up a sticky, white to transparent food substance?": [
+                28,
+                54,
+                27,
+                21
+            ],
+            "TiQBTesZUJQ_What kind of transportation do the people carry on the boat?": [
+                72,
+                57,
+                23,
+                45
+            ],
+            "TiQBTesZUJQ_One of the woman give the reporter a kind of beverage in a glass cup, that is ___.": [
+                60,
+                73,
+                8,
+                24
+            ],
+            "TiQBTesZUJQ_What is Saya's daughter doing at 34:22?": [
+                60,
+                26,
+                55,
+                38
+            ],
+            "TiQBTesZUJQ____ is an insect appears in the video.": [
+                70,
+                66,
+                7,
+                14
+            ],
+            "TiQBTesZUJQ_What kind of transportation does the reporter use to leave the tribe?": [
+                57,
+                72,
+                3,
+                45
+            ],
+            "5dZ_lvDgevk_Who is the man wearing glasses, a black suit, and a blue patterned tie?": [
+                31,
+                32,
+                5,
+                30
+            ],
+            "5dZ_lvDgevk_How do the main characters interact with each other after the appearance of book 'Zurked' with a thumb down on the book?": [
+                28,
+                48,
+                70,
+                55
+            ],
+            "5dZ_lvDgevk_What is the most possible relationships among the people at 103:57?": [
+                12,
+                67,
+                13,
+                41
+            ],
+            "GcRKREorGSc_What is the animal in the first scene that appears after the opening cloud scene?": [
+                19,
+                72,
+                1,
+                47
+            ],
+            "GcRKREorGSc_What is the animal that appears in the picture after the first appearance of a lion?": [
+                1,
+                9,
+                25,
+                49
+            ],
+            "GcRKREorGSc_What is a bat-eared fox licking in the grass in the middle of the picture?": [
+                69,
+                15,
+                17,
+                16
+            ],
+            "GcRKREorGSc_What are the three animals that appear after two deer eat grass and play with their horns?": [
+                65,
+                67,
+                63,
+                16
+            ],
+            "GcRKREorGSc_What color is the cloud layer captured for the second time in the video?": [
+                72,
+                19,
+                0,
+                71
+            ],
+            "GcRKREorGSc_What animal licks its fur and then looks straight to the camera?": [
+                9,
+                38,
+                37,
+                15
+            ],
+            "xi6r3hZe5Tg_What color watch do respondents wearing blue short sleeves and glasses wear?": [
+                64,
+                29,
+                48,
+                11
+            ],
+            "xi6r3hZe5Tg_What color hats do children wearing yellow short sleeves wear?": [
+                57,
+                59,
+                56,
+                1
+            ],
+            "xi6r3hZe5Tg_What is hanging around the neck of the girl observing birds in the forest in the video?": [
+                69,
+                70,
+                71,
+                57
+            ],
+            "xi6r3hZe5Tg_What animal is this at 42:00?": [
+                32,
+                70,
+                65,
+                53
+            ],
+            "xi6r3hZe5Tg_What animal appears after the interview with Karen Sim and Jeffrey Chong?": [
+                32,
+                65,
+                74,
+                13
+            ],
+            "xi6r3hZe5Tg_What animal is shown in the scene that follows the scene Karen Sim submits a sighting photo and earns a badge on the phone?": [
+                69,
+                32,
+                70,
+                72
+            ],
+            "xi6r3hZe5Tg_What color is the device that Mark Wong wears to monitor his health?": [
+                51,
+                29,
+                48,
+                31
+            ],
+            "xi6r3hZe5Tg_When the video discusses water reservoir, which animal lives in water appear?": [
+                32,
+                41,
+                34,
+                35
+            ],
+            "Z4HGQL_McDQ_What is the yellow semi-circular tool used by black clad engineers in cars?": [
+                16,
+                15,
+                1,
+                28
+            ],
+            "Z4HGQL_McDQ_What color are the gloves when cleaning parts?": [
+                32,
+                24,
+                60,
+                28
+            ],
+            "Z4HGQL_McDQ_What does a man wearing a black suit, black glasses, and a beard do?": [
+                47,
+                0,
+                46,
+                5
+            ],
+            "Z4HGQL_McDQ_What job is the man in red responsible for?": [
+                4,
+                54,
+                59,
+                58
+            ],
+            "Z4HGQL_McDQ_What tools does a woman wearing black glasses and silver earrings first use to work?": [
+                36,
+                29,
+                52,
+                56
+            ],
+            "Z4HGQL_McDQ_How does Klaus Pachall drive after being interviewed?": [
+                72,
+                9,
+                42,
+                67
+            ],
+            "Z4HGQL_McDQ_What color gloves does the mechanic, who removes the standard exhaust of a car, wear?": [
+                8,
+                16,
+                7,
+                32
+            ],
+            "Z4HGQL_McDQ_What color is the car that mechanics are changing from the standard exhaust to the valve-controlled exhaust?": [
+                8,
+                7,
+                50,
+                38
+            ],
+            "Z4HGQL_McDQ_What's this man's expression like at 06:01?": [
+                42,
+                17,
+                72,
+                0
+            ],
+            "Z4HGQL_McDQ_What color is the steering wheel?": [
+                63,
+                71,
+                40,
+                13
+            ],
+            "aJI8XTa_DII_Who first comes out of the golden door?": [
+                6,
+                55,
+                59,
+                13
+            ],
+            "aJI8XTa_DII_How many flags of the Russian Federation are there on the stage when Putin delivers the first speech?": [
+                2,
+                1,
+                7,
+                0
+            ],
+            "aJI8XTa_DII_What color is Putin's tie between the interview with Antony Blinkoen and interview with Marie Yovanovitch?": [
+                31,
+                16,
+                65,
+                2
+            ],
+            "aJI8XTa_DII_Who is the lady in green who is being interviewed?": [
+                13,
+                6,
+                23,
+                56
+            ],
+            "aJI8XTa_DII_What did the man use to cover the sculpture's face?": [
+                18,
+                46,
+                4,
+                17
+            ],
+            "aJI8XTa_DII_When Putin spoke for the first time in the video, how many microphones were on the stage?": [
+                2,
+                1,
+                16,
+                22
+            ],
+            "aJI8XTa_DII_During Putin's first speech on stage in the video, how many women appeared when the camera panned offstage?": [
+                2,
+                1,
+                16,
+                56
+            ],
+            "aJI8XTa_DII_Who are the two people who appear in the next frame after Evan Osnos finishes speaking?": [
+                46,
+                43,
+                32,
+                27
+            ],
+            "aJI8XTa_DII_How many microphones are on stage during Donald Trump's speech?": [
+                53,
+                54,
+                55,
+                12
+            ],
+            "aJI8XTa_DII_What color of coat does Melania Trump wear for the meeting that is hosted at Helsinki, Finland?": [
+                54,
+                53,
+                16,
+                6
+            ],
+            "aJI8XTa_DII_Which country's flag is on the flagpole on the top of the building with gold clock?": [
+                0,
+                47,
+                70,
+                43
+            ],
+            "IsdbCjlZ5cQ_Who are the main individuals featured in this video?": [
+                17,
+                4,
+                44,
+                45
+            ],
+            "IsdbCjlZ5cQ_What object is in front of the J. Edgar Hoover FBI Building sign?": [
+                38,
+                41,
+                47,
+                2
+            ],
+            "IsdbCjlZ5cQ_Which direction does Don Mcgahn look at in the black and white picture that has a portrait behind his back?": [
+                33,
+                17,
+                18,
+                19
+            ],
+            "IsdbCjlZ5cQ_What is in the center of the table?": [
+                8,
+                59,
+                63,
+                60
+            ],
+            "EpMLAQbSYAw_What characteristic does the Tea Party have in common in this people?": [
+                11,
+                12,
+                13,
+                72
+            ],
+            "EpMLAQbSYAw_What animal is on the street next to the famous Wall Street statue?": [
+                40,
+                17,
+                45,
+                28
+            ],
+            "EpMLAQbSYAw_What does Jacoby have on his hand in the interview with Jeremy?": [
+                48,
+                49,
+                20,
+                74
+            ],
+            "EpMLAQbSYAw_What colour is Tom Kertis's clothes?": [
+                48,
+                49,
+                60,
+                64
+            ],
+            "EpMLAQbSYAw_What is the most common job for the interviewees?": [
+                49,
+                20,
+                63,
+                57
+            ],
+            "EpMLAQbSYAw_What is the most common costume in the video?": [
+                64,
+                4,
+                33,
+                48
+            ],
+            "EpMLAQbSYAw_What is the most frequent element in the video?": [
+                48,
+                49,
+                46,
+                16
+            ],
+            "wNCPgIVz15c_What color are the chairs in the restaurant where the food travelers eat Peshawari chicken with roti?": [
+                27,
+                10,
+                7,
+                17
+            ],
+            "wNCPgIVz15c_What decoration is the man wearing on his head while sitting at the table and talking with the American man in the video, but not eating together?": [
+                49,
+                8,
+                18,
+                73
+            ],
+            "wNCPgIVz15c_How many women does the American man have dinner face-to-face with in the video?": [
+                7,
+                49,
+                56,
+                15
+            ],
+            "wNCPgIVz15c_In this video, what is the primary method of eating?": [
+                62,
+                63,
+                30,
+                66
+            ],
+            "wNCPgIVz15c_Which foot does the person in the video use to cut open the cow's stomach?": [
+                33,
+                61,
+                32,
+                64
+            ],
+            "wNCPgIVz15c_In the video, how many people are having breakfast with the American man? (Excluding himself)": [
+                49,
+                52,
+                50,
+                62
+            ],
+            "wNCPgIVz15c_How many different outfits has the American man worn in total in the video?": [
+                42,
+                58,
+                52,
+                49
+            ],
+            "wNCPgIVz15c_Are the men, women, and children in the valley eating together in the video?": [
+                73,
+                71,
+                72,
+                62
+            ],
+            "TZ0j6kr4ZJ0_Which fruit is shown in the video?": [
+                38,
+                36,
+                30,
+                39
+            ],
+            "TZ0j6kr4ZJ0_What is the relation between the girl wearing a school uniform and the woman wearing a floral top and a purple dress?": [
+                58,
+                60,
+                11,
+                59
+            ],
+            "TZ0j6kr4ZJ0_What is the person doing while passing by the sign that has \"Climate Change Adaptation Support Project Pilot Site\" written on it?": [
+                47,
+                70,
+                4,
+                43
+            ],
+            "TZ0j6kr4ZJ0_What color tops are most of the elementary school students wearing in the video?": [
+                60,
+                57,
+                59,
+                58
+            ],
+            "TZ0j6kr4ZJ0_What color is the oxygen tank that appears the last in the video?": [
+                69,
+                68,
+                70,
+                30
+            ],
+            "ihfjEFGdZdc_What color are the staff uniforms of Bugatti workers?": [
+                5,
+                68,
+                40,
+                74
+            ],
+            "ihfjEFGdZdc_What does the test driver do before he enters the car with license plate \"W392DB\"?": [
+                32,
+                30,
+                69,
+                44
+            ],
+            "ihfjEFGdZdc_What colour is the car Andy test?": [
+                69,
+                32,
+                58,
+                9
+            ],
+            "ihfjEFGdZdc_How are the two parts, one for the front seats and one for the back seats, put together and then assembled?": [
+                7,
+                59,
+                43,
+                58
+            ],
+            "ihfjEFGdZdc_Which tire is put on first during assembly?": [
+                53,
+                52,
+                46,
+                57
+            ],
+            "ihfjEFGdZdc_What color is the car they assemble?": [
+                57,
+                7,
+                40,
+                58
+            ],
+            "ihfjEFGdZdc_What is the weather when the last test drive?": [
+                30,
+                32,
+                35,
+                72
+            ],
+            "ihfjEFGdZdc_How many people are interviewed in this video?": [
+                65,
+                69,
+                61,
+                8
+            ],
+            "vaL_vSdZKZo_What type of earrings does the woman who sits at the steering wheel wear?": [
+                68,
+                46,
+                4,
+                22
+            ],
+            "vaL_vSdZKZo_What's the man in black short sleeves holding?": [
+                62,
+                63,
+                40,
+                64
+            ],
+            "vaL_vSdZKZo_How many people are there in the descending elevator?": [
+                16,
+                13,
+                41,
+                36
+            ],
+            "vaL_vSdZKZo_Who was the man who spoke between LORETTA NAPOLEONI and ATEPHEN ASKINS?": [
+                36,
+                40,
+                65,
+                71
+            ],
+            "vaL_vSdZKZo_How many people dragged the blue and white wooden boat ashore at the same time?": [
+                12,
+                23,
+                33,
+                32
+            ],
+            "vaL_vSdZKZo_Before Svetlana McGlaser spoke, how many floors did the building in the video have?": [
+                54,
+                12,
+                11,
+                67
+            ],
+            "vaL_vSdZKZo_What is the background color of \"EXIT\" on the door in the picture when the bearded man speaks?": [
+                57,
+                52,
+                17,
+                56
+            ],
+            "vaL_vSdZKZo_Before GEIR-OVE spoke, how many of the runners had bottled water?": [
+                66,
+                62,
+                21,
+                69
+            ],
+            "vaL_vSdZKZo_What did the man interviewed after Sergey Sarancha hold in his hand?": [
+                11,
+                67,
+                66,
+                24
+            ],
+            "vaL_vSdZKZo_What is the tattoo pattern on the arm of the woman who is using a telescope wearing a bracelet?": [
+                38,
+                47,
+                46,
+                25
+            ]
+        }
+    },
+    "reasoning": {
+        "config": {
+            "selected_topk": 7,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "TiQBTesZUJQ_When do animals move out?": [
+                57,
+                66,
+                7,
+                64,
+                1,
+                65,
+                38
+            ],
+            "TiQBTesZUJQ_What might the reporter do?": [
+                73,
+                57,
+                45,
+                74,
+                72,
+                24,
+                25
+            ],
+            "5dZ_lvDgevk_Is the autonomous vehicle driving scene after a man in black said something real or simulated?": [
+                14,
+                15,
+                34,
+                8,
+                73,
+                16,
+                27
+            ],
+            "5dZ_lvDgevk_What is the relationship between the first two people appear in the video after the appearance of blue words 'TRUCK WASH' on a blue factory?": [
+                35,
+                23,
+                36,
+                26,
+                0,
+                22,
+                43
+            ],
+            "5dZ_lvDgevk_What goals or objectives are the man holding a woman's arm trying to achieve at 101:21?": [
+                67,
+                69,
+                37,
+                41,
+                46,
+                44,
+                12
+            ],
+            "GcRKREorGSc_What are the two deer seen in the first half of the video doing?": [
+                68,
+                70,
+                5,
+                16,
+                69,
+                22,
+                64
+            ],
+            "xi6r3hZe5Tg_What is the relationship between the lady in blue clothes and the kid in yellow clothes?": [
+                60,
+                57,
+                58,
+                56,
+                59,
+                1,
+                8
+            ],
+            "IsdbCjlZ5cQ_What does it mean when Trump raises his hand in front of a green helicopter with United States of America written on it?": [
+                1,
+                49,
+                61,
+                72,
+                27,
+                62,
+                71
+            ],
+            "IsdbCjlZ5cQ_Why two sentences have red underlines on two different documents?": [
+                50,
+                67,
+                24,
+                34,
+                4,
+                19,
+                3
+            ],
+            "EpMLAQbSYAw_How does the emotion change on Sarah's face when interviewed?": [
+                67,
+                30,
+                42,
+                24,
+                63,
+                16,
+                72
+            ],
+            "KktLi3UifPY_What is the possible reason why two hosts are standing on the roadside with bowls in their hands?": [
+                19,
+                21,
+                22,
+                29,
+                3,
+                23,
+                55
+            ],
+            "KktLi3UifPY_How does the female host express herself at 40:20?": [
+                25,
+                2,
+                55,
+                9,
+                7,
+                27,
+                14
+            ],
+            "KktLi3UifPY_How does the male host feel on the ship?": [
+                39,
+                40,
+                44,
+                43,
+                45,
+                41,
+                30
+            ],
+            "wNCPgIVz15c_Which animal does Kareem take care of?": [
+                20,
+                38,
+                60,
+                19,
+                33,
+                22,
+                18
+            ],
+            "uW9mcG0rdLY_How are the photographer's equipment transported to the island?": [
+                15,
+                23,
+                73,
+                26,
+                16,
+                47,
+                74
+            ],
+            "uW9mcG0rdLY_Why did the person jump up at the end of the clip that has a white reticle at the center?": [
+                9,
+                19,
+                73,
+                6,
+                48,
+                16,
+                10
+            ],
+            "uW9mcG0rdLY_Why is the penguin lying down at 22:14?": [
+                52,
+                25,
+                31,
+                32,
+                54,
+                26,
+                27
+            ],
+            "uW9mcG0rdLY_What is the man in the scene most likely doing while on the left side, there are a blue sweatshirt, a black T-shirt, a mint towel, and two black and red socks hanging on a rope to dry?": [
+                48,
+                50,
+                14,
+                22,
+                39,
+                17,
+                19
+            ],
+            "TZ0j6kr4ZJ0_Why is there so much water on the road in the video?": [
+                56,
+                22,
+                4,
+                3,
+                21,
+                73,
+                62
+            ],
+            "TZ0j6kr4ZJ0_What is the intention behind the residents showing the photos in the video?": [
+                9,
+                10,
+                73,
+                21,
+                36,
+                62,
+                3
+            ],
+            "TZ0j6kr4ZJ0_Did the islanders accept help from the outside?": [
+                21,
+                57,
+                56,
+                10,
+                63,
+                43,
+                49
+            ],
+            "ihfjEFGdZdc_Why is everyone celebrating after the test drive is over?": [
+                9,
+                30,
+                36,
+                10,
+                32,
+                44,
+                8
+            ],
+            "ihfjEFGdZdc_What do the blue and red dotted lines in the animation represent at 42:04?": [
+                64,
+                26,
+                6,
+                13,
+                65,
+                74,
+                28
+            ],
+            "vaL_vSdZKZo_What is the occasion right after the last interview scene with Mohamed Abshir Waldo?": [
+                42,
+                19,
+                72,
+                20,
+                34,
+                45,
+                52
+            ]
+        }
+    },
+    "summarization": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "TiQBTesZUJQ_What happens between 22:17-42:05?": [
+                45,
+                66,
+                14,
+                1,
+                35,
+                57
+            ],
+            "Z4HGQL_McDQ_What does this documentary mainly introduce?": [
+                49,
+                26,
+                46,
+                52,
+                51,
+                65
+            ],
+            "IsdbCjlZ5cQ_What is the best summary for 60:10-60:36?": [
+                50,
+                3,
+                52,
+                8,
+                38,
+                24
+            ],
+            "KktLi3UifPY_What is the main content introduced in the video segment from 68:09-71:16?": [
+                45,
+                20,
+                10,
+                25,
+                65,
+                22
+            ],
+            "uW9mcG0rdLY_What are the key events or actions that occur from 01:17 - 05:07?": [
+                1,
+                53,
+                70,
+                48,
+                50,
+                39
+            ]
+        }
+    },
+    "temporal grounding": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "GcRKREorGSc_What happens from 28:37-29:10?": [
+                72,
+                73,
+                0,
+                74,
+                56,
+                71
+            ],
+            "uW9mcG0rdLY_What are the baby penguins doing from 18:55-19:15?": [
+                25,
+                26,
+                31,
+                27,
+                32,
+                52
+            ],
+            "ihfjEFGdZdc_What are the workers doing from 07:30-14:12?": [
+                26,
+                27,
+                36,
+                10,
+                19,
+                28
+            ]
+        }
+    },
+    "key information retrieval": {
+        "config": {
+            "selected_topk": 4,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "5dZ_lvDgevk_What is the label on the toggle switch button after the first driver sitting in a truck without driving in chapter 2 'The promise' of the video?": [
+                16,
+                14,
+                23,
+                26
+            ],
+            "5dZ_lvDgevk_Which account's Facebook page is displayed with 28402 likes?": [
+                51,
+                10,
+                41,
+                50
+            ],
+            "Z4HGQL_McDQ_What kind of Mercedes-Benz car is this black one?": [
+                66,
+                0,
+                10,
+                11
+            ],
+            "Z4HGQL_McDQ_What is the serial number of the car that Samir Boulahya works on?": [
+                8,
+                15,
+                17,
+                18
+            ],
+            "aJI8XTa_DII_What is the number on the tank can be seen, with two tanks appear in front of it, in the snow?": [
+                62,
+                26,
+                69,
+                41
+            ],
+            "IsdbCjlZ5cQ_What is the headline of the second news report?": [
+                47,
+                57,
+                27,
+                55
+            ],
+            "EpMLAQbSYAw_What is the name of Chapter2?": [
+                33,
+                13,
+                64,
+                35
+            ],
+            "EpMLAQbSYAw_What are the changing trends of NASDAQ when the changing trends of Dow Jones are +457.21, 1.95%?": [
+                36,
+                29,
+                30,
+                46
+            ],
+            "KktLi3UifPY_How much does a ramen set cost in the second ramen shop?": [
+                7,
+                4,
+                6,
+                10
+            ],
+            "KktLi3UifPY_What is Keita Karino's identity in the store?": [
+                2,
+                7,
+                15,
+                68
+            ],
+            "KktLi3UifPY_When does Oliver_B post his comment?": [
+                20,
+                48,
+                47,
+                58
+            ],
+            "KktLi3UifPY_What text appears at 88:07?": [
+                68,
+                20,
+                33,
+                18
+            ],
+            "KktLi3UifPY_What payment method appears in the video at last?": [
+                33,
+                4,
+                10,
+                12
+            ],
+            "uW9mcG0rdLY_What is written at the beginning of the last line on the squared notebook?": [
+                70,
+                74,
+                39,
+                72
+            ],
+            "TZ0j6kr4ZJ0_What is the number of the student trainer that is further away from the camera compared to the 9772 student trainer?": [
+                69,
+                50,
+                68,
+                49
+            ],
+            "TZ0j6kr4ZJ0_What are the people holding a torch in their hand doing at night?": [
+                67,
+                66,
+                65,
+                49
+            ],
+            "ihfjEFGdZdc_Who is the president of Bugatti?": [
+                25,
+                3,
+                5,
+                74
+            ],
+            "ihfjEFGdZdc_What is Andy's top speed while testing the sports car?": [
+                34,
+                35,
+                32,
+                30
+            ],
+            "ihfjEFGdZdc_Who is the assembly editor of Bugatti?": [
+                47,
+                3,
+                69,
+                25
+            ],
+            "vaL_vSdZKZo_What was written on the right glass door when Paul Agate entered the front door?": [
+                41,
+                40,
+                52,
+                67
+            ],
+            "vaL_vSdZKZo_What number is highlighted with rectangle in the chart written with pencil in numerical increasing order for each name?": [
+                60,
+                74,
+                41,
+                18
+            ],
+            "vaL_vSdZKZo_What was written on the building behind Arve Nordeide when he came from a distance?": [
+                70,
+                68,
+                69,
+                22
+            ]
+        }
+    }
+}

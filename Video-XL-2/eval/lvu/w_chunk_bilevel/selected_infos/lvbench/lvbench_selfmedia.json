@@ -1,0 +1,2410 @@
+{
+    "event understanding": {
+        "config": {
+            "selected_topk": 4,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "hROKtPqktO8_What is she doing on the stairs at 08:00?": [
+                14,
+                9,
+                19,
+                46
+            ],
+            "hROKtPqktO8_After the vlogger sees a dog with an advertisement from the company named Smitten, camera changes to the scene with ___.": [
+                10,
+                9,
+                29,
+                12
+            ],
+            "hROKtPqktO8_What does the vlogger do after swimming in a hot spring?": [
+                34,
+                33,
+                35,
+                36
+            ],
+            "tH_5YbklevQ_What is this video introducing?": [
+                74,
+                72,
+                73,
+                47
+            ],
+            "tH_5YbklevQ_Where is the first destination the vlogger goes to?": [
+                0,
+                1,
+                10,
+                13
+            ],
+            "tH_5YbklevQ_What happens to the vlogger between 21:50-22:30?": [
+                47,
+                49,
+                22,
+                63
+            ],
+            "tH_5YbklevQ_What is the temperature like when the vlogger entered the national monument?": [
+                27,
+                26,
+                28,
+                33
+            ],
+            "tH_5YbklevQ_Where does the vlogger go after crossing the street that has a no parking sign?": [
+                21,
+                44,
+                16,
+                22
+            ],
+            "tH_5YbklevQ_Where does the vlogger go after leaving the church?": [
+                47,
+                49,
+                45,
+                44
+            ],
+            "tH_5YbklevQ_What kind of transportation does the vlogger use to get back to the hotel?": [
+                22,
+                65,
+                63,
+                58
+            ],
+            "USfvmoalqsw_Where does the vlogger go first after landing in the city?": [
+                1,
+                14,
+                2,
+                63
+            ],
+            "USfvmoalqsw_What is the video time interval that the vlogger visit the cultural center?": [
+                35,
+                15,
+                11,
+                23
+            ],
+            "USfvmoalqsw_Why does the vlogger's team park the car on the side of the road?": [
+                25,
+                30,
+                28,
+                56
+            ],
+            "USfvmoalqsw_What color of the jacket does Sophia wear when she sees the crane status?": [
+                17,
+                58,
+                16,
+                11
+            ],
+            "USfvmoalqsw_Where does the vlogger go at 104:44?": [
+                11,
+                73,
+                72,
+                30
+            ],
+            "evYm0cELO3I_Which animal does the vlogger hold on a boat?": [
+                74,
+                13,
+                14,
+                12
+            ],
+            "evYm0cELO3I_Miko goes from sea to ___.": [
+                14,
+                15,
+                12,
+                13
+            ],
+            "evYm0cELO3I_Where does the vlogger and crab catcher catch a carb?": [
+                55,
+                47,
+                43,
+                11
+            ],
+            "RbpKkvlHYTw_How does the vlogger get to Hannam?": [
+                6,
+                55,
+                73,
+                50
+            ],
+            "RbpKkvlHYTw_How many meals does the vlogger eat in Seoul?": [
+                8,
+                73,
+                50,
+                47
+            ],
+            "RbpKkvlHYTw_Where is the vlogger at when there is gondola above him?": [
+                62,
+                1,
+                56,
+                43
+            ],
+            "RbpKkvlHYTw_What is the category of this video?": [
+                32,
+                21,
+                20,
+                55
+            ],
+            "Mcggugol2ts_Why does the vlogger not take the Narita express?": [
+                6,
+                5,
+                2,
+                4
+            ],
+            "Mcggugol2ts_What is the best word that describes Tokyo's night view?": [
+                16,
+                74,
+                41,
+                73
+            ],
+            "Mcggugol2ts_What does the vlogger do after settling in the hotel?": [
+                20,
+                21,
+                18,
+                19
+            ],
+            "Mcggugol2ts_What does the vlogger do first after finishing dinner at the restaurant?": [
+                49,
+                20,
+                28,
+                32
+            ],
+            "Mcggugol2ts_Which of the following event occurs after the bookoff visit?": [
+                57,
+                56,
+                58,
+                51
+            ],
+            "JPPMz8fEml0_How many vloggers find a place to live before sunset?": [
+                5,
+                62,
+                72,
+                21
+            ],
+            "JPPMz8fEml0_What does Staffen choose when his host offers him some food?": [
+                56,
+                29,
+                67,
+                34
+            ],
+            "JPPMz8fEml0_What does Thomas do before sleeping?": [
+                63,
+                60,
+                61,
+                56
+            ],
+            "JPPMz8fEml0_How many vloggers find a place to live at night?": [
+                40,
+                59,
+                61,
+                48
+            ],
+            "uusf1qG_uZ4_How do the kids feel when the substitute  daycare teacher falls into the pool?": [
+                29,
+                10,
+                54,
+                25
+            ],
+            "uusf1qG_uZ4_Why does Boss Baby sneak JJ's birthday cake?": [
+                5,
+                43,
+                55,
+                72
+            ],
+            "uusf1qG_uZ4_How many times do these kids take the school bus together?": [
+                44,
+                57,
+                62,
+                15
+            ],
+            "O14bbpvy2x0_What vegetables are in the first burger?": [
+                53,
+                16,
+                18,
+                62
+            ],
+            "O14bbpvy2x0_How many burgers does the vlogger make during the video?": [
+                62,
+                61,
+                58,
+                36
+            ],
+            "O14bbpvy2x0_What does the vlogger use to wipe the yellow chopping board after cleaning it?": [
+                66,
+                3,
+                24,
+                35
+            ],
+            "O14bbpvy2x0_When making the side salad, what does the vlogger put on the tomato slice?": [
+                6,
+                53,
+                57,
+                22
+            ],
+            "O14bbpvy2x0_What is the side of the no-bun burger?": [
+                58,
+                72,
+                74,
+                24
+            ],
+            "O14bbpvy2x0_What is this video about?": [
+                1,
+                50,
+                33,
+                45
+            ],
+            "O14bbpvy2x0_Where are the hamburger bun stored?": [
+                38,
+                12,
+                48,
+                11
+            ],
+            "3_upA09AntU_What does the chef do from 01:06-01:24?": [
+                6,
+                4,
+                37,
+                28
+            ],
+            "3_upA09AntU_When the action of scooping out fried food appears for the first time, what kind of food is scooped out?": [
+                3,
+                70,
+                21,
+                2
+            ],
+            "3_upA09AntU_What does the chef do after organizing the receipts?": [
+                37,
+                2,
+                74,
+                12
+            ],
+            "3_upA09AntU_How many times does the chef wash his hands during the entire process?": [
+                6,
+                40,
+                2,
+                74
+            ],
+            "gbDR39yIs3Y_What does the vlogger do after she ties her hair?": [
+                71,
+                65,
+                3,
+                66
+            ],
+            "gbDR39yIs3Y_What does the vlogger do after putting things into the washing machine?": [
+                5,
+                4,
+                13,
+                33
+            ],
+            "gbDR39yIs3Y_What does the vlogger do in the washroom when she gets up?": [
+                6,
+                70,
+                5,
+                69
+            ],
+            "gbDR39yIs3Y_What does the vlogger do after cleaning the grocery and fruit?": [
+                22,
+                26,
+                25,
+                23
+            ],
+            "gbDR39yIs3Y_What is the main reason the vlogger goes out again, where she also buys beauty products?": [
+                43,
+                72,
+                42,
+                64
+            ],
+            "gbDR39yIs3Y_What does she do after cleaning her face?": [
+                68,
+                67,
+                66,
+                64
+            ],
+            "KbahC-QCKU8_What does the vlogger family do after buying fishing stuffs?": [
+                74,
+                3,
+                65,
+                57
+            ],
+            "KbahC-QCKU8_What happens to the vlogger family members after trying to shoot the birds?": [
+                52,
+                70,
+                65,
+                44
+            ],
+            "KbahC-QCKU8_How many places does the vlogger family go to catch king crabs?": [
+                40,
+                39,
+                72,
+                31
+            ],
+            "KbahC-QCKU8_What happens to the vlogger family members after their second hunting?": [
+                74,
+                20,
+                52,
+                65
+            ],
+            "KbahC-QCKU8_What are the vlogger family members doing at 34:33?": [
+                65,
+                74,
+                57,
+                40
+            ],
+            "KbahC-QCKU8_What are the vlogger family members doing from 36:19-37:08?": [
+                65,
+                74,
+                57,
+                43
+            ],
+            "KbahC-QCKU8_How many times do the vlogger family members go hunting in total?": [
+                20,
+                74,
+                46,
+                52
+            ],
+            "_T2Avd3tFHc_What is the destination of the trip?": [
+                4,
+                2,
+                71,
+                1
+            ],
+            "_T2Avd3tFHc_Where does the conversation take place from 02:48-02:53?": [
+                21,
+                12,
+                43,
+                15
+            ],
+            "_T2Avd3tFHc_What is the first place the elder goes with the vlogger team?": [
+                5,
+                66,
+                23,
+                72
+            ],
+            "_T2Avd3tFHc_How many people, including the vlogger himself, have lunch together on the first day?": [
+                22,
+                6,
+                63,
+                40
+            ],
+            "_T2Avd3tFHc_How many kinds of desserts do the vlogger team and Mikhail have on the third day?": [
+                67,
+                62,
+                66,
+                63
+            ],
+            "_T2Avd3tFHc_What does the vlogger team do before going to a tailer store?": [
+                5,
+                6,
+                29,
+                44
+            ],
+            "RCAqKnvu_P0_Where does the vlogger go after visiting Shibuya Sky?": [
+                16,
+                18,
+                67,
+                24
+            ],
+            "RCAqKnvu_P0_The vlogger visits Takeshita Street ___.": [
+                24,
+                50,
+                32,
+                33
+            ],
+            "RCAqKnvu_P0_Where does the vlogger go after visiting Takeshita Street?": [
+                32,
+                50,
+                24,
+                49
+            ],
+            "RCAqKnvu_P0_Where does the vlogger go after visiting TeamLab Planets?": [
+                40,
+                38,
+                36,
+                39
+            ],
+            "RCAqKnvu_P0_Why is the refrigerator at the vlogger's hotel full?": [
+                44,
+                65,
+                12,
+                19
+            ],
+            "RCAqKnvu_P0_What else does the vlogger do on the last day, besides going to the airport?": [
+                74,
+                24,
+                2,
+                7
+            ],
+            "iA_69g87Ilw_The vlogger decides to ___ after arriving at the hotel and sitting on the orange chair.": [
+                37,
+                72,
+                14,
+                67
+            ],
+            "iA_69g87Ilw_Where does the vlogger go first aftering exiting his room?": [
+                18,
+                35,
+                19,
+                21
+            ],
+            "iA_69g87Ilw_Where does the vlogger go after touching a \"Mindspa Synctuition\" screen?": [
+                42,
+                7,
+                34,
+                51
+            ],
+            "iA_69g87Ilw_What does the vlogger do before having fries?": [
+                53,
+                12,
+                13,
+                37
+            ],
+            "iA_69g87Ilw_Where is the vlogger at from 23:20-23:50?": [
+                73,
+                74,
+                51,
+                72
+            ],
+            "iA_69g87Ilw_Where does the vlogger have his second day breakfast?": [
+                70,
+                69,
+                67,
+                68
+            ],
+            "wgBlACG927Y_After coming downstairs from the B1 floor of the mall, which booth do the vloggers stop in front of first?": [
+                69,
+                67,
+                47,
+                52
+            ],
+            "wgBlACG927Y_How many bubble waffle ice creams models are placed as exhibition in front of the bubble waffle booth?": [
+                54,
+                53,
+                55,
+                56
+            ],
+            "wgBlACG927Y_After watching the acrobatic show, which restaurant do the vloggers go to?": [
+                67,
+                35,
+                46,
+                38
+            ],
+            "wgBlACG927Y_How does one of the vlogger who wears hat eat the rice?": [
+                36,
+                38,
+                39,
+                37
+            ],
+            "2zkJFv-ro4A_During the first song, do all members in BigBang dance and are there accompanying dancers?": [
+                4,
+                25,
+                64,
+                39
+            ],
+            "2zkJFv-ro4A_At the beginning of the concert, the screen on the stage shows the members of Big bang in sequence, but which member does not appear on the screen?": [
+                68,
+                4,
+                39,
+                18
+            ],
+            "2zkJFv-ro4A_When performing the last song, who else are on the stage besides the five members?": [
+                22,
+                36,
+                49,
+                56
+            ],
+            "2zkJFv-ro4A_Is there any Chinese character on the background wall of the vlogger's home? If so, which Chinese character is it?": [
+                71,
+                72,
+                0,
+                31
+            ],
+            "LLSJrEgOOtw_What type is this vlog?": [
+                74,
+                23,
+                18,
+                68
+            ],
+            "LLSJrEgOOtw_What is the weather like at the very beginning of the video?": [
+                74,
+                23,
+                64,
+                22
+            ],
+            "LLSJrEgOOtw_Which animal appears first in the video playing with the wood alone for the first time?": [
+                17,
+                12,
+                13,
+                7
+            ],
+            "LLSJrEgOOtw_What does the woman do after the man putting the first black pot on the fire?": [
+                48,
+                44,
+                53,
+                50
+            ],
+            "Va_9Q6ekm60_What does the the shop assistant do after assembling the ice cream machine?": [
+                67,
+                1,
+                5,
+                70
+            ],
+            "Va_9Q6ekm60_What is the first non-flour substance the shop assistant put into the mixing bowl?": [
+                9,
+                8,
+                15,
+                16
+            ],
+            "Va_9Q6ekm60_What is the second non-flour substance the shop assistant put into the mixing bowl?": [
+                9,
+                15,
+                8,
+                10
+            ],
+            "Va_9Q6ekm60_What does the shop assistant do before rolling matcha dough?": [
+                39,
+                40,
+                48,
+                50
+            ],
+            "Va_9Q6ekm60_Where does the shop assistant put the rolling the dough?": [
+                39,
+                40,
+                43,
+                42
+            ],
+            "Va_9Q6ekm60_What does the shop assistant do after cooking the Taiyaki cookies?": [
+                64,
+                62,
+                57,
+                74
+            ],
+            "1FsiZgGZU70_How does the weather change?": [
+                30,
+                37,
+                29,
+                28
+            ],
+            "1FsiZgGZU70_Where does the vlogger do after finish eating the sandwiches?": [
+                20,
+                35,
+                0,
+                34
+            ],
+            "1FsiZgGZU70_What color shorts is the man wearing during the workout?": [
+                50,
+                49,
+                55,
+                53
+            ],
+            "1FsiZgGZU70_What is the man primarily exercising today?": [
+                55,
+                49,
+                48,
+                47
+            ],
+            "jp2M1hIEtsk_How many pieces of sandwiche does the vlogger eat?": [
+                38,
+                40,
+                34,
+                37
+            ],
+            "jp2M1hIEtsk_What does the vlogger do at 20:51?": [
+                3,
+                47,
+                4,
+                5
+            ],
+            "jp2M1hIEtsk_What does the vlogger do after doing some watercolor art?": [
+                43,
+                44,
+                46,
+                45
+            ],
+            "jp2M1hIEtsk_What happens after the vlogger has her dinner?": [
+                67,
+                66,
+                14,
+                48
+            ],
+            "jp2M1hIEtsk_What is the category of this video?": [
+                38,
+                7,
+                73,
+                30
+            ]
+        }
+    },
+    "entity recognition": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "hROKtPqktO8_What posture does the vlogger use to take the photo in 12:53?": [
+                17,
+                0,
+                19,
+                15,
+                4,
+                1
+            ],
+            "hROKtPqktO8_Which objects appears at 16:46?": [
+                12,
+                10,
+                19,
+                40,
+                17,
+                4
+            ],
+            "tH_5YbklevQ_What does the guy in green who rides a motorcycle with the plate number B 5237 FLM do to the vlogger?": [
+                50,
+                51,
+                53,
+                52,
+                38,
+                22
+            ],
+            "tH_5YbklevQ_What color hat is the person communicating with the vlogger wearing before entering the national monument?": [
+                33,
+                27,
+                32,
+                34,
+                26,
+                31
+            ],
+            "tH_5YbklevQ_What color is the door of the national monument in the video?": [
+                39,
+                27,
+                30,
+                28,
+                32,
+                33
+            ],
+            "tH_5YbklevQ_What is the color of the vlogger's sunglasses frame?": [
+                36,
+                26,
+                32,
+                31,
+                33,
+                34
+            ],
+            "tH_5YbklevQ_How is the weather after the vlogger walking out of the church?": [
+                47,
+                49,
+                48,
+                44,
+                45,
+                50
+            ],
+            "tH_5YbklevQ_Where does the vlogger go to after having a very American style meal?": [
+                22,
+                70,
+                66,
+                69,
+                65,
+                1
+            ],
+            "USfvmoalqsw_Why is the vlogger happy to see two Bhutanese who wear brown clothes and fake leaves hats?": [
+                16,
+                19,
+                27,
+                2,
+                6,
+                13
+            ],
+            "USfvmoalqsw_What is the best word that describes the local market?": [
+                21,
+                20,
+                22,
+                24,
+                60,
+                27
+            ],
+            "evYm0cELO3I_Who is the owner of Gourment Conch Salad?": [
+                12,
+                19,
+                15,
+                25,
+                21,
+                16
+            ],
+            "evYm0cELO3I_Which animal appears at 00:07?": [
+                58,
+                46,
+                74,
+                61,
+                18,
+                59
+            ],
+            "evYm0cELO3I_How does Maxine Smith prepare the lobster?": [
+                5,
+                55,
+                57,
+                9,
+                49,
+                51
+            ],
+            "evYm0cELO3I_How does the vlogger eat the grilled lobster?": [
+                6,
+                7,
+                5,
+                43,
+                9,
+                53
+            ],
+            "evYm0cELO3I_What does the vlogger wear?": [
+                63,
+                45,
+                44,
+                69,
+                59,
+                58
+            ],
+            "evYm0cELO3I_Who is Shay?": [
+                60,
+                26,
+                27,
+                28,
+                30,
+                12
+            ],
+            "evYm0cELO3I_What does Kishley cook for the vlogger?": [
+                36,
+                32,
+                30,
+                33,
+                50,
+                5
+            ],
+            "RbpKkvlHYTw_What is the first food the vlogger eat?": [
+                55,
+                73,
+                50,
+                54,
+                74,
+                19
+            ],
+            "RbpKkvlHYTw_What is the vlogger's first meal in Hannam?": [
+                73,
+                50,
+                2,
+                6,
+                64,
+                47
+            ],
+            "RbpKkvlHYTw_How many pictures of food are on the menu at 17:49?": [
+                73,
+                19,
+                25,
+                54,
+                57,
+                8
+            ],
+            "RbpKkvlHYTw_At 65:20, what is put on the scallop?": [
+                44,
+                72,
+                37,
+                59,
+                58,
+                60
+            ],
+            "Mcggugol2ts_What does the vlogger order in the restaurant?": [
+                49,
+                20,
+                27,
+                31,
+                29,
+                32
+            ],
+            "Mcggugol2ts_What are the items sold in the bookoff that the vlogger went to?": [
+                58,
+                57,
+                59,
+                56,
+                0,
+                52
+            ],
+            "Mcggugol2ts_What does the vlogger buy after coming out of the bookstore?": [
+                58,
+                57,
+                59,
+                56,
+                14,
+                32
+            ],
+            "Mcggugol2ts_What vehicle passes on the right side of the vlogger when there is a SUBNADE sign above?": [
+                74,
+                32,
+                26,
+                24,
+                16,
+                65
+            ],
+            "JPPMz8fEml0_Who is Staffan's roommate?": [
+                42,
+                34,
+                56,
+                51,
+                38,
+                2
+            ],
+            "uusf1qG_uZ4_What is the first exercise the substitute daycare teacher does with these infants?": [
+                29,
+                41,
+                55,
+                54,
+                60,
+                10
+            ],
+            "uusf1qG_uZ4_Who is the third kid to slide into the pool?": [
+                10,
+                29,
+                9,
+                46,
+                74,
+                65
+            ],
+            "uusf1qG_uZ4_Who opens the door for JJ when he rings the doorbell on Masha's birthday?": [
+                5,
+                70,
+                43,
+                21,
+                20,
+                19
+            ],
+            "uusf1qG_uZ4_Who is pushing over by Janice?": [
+                25,
+                51,
+                19,
+                60,
+                33,
+                17
+            ],
+            "uusf1qG_uZ4_Which kid has a little sister?": [
+                21,
+                19,
+                60,
+                39,
+                48,
+                14
+            ],
+            "uusf1qG_uZ4_What color does Pablo wear most often?": [
+                68,
+                28,
+                0,
+                15,
+                56,
+                59
+            ],
+            "uusf1qG_uZ4_How many female substitute daycare teachers have appeared in total?": [
+                54,
+                55,
+                22,
+                24,
+                2,
+                41
+            ],
+            "uusf1qG_uZ4_Who is the biggest crybaby among these kids?": [
+                29,
+                10,
+                74,
+                39,
+                14,
+                34
+            ],
+            "O14bbpvy2x0_At 24:09 what does the people at background do?": [
+                33,
+                13,
+                47,
+                11,
+                30,
+                39
+            ],
+            "O14bbpvy2x0_What does the vlogger do at 14:42?": [
+                28,
+                32,
+                44,
+                73,
+                1,
+                30
+            ],
+            "O14bbpvy2x0_How many pieces of patties does the vlogger cook at the very begining?": [
+                62,
+                1,
+                19,
+                43,
+                36,
+                59
+            ],
+            "O14bbpvy2x0_How many patties are there in the first hamburger made by the vlogger?": [
+                62,
+                61,
+                36,
+                48,
+                16,
+                58
+            ],
+            "O14bbpvy2x0_What color is the rubber part of the tong?": [
+                5,
+                20,
+                73,
+                59,
+                45,
+                55
+            ],
+            "O14bbpvy2x0_How many melting domes are there in total?": [
+                38,
+                50,
+                20,
+                73,
+                45,
+                55
+            ],
+            "3_upA09AntU_What color of the sauce which is put on the dish that has pepper as its side?": [
+                13,
+                17,
+                27,
+                0,
+                26,
+                44
+            ],
+            "3_upA09AntU_What color of the sauce which is put on the dish from 07:25-07:34?": [
+                26,
+                17,
+                27,
+                0,
+                13,
+                44
+            ],
+            "3_upA09AntU_How many times does the chef put condiments on broccoli?": [
+                19,
+                64,
+                67,
+                20,
+                24,
+                40
+            ],
+            "gbDR39yIs3Y_What color is the atmosphere of the room?": [
+                1,
+                2,
+                36,
+                14,
+                35,
+                47
+            ],
+            "gbDR39yIs3Y_What is the first thing the vlogger drops?": [
+                43,
+                56,
+                72,
+                64,
+                42,
+                67
+            ],
+            "gbDR39yIs3Y_How many tops does the vlogger wear to go out?": [
+                39,
+                46,
+                9,
+                10,
+                72,
+                19
+            ],
+            "KbahC-QCKU8_What does the vlogger family buy for fishing?": [
+                74,
+                3,
+                65,
+                57,
+                27,
+                56
+            ],
+            "KbahC-QCKU8_What does the vlogger family find in the visitor center?": [
+                6,
+                28,
+                63,
+                0,
+                66,
+                3
+            ],
+            "KbahC-QCKU8_What is the key difference between a local knife and other knives?": [
+                41,
+                55,
+                40,
+                56,
+                3,
+                18
+            ],
+            "KbahC-QCKU8_What is the most common form of transportation there?": [
+                73,
+                54,
+                2,
+                18,
+                7,
+                65
+            ],
+            "KbahC-QCKU8_What foods do the vlogger family members eat the most here?": [
+                40,
+                64,
+                19,
+                39,
+                57,
+                66
+            ],
+            "_T2Avd3tFHc_What is the name of the elder who joins the vlogger on their travel?": [
+                72,
+                6,
+                44,
+                68,
+                70,
+                4
+            ],
+            "_T2Avd3tFHc_What color of clothes does Mikhail wear on the first day?": [
+                2,
+                73,
+                64,
+                67,
+                11,
+                3
+            ],
+            "_T2Avd3tFHc_Who have quarrel with a grey T-shirt elder in the Monastery?": [
+                18,
+                19,
+                66,
+                65,
+                61,
+                72
+            ],
+            "_T2Avd3tFHc_On which day does one of the vlogger team members ring a bell?": [
+                65,
+                5,
+                64,
+                37,
+                30,
+                67
+            ],
+            "_T2Avd3tFHc_Mikhail has a broken ___.": [
+                42,
+                73,
+                67,
+                41,
+                3,
+                27
+            ],
+            "_T2Avd3tFHc_What color of shirts does the vlogger team wear on the second day evening event?": [
+                5,
+                37,
+                74,
+                59,
+                6,
+                30
+            ],
+            "RCAqKnvu_P0_What does the vlogger eat on the first day evening?": [
+                74,
+                30,
+                50,
+                73,
+                65,
+                57
+            ],
+            "RCAqKnvu_P0_What kind of transportation does the vlogger use to get to Shibuya Scramble Crossing?": [
+                17,
+                16,
+                26,
+                72,
+                67,
+                14
+            ],
+            "iA_69g87Ilw_What is in the top shelf of cabinet that the vlogger opens right after he checks the cooler for the first time?": [
+                10,
+                8,
+                32,
+                27,
+                21,
+                14
+            ],
+            "iA_69g87Ilw_What color is the hair dryer?": [
+                21,
+                24,
+                34,
+                6,
+                9,
+                35
+            ],
+            "iA_69g87Ilw_What is in the bedside table's drawer?": [
+                33,
+                34,
+                32,
+                21,
+                35,
+                24
+            ],
+            "iA_69g87Ilw_What does the dark-skinned man in the white robe do to the vlogger when the vlogger checks the outdoor fountain on the first evening?": [
+                62,
+                72,
+                24,
+                64,
+                65,
+                51
+            ],
+            "iA_69g87Ilw_What is the make of the white vehicle that is parked next to the car bearing the license plate number 77704?": [
+                1,
+                62,
+                63,
+                2,
+                64,
+                24
+            ],
+            "iA_69g87Ilw_What's inside the red box?": [
+                66,
+                20,
+                73,
+                27,
+                72,
+                8
+            ],
+            "wgBlACG927Y_What is the first means of transportation the vloggers take when they come to China?": [
+                23,
+                8,
+                19,
+                11,
+                12,
+                0
+            ],
+            "wgBlACG927Y_What means of transportation do the vloggers take after getting off the high-speed train?": [
+                12,
+                19,
+                8,
+                17,
+                15,
+                9
+            ],
+            "wgBlACG927Y_They eat ___ courses of meals, not including rice, in the restaurant": [
+                36,
+                38,
+                39,
+                37,
+                42,
+                45
+            ],
+            "wgBlACG927Y_How many arches are there on the overpass?": [
+                25,
+                26,
+                12,
+                2,
+                58,
+                57
+            ],
+            "wgBlACG927Y_What animal statue is under the Dong Men Ding Food Street sign?": [
+                73,
+                68,
+                60,
+                61,
+                71,
+                67
+            ],
+            "wgBlACG927Y_The vloggers meet a man selling ___ in a cage that is wrapped in plastic": [
+                73,
+                74,
+                72,
+                52,
+                66,
+                67
+            ],
+            "wgBlACG927Y_How many pieces are in the purple roll dish the vloggers shoot at the dinner?": [
+                35,
+                34,
+                42,
+                44,
+                36,
+                39
+            ],
+            "2zkJFv-ro4A_What are the props in the hands of the audience during the concert?": [
+                5,
+                41,
+                11,
+                28,
+                42,
+                23
+            ],
+            "2zkJFv-ro4A_Who is the man appearing on the screen from 01:38-01:40?": [
+                12,
+                30,
+                9,
+                1,
+                43,
+                18
+            ],
+            "2zkJFv-ro4A_Who performs a solo after Seungri does?": [
+                39,
+                26,
+                53,
+                27,
+                15,
+                37
+            ],
+            "2zkJFv-ro4A_Which two fingers does Seungri use to represent a gesture from 27:03-27:40?": [
+                8,
+                4,
+                39,
+                37,
+                25,
+                9
+            ],
+            "2zkJFv-ro4A_Who does the vlogger see from the BigBang after the concert ends?": [
+                4,
+                3,
+                8,
+                12,
+                18,
+                37
+            ],
+            "2zkJFv-ro4A_How many red stripes are there on the vlogger's black t-shirt?": [
+                72,
+                0,
+                1,
+                69,
+                71,
+                31
+            ],
+            "LLSJrEgOOtw_What appears on the screen at the very beginning of the vedio?": [
+                68,
+                55,
+                52,
+                9,
+                74,
+                6
+            ],
+            "LLSJrEgOOtw_What does the woman do first in the wooden carbin?": [
+                33,
+                39,
+                10,
+                54,
+                14,
+                31
+            ],
+            "LLSJrEgOOtw_What does the man do first in the wooden carbin?": [
+                18,
+                15,
+                54,
+                16,
+                33,
+                10
+            ],
+            "Va_9Q6ekm60_Which liquid is poured at the beginning of the video?": [
+                5,
+                20,
+                6,
+                22,
+                2,
+                3
+            ],
+            "Va_9Q6ekm60_What color shovels are used to scrape the liquid in the container?": [
+                59,
+                36,
+                35,
+                33,
+                66,
+                11
+            ],
+            "Va_9Q6ekm60_What is in the pocket of the shop assistant's clothe?": [
+                44,
+                41,
+                43,
+                48,
+                7,
+                15
+            ],
+            "Va_9Q6ekm60_How many Taiyaki cookies does the shop assistant cook?": [
+                64,
+                62,
+                57,
+                67,
+                74,
+                0
+            ],
+            "Va_9Q6ekm60_How many boxes of ingredients are on the stage when the shop assistant starts the build the Taiyaki ice cream?": [
+                74,
+                0,
+                64,
+                62,
+                72,
+                67
+            ],
+            "Va_9Q6ekm60_How many Taiyaki ice creams does the shop assistant assemble in total?": [
+                74,
+                64,
+                67,
+                0,
+                62,
+                72
+            ],
+            "Va_9Q6ekm60_Which store, the one next to the Taiyaki shop, opens before the Taiyaki shop does?": [
+                0,
+                64,
+                62,
+                74,
+                63,
+                67
+            ],
+            "Va_9Q6ekm60_What is the theme color of the Taiyaki shop?": [
+                64,
+                0,
+                62,
+                74,
+                67,
+                57
+            ],
+            "Va_9Q6ekm60_What does the shop assistant wear?": [
+                7,
+                43,
+                17,
+                10,
+                40,
+                9
+            ],
+            "Va_9Q6ekm60_What's hanging on the back of the kitchen's wall?": [
+                43,
+                21,
+                41,
+                7,
+                20,
+                40
+            ],
+            "1FsiZgGZU70_What is the color of the sticker on the vlogger's drink?": [
+                44,
+                45,
+                35,
+                43,
+                56,
+                55
+            ],
+            "1FsiZgGZU70_What is on the vlogger's neck?": [
+                34,
+                14,
+                33,
+                56,
+                8,
+                36
+            ],
+            "1FsiZgGZU70_What is the hairstyle of the vlogger?": [
+                19,
+                57,
+                0,
+                74,
+                17,
+                65
+            ],
+            "1FsiZgGZU70_What is the vlogger doing while the blue shirt man is ordering food at the fast food chain?": [
+                44,
+                15,
+                34,
+                45,
+                6,
+                13
+            ],
+            "1FsiZgGZU70_What color is vlogger's car?": [
+                19,
+                18,
+                17,
+                9,
+                38,
+                16
+            ],
+            "1FsiZgGZU70_What evidence can be used to infer the vlog is filmed on two days?": [
+                0,
+                66,
+                69,
+                73,
+                61,
+                62
+            ],
+            "1FsiZgGZU70_What does the vlogger wear when he is on his way to the gym?": [
+                55,
+                41,
+                46,
+                31,
+                32,
+                43
+            ],
+            "1FsiZgGZU70_What does the vlogger hold in the equipment room at the gym?": [
+                55,
+                46,
+                42,
+                49,
+                43,
+                52
+            ],
+            "jp2M1hIEtsk_What is the colour of the Teacup map?": [
+                74,
+                41,
+                43,
+                48,
+                44,
+                27
+            ],
+            "jp2M1hIEtsk_How many flowers does the vlogger put in the cylindrical bottle?": [
+                21,
+                47,
+                24,
+                46,
+                48,
+                20
+            ],
+            "jp2M1hIEtsk_How many strips of bacon does the vlogger fry?": [
+                31,
+                37,
+                40,
+                36,
+                38,
+                34
+            ],
+            "jp2M1hIEtsk_What colour of ink does the vlogger use to write first?": [
+                43,
+                42,
+                41,
+                44,
+                46,
+                45
+            ],
+            "jp2M1hIEtsk_How many flowers does the vlogger draw?": [
+                46,
+                45,
+                44,
+                43,
+                21,
+                47
+            ],
+            "jp2M1hIEtsk_How many spoonfuls of soup dose the vlogger put into the glass pot from 25:15-25:31?": [
+                56,
+                53,
+                27,
+                36,
+                59,
+                26
+            ]
+        }
+    },
+    "reasoning": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "hROKtPqktO8_Why can't the vlogger close her mouth at 28:00?": [
+                17,
+                4,
+                1,
+                0,
+                3,
+                18
+            ],
+            "tH_5YbklevQ_What might be the most likely reason the vlogger doesn't enter the national monument on the first day?": [
+                27,
+                26,
+                28,
+                33,
+                30,
+                32
+            ],
+            "tH_5YbklevQ_What is the most possible relationship between the woman in white robe and the vlogger?": [
+                47,
+                68,
+                61,
+                62,
+                59,
+                71
+            ],
+            "USfvmoalqsw_Why does the vlogger wear a white accessory?": [
+                42,
+                35,
+                41,
+                74,
+                2,
+                9
+            ],
+            "USfvmoalqsw_What might be the most common type of grain in this city?": [
+                49,
+                16,
+                59,
+                25,
+                36,
+                21
+            ],
+            "evYm0cELO3I_Why does Sonny look so expected at 07:27?": [
+                38,
+                14,
+                5,
+                46,
+                55,
+                12
+            ],
+            "evYm0cELO3I_What does Sonny look so happy at 08:23?": [
+                17,
+                38,
+                39,
+                0,
+                26,
+                14
+            ],
+            "evYm0cELO3I_Why does the vlogger take the whole tail of a lobster out?": [
+                6,
+                7,
+                5,
+                9,
+                43,
+                11
+            ],
+            "RbpKkvlHYTw_Why does the vlogger do push-ups in hotel?": [
+                54,
+                55,
+                67,
+                3,
+                20,
+                4
+            ],
+            "Mcggugol2ts_What is the overall expression of the vlogger on the train?": [
+                6,
+                5,
+                8,
+                7,
+                4,
+                10
+            ],
+            "JPPMz8fEml0_Among the three vloggers, ___ has the most normal night.": [
+                60,
+                61,
+                40,
+                51,
+                30,
+                38
+            ],
+            "JPPMz8fEml0_What is the attitudes of people living in Lebanon towards life?": [
+                18,
+                9,
+                2,
+                26,
+                10,
+                8
+            ],
+            "JPPMz8fEml0_Does the car driver accept the request at 09:00?": [
+                50,
+                44,
+                52,
+                49,
+                53,
+                39
+            ],
+            "JPPMz8fEml0_Thomas sleeps at ___ house.": [
+                63,
+                60,
+                51,
+                34,
+                52,
+                61
+            ],
+            "uusf1qG_uZ4_What do these kids think of the substitute daycare teacher?": [
+                24,
+                71,
+                41,
+                55,
+                39,
+                60
+            ],
+            "uusf1qG_uZ4_Why does JJ look terrified after Boss Baby says 'It's boss boy'?": [
+                55,
+                22,
+                2,
+                60,
+                13,
+                3
+            ],
+            "uusf1qG_uZ4_Why does Janice act so nice?": [
+                22,
+                12,
+                33,
+                14,
+                46,
+                17
+            ],
+            "uusf1qG_uZ4_Why is the daycare teacher very irritable with the kids?": [
+                54,
+                55,
+                2,
+                24,
+                41,
+                22
+            ],
+            "O14bbpvy2x0_Who are the vlogger's customers?": [
+                19,
+                9,
+                28,
+                59,
+                32,
+                44
+            ],
+            "O14bbpvy2x0_What is the vlogger's job other than making videos?": [
+                28,
+                32,
+                22,
+                54,
+                73,
+                33
+            ],
+            "3_upA09AntU_There are four containers on the left side of the table where the bills are placed. What are they used for?": [
+                59,
+                37,
+                2,
+                7,
+                12,
+                3
+            ],
+            "3_upA09AntU_Which color of the sauce is mostly used?": [
+                0,
+                26,
+                27,
+                17,
+                3,
+                13
+            ],
+            "3_upA09AntU_What might be the number on the stove above the table next to the trash can?": [
+                2,
+                12,
+                37,
+                30,
+                70,
+                48
+            ],
+            "3_upA09AntU_Given the vlog, is the restaurant profitable?": [
+                37,
+                2,
+                33,
+                68,
+                22,
+                3
+            ],
+            "gbDR39yIs3Y_Given the vlogger's behavior from 00:38-01:22, what does she want to do?": [
+                49,
+                46,
+                60,
+                59,
+                61,
+                43
+            ],
+            "gbDR39yIs3Y_How long does the vlogger go out for groceries?": [
+                25,
+                22,
+                21,
+                41,
+                26,
+                42
+            ],
+            "KbahC-QCKU8_Why does the vlogger point the barrel of the gun toward his mouth?": [
+                21,
+                20,
+                46,
+                3,
+                49,
+                55
+            ],
+            "_T2Avd3tFHc_Compared to most other amusement parks, the one the vlogger team visits in the afternoon on the first day is ___.": [
+                28,
+                24,
+                9,
+                23,
+                17,
+                30
+            ],
+            "_T2Avd3tFHc_Where do the vlogger team members invite Mikhail on the first night?": [
+                67,
+                41,
+                29,
+                6,
+                40,
+                30
+            ],
+            "RCAqKnvu_P0_Why does everything go smoothly after the vlogger exits the airport?": [
+                74,
+                2,
+                37,
+                66,
+                64,
+                24
+            ],
+            "RCAqKnvu_P0_On which floor is Shibuya Sky?": [
+                21,
+                23,
+                20,
+                18,
+                10,
+                16
+            ],
+            "wgBlACG927Y_What season do the vloggers visit the city?": [
+                57,
+                58,
+                47,
+                48,
+                64,
+                62
+            ],
+            "LLSJrEgOOtw_Why do they go to the wooden cabin?": [
+                12,
+                59,
+                73,
+                54,
+                74,
+                57
+            ],
+            "Va_9Q6ekm60_What is the maximum number of Taiyaki can the machine cook at the same time?": [
+                64,
+                62,
+                0,
+                74,
+                67,
+                63
+            ],
+            "1FsiZgGZU70_What is the overall style of the video?": [
+                62,
+                60,
+                65,
+                4,
+                66,
+                69
+            ],
+            "1FsiZgGZU70_What is the camera initially facing in the video?": [
+                60,
+                66,
+                65,
+                61,
+                64,
+                62
+            ],
+            "1FsiZgGZU70_What might a passenger think about the vlogger from a third person perspective?": [
+                5,
+                17,
+                32,
+                18,
+                19,
+                33
+            ],
+            "1FsiZgGZU70_Is there any underage person living in the vlogger's house?": [
+                58,
+                64,
+                66,
+                61,
+                73,
+                69
+            ],
+            "jp2M1hIEtsk_Why does the vlogger take the flowers out of the bottle?": [
+                21,
+                47,
+                12,
+                46,
+                20,
+                24
+            ],
+            "jp2M1hIEtsk_Why does the vlogger shake the white bag at 16:55-17:20?": [
+                36,
+                29,
+                18,
+                30,
+                14,
+                8
+            ]
+        }
+    },
+    "summarization": {
+        "config": {
+            "selected_topk": 6,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "hROKtPqktO8_What does the vlogger do on the third day?": [
+                0,
+                3,
+                1,
+                17,
+                4,
+                14
+            ],
+            "USfvmoalqsw_What happens between the vlogger's arrive and exit the airport?": [
+                1,
+                74,
+                2,
+                11,
+                69,
+                35
+            ],
+            "USfvmoalqsw_What happens between the vlogger's leave from the clothing shop and before the Bhutan promotional video?": [
+                2,
+                27,
+                25,
+                9,
+                24,
+                52
+            ],
+            "USfvmoalqsw_What does the vlogger do after he tries a traditional hat and before he visits the white and red building?": [
+                23,
+                53,
+                24,
+                16,
+                25,
+                52
+            ],
+            "evYm0cELO3I_What happens from 02:45-04:00?": [
+                31,
+                27,
+                26,
+                47,
+                40,
+                46
+            ],
+            "Mcggugol2ts_What does vlogger do in the second half of the video?": [
+                14,
+                32,
+                0,
+                6,
+                20,
+                16
+            ],
+            "O14bbpvy2x0_What is the content of the video?": [
+                33,
+                44,
+                20,
+                1,
+                22,
+                21
+            ],
+            "KbahC-QCKU8_What do the vlogger family members do from 23:45-26:15?": [
+                65,
+                57,
+                74,
+                2,
+                25,
+                43
+            ],
+            "_T2Avd3tFHc_After exiting the airport, what does the vlogger team do before seeking directions from an elder?": [
+                69,
+                68,
+                71,
+                7,
+                6,
+                72
+            ],
+            "iA_69g87Ilw_What happens from 10:00-20:00?": [
+                72,
+                73,
+                24,
+                34,
+                4,
+                0
+            ],
+            "wgBlACG927Y_How does the vloggers leave the platform and go upstairs?": [
+                21,
+                8,
+                69,
+                22,
+                11,
+                3
+            ],
+            "LLSJrEgOOtw_What happens from 02:03-04:09?": [
+                23,
+                64,
+                65,
+                55,
+                19,
+                18
+            ],
+            "LLSJrEgOOtw_What happens from 04:49-06:20?": [
+                23,
+                64,
+                55,
+                18,
+                44,
+                19
+            ],
+            "Va_9Q6ekm60_What is the video about?": [
+                1,
+                24,
+                6,
+                19,
+                61,
+                9
+            ],
+            "jp2M1hIEtsk_What does the vlogger do from 00:00-14:00?": [
+                3,
+                47,
+                4,
+                13,
+                41,
+                1
+            ]
+        }
+    },
+    "temporal grounding": {
+        "config": {
+            "selected_topk": 4,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "evYm0cELO3I_What happens from 04:19-04:45?": [
+                31,
+                27,
+                40,
+                26
+            ],
+            "evYm0cELO3I_What happens from 04:50-05:20?": [
+                31,
+                26,
+                27,
+                40
+            ],
+            "evYm0cELO3I_What happens from 24:46-25:12?": [
+                31,
+                26,
+                27,
+                40
+            ],
+            "evYm0cELO3I_What does the man do from 28:43-29:14?": [
+                26,
+                1,
+                40,
+                47
+            ],
+            "uusf1qG_uZ4_What is the main content discussed from 73:13-73:31?": [
+                31,
+                16,
+                71,
+                17
+            ],
+            "O14bbpvy2x0_How many slices of cheese does the vlogger put on each patty from 19:25-19:45?": [
+                43,
+                71,
+                37,
+                1
+            ],
+            "3_upA09AntU_How many plates does the chef place on the table from 04:40-04:46?": [
+                64,
+                38,
+                45,
+                52
+            ],
+            "3_upA09AntU_How many spoonfuls of sauce are placed on the two plates from 09:13-09:30?": [
+                26,
+                27,
+                0,
+                3
+            ],
+            "KbahC-QCKU8_Why are the vlogger family members so happy at 22:03?": [
+                43,
+                65,
+                57,
+                74
+            ],
+            "_T2Avd3tFHc_Where does the conversation happen from 18:55-20:55?": [
+                2,
+                21,
+                39,
+                12
+            ],
+            "RCAqKnvu_P0_What appears from 00:23-00:24?": [
+                18,
+                52,
+                30,
+                37
+            ],
+            "RCAqKnvu_P0_What happens from 01:54-02:25?": [
+                30,
+                45,
+                44,
+                18
+            ]
+        }
+    },
+    "key information retrieval": {
+        "config": {
+            "selected_topk": 7,
+            "selected_chunk_size": 16,
+            "compression": 4,
+            "relevance oracle": "languagebind"
+        },
+        "selected_unit_indices": {
+            "hROKtPqktO8_What are the words on the warning sign the vlogger first notices?": [
+                29,
+                25,
+                0,
+                21,
+                3,
+                38,
+                4
+            ],
+            "hROKtPqktO8_What is the first warn on the warning sign in the volcano skali?": [
+                38,
+                25,
+                37,
+                39,
+                29,
+                28,
+                36
+            ],
+            "USfvmoalqsw_Where does the vlogger travel to?": [
+                74,
+                52,
+                63,
+                1,
+                5,
+                2,
+                14
+            ],
+            "USfvmoalqsw_How many percentage of the land is covered in forest mentioned in the video?": [
+                3,
+                30,
+                18,
+                14,
+                39,
+                24,
+                27
+            ],
+            "evYm0cELO3I_What is the name of the vlogger?": [
+                22,
+                63,
+                74,
+                59,
+                58,
+                39,
+                64
+            ],
+            "evYm0cELO3I_What is the name of MT. Pleasant Fishing Lodge's chef?": [
+                68,
+                23,
+                73,
+                8,
+                39,
+                69,
+                40
+            ],
+            "RbpKkvlHYTw_Which city does the vlogger first go to?": [
+                1,
+                62,
+                55,
+                56,
+                47,
+                54,
+                73
+            ],
+            "RbpKkvlHYTw_Where is the vlogger when it comes to day 6?": [
+                56,
+                54,
+                55,
+                62,
+                1,
+                50,
+                43
+            ],
+            "RbpKkvlHYTw_How many time has the vlogger been to Seoul in this video?": [
+                62,
+                56,
+                8,
+                1,
+                47,
+                73,
+                36
+            ],
+            "RbpKkvlHYTw_Where does the vlogger have his last meal in Korea?": [
+                54,
+                50,
+                73,
+                8,
+                2,
+                25,
+                47
+            ],
+            "Mcggugol2ts_What is the time when the vlogger gets out of the Shinjuku Station?": [
+                15,
+                14,
+                12,
+                16,
+                67,
+                13,
+                4
+            ],
+            "Mcggugol2ts_The vlogger spend ___  yen to buy water from the vending machine for the first time.": [
+                60,
+                61,
+                30,
+                54,
+                31,
+                55,
+                22
+            ],
+            "Mcggugol2ts_What is the most likely way the vlogger hold the phone?": [
+                14,
+                13,
+                32,
+                0,
+                20,
+                7,
+                74
+            ],
+            "Mcggugol2ts_Which floor is the bookoff on?": [
+                57,
+                58,
+                56,
+                59,
+                11,
+                66,
+                62
+            ],
+            "Mcggugol2ts_The vlogger spend ___  yen to buy water from the vending machine for the second time.": [
+                61,
+                60,
+                30,
+                31,
+                54,
+                55,
+                22
+            ],
+            "JPPMz8fEml0_What is the highest percentage of the country's respondents who experienced anger on the day previous to the survey?": [
+                0,
+                18,
+                27,
+                23,
+                26,
+                11,
+                25
+            ],
+            "JPPMz8fEml0_Which country do the travelers choose?": [
+                5,
+                6,
+                8,
+                3,
+                26,
+                2,
+                27
+            ],
+            "JPPMz8fEml0_What is the discount on the vlogger's merchandise?": [
+                33,
+                32,
+                5,
+                40,
+                30,
+                11,
+                6
+            ],
+            "JPPMz8fEml0_Who goes to a party at night?": [
+                59,
+                51,
+                58,
+                34,
+                56,
+                37,
+                52
+            ],
+            "uusf1qG_uZ4_What is the name of the coffee shop behind the road that appears at 49:50?": [
+                28,
+                17,
+                64,
+                8,
+                62,
+                56,
+                35
+            ],
+            "uusf1qG_uZ4_What are the words that appear in the top left corner of the screen at 71:00?": [
+                4,
+                37,
+                48,
+                27,
+                74,
+                62,
+                71
+            ],
+            "O14bbpvy2x0_What type of sauce does the label indicate on the second bottle that is closest to the view?": [
+                26,
+                55,
+                69,
+                32,
+                22,
+                72,
+                41
+            ],
+            "3_upA09AntU_What does the chef write when he first writing on paper?": [
+                74,
+                40,
+                6,
+                37,
+                4,
+                32,
+                28
+            ],
+            "3_upA09AntU_How many steak on the left side of the table at 21:00?": [
+                44,
+                73,
+                57,
+                42,
+                63,
+                0,
+                45
+            ],
+            "gbDR39yIs3Y_How long does the vlogger set the timer for when brushing her teeth?": [
+                70,
+                69,
+                49,
+                6,
+                68,
+                67,
+                64
+            ],
+            "gbDR39yIs3Y_When does the vlogger go out again?": [
+                72,
+                39,
+                56,
+                46,
+                19,
+                59,
+                60
+            ],
+            "gbDR39yIs3Y_Which beauty brand does the vlogger visit?": [
+                42,
+                72,
+                43,
+                18,
+                19,
+                64,
+                70
+            ],
+            "gbDR39yIs3Y_When does the vlogger go home for the last time?": [
+                56,
+                49,
+                59,
+                46,
+                60,
+                72,
+                19
+            ],
+            "KbahC-QCKU8_What brand of goggles does the vlogger family have?": [
+                56,
+                41,
+                66,
+                74,
+                57,
+                28,
+                48
+            ],
+            "_T2Avd3tFHc_At what timestamp in the video does the third morning occur?": [
+                41,
+                60,
+                67,
+                2,
+                3,
+                43,
+                5
+            ],
+            "RCAqKnvu_P0_How long is the vlogger's flight duration to Japan?": [
+                74,
+                53,
+                58,
+                57,
+                24,
+                67,
+                1
+            ],
+            "RCAqKnvu_P0_How much does the vlogger pay to the hotel for 8 days?": [
+                7,
+                30,
+                44,
+                18,
+                45,
+                24,
+                74
+            ],
+            "RCAqKnvu_P0_How many kinds of train cards are threre in Japan?": [
+                9,
+                14,
+                43,
+                15,
+                3,
+                8,
+                4
+            ],
+            "iA_69g87Ilw_What is the text on the upper right corner of the video?": [
+                0,
+                12,
+                74,
+                54,
+                55,
+                56,
+                71
+            ],
+            "wgBlACG927Y_Which of the two platforms are the vloggers standing on at the beginning of the video?": [
+                2,
+                14,
+                4,
+                18,
+                19,
+                8,
+                3
+            ],
+            "wgBlACG927Y_After they finish talking to the camera next to the B1 sign, what is written on the high-rise building where the camera turns to?": [
+                47,
+                62,
+                66,
+                58,
+                48,
+                73,
+                64
+            ],
+            "2zkJFv-ro4A_What is the relation beween Daesung and Kange Dae Sung?": [
+                4,
+                12,
+                39,
+                57,
+                3,
+                37,
+                53
+            ],
+            "LLSJrEgOOtw_What does the woman put into the pot at 43:08?": [
+                68,
+                49,
+                20,
+                53,
+                33,
+                23,
+                48
+            ],
+            "jp2M1hIEtsk_What is the brand of the vlogger's scented candle?": [
+                2,
+                3,
+                1,
+                47,
+                41,
+                42,
+                24
+            ],
+            "jp2M1hIEtsk_What is the word on vlogger's ceramic cup?": [
+                41,
+                7,
+                28,
+                74,
+                27,
+                1,
+                19
+            ],
+            "jp2M1hIEtsk_What's the time on the clock at 22:35?": [
+                47,
+                3,
+                2,
+                68,
+                1,
+                11,
+                74
+            ],
+            "jp2M1hIEtsk_How much water does the vlogger put in the bowl in 24:37?": [
+                1,
+                72,
+                36,
+                3,
+                48,
+                30,
+                18
+            ]
+        }
+    }
+}

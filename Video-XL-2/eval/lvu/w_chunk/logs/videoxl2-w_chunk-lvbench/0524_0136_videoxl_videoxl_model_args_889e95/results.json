@@ -1,0 +1,415 @@
+{
+    "results": {
+        "lvbench": {
+            "lvbench_mc_accuracy": 46.61,
+            "alias": "lvbench",
+            "accuracy": 46.61071659134925
+        },
+        "lvbench_cartoon": {
+            "alias": " - lvbench_cartoon",
+            "lvbench_mc_accuracy,none": 43.81625441696113,
+            "lvbench_mc_accuracy_stderr,none": "N/A"
+        },
+        "lvbench_documentary": {
+            "alias": " - lvbench_documentary",
+            "lvbench_mc_accuracy,none": 50.253807106598984,
+            "lvbench_mc_accuracy_stderr,none": "N/A"
+        },
+        "lvbench_live": {
+            "alias": " - lvbench_live",
+            "lvbench_mc_accuracy,none": 46.18320610687023,
+            "lvbench_mc_accuracy_stderr,none": "N/A"
+        },
+        "lvbench_selfmedia": {
+            "alias": " - lvbench_selfmedia",
+            "lvbench_mc_accuracy,none": 46.68769716088328,
+            "lvbench_mc_accuracy_stderr,none": "N/A"
+        },
+        "lvbench_sport": {
+            "alias": " - lvbench_sport",
+            "lvbench_mc_accuracy,none": 47.5,
+            "lvbench_mc_accuracy_stderr,none": "N/A"
+        },
+        "lvbench_tv": {
+            "alias": " - lvbench_tv",
+            "lvbench_mc_accuracy,none": 46.4,
+            "lvbench_mc_accuracy_stderr,none": "N/A"
+        }
+    },
+    "group_subtasks": {
+        "lvbench": [
+            "lvbench_cartoon",
+            "lvbench_documentary",
+            "lvbench_live",
+            "lvbench_selfmedia",
+            "lvbench_sport",
+            "lvbench_tv"
+        ]
+    },
+    "configs": {
+        "lvbench_cartoon": {
+            "task": "lvbench_cartoon",
+            "dataset_path": "/share/minghao/VideoProjects/VideoChat-Flash/lmms-eval_videochat/eval_annotations/LVBench",
+            "dataset_name": "lvbench_cartoon",
+            "dataset_kwargs": {
+                "token": true
+            },
+            "test_split": "train",
+            "full_docs": false,
+            "process_results_use_image": false,
+            "doc_to_visual": "<function lvbench_mc_doc_to_visual at 0x7fe3be313c70>",
+            "doc_to_text": "<function lvbench_mc_doc_to_text at 0x7fe3be334670>",
+            "doc_to_target": "answer",
+            "process_results": "<function lvbench_mc_process_results at 0x7fe3be334dc0>",
+            "description": "",
+            "target_delimiter": " ",
+            "fewshot_delimiter": "\n\n",
+            "num_fewshot": 0,
+            "metric_list": [
+                {
+                    "metric": "lvbench_mc_accuracy",
+                    "aggregation": "<function lvbench_mc_aggregate_results at 0x7fe3be335480>",
+                    "higher_is_better": true
+                }
+            ],
+            "output_type": "generate_until",
+            "generation_kwargs": {
+                "max_new_tokens": 16,
+                "temperature": 0.0,
+                "top_p": 1.0,
+                "num_beams": 1,
+                "do_sample": false,
+                "until": [
+                    "\n\n"
+                ]
+            },
+            "repeats": 1,
+            "should_decontaminate": false,
+            "lmms_eval_specific_kwargs": {
+                "default": {
+                    "sub_task": "lvbench_cartoon",
+                    "post_prompt": "Answer with the option's letter from the given choices directly."
+                },
+                "sub_task": "lvbench_cartoon",
+                "post_prompt": "Answer with the option's letter from the given choices directly."
+            }
+        },
+        "lvbench_documentary": {
+            "task": "lvbench_documentary",
+            "dataset_path": "/share/minghao/VideoProjects/VideoChat-Flash/lmms-eval_videochat/eval_annotations/LVBench",
+            "dataset_name": "lvbench_documentary",
+            "dataset_kwargs": {
+                "token": true
+            },
+            "test_split": "train",
+            "full_docs": false,
+            "process_results_use_image": false,
+            "doc_to_visual": "<function lvbench_mc_doc_to_visual at 0x7fe3be312710>",
+            "doc_to_text": "<function lvbench_mc_doc_to_text at 0x7fe3be312c20>",
+            "doc_to_target": "answer",
+            "process_results": "<function lvbench_mc_process_results at 0x7fe3be313370>",
+            "description": "",
+            "target_delimiter": " ",
+            "fewshot_delimiter": "\n\n",
+            "num_fewshot": 0,
+            "metric_list": [
+                {
+                    "metric": "lvbench_mc_accuracy",
+                    "aggregation": "<function lvbench_mc_aggregate_results at 0x7fe3be313a30>",
+                    "higher_is_better": true
+                }
+            ],
+            "output_type": "generate_until",
+            "generation_kwargs": {
+                "max_new_tokens": 16,
+                "temperature": 0.0,
+                "top_p": 1.0,
+                "num_beams": 1,
+                "do_sample": false,
+                "until": [
+                    "\n\n"
+                ]
+            },
+            "repeats": 1,
+            "should_decontaminate": false,
+            "lmms_eval_specific_kwargs": {
+                "default": {
+                    "sub_task": "lvbench_documentary",
+                    "post_prompt": "Answer with the option's letter from the given choices directly."
+                },
+                "sub_task": "lvbench_documentary",
+                "post_prompt": "Answer with the option's letter from the given choices directly."
+            }
+        },
+        "lvbench_live": {
+            "task": "lvbench_live",
+            "dataset_path": "/share/minghao/VideoProjects/VideoChat-Flash/lmms-eval_videochat/eval_annotations/LVBench",
+            "dataset_name": "lvbench_live",
+            "dataset_kwargs": {
+                "token": true
+            },
+            "test_split": "train",
+            "full_docs": false,
+            "process_results_use_image": false,
+            "doc_to_visual": "<function lvbench_mc_doc_to_visual at 0x7fe3be310d30>",
+            "doc_to_text": "<function lvbench_mc_doc_to_text at 0x7fe3be311240>",
+            "doc_to_target": "answer",
+            "process_results": "<function lvbench_mc_process_results at 0x7fe3be311990>",
+            "description": "",
+            "target_delimiter": " ",
+            "fewshot_delimiter": "\n\n",
+            "num_fewshot": 0,
+            "metric_list": [
+                {
+                    "metric": "lvbench_mc_accuracy",
+                    "aggregation": "<function lvbench_mc_aggregate_results at 0x7fe3be312050>",
+                    "higher_is_better": true
+                }
+            ],
+            "output_type": "generate_until",
+            "generation_kwargs": {
+                "max_new_tokens": 16,
+                "temperature": 0.0,
+                "top_p": 1.0,
+                "num_beams": 1,
+                "do_sample": false,
+                "until": [
+                    "\n\n"
+                ]
+            },
+            "repeats": 1,
+            "should_decontaminate": false,
+            "lmms_eval_specific_kwargs": {
+                "default": {
+                    "sub_task": "lvbench_live",
+                    "post_prompt": "Answer with the option's letter from the given choices directly."
+                },
+                "sub_task": "lvbench_live",
+                "post_prompt": "Answer with the option's letter from the given choices directly."
+            }
+        },
+        "lvbench_selfmedia": {
+            "task": "lvbench_selfmedia",
+            "dataset_path": "/share/minghao/VideoProjects/VideoChat-Flash/lmms-eval_videochat/eval_annotations/LVBench",
+            "dataset_name": "lvbench_selfmedia",
+            "dataset_kwargs": {
+                "token": true
+            },
+            "test_split": "train",
+            "full_docs": false,
+            "process_results_use_image": false,
+            "doc_to_visual": "<function lvbench_mc_doc_to_visual at 0x7fe3be4b3250>",
+            "doc_to_text": "<function lvbench_mc_doc_to_text at 0x7fe3be4b3760>",
+            "doc_to_target": "answer",
+            "process_results": "<function lvbench_mc_process_results at 0x7fe3be4b3eb0>",
+            "description": "",
+            "target_delimiter": " ",
+            "fewshot_delimiter": "\n\n",
+            "num_fewshot": 0,
+            "metric_list": [
+                {
+                    "metric": "lvbench_mc_accuracy",
+                    "aggregation": "<function lvbench_mc_aggregate_results at 0x7fe3be3105e0>",
+                    "higher_is_better": true
+                }
+            ],
+            "output_type": "generate_until",
+            "generation_kwargs": {
+                "max_new_tokens": 16,
+                "temperature": 0.0,
+                "top_p": 1.0,
+                "num_beams": 1,
+                "do_sample": false,
+                "until": [
+                    "\n\n"
+                ]
+            },
+            "repeats": 1,
+            "should_decontaminate": false,
+            "lmms_eval_specific_kwargs": {
+                "default": {
+                    "sub_task": "lvbench_selfmedia",
+                    "post_prompt": "Answer with the option's letter from the given choices directly."
+                },
+                "sub_task": "lvbench_selfmedia",
+                "post_prompt": "Answer with the option's letter from the given choices directly."
+            }
+        },
+        "lvbench_sport": {
+            "task": "lvbench_sport",
+            "dataset_path": "/share/minghao/VideoProjects/VideoChat-Flash/lmms-eval_videochat/eval_annotations/LVBench",
+            "dataset_name": "lvbench_sport",
+            "dataset_kwargs": {
+                "token": true
+            },
+            "test_split": "train",
+            "full_docs": false,
+            "process_results_use_image": false,
+            "doc_to_visual": "<function lvbench_mc_doc_to_visual at 0x7fe3be4b15a0>",
+            "doc_to_text": "<function lvbench_mc_doc_to_text at 0x7fe3be4b1c60>",
+            "doc_to_target": "answer",
+            "process_results": "<function lvbench_mc_process_results at 0x7fe3be4b23b0>",
+            "description": "",
+            "target_delimiter": " ",
+            "fewshot_delimiter": "\n\n",
+            "num_fewshot": 0,
+            "metric_list": [
+                {
+                    "metric": "lvbench_mc_accuracy",
+                    "aggregation": "<function lvbench_mc_aggregate_results at 0x7fe3be4b2a70>",
+                    "higher_is_better": true
+                }
+            ],
+            "output_type": "generate_until",
+            "generation_kwargs": {
+                "max_new_tokens": 16,
+                "temperature": 0.0,
+                "top_p": 1.0,
+                "num_beams": 1,
+                "do_sample": false,
+                "until": [
+                    "\n\n"
+                ]
+            },
+            "repeats": 1,
+            "should_decontaminate": false,
+            "lmms_eval_specific_kwargs": {
+                "default": {
+                    "sub_task": "lvbench_sport",
+                    "post_prompt": "Answer with the option's letter from the given choices directly."
+                },
+                "sub_task": "lvbench_sport",
+                "post_prompt": "Answer with the option's letter from the given choices directly."
+            }
+        },
+        "lvbench_tv": {
+            "task": "lvbench_tv",
+            "dataset_path": "/share/minghao/VideoProjects/VideoChat-Flash/lmms-eval_videochat/eval_annotations/LVBench",
+            "dataset_name": "lvbench_tv",
+            "dataset_kwargs": {
+                "token": true
+            },
+            "test_split": "train",
+            "full_docs": false,
+            "process_results_use_image": false,
+            "doc_to_visual": "<function lvbench_mc_doc_to_visual at 0x7fe3be400430>",
+            "doc_to_text": "<function lvbench_mc_doc_to_text at 0x7fe3be400af0>",
+            "doc_to_target": "answer",
+            "process_results": "<function lvbench_mc_process_results at 0x7fe3be401240>",
+            "description": "",
+            "target_delimiter": " ",
+            "fewshot_delimiter": "\n\n",
+            "num_fewshot": 0,
+            "metric_list": [
+                {
+                    "metric": "lvbench_mc_accuracy",
+                    "aggregation": "<function lvbench_mc_aggregate_results at 0x7fe3be401900>",
+                    "higher_is_better": true
+                }
+            ],
+            "output_type": "generate_until",
+            "generation_kwargs": {
+                "max_new_tokens": 16,
+                "temperature": 0.0,
+                "top_p": 1.0,
+                "num_beams": 1,
+                "do_sample": false,
+                "until": [
+                    "\n\n"
+                ]
+            },
+            "repeats": 1,
+            "should_decontaminate": false,
+            "lmms_eval_specific_kwargs": {
+                "default": {
+                    "sub_task": "lvbench_tv",
+                    "post_prompt": "Answer with the option's letter from the given choices directly."
+                },
+                "sub_task": "lvbench_tv",
+                "post_prompt": "Answer with the option's letter from the given choices directly."
+            }
+        }
+    },
+    "versions": {
+        "lvbench_cartoon": "Yaml",
+        "lvbench_documentary": "Yaml",
+        "lvbench_live": "Yaml",
+        "lvbench_selfmedia": "Yaml",
+        "lvbench_sport": "Yaml",
+        "lvbench_tv": "Yaml"
+    },
+    "n-shot": {
+        "lvbench_cartoon": 0,
+        "lvbench_documentary": 0,
+        "lvbench_live": 0,
+        "lvbench_selfmedia": 0,
+        "lvbench_sport": 0,
+        "lvbench_tv": 0
+    },
+    "higher_is_better": {
+        "lvbench": {
+            "lvbench_mc_accuracy": true
+        },
+        "lvbench_cartoon": {
+            "lvbench_mc_accuracy": true
+        },
+        "lvbench_documentary": {
+            "lvbench_mc_accuracy": true
+        },
+        "lvbench_live": {
+            "lvbench_mc_accuracy": true
+        },
+        "lvbench_selfmedia": {
+            "lvbench_mc_accuracy": true
+        },
+        "lvbench_sport": {
+            "lvbench_mc_accuracy": true
+        },
+        "lvbench_tv": {
+            "lvbench_mc_accuracy": true
+        }
+    },
+    "n-samples": {
+        "lvbench_cartoon": {
+            "original": 283,
+            "effective": 283
+        },
+        "lvbench_documentary": {
+            "original": 197,
+            "effective": 197
+        },
+        "lvbench_live": {
+            "original": 262,
+            "effective": 262
+        },
+        "lvbench_selfmedia": {
+            "original": 317,
+            "effective": 317
+        },
+        "lvbench_sport": {
+            "original": 240,
+            "effective": 240
+        },
+        "lvbench_tv": {
+            "original": 250,
+            "effective": 250
+        }
+    },
+    "config": {
+        "model": "videoxl",
+        "model_args": "pretrained=/share/LXRlxr0_0/code/videoxl2/videoxl2/checkpoints/finetune_stage4/,conv_template=qwen_1_5,model_name=llava_qwen,max_frames_num=600,fps=1,max_fps=4,video_decode_backend=decord,attn_implementation=sdpa,block_size_chosed=4,prev_blocks_num=11,retriev_agrs=8;3;8,search_gt_chunk_idx_path=/share/minghao/Projects/LanguageBind/lmmseval_lvbench/lvbench_600_4fps/3,",
+        "batch_size": "1",
+        "batch_sizes": [],
+        "device": null,
+        "use_cache": null,
+        "limit": null,
+        "bootstrap_iters": 100000,
+        "gen_kwargs": "",
+        "random_seed": 0,
+        "numpy_seed": 1234,
+        "torch_seed": 1234,
+        "fewshot_seed": 1234
+    },
+    "git_hash": "dd7ef87",
+    "date": "0524_0439"
+}

@@ -1,0 +1,37 @@
+{
+    "key information retrieval": {
+        "correct": 103,
+        "total": 196,
+        "accuracy": 52.55102040816326
+    },
+    "event understanding": {
+        "correct": 248,
+        "total": 526,
+        "accuracy": 47.14828897338403
+    },
+    "summarization": {
+        "correct": 19,
+        "total": 55,
+        "accuracy": 34.54545454545455
+    },
+    "entity recognition": {
+        "correct": 271,
+        "total": 560,
+        "accuracy": 48.392857142857146
+    },
+    "reasoning": {
+        "correct": 84,
+        "total": 147,
+        "accuracy": 57.14285714285714
+    },
+    "temporal grounding": {
+        "correct": 28,
+        "total": 65,
+        "accuracy": 43.07692307692308
+    },
+    "global": {
+        "total": 1549,
+        "correct": 753,
+        "accuracy": 48.61200774693351
+    }
+}

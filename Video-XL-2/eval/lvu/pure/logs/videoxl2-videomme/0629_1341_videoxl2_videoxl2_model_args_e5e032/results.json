@@ -1,0 +1,111 @@
+{
+    "results": {
+        "videomme": {
+            "alias": "videomme",
+            "videomme_percetion_score,none": 66.37,
+            "videomme_percetion_score_stderr,none": "N/A"
+        }
+    },
+    "group_subtasks": {
+        "videomme": []
+    },
+    "configs": {
+        "videomme": {
+            "task": "videomme",
+            "dataset_path": "lmms-lab/Video-MME",
+            "dataset_kwargs": {
+                "token": true
+            },
+            "test_split": "test",
+            "full_docs": false,
+            "process_results_use_image": false,
+            "doc_to_visual": "<function videomme_doc_to_visual at 0x7f0c56bed870>",
+            "doc_to_text": "<function videomme_doc_to_text at 0x7f0c56bee170>",
+            "doc_to_target": "answer",
+            "process_results": "<function videomme_process_results at 0x7f0c56beeb00>",
+            "description": "",
+            "target_delimiter": " ",
+            "fewshot_delimiter": "\n\n",
+            "num_fewshot": 0,
+            "metric_list": [
+                {
+                    "metric": "videomme_percetion_score",
+                    "aggregation": "<function videomme_aggregate_results at 0x7f0c56bef370>",
+                    "higher_is_better": true
+                }
+            ],
+            "output_type": "generate_until",
+            "generation_kwargs": {
+                "max_new_tokens": 16,
+                "temperature": 0.0,
+                "top_p": 1.0,
+                "num_beams": 1,
+                "do_sample": false,
+                "until": [
+                    "\n\n"
+                ]
+            },
+            "repeats": 1,
+            "should_decontaminate": false,
+            "metadata": [
+                {
+                    "version": 0.0
+                }
+            ],
+            "lmms_eval_specific_kwargs": {
+                "default": {
+                    "pre_prompt": "",
+                    "post_prompt": "\nAnswer with the option's letter from the given choices directly."
+                },
+                "gpt4v": {
+                    "pre_prompt": "",
+                    "post_prompt": "\nAnswer the question with A, B, C, or D."
+                },
+                "xcomposer2_4khd": {
+                    "pre_prompt": "[UNUSED_TOKEN_146]user\n",
+                    "post_prompt": " Answer this question with A, B, C, or D.[UNUSED_TOKEN_145]\n[UNUSED_TOKEN_146]assistant\n"
+                },
+                "pre_prompt": "",
+                "post_prompt": "\nAnswer with the option's letter from the given choices directly."
+            },
+            "category_split": "duration",
+            "target_category": [
+                "medium"
+            ]
+        }
+    },
+    "versions": {
+        "videomme": "Yaml"
+    },
+    "n-shot": {
+        "videomme": 0
+    },
+    "higher_is_better": {
+        "videomme": {
+            "videomme_percetion_score": true
+        }
+    },
+    "n-samples": {
+        "videomme": {
+            "original": 2700,
+            "effective": 2700
+        }
+    },
+    "config": {
+        "model": "videoxl2",
+        "model_args": "pretrained=/share/minghao/Models2/Video-XL-2,conv_template=qwen_1_5,model_name=llava_qwen,max_frames_num=400,fps=1,max_fps=4,video_decode_backend=decord",
+        "batch_size": "1",
+        "batch_sizes": [],
+        "device": null,
+        "use_cache": null,
+        "limit": null,
+        "bootstrap_iters": 100000,
+        "gen_kwargs": "",
+        "random_seed": 0,
+        "numpy_seed": 1234,
+        "torch_seed": 1234,
+        "fewshot_seed": 1234
+    },
+    "git_hash": "21bf182",
+    "date": "0629_1233"
+}

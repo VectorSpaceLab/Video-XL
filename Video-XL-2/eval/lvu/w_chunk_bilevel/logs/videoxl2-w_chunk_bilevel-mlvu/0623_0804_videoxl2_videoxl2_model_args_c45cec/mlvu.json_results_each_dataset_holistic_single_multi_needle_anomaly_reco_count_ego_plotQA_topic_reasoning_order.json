@@ -1,0 +1,57 @@
+{
+    "holistic": {
+        "total": 463,
+        "correct": 360,
+        "accuracy": 77.7537796976242
+    },
+    "single": {
+        "total": 1246,
+        "correct": 969,
+        "accuracy": 77.76886035313002
+    },
+    "multi": {
+        "total": 465,
+        "correct": 297,
+        "accuracy": 63.87096774193548
+    },
+    "needle": {
+        "total": 355,
+        "correct": 302,
+        "accuracy": 85.07042253521126
+    },
+    "anomaly_reco": {
+        "total": 200,
+        "correct": 141,
+        "accuracy": 70.5
+    },
+    "count": {
+        "total": 206,
+        "correct": 94,
+        "accuracy": 45.63106796116505
+    },
+    "ego": {
+        "total": 352,
+        "correct": 241,
+        "accuracy": 68.4659090909091
+    },
+    "plotQA": {
+        "total": 539,
+        "correct": 426,
+        "accuracy": 79.0352504638219
+    },
+    "topic_reasoning": {
+        "total": 263,
+        "correct": 219,
+        "accuracy": 83.26996197718631
+    },
+    "order": {
+        "total": 259,
+        "correct": 203,
+        "accuracy": 78.37837837837837
+    },
+    "global": {
+        "total": 2174,
+        "correct": 1626,
+        "accuracy": 74.79300827966881
+    }
+}

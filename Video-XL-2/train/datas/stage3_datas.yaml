@@ -1,0 +1,25 @@
+datasets:
+  # image caption datasets
+  - json_path: /share_2/minghao/Datasets/Annos/Stage3V2/caption_image_densefusion_1m.json 
+    sampling_strategy: all 
+  - json_path: /share_2/minghao/Datasets/Annos/Stage3V2/caption_image_gpt4o_image_57k.json 
+    sampling_strategy: all 
+  - json_path: /share_2/minghao/Datasets/Annos/Stage3V2/caption_image_VL3_3m.json 
+    sampling_strategy: all 
+  - json_path: /share_2/minghao/Datasets/Annos/Stage3V2/caption_video_baaicaption_11k.json
+    sampling_strategy: all 
+
+  # video caption datasets
+  - json_path: /share_2/minghao/Datasets/Annos/Stage3V2/caption_video_chatflash_sharegptvideo_300k.json
+    sampling_strategy: all 
+  - json_path: /share_2/minghao/Datasets/Annos/Stage3V2/caption_video_chatflash_webvid_800k.json
+    sampling_strategy: all 
+  - json_path: /share_2/minghao/Datasets/Annos/Stage3V2/caption_video_LVD_webvid_1112k.json
+    sampling_strategy: all 
+  - json_path: /share_2/minghao/Datasets/Annos/Stage3V2/caption_video_LVD_ytb_489k.json
+    sampling_strategy: all 
+  - json_path: /share_2/minghao/Datasets/Annos/Stage3V2/caption_video_sharegemini_kinestics_222k.json
+    sampling_strategy: all 
+  - json_path: /share_2/minghao/Datasets/Annos/Stage3V2/caption_video_sharegemini_webvid_93k.json
+    sampling_strategy: all 
+  
