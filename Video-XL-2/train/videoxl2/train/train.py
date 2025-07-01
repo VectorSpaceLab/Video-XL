@@ -110,6 +110,7 @@ class ModelArguments:
     use_pos_skipping: Optional[bool] = field(default=False)
     pos_skipping_range: Optional[int] = field(default=4096)
     initialize_vision_modules: Optional[bool] = field(default=True)
+    after_stage3: Optional[bool] = field(default=False)
 
 
 
@@ -1307,6 +1308,25 @@ def get_model(model_args, training_args, bnb_model_from_pretrained_args):
 
         customized_kwargs["config"] = cfg_pretrained
 
+    # load model for stage 4
+    if model_args.after_stage3:
+        from videoxl2.model.language_model.llava_qwen import LlavaQwenConfig
+        llava_cfg = LlavaQwenConfig.from_pretrained(model_args.model_name_or_path)
+        rank0_print(f"Overwriting config with {overwrite_config}")
+        for k, v in overwrite_config.items():
+            setattr(llava_cfg, k, v)
+            
+        print("config",customized_kwargs)
+        model = LlavaQwenForCausalLM.from_pretrained(
+            model_args.model_name_or_path,
+            cache_dir=training_args.cache_dir,
+            attn_implementation=training_args.attn_implementation,
+            torch_dtype=(torch.bfloat16 if training_args.bf16 else None),
+            low_cpu_mem_usage=False,
+            **customized_kwargs,
+        )
+        return model
+
     if model_args.model_class_name is not None:
         actual_model_class_name = f"{model_args.model_class_name}ForCausalLM"
         model_class = getattr(transformers, actual_model_class_name)
@@ -1371,8 +1391,6 @@ def get_model(model_args, training_args, bnb_model_from_pretrained_args):
 
                 deepspeed.utils.set_z3_leaf_modules(model, [Qwen2MoeSparseMoeBlock])
             else:
-                print("@@@@@@@@@@@@@@@")
-                
                 if 'checkpoint' in model_args.model_name_or_path:
                     from videoxl2.model.language_model.llava_qwen import LlavaQwenConfig
                     llava_cfg = LlavaQwenConfig.from_pretrained(model_args.model_name_or_path)
@@ -1552,7 +1570,7 @@ def train(attn_implementation=None):
         if model_args.initialize_vision_modules:
             model.get_model().initialize_vision_modules(model_args=model_args, fsdp=training_args.fsdp)
         else:
-            print(f'Do not initialize vision modules.')
+            print(f'Do not initialize vision modules. Directly use the weight from the checkpoint.')
 
         vision_tower = model.get_vision_tower()
         vision_tower.to(dtype=torch.bfloat16 if training_args.bf16 else torch.float16, device=training_args.device)

@@ -1,29 +1,87 @@
-cd /share/minghao/VideoProjects/Upload/Video-XL/Video-XL-2/train
-source activate /share/LXRlxr0_0/env/xl
+#!/bin/bash
+# This script trains the Video-XL-2 model with specified configurations.
+
+# --- Configuration Variables ---
+# You can modify these paths and settings as needed.
+# Base directory for the Video-XL-2 project
+PROJECT_DIR="/root/Video-XL/Video-XL-2"
+
+# Path to the Conda environment for Video-XL
+CONDA_ENV_PATH="YOUR_CONDA_ENV_PATH"
+
+# Path to the Qwen model
+BASE_MODEL_PATH="/Root/Model/Qwen2.5-7B-Instruct"
+
+# Path to the vision tower model (SigLIP)
+VISION_TOWER_PATH="/Root/Model/siglip-so400m-patch14-384"
+
+# Path to the pre-trained MLP adapter
+MLP_PROJECTOR_PATH="/Root/Model/VideoXL2_Stage2/pretrain_mlp_projector.bin"
+
+# Path to the pre-trained DTS encoder
+DTS_PATH="/Root/Model/VideoXL2_Stage1/dts.pth"
+
+# Output directory for checkpoints
+OUTPUT_DIR="./checkpoints/videoxl2_stage3"
+
+# Data configuration file
+DATA_PATH="./datas/stage3_datas.yaml"
+
+# DeepSpeed configuration file
+DEEPSPEED_CONFIG="./deepspeed/zero1.json"
+
+# --- Hardware Configuration ---
+ARG_WORLD_SIZE=${1:-1}
+ARG_NPROC_PER_NODE=${2:-8}
+ARG_MASTER_ADDR="127.0.0.1"
+ARG_MASTER_PORT=16667
+ARG_RANK=0
+
+# Multiple conditions
+if [ ! -n "$WORLD_SIZE" ] || [ ! -n "$NPROC_PER_NODE" ]; then
+    WORLD_SIZE=$ARG_WORLD_SIZE
+    NPROC_PER_NODE=$ARG_NPROC_PER_NODE
+fi
+if [ ! -n "$MASTER_ADDR" ] || [ ! -n "$MASTER_PORT" ] || [ ! -n "$RANK" ]; then
+    MASTER_ADDR=$ARG_MASTER_ADDR
+    MASTER_PORT=$ARG_MASTER_PORT
+    RANK=$ARG_RANK
+fi
+
+echo "WORLD_SIZE: $WORLD_SIZE"
+echo "NPROC_PER_NODE: $NPROC_PER_NODE"
+echo "ARG_MASTER_ADDR: $ARG_MASTER_ADDR"
+echo "ARG_MASTER_PORT: $ARG_MASTER_PORT"
+echo "RANK: $RANK"
+
+# --- Environment Setup ---
+echo "Changing directory to $PROJECT_DIR/train..."
+cd "$PROJECT_DIR/train" || { echo "Failed to change directory."; exit 1; }
+
+echo "Activating Conda environment from $CONDA_ENV_PATH..."
+source activate "$CONDA_ENV_PATH" || { echo "Failed to activate conda environment."; exit 1; }
+
+# Set environment variables for multi-threading
 export OMP_NUM_THREADS=1
 export MKL_NUM_THREADS=1
-export NCCL_DEBUG=WARN
+export NCCL_DEBUG=WARN # Set to INFO for more detailed NCCL debugging
 
-WORLD_SIZE=1
-MASTER_ADDR="127.0.0.1" # Or your machine's IP address if needed, but localhost is fine for single machine
-MASTER_PORT="29500" # Choose an available port
-RANK=0 # For a single node, the rank is 0
-NPROC_PER_NODE=8
-
+# --- Start Training ---
+echo "Starting distributed training with torchrun..."
 torchrun \
-    --nnodes=$WORLD_SIZE \
-    --nproc_per_node=$NPROC_PER_NODE \
-    --master_addr=$MASTER_ADDR \
-    --master_port=$MASTER_PORT \
-    --node_rank=$RANK \
+    --nnodes="$WORLD_SIZE" \
+    --nproc_per_node="$NPROC_PER_NODE" \
+    --master_addr="$MASTER_ADDR" \
+    --master_port="$MASTER_PORT" \
+    --node_rank="$RANK" \
     videoxl2/train/train_mem.py \
-    --deepspeed ./deepspeed/zero1.json \
-    --model_name_or_path /share/LXRlxr0_0/code/Qwen/Qwen2.5-7B-Instruct \
-    --version qwen_1_5  \
-    --data_path ./datas/toy.yaml \
-    --vision_tower /share/LXRlxr0_0/code/videoxlturbo2.0/videoxl/google/siglip-so400m-patch14-384 \
-    --pretrain_mm_mlp_adapter /share/LXRlxr0_0/code/videoxlturbo2.0/LongVA_stage2/checkpoints/pretrain_0308_qwen2.5_7b/mm_projector.bin \
-    --pretrain_dts /share/minghao/VideoProjects/lmm-eval-sparse/longva/longva/model/encoder.pth \
+    --deepspeed "$DEEPSPEED_CONFIG" \
+    --model_name_or_path "$BASE_MODEL_PATH" \
+    --version qwen_1_5 \
+    --data_path "$DATA_PATH" \
+    --vision_tower "$VISION_TOWER_PATH" \
+    --pretrain_mm_mlp_adapter "$MLP_PROJECTOR_PATH" \
+    --pretrain_dts "$DTS_PATH" \
     --mm_projector_type mlp2x_gelu \
     --video_fps 1 \
     --frames_upbound 16 \
@@ -34,12 +92,12 @@ torchrun \
     --mm_resampler_type "spatial_pool" \
     --mm_spatial_pool_out_channels 1152 \
     --mm_vision_select_feature patch \
-    --image_grid_pinpoints "(1x1)...(6x6)"  \
+    --image_grid_pinpoints "(1x1)...(6x6)" \
     --mm_patch_merge_type unires \
     --mm_use_im_start_end False \
     --mm_use_im_patch_token False \
     --bf16 True \
-    --output_dir ./checkpoints/videoxl2_stage3 \
+    --output_dir "$OUTPUT_DIR" \
     --num_train_epochs 1 \
     --per_device_train_batch_size 1 \
     --per_device_eval_batch_size 4 \
@@ -59,4 +117,6 @@ torchrun \
     --dataloader_num_workers 8 \
     --lazy_preprocess True \
     --run_name finetune_stage3 \
-    --group_by_stride strict \
+    --group_by_stride strict
+
+echo "Training script finished."

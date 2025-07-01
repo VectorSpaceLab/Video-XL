@@ -1,0 +1,35 @@
+datasets:
+  # image caption datasets
+  - json_path: /root/datasets/stage3/caption_image_densefusion_1m.json 
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/BAAI/DenseFusion-1M
+  - json_path: /root/datasets/stage3/caption_image_gpt4o_image_57k.json 
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/OpenGVLab/ShareGPT-4o
+  - json_path: /root/datasets/stage3/caption_image_VL3_3m.json 
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/DAMO-NLP-SG/VL3-Syn7M
+  - json_path: /root/datasets/stage3/caption_video_baaicaption_11k.json
+    sampling_strategy: all 
+    source: in-house data
+
+  # video caption datasets
+  - json_path: /root/datasets/stage3/caption_video_chatflash_sharegptvideo_300k.json
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/OpenGVLab/VideoChat-Flash-Training-Data
+  - json_path: /root/datasets/stage3/caption_video_chatflash_webvid_800k.json
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/OpenGVLab/VideoChat-Flash-Training-Data
+  - json_path: /root/datasets/stage3/caption_video_LVD_webvid_1112k.json
+    sampling_strategy: all 
+    source: https://github.com/SilentView/LVD-2M
+  - json_path: /root/datasets/stage3/caption_video_LVD_ytb_489k.json
+    sampling_strategy: all 
+    source: https://github.com/SilentView/LVD-2M
+  - json_path: /root/datasets/stage3/caption_video_sharegemini_kinestics_222k.json
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/Share14/ShareGemini/tree/main
+  - json_path: /root/datasets/stage3/caption_video_sharegemini_webvid_93k.json
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/Share14/ShareGemini/tree/main
+  

@@ -1,0 +1,81 @@
+datasets:
+  # image sft datasets
+  - json_path: /root/datasets/stage4/qa_image_mathverse.json 
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/AI4Math/MathVerse
+  - json_path: /root/datasets/stage4/qa_image_nlvr.json 
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/TIGER-Lab/NLVR2
+  - json_path: /root/datasets/stage4/qa_image_onevision.json 
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/lmms-lab/LLaVA-OneVision-Data
+  - json_path: /root/datasets/stage4/qa_image_visualmrc.json 
+    sampling_strategy: all
+    source: https://huggingface.co/datasets/NTT-hil-insight/VisualMRC
+
+  # video sft datasets
+  - json_path: /root/datasets/stage4/qa_video_cinepine.json
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/tomg-group-umd/cinepile
+  - json_path: /root/datasets/stage4/qa_video_finevideo_210.json
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/HuggingFaceFV/finevideo
+  - json_path: /root/datasets/stage4/qa_video_llava178k.json
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/lmms-lab/LLaVA-Video-178K
+  - json_path: /root/datasets/stage4/qa_video_nextqa.json
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/lmms-lab/NExTQA/tree/main
+  - json_path: /root/datasets/stage4/qa_video_perception_test.json
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/lmms-lab/PerceptionTest
+  - json_path: /root/datasets/stage4/qa_video_vcg_plus_112k.json
+    sampling_strategy: all
+    source: https://huggingface.co/datasets/MBZUAI/VCG-plus_112K/viewer
+  - json_path: /root/datasets/stage4/vript_long_videos_en_20240911_fix.json
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/Mutonix/Vript
+  - json_path: /root/datasets/stage4/vript_short_videos_en_20240911_fix.json
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/Mutonix/Vript
+  
+
+  # in-house data, we will release it later
+  # - json_path: /root/datasets/stage4/qa_video_cinepine_order.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_video_action_reasoning_46k.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_video_temporal_reasoning_47k.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_video_object_reasoning_45k.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_video_temporal_ordering_g1_47k.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_video_temporal_ordering_g2_39k.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_image_counting3_coco_54k.json 
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_image_counting12_coco_258k.json 
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_video_fsc_counting_4k.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_video_coco_counting_15k.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_video_counting_ytbvis_4k.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_video_counting_ovis_1k.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_video_temporal_ordering_g1_ruled_20k.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_video_event_counting_g2_ruled_10k.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_video_clean_time_videoxl2_data.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/pevideo.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_video_countix_counting_4k.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_video_DVD_counting_5k.json
+  #   sampling_strategy: all 
+  # - json_path: /root/datasets/stage4/qa_video_yt_bounding_box_12k.json
+  #   sampling_strategy: all 

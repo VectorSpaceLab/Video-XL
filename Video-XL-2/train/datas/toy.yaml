@@ -2,3 +2,5 @@ datasets:
   # image caption datasets
   - json_path: /share_2/minghao/Datasets/Annos/Stage3V2/caption_image_gpt4o_image_57k.json 
     sampling_strategy: all 
+  - json_path: /share_2/minghao/Datasets/Annos/Stage4/qa_video_nextqa.json
+    sampling_strategy: all 
