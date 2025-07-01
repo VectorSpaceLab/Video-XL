@@ -1,39 +1,49 @@
 # Train Video-XL-2
+This sub repo provides the training code for **Video-XL-2**.
 
-## 1. Setup
+
+## 1. Installation
+To get started, clone the repository and install the necessary dependencies.
+
 ```bash
 git clone https://github.com/VectorSpaceLab/Video-XL
-cd Video-XL-2
-pip install -e .
+cd ./Video-XL/train
+conda create -n video_xl_env python=3.10 # Create a new conda environment named 'video_xl_env'
+conda activate video_xl_env             # Activate your environment
+pip install -r requirements.txt
 ```
 
 ## 2. Training Data
-We provide the training data infomations for Video-XL-2 in [./datas](./datas).
+The training data configuration files for **stage3** and **stage4** are located in `./configs/data`. These files contain source links to help you download the raw video data.
 
-## 3. Training
-<!-- | Stage | Num. frames | ViT | Connector | LLM | CKPT |
-|--------|:-------:|:------:|:------:|:------:|:------:|
-| [stage1](scripts/train/stage1-init_connector) | 4 | :snowflake: | :fire: | :snowflake: | [all projector weights](https://huggingface.co/OpenGVLab/stage1-mm-projectors/tree/main) |
-| [stage2](scripts/train/stage2-visual_pretraining) | 4-8 | :fire: | :fire: | :fire: | [UMT-Qwen2_7B](https://huggingface.co/OpenGVLab/stage2-UMT-Qwen2-7B-tome16_mlp), [UMT-Qwen2_5_1M_7B](https://huggingface.co/OpenGVLab/stage2-UMT-Qwen2_5_7B_1m-tome16_mlp), [UMT-HD-Qwen2_5_2B](https://huggingface.co/OpenGVLab/stage2-UMT-Qwen2_5_1.5B-tome16_mlp), [InternVideo2-Qwen2_5_7B](https://huggingface.co/OpenGVLab/stage2-InternVideo2-1B-Qwen2_5-7B-tome16_mlp) |
-| [stage3](scripts/train/stage3-video_sft) | 64-512 | :fire: | :fire: | :fire: | [UMT-Qwen2_7B](https://huggingface.co/OpenGVLab/VideoChat-Flash-Qwen2-7B_res448),[UMT-HD-Qwen2_5-2B](https://huggingface.co/OpenGVLab/VideoChat-Flash-Qwen2_5-2B_res448),[UMT-Qwen2_5_1M_7B](https://huggingface.co/OpenGVLab/VideoChat-Flash-Qwen2_5-7B-1M_res224), [InternVideo2-Qwen2_5_7B](https://huggingface.co/OpenGVLab/VideoChat-Flash-Qwen2_5-7B_InternVideo2-1B) |
-| [stage4](scripts/train/stage4_highres_postft) | 64-512 | :fire: | :fire: | :snowflake: | [UMT-HD-Qwen2-7B](https://huggingface.co/OpenGVLab/VideoChat-Flash-Qwen2-7B_res448)| -->
+Their corresponding annotation JSON files can be downloaded directly from here (https://www.google.com/search?q=https://drive.google.com/
 
-<!-- Training time with a 32 A100:
-- stage1: under one hour:
-- stage2: about 2 day
-- stage3: about 2~3day
-- stage4: about 2~3day -->
+**Important**: After downloading your video data to a local directory (e.g., `/path/to/your/local/videos`), you'll need to update the `data_path` in the annotation JSON files to point to your local video storage. Run the following command, replacing `/path/to/your/local/videos` with the actual absolute path to your video dataset:
 
-### Stage-1: DTS Pre-training
 ```bash
-```
-### Stage-2: Visual-Language Alignment
-```bash
-```
-### Stage-3: Visual Pre-training
-```bash
+python ./preprocess/train.py --anno_file_path ./data/stage3_train.json --local_video_dir /path/to/your/local/videos
 ```
 
-### Stage-4: Visual SFT
+
+## 3. Model Weights
+
+Download the following pre-trained weights, which are essential for **stage3** and **stage4** fine-tuning.
+
+  * **For Stage3 fine-tuning, you will need:**
+      * **DTS module weight** (from stage1): [Download Link](https://www.google.com/search?q=YOUR_DTS_MODULE_WEIGHT_LINK)
+      * **MLP projector weight** (from stage2): [Download Link](https://www.google.com/search?q=YOUR_MLP_PROJECTOR_WEIGHT_LINK)
+  * **For Stage4 fine-tuning, you will need:**
+      * **Complete model weight** (from stage3): [Download Link](https://www.google.com/search?q=YOUR_COMPLETE_STAGE3_MODEL_LINK)
+
+
+## 4. Training
+
+Training for Stage1 and Stage2 is consistent with **Video-XL-Pro**. For details and training code related to these initial stages, please refer to the Video-XL-Pro repository.
+
+For **stage3** and **stage4** training, use the following commands. The parameters `4` and `8` in the scripts represent the **number of machines** and the **number of GPUs per machine**, respectively.
+
 ```bash
+cd ./Video-XL/train
+bash ./scripts/train_stage3.sh 4 8 # Example: Train on 4 machines, each with 8 GPUs
+bash ./scripts/train_stage4.sh 4 8 # Example: Train on 4 machines, each with 8 GPUs
 ```
