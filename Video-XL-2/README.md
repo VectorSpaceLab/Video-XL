@@ -2,7 +2,7 @@
 <h1>Video-XL-2: A Better, Faster, and High-Frame-Count Model for Long Video Understanding.</h1>
 <h3></h3>
 
-| [Blog](https://unabletousegit.github.io/video-xl2.github.io/) | [Tech Report (comming soon)](YOUR_TECH_REPORT_LINK_HERE) | [🤗HF Models](https://huggingface.co/BAAI/Video-XL-2) |
+| [HomePage](https://unabletousegit.github.io/video-xl2.github.io/) | [Tech Report](https://arxiv.org/abs/2506.19225v1) | [🤗HF Models](https://huggingface.co/BAAI/Video-XL-2) | [🤗Demo](http://39.101.64.147:28787) |
 
 </div>
 
@@ -128,5 +128,11 @@ If you find Video-XL-2 useful for your research and applications, please conside
   journal={arXiv preprint arXiv:2503.18478},
   year={2025}
 }
-```
 
+@article{qin2025video,
+  title={Video-XL-2: Towards Very Long-Video Understanding Through Task-Aware KV Sparsification},
+  author={Qin, Minghao and Liu, Xiangrui and Liang, Zhengyang and Shu, Yan and Yuan, Huaying and Zhou, Juenjie and Xiao, Shitao and Zhao, Bo and Liu, Zheng},
+  journal={arXiv preprint arXiv:2506.19225},
+  year={2025}
+}
+```
