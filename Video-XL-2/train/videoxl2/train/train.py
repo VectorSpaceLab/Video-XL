@@ -1033,8 +1033,8 @@ class LazySupervisedDataset(Dataset):
         processor = self.data_args.image_processor
         # print(f"\n\nInspecting the image path, folder = {image_folder}, image={image_file}\n\n")
         try:
-            #image = Image.open(os.path.join(image_folder, image_file)).convert("RGB")
-            image = Image.open(image_file).convert("RGB")
+            image = Image.open(os.path.join(image_folder, image_file)).convert("RGB")
+            # image = Image.open(image_file).convert("RGB")
         except Exception as exn:
             print(f"Failed to open image {image_file}. Exception:", exn)
             raise exn
@@ -1120,8 +1120,8 @@ class LazySupervisedDataset(Dataset):
         elif "video" in sources[0]:
             video_file = self.list_data_dict[i]["video"]
             video_folder = self.data_args.video_folder
-            #video_file = os.path.join(video_folder, video_file)
-            video_file = video_file
+            video_file = os.path.join(video_folder, video_file)
+            # video_file = video_file
             suffix = video_file.split(".")[-1]
             if not os.path.exists(video_file):
                 print("File {} not exist!".format(video_file))

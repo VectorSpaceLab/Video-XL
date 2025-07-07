@@ -32,12 +32,15 @@ datasets:
   - json_path: /root/datasets/stage4/qa_video_vcg_plus_112k.json
     sampling_strategy: all
     source: https://huggingface.co/datasets/MBZUAI/VCG-plus_112K/viewer
-  - json_path: /root/datasets/stage4/vript_long_videos_en_20240911_fix.json
+  - json_path: /root/datasets/stage4/caption_video_vript_long_videos_en_20240911_fix.json
     sampling_strategy: all 
     source: https://huggingface.co/datasets/Mutonix/Vript
-  - json_path: /root/datasets/stage4/vript_short_videos_en_20240911_fix.json
+  - json_path: /root/datasets/stage4/caption_video_vript_short_videos_en_20240911_fix.json
     sampling_strategy: all 
     source: https://huggingface.co/datasets/Mutonix/Vript
+  - json_path: /root/datasets/stage4/caption_video_pevideo.json
+    sampling_strategy: all 
+    source: https://huggingface.co/datasets/facebook/PE-Video
   
 
   # in-house data, we will release it later
@@ -70,8 +73,6 @@ datasets:
   # - json_path: /root/datasets/stage4/qa_video_event_counting_g2_ruled_10k.json
   #   sampling_strategy: all 
   # - json_path: /root/datasets/stage4/qa_video_clean_time_videoxl2_data.json
-  #   sampling_strategy: all 
-  # - json_path: /root/datasets/stage4/pevideo.json
   #   sampling_strategy: all 
   # - json_path: /root/datasets/stage4/qa_video_countix_counting_4k.json
   #   sampling_strategy: all 

@@ -14,17 +14,28 @@ pip install -r requirements.txt
 ```
 
 ## 2. Training Data
-The training data configuration files for **stage3** and **stage4** are located in `./configs/data`. These files contain source links to help you download the raw video data.
+The training data configuration files for **stage3** and **stage4** are located in `./configs/data`. These files contain source links to help you download the raw video and image data.
 
 Their corresponding annotation JSON files can be downloaded directly from here (https://www.google.com/search?q=https://drive.google.com/
 
-**Important**: After downloading your video data to a local directory (e.g., `/path/to/your/local/videos`), you'll need to update the `data_path` in the annotation JSON files to point to your local video storage. Run the following command, replacing `/path/to/your/local/videos` with the actual absolute path to your video dataset:
+**Important**: After downloading your video and image data,you'll need to keep all video and image datasets in their respective directories
 
-```bash
-python ./preprocess/train.py --anno_file_path ./data/stage3_train.json --local_video_dir /path/to/your/local/videos
+For example, your directory structure should look like this:
+```
+/path/to/your/local/datas
+├── videodatas
+│   ├── datasets_1
+│   ├── datasets_2
+│   ├── datasets_3
+│   ├── ...
+├── imagedata
+│   ├── datasets_4
+│   ├── datasets_5
+│   ├── datasets_6
+│   ├── ...
 ```
 
-
+```
 ## 3. Model Weights
 
 Download the following pre-trained weights, which are essential for **stage3** and **stage4** fine-tuning.

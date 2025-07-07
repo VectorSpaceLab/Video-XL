@@ -21,6 +21,10 @@ OUTPUT_DIR="./checkpoints/videoxl2_stage4"
 # Data configuration file
 DATA_PATH="./datas/stage4_datas.yaml"
 
+# Path to the pre-trained DTS encoder
+IMAGE_FOLDER="/Root/Datasets/ImageDatas/"
+VIDEO_FOLDER="/Root/Datasets/VideoDatas/"
+
 # DeepSpeed configuration file
 DEEPSPEED_CONFIG="./deepspeed/zero1.json"
 
@@ -74,6 +78,8 @@ torchrun \
     --model_name_or_path $BASE_MODEL_PATH \
     --version qwen_1_5  \
     --data_path $DATA_PATH \
+    --image_folder "$IMAGE_FOLDER" \
+    --video_folder "$VIDEO_FOLDER" \
     --initialize_vision_modules False \
     --after_stage3 True \
     --vision_tower $VISION_TOWER_PATH  \

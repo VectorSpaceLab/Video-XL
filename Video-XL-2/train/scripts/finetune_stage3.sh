@@ -21,6 +21,10 @@ MLP_PROJECTOR_PATH="/Root/Model/VideoXL2_Stage2/pretrain_mlp_projector.bin"
 # Path to the pre-trained DTS encoder
 DTS_PATH="/Root/Model/VideoXL2_Stage1/dts.pth"
 
+# Path to the pre-trained DTS encoder
+IMAGE_FOLDER="/Root/Datasets/ImageDatas/"
+VIDEO_FOLDER="/Root/Datasets/VideoDatas/"
+
 # Output directory for checkpoints
 OUTPUT_DIR="./checkpoints/videoxl2_stage3"
 
@@ -79,6 +83,8 @@ torchrun \
     --model_name_or_path "$BASE_MODEL_PATH" \
     --version qwen_1_5 \
     --data_path "$DATA_PATH" \
+    --image_folder "$IMAGE_FOLDER" \
+    --video_folder "$VIDEO_FOLDER" \
     --vision_tower "$VISION_TOWER_PATH" \
     --pretrain_mm_mlp_adapter "$MLP_PROJECTOR_PATH" \
     --pretrain_dts "$DTS_PATH" \
