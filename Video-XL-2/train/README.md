@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ## 2. Training Data
 The training data configuration files for **stage3** and **stage4** are located in `./configs/data`. These files contain source links to help you download the raw video and image data.
 
-Their corresponding annotation JSON files can be downloaded directly from here (https://www.google.com/search?q=https://drive.google.com/
+Their corresponding annotation JSON files can be downloaded directly from here (https://huggingface.co/datasets/BAAI/VideoXL2_Training_Data_Anno_Files)
 
 **Important**: After downloading your video and image data,you'll need to keep all video and image datasets in their respective directories
 
@@ -41,10 +41,10 @@ For example, your directory structure should look like this:
 Download the following pre-trained weights, which are essential for **stage3** and **stage4** fine-tuning.
 
   * **For Stage3 fine-tuning, you will need:**
-      * **DTS module weight** (from stage1): [Download Link](https://www.google.com/search?q=YOUR_DTS_MODULE_WEIGHT_LINK)
-      * **MLP projector weight** (from stage2): [Download Link](https://www.google.com/search?q=YOUR_MLP_PROJECTOR_WEIGHT_LINK)
+      * **DTS module weight** (from stage1): [Download Link](https://huggingface.co/BAAI/Stage1_and_Stage2_Weights)
+      * **MLP projector weight** (from stage2): [Download Link](https://huggingface.co/BAAI/Stage1_and_Stage2_Weights)
   * **For Stage4 fine-tuning, you will need:**
-      * **Complete model weight** (from stage3): [Download Link](https://www.google.com/search?q=YOUR_COMPLETE_STAGE3_MODEL_LINK)
+      * **Complete model weight** (from stage3): [Download Link](https://huggingface.co/BAAI/Stage3_Weights)
 
 
 ## 4. Training

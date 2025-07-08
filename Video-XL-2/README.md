@@ -1,8 +1,8 @@
 <div align='center'>
-<h1>Video-XL-2: A Better, Faster, and High-Frame-Count Model for Long Video Understanding.</h1>
+<h1>Video-XL-2: Towards Very Long-Video Understanding Through Task-Aware KV Sparsification </h1>
 <h3></h3>
 
-| [Blog](https://unabletousegit.github.io/video-xl2.github.io/) | [Tech Report (comming soon)](YOUR_TECH_REPORT_LINK_HERE) | [🤗HF Models](https://huggingface.co/BAAI/Video-XL-2) |
+| [Blog](https://unabletousegit.github.io/video-xl2.github.io/) | [Tech Report](https://arxiv.org/abs/2506.19225) | [🤗HF Models](https://huggingface.co/BAAI/Video-XL-2) |
 
 </div>
 
@@ -26,25 +26,27 @@ We introduce **Video-XL-2**, a new suite of multimodal models that achieves stat
 - **Emu3** simply generates a video causally by predicting the next token in a video sequence, unlike the video diffusion model as in Sora. With a video in context, Emu3 can also naturally extend the video and predict what will happen next.  -->
 
 
-### TODO
+<!-- ### TODO
 - [X] Release model weights.
 - [ ] Release the inference code.
 - [X] Release the training code for sft.
 - [ ] Release the training guidance.
 - [X] Release the evaluation code.
-- [ ] Release the evaluation guidance.
+- [ ] Release the evaluation guidance. -->
 
 
 ### Model Weights
 
-| Model name| HF Weight | Modelscope  | 
-| ------------------------ | -------------------------------------------------------------- | ------------------------------------------------------------------------- | 
-| **Video-XL-2/Stage3**          | [🤗 HF link](https://huggingface.co/BAAI/Video-XL-2)  | [Modelscope link]()          | 
-| **Video-XL-2/Stage4**           | [🤗 HF link](https://huggingface.co/BAAI/Video-XL-2) | [Modelscope link]()           |
+| Model name| HF Weight |
+| ------------------------ | -------------------------------------------------------------- | 
+| **Video-XL-2/Stage1**          | [🤗 HF link](https://huggingface.co/BAAI/Stage1_and_Stage2_Weights)  |
+| **Video-XL-2/Stage2**           | [🤗 HF link](https://huggingface.co/BAAI/Stage1_and_Stage2_Weights) |
+| **Video-XL-2/Stage3**          | [🤗 HF link](https://huggingface.co/BAAI/Stage3_Weights)  |
+| **Video-XL-2/Stage4**           | [🤗 HF link](https://huggingface.co/BAAI/Video-XL-2) |
 
-### Quickstart
+<!-- ### Quickstart -->
 
-#### Setup
+### Setup
 
 Clone this repository and install required packages:
 
@@ -54,51 +56,9 @@ cd Video-XL-2
 pip install -r requirements.txt
 ```
 
-#### Use 🤗Transformers to run Video-XL-2 for video understanding
+<!-- #### Use 🤗Transformers to run Video-XL-2 for video understanding
 ```python
-from transformers import AutoTokenizer, AutoModel, AutoConfig, BitsAndBytesConfig
-import torch
-
-# load model 
-model_path = '/root/Models/Video-XL-2'
-tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
-model = AutoModel.from_pretrained(model_path, trust_remote_code=True, device_map=device,quantization_config=None,attn_implementation="sdpa").to(torch.bfloat16)
-
-gen_kwargs = {
-    "do_sample": True,
-    "temperature": 0.01,
-    "top_p": 0.001,
-    "num_beams": 1,
-    "use_cache": True,
-    "max_new_tokens": 256
-}
-
-enable_sparse = False # use the sparse pattern or not
-sparse_mode = 'streaming' # streaming or mask
-if enable_sparse:
-    model.config.enable_sparse = True
-    model.config.sparse_mode = sparse_mode
-    block_size_chosed = 4
-    prev_blocks_num = 3
-    model.config.sparse_config = {'block_size_chosed':block_size_chosed, 'prev_blocks_num':prev_blocks_num}
-else:
-    model.config.enable_sparse = False
-
-# input data
-video_path = "/asset/demo.mp4"
-question1 = "How many people in the video? (A)3 people (B)6 people. Please only respone the letter"
-
-# params
-max_num_frames = 100
-sample_fps = 1  # extract frame at 1fps
-max_sample_fps = 4
-
-with torch.inference_mode():
-    response = model.chat(video_path, tokenizer, question1, chat_history=None, return_history=False,max_num_frames=max_num_frames, sample_fps=sample_fps, max_sample_fps=max_sample_fps, generation_config=gen_kwargs)
-    
-print(response)
-```
+``` -->
 
 ### Training
 The training codes and scripts can be found in [./train](./train).
@@ -115,6 +75,13 @@ We thank the great work from [Video-XL Series](https://github.com/VectorSpaceLab
 If you find Video-XL-2 useful for your research and applications, please consider starring this repository and citing:
 
 ```
+@article{qin2025video,
+  title={Video-XL-2: Towards Very Long-Video Understanding Through Task-Aware KV Sparsification},
+  author={Qin, Minghao and Liu, Xiangrui and Liang, Zhengyang and Shu, Yan and Yuan, Huaying and Zhou, Juenjie and Xiao, Shitao and Zhao, Bo and Liu, Zheng},
+  journal={arXiv preprint arXiv:2506.19225},
+  year={2025}
+}
+
 @article{shu2024video,
   title={Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding},
   author={Shu, Yan and Zhang, Peitian and Liu, Zheng and Qin, Minghao and Zhou, Junjie and Huang, Tiejun and Zhao, Bo},
