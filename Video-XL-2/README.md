@@ -2,37 +2,19 @@
 <h1>Video-XL-2: Towards Very Long-Video Understanding Through Task-Aware KV Sparsification </h1>
 <h3></h3>
 
-| [Blog](https://unabletousegit.github.io/video-xl2.github.io/) | [Tech Report](https://arxiv.org/abs/2506.19225) | [🤗HF Models](https://huggingface.co/BAAI/Video-XL-2) |
+| [Blog](https://unabletousegit.github.io/video-xl2.github.io/) | [Tech Report](https://arxiv.org/abs/2506.19225) | [🤗HF Models](https://huggingface.co/collections/BAAI/video-xl-683973cd45636acda09a11bd) |
 
 </div>
 
 
-<div align='center'>
+<!-- <div align='center'>
 <img src="./assets/performance.png" class="interpolation-image" alt="arch." height="80%" width="70%" />
-</div>
+</div> -->
 
 We introduce **Video-XL-2**, a new suite of multimodal models that achieves state-of-the-art (SOTA) performance and superior efficiency in long video understanding.
 
 ### Video-XL-2: SOTA Performance and Unrivaled Efficiency
 **Video-XL-2** achieves SOTA performance in mainstream long video understanding benchmarks and leading performance in temporal grounding tasks when compared to open-source lightweight models. Furthermore, it boasts significant advantages over existing models in both memory consumption and inference speed."
-<!-- 
-<div align='center'>
-<img src="./assets/comparison.png" class="interpolation-image" alt="comparison." height="80%" width="80%" />
-</div> -->
-<!-- 
-### Highlights
-- **Emu3** is capable of generating high-quality images following the text input, by simply predicting the next vision token. The model naturally supports flexible resolutions and styles.
-- **Emu3** shows strong vision-language understanding capabilities to see the physical world and provides coherent text responses. Notably, this capability is achieved without depending on a CLIP and a pretrained LLM.
-- **Emu3** simply generates a video causally by predicting the next token in a video sequence, unlike the video diffusion model as in Sora. With a video in context, Emu3 can also naturally extend the video and predict what will happen next.  -->
-
-
-<!-- ### TODO
-- [X] Release model weights.
-- [ ] Release the inference code.
-- [X] Release the training code for sft.
-- [ ] Release the training guidance.
-- [X] Release the evaluation code.
-- [ ] Release the evaluation guidance. -->
 
 
 ### Model Weights
