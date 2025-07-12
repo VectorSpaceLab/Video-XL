@@ -9,11 +9,11 @@ datasets:
   - json_path: /root/datasets/stage3/caption_image_VL3_3m.json 
     sampling_strategy: all 
     source: https://huggingface.co/datasets/DAMO-NLP-SG/VL3-Syn7M
-  - json_path: /root/datasets/stage3/caption_video_baaicaption_11k.json
-    sampling_strategy: all 
-    source: in-house data
 
   # video caption datasets
+  - json_path: /root/datasets/stage3/caption_video_baaicaption_11k.json
+    sampling_strategy: all 
+    source: in-house
   - json_path: /root/datasets/stage3/caption_video_chatflash_sharegptvideo_300k.json
     sampling_strategy: all 
     source: https://huggingface.co/datasets/OpenGVLab/VideoChat-Flash-Training-Data

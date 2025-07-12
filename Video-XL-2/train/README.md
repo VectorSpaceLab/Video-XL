@@ -44,7 +44,7 @@ Download the following pre-trained weights, which are essential for **stage3** a
       * **DTS module weight** (from stage1): [Download Link](https://huggingface.co/BAAI/Stage1_and_Stage2_Weights)
       * **MLP projector weight** (from stage2): [Download Link](https://huggingface.co/BAAI/Stage1_and_Stage2_Weights)
   * **For Stage4 fine-tuning, you will need:**
-      * **Complete model weight** (from stage3): [Download Link](https://huggingface.co/BAAI/Stage3_Weights)
+      * **Complete model weight** (from stage3): [Download Link](https://huggingface.co/BAAI/Video-XL-2-Stage3)
 
 
 ## 4. Training
