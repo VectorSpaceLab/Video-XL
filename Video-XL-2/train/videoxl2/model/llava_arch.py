@@ -218,24 +218,31 @@ class LlavaMetaForCausalLM(ABC):
         return torch.repeat_interleave(image_features, repeats=4, dim=0)
     
     def add_video(self, video_features):
-        if video_features.size(0)<4:
-            last_feature = video_features[-1:]
+        # Current batch size
+        current_batch_size = video_features.size(0)
 
-            repeated_features = last_feature.repeat(4 - video_features.size(0), 1,1,1)
+        # Handle cases where the batch size is less than 4
+        if current_batch_size < 4:
+            last_feature = video_features[-1:]
+            # Calculate how many times the last feature needs to be repeated
+            num_repeats = 4 - current_batch_size
+            repeated_features = last_feature.repeat(num_repeats, 1, 1, 1)
+            # Concatenate original features with repeated last feature
+            expanded_x = torch.cat([video_features, repeated_features], dim=0)
+            return expanded_x
+
+        # Handle cases where the batch size is 4 or greater, but not a multiple of 4
+        if current_batch_size % 4 != 0:
+            last_feature = video_features[-1:]
+            # Calculate how many features are needed to reach the next multiple of 4
+            padding_size = 4 - (current_batch_size % 4)
+            repeated_features = last_feature.repeat(padding_size, 1, 1, 1)
+            # Concatenate original features with repeated last feature
             expanded_x = torch.cat([video_features, repeated_features], dim=0)
             return expanded_x
         
-        repeat_counts = torch.ones(video_features.size(0), dtype=torch.long, device=video_features.device)
-
-        sum_counts=torch.sum(repeat_counts)
-        if sum_counts % 4!=0:
-            padding_size = 4 - (sum_counts % 4)
-            random_indices = torch.randperm(repeat_counts.size(0))[:padding_size].to(video_features.device)
-            repeat_counts[random_indices] += 1 
-            
-        expanded_x = torch.repeat_interleave(video_features, repeat_counts, dim=0)
-        
-        return expanded_x
+        # If the batch size is already a multiple of 4, return as is
+        return video_features
 
     def encode_multimodals(self, videos_or_images, video_idx_in_batch, split_sizes=None):
         #################################################################################
