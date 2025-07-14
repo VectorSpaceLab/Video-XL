@@ -253,7 +253,7 @@ class LlavaMetaForCausalLM(ABC):
             
         #################################################################################
         # Define the maximum batch size (1024 frames)
-        max_batch_size = 200
+        max_batch_size = 100
         num_frames = videos_or_images.shape[0]
         # Initialize a list to store the features from each batch
         videos_or_images_features = []
@@ -315,6 +315,9 @@ class LlavaMetaForCausalLM(ABC):
             all_videos_or_images_features.append(feat)
             
         del per_videos_or_images_features
+        del videos_or_images_features
+        torch.cuda.empty_cache()
+        
         return all_videos_or_images_features
     ########################################################
     def interpolate(self,image_features):
